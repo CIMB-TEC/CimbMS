@@ -1,0 +1,13 @@
+{
+  "description": "El Laboratorio de CIMB (Computing Intelligence, Mechatronics and Biodesign) es una iniciativa generada por un grupo de profesores y alumnos del Tecnológico de Monterrey en Campus Ciudad de México en el año 2009. Nuestro grupo busca generar proyectos para la mejora de la calidad de vida de la sociedad mexicana y una mejora de la Experiencia del Usuario (UX) ante el uso de nuevas tecnologías. Él laboratorio trabaja a través de la generación de proyectos de Posgrados y Pregrado sobre las distintas líneas de investigación de enfoque. Somos un grupo multidisciplinario que combinan sus conocimientos en las áreas de, Biodiseño, Telecomunicaciones, Biotecnología, Mecatrónica, Inteligencia Artificial, Exoesqueletos, Biomédica, Vehículos Autónomos, Domótica y otros.",
+  "address": "Calle del Puente #222 Col. Ejidos de Huipulco, Tlalpan C.P. 14380, México CDMX",
+  "tec_blurb": "Instituto Tecnológico y de Estudios Superiores de Monterrey. México ${}.",
+  "menu_header": "Contenido",
+  "menu_content": {
+    "projects": "Proyectos",
+    "projects_cat": "ADMAS, EXODUX, Domótica Emocional, Pregrado",
+    "team": "Equipo",
+    "academia": "Divulgación",
+    "language": "English"
+  }
+}
