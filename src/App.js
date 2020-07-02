@@ -15,30 +15,30 @@ import {
 
 
 function App() {
-    const {isOpen, onOpen, onClose} = useDisclosure();
+    const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef();
 
     return (
         <>
             {/*<Button variantColor="green">Button</Button>*/}
-            <p onClick={onOpen}>Open</p>
+            <p onClick={onOpen}>OpenTest2</p>
             <Drawer
                 isOpen={isOpen}
                 placement="right"
                 onClose={onClose}
                 finalFocusRef={btnRef}
             >
-                <DrawerOverlay/>
+                <DrawerOverlay />
                 <DrawerContent>
-                    <DrawerCloseButton/>
+                    <DrawerCloseButton />
                     <DrawerHeader>Create your account</DrawerHeader>
 
                     <DrawerBody>
-                        <Input placeholder="Type here..."/>
+                        <Input placeholder="Type here..." />
                     </DrawerBody>
 
                     <DrawerFooter>
-                        <Button  mr={3} onClick={onClose}>
+                        <Button mr={3} onClick={onClose}>
                             Cancel
                         </Button>
                         <Button >Save</Button>
