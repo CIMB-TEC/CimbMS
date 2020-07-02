@@ -21,7 +21,7 @@ function App() {
     return (
         <>
             {/*<Button variantColor="green">Button</Button>*/}
-            <p onClick={onOpen}>OpenTest2</p>
+            <p onClick={onOpen}>Close</p>
             <Drawer
                 isOpen={isOpen}
                 placement="right"
