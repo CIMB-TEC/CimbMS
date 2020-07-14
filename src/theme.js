@@ -5,6 +5,10 @@ export default {
         body: "system-ui, sans-serif",
         mono: "Menlo, monospace",
     },
+
+    colors: {
+        green: "#75de45",
+    },
     fontSizes: {
         xs: "0.75rem",
         sm: "0.875rem",
