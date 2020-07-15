@@ -1,4 +1,4 @@
-export default {
+let mono = {
     breakpoints: ["30em", "48em", "62em", "80em"],
     fonts: {
         heading: '"Avenir Next", sans-serif',
@@ -7,7 +7,10 @@ export default {
     },
 
     colors: {
-        green: "#75de45",
+        green: "#48BB78",
+        bacc: "#333333",
+        soft: "#3b3b3b",
+        text: "#eeeeee"
     },
     fontSizes: {
         xs: "0.75rem",
@@ -22,3 +25,4 @@ export default {
         "6xl": "4rem",
     },
 };
+export default mono

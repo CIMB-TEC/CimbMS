@@ -13,13 +13,13 @@ import {
 } from "@chakra-ui/core";
 import React from 'react';
 
-function Menu() {
+let Menu= () => {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const btnRef = React.useRef();
 
     return (
         <>
-            <Button ref={btnRef} variantColor="teal" onClick={onOpen} transform="rotate(-90deg)" position="absolute"
+            <Button ref={btnRef} backgroundColor="green" variantColor="green" onClick={onOpen} transform="rotate(-90deg)" position="absolute"
                     right="0" top="2em">
                 Menú
             </Button>
