@@ -18,9 +18,9 @@ let Menu= () => {
     const btnRef = React.useRef();
 
     return (
-        <>
-            <Button ref={btnRef} backgroundColor="green" variantColor="green" onClick={onOpen} transform="rotate(-90deg)" position="absolute"
-                    right="0" top="2em">
+        <div>
+            <Button ref={btnRef} height="2em" backgroundColor="green" variantColor="green" onClick={onOpen} transform="rotate(-90deg)" position="absolute"
+                    right="-2em" top="10em">
                 Menú
             </Button>
             <Drawer
@@ -29,6 +29,7 @@ let Menu= () => {
                 onClose={onClose}
                 finalFocusRef={btnRef}
                 isFullHeight={false}
+                size={"sm"}
             >
                 <DrawerOverlay/>
                 <DrawerContent>
@@ -53,8 +54,44 @@ let Menu= () => {
                     </DrawerFooter>
                 </DrawerContent>
             </Drawer>
+        </div>
+    );
+}
+let DrawerExa= () =>{
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const btnRef = React.useRef();
+
+    return (
+        <>
+            <Button ref={btnRef} onClick={onOpen}>
+                Open
+            </Button>
+            <Drawer
+                isOpen={isOpen}
+                placement="right"
+                onClose={onClose}
+                finalFocusRef={btnRef}
+            >
+                <DrawerOverlay />
+                <DrawerContent>
+                    <DrawerHeader>Create your account</DrawerHeader>
+
+                    <DrawerBody>
+                        BODY
+                    </DrawerBody>
+
+                    <DrawerFooter>
+                        <Button onClick={onClose}>
+                            Cancel
+                        </Button>
+                        <Button >Save</Button>
+                    </DrawerFooter>
+                </DrawerContent>
+            </Drawer>
         </>
+
     );
 }
 
-export default Menu;
+
+export default DrawerExa;
