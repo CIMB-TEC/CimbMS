@@ -8,7 +8,7 @@ import Flex from "@chakra-ui/core/dist/Flex";
 
 let navbar = () => {
     return(
-        <Flex bg="bacc" h={80} padding={3} justifyContent={"space-between"} alignItems={"center"}>
+        <Flex bg="#222" h={80} padding={3} justifyContent={"space-between"} alignItems={"center"}>
                 <img src={cimb} alt="Logo" height={50}/>
                 <FormControl>
                     <Input placeholder="kiss" size="lg"/>

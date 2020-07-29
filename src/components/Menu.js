@@ -13,12 +13,12 @@ import {
 } from "@chakra-ui/core";
 import React from 'react';
 
-let Menu= () => {
-    const {isOpen, onOpen, onClose} = useDisclosure();
+let DrawerExa= () =>{
+    const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef();
 
     return (
-        <div>
+        <>
             <Button ref={btnRef} height="2em" backgroundColor="green" variantColor="green" onClick={onOpen} transform="rotate(-90deg)" position="absolute"
                     right="-2em" top="10em">
                 Menú
@@ -28,8 +28,6 @@ let Menu= () => {
                 placement="right"
                 onClose={onClose}
                 finalFocusRef={btnRef}
-                isFullHeight={false}
-                size={"sm"}
             >
                 <DrawerOverlay/>
                 <DrawerContent>
@@ -51,40 +49,6 @@ let Menu= () => {
                         </List>
                     </DrawerBody>
                     <DrawerFooter>
-                    </DrawerFooter>
-                </DrawerContent>
-            </Drawer>
-        </div>
-    );
-}
-let DrawerExa= () =>{
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const btnRef = React.useRef();
-
-    return (
-        <>
-            <Button ref={btnRef} onClick={onOpen}>
-                Open
-            </Button>
-            <Drawer
-                isOpen={isOpen}
-                placement="right"
-                onClose={onClose}
-                finalFocusRef={btnRef}
-            >
-                <DrawerOverlay />
-                <DrawerContent>
-                    <DrawerHeader>Create your account</DrawerHeader>
-
-                    <DrawerBody>
-                        BODY
-                    </DrawerBody>
-
-                    <DrawerFooter>
-                        <Button onClick={onClose}>
-                            Cancel
-                        </Button>
-                        <Button >Save</Button>
                     </DrawerFooter>
                 </DrawerContent>
             </Drawer>

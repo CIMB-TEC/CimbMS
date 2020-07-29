@@ -7,10 +7,10 @@ import {Text} from "@chakra-ui/core";
 
 let footer = () => {
    return(
-       <Box bg="bacc" h={400}>
+       <Box bg="#222" h={400}>
             <Stack maxWidth="30%" spacing={5} padding={5}>
                 <img src={cimb} alt="Logo" width={200}/>
-               <Text color="text">
+               <Text color="white">
                    CEDETEC 3er piso <br/>
                    Calle del Puente #222 <br/>
                    Col. Ejidos de Huipulco, <br/>

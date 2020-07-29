@@ -1,4 +1,7 @@
+import theme from "@chakra-ui/core/dist/theme"
+
 let mono = {
+    ...theme,
     breakpoints: ["30em", "48em", "62em", "80em"],
     fonts: {
         heading: '"Avenir Next", sans-serif',
@@ -7,10 +10,12 @@ let mono = {
     },
 
     colors: {
+        ...theme.colors,
         green: "#48BB78",
         bacc: "#333333",
         soft: "#3b3b3b",
-        text: "#eeeeee"
+        text: "#eeeeee",
+        gray: "gray",
     },
     fontSizes: {
         xs: "0.75rem",
