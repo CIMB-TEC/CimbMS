@@ -1,85 +1,97 @@
-import React from 'react'
+import React from "react";
 import {
-    Button,
-    Collapse,
-    Box,
-    Text,
-    Stack,
-    Image,
-    Flex,
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-    useDisclosure,
-    Icon,
-
+  Box,
+  Button,
+  Flex,
+  Image,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Stack,
+  Text,
+  useDisclosure,
 } from "@chakra-ui/core";
 
-
-
-import rogelio from './rogelio.jpg'
-import { FaResearchgate } from 'react-icons/fa'
-import { MdMailOutline } from 'react-icons/md'
-import { AiOutlineLinkedin } from 'react-icons/ai'
+import rogelio from "./rogelio.jpg";
+import { FaResearchgate } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 function PersonasCard(props) {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-    return (
-        <Box>
+  return (
+    <Box>
+      <Flex>
+        <Stack
+          marginRight="25px"
+          marginLeft="25px"
+          marginTop="20px"
+          borderRadius="5%"
+          borderLeft="1px"
+          borderRight="1px"
+          borderBottom="1px"
+          borderTop="1px"
+          borderColor={props.bor}
+          w="300px"
+          p="10px"
+        >
+          <Flex justify="center">
+            <Image w="200px" src={rogelio}></Image>
+          </Flex>
 
+          <Box>
+            <Text textAlign="center" fontSize="25px">
+              Dr. Rogelio Bustamante Bello
+            </Text>
+          </Box>
 
-            <Flex>
-                <Stack marginRight='25px' marginLeft='25px' marginTop='20px' borderRadius='5%' borderLeft='1px' borderRight='1px' borderBottom='1px' borderTop='1px' borderColor={props.bor} w='300px' p='10px'>
-                    <Flex justify='center'>
-                        <Image w='200px' src={rogelio}></Image>
-                    </Flex>
+          <Flex justify="space-around">
+            <Box as={MdMailOutline} color="black" size="30px" />
+            <Box as={AiOutlineLinkedin} color="black" size="30px" />
+            <Box as={FaResearchgate} color="black" size="30px" />
+          </Flex>
 
-                    <Box>
-                        <Text textAlign='center' fontSize='25px'>Dr. Rogelio Bustamante Bello</Text>
-                    </Box>
+          <Button onClick={onOpen} variantColor={props.col} variant="outline">
+            Read More
+          </Button>
 
-                    <Flex justify='space-around'>
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Modal Title</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                televisión situada en la época del paso de la República romana
+                al Imperio. Fue estrenada en Estados Unidos en agosto de 2005.
+                Fue creada por John Milius, William J. MacDonald, y Bruno Heller
+                como coproducción entre la BBC (Reino Unido), la cadena de pago
+                HBO (Estados Unidos), y la RAI (Italia). Fue rodada en los
+                alrededores de la actual ciudad de Roma y en los antiguos
+                estudios de Cinecittà, en una superficie de más de 20 000 metros
+                cuadrados, con la participación de 350 personas. Por ellos es
+                una de las series más caras de la televisión, con un presupuesto
+                de 100 millones para sus dos temporadas. Además ha sido
+                galardonada con el premio BAFTA y cuenta con dos nominaciones a
+                los Globo de Oro.
+              </ModalBody>
 
-                        <Box as={MdMailOutline} color='black' size='30px' />
-                        <Box as={AiOutlineLinkedin} color='black' size='30px' />
-                        <Box as={FaResearchgate} color='black' size='30px' />
-                    </Flex>
-
-
-
-                    <Button onClick={onOpen} variantColor={props.col} variant="outline">Read More</Button>
-
-
-                    <Modal isOpen={isOpen} onClose={onClose}>
-                        <ModalOverlay />
-                        <ModalContent>
-                            <ModalHeader>Modal Title</ModalHeader>
-                            <ModalCloseButton />
-                            <ModalBody>
-                                televisión situada en la época del paso de la República romana al Imperio. Fue estrenada en Estados Unidos en agosto de 2005. Fue creada por John Milius, William J. MacDonald, y Bruno Heller como coproducción entre la BBC (Reino Unido), la cadena de pago HBO (Estados Unidos), y la RAI (Italia). Fue rodada en los alrededores de la actual ciudad de Roma y en los antiguos estudios de Cinecittà, en una superficie de más de 20 000 metros cuadrados, con la participación de 350 personas. Por ellos es una de las series más caras de la televisión, con un presupuesto de 100 millones para sus dos temporadas. Además ha sido galardonada con el premio BAFTA y cuenta con dos nominaciones a los Globo de Oro.
-                            </ModalBody>
-
-                            <ModalFooter>
-                                <Button variantColor="blue" mr={3} onClick={onClose}>
-                                    Close
-            </Button>
-                                <Button variant="ghost">Secondary Action</Button>
-                            </ModalFooter>
-                        </ModalContent>
-                    </Modal>
-
-
-                </Stack>
-
-            </Flex>
-
-        </Box>
-    );
+              <ModalFooter>
+                <Button variantColor="blue" mr={3} onClick={onClose}>
+                  Close
+                </Button>
+                <Button variant="ghost">Secondary Action</Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+        </Stack>
+      </Flex>
+    </Box>
+  );
 }
 
 export default PersonasCard;
