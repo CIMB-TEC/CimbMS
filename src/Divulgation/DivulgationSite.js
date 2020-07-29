@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import DivulgationCard from "./DivulgationSiteComponents/DivulgationCard"
-import {Box, Stack} from "@chakra-ui/core"
+import { Stack, Box } from "@chakra-ui/core"
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default class DivulgationSite extends Component {
     render() {
