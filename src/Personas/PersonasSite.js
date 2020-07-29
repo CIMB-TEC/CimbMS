@@ -15,8 +15,6 @@ function PersonasSite() {
                 <Persona/>
                 <Persona/>
                 <Persona/>
-                <Persona/>
-                <Persona/>
             </Flex>
             <Text>Lideres</Text>
             <Flex>
@@ -24,11 +22,9 @@ function PersonasSite() {
                 <Persona/>
                 <Persona/>
                 <Persona/>
-                <Persona/>
             </Flex>
             <Text>Maestros</Text>
             <Flex>
-                <Persona/>
                 <Persona/>
                 <Persona/>
                 <Persona/>

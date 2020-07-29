@@ -1,14 +1,5 @@
 import React from 'react'
-import {
-    Button,
-    Collapse,
-    Box,
-    Text,
-    Stack,
-    Image,
-    Flex,
-
-} from "@chakra-ui/core";
+import {Box, Button, Collapse, Flex, Image, Stack, Text,} from "@chakra-ui/core";
 
 
 function DivulgationCardToggle() {

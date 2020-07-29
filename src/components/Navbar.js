@@ -1,9 +1,7 @@
 import React from 'react';
-import Box from "@chakra-ui/core/dist/Box";
-import Stack from "@chakra-ui/core/dist/Stack";
 import tec from "../img/tec.png";
 import cimb from "../img/cimb.png";
-import {FormControl, Input, Text} from "@chakra-ui/core";
+import {FormControl, Input} from "@chakra-ui/core";
 import Flex from "@chakra-ui/core/dist/Flex";
 
 let navbar = () => {

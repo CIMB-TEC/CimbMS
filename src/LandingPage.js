@@ -1,15 +1,12 @@
-import {ThemeProvider, CSSReset, Text, ColorModeProvider, Flex} from "@chakra-ui/core"
+import {ThemeProvider} from "@chakra-ui/core"
 import React from 'react';
-import BlogEntry from "./Blog/Entry";
-import Persona from "./components/Persona";
-import PersonasSite from "./Personas/PersonasSite";
+import Main from "./Main/Homepage";
 
 function LandingPage() {
     return (
         <div>
             <ThemeProvider>
-                <PersonasSite/>
-
+                <Main/>
             </ThemeProvider>
         </div>
     );

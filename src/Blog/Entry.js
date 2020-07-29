@@ -2,7 +2,7 @@ import React from "react";
 import Menu from "../components/Menu";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import {Box, Image, Text} from "@chakra-ui/core";
+import {Image, Text} from "@chakra-ui/core";
 import NewsCard from "../Main/MainComponents/Card";
 import Flex from "@chakra-ui/core/dist/Flex";
 
@@ -14,7 +14,7 @@ const styles = {
 }
 
 // Dummy. Will be replaced with Trix editor generated content
-let BlogEntry = (content) => {
+let BlogEntry = () => {
     return (
         <div>
             <Navbar/>

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Component } from 'react';
+import React, {Component} from 'react';
 import DivulgationCard from "./DivulgationSiteComponents/DivulgationCard"
-import { Stack, Box } from "@chakra-ui/core"
+import {Box, Stack} from "@chakra-ui/core"
+
 export default class DivulgationSite extends Component {
     render() {
         return (

@@ -1,17 +1,5 @@
 import React from 'react';
-import {
-    Box,
-    SimpleGrid,
-    Stack,
-    Flex,
-    Text,
-    Divider,
-    ListItem,
-    ListIcon,
-    Link,
-    List,
-
-} from "@chakra-ui/core";
+import {Box, Divider, Flex, Link, List, ListIcon, ListItem, SimpleGrid, Stack, Text,} from "@chakra-ui/core";
 
 import DivulgationCardToggle from './DivulgationCardToggle'
 
