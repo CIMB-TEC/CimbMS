@@ -14,18 +14,18 @@ import {
 
 import DivulgationCardToggle from "./DivulgationCardToggle";
 
-function DivulgationCard() {
+function DivulgationCard(props) {
   return (
     <Box
-      bg="#1a1a1a"
+      bg="white"
       border="1px"
-      borderColor="#75de45"
-      color="white"
+      borderColor={props.bor}
+      color="black"
       padding="20px"
     >
       <Box marginBottom="25px">
         {" "}
-        <Link color="#75de45" fontSize="25px">
+        <Link color={props.bor} fontSize="25px">
           A study of the effects of advanced driver assistance systems alerts on
           driver performance
         </Link>
@@ -33,15 +33,15 @@ function DivulgationCard() {
       <SimpleGrid columns="2">
         <List spacing={3}>
           <ListItem>
-            <ListIcon icon="arrow-forward" color="#75de45" />
+            <ListIcon icon="arrow-forward" color="#black" />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit
           </ListItem>
           <ListItem>
-            <ListIcon icon="arrow-forward" color="#75de45" />
+            <ListIcon icon="arrow-forward" color="#black" />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit
           </ListItem>
           <ListItem>
-            <ListIcon icon="arrow-forward" color="#75de45" />
+            <ListIcon icon="arrow-forward" color="black" />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit
           </ListItem>
         </List>
@@ -63,7 +63,7 @@ function DivulgationCard() {
           </Stack>
         </Flex>
       </SimpleGrid>
-      <DivulgationCardToggle />
+      <DivulgationCardToggle col={props.col} />
     </Box>
   );
 }

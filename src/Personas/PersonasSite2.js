@@ -34,3 +34,5 @@ function PersonasSite() {
     </div>
   );
 }
+
+export default PersonasSite;
