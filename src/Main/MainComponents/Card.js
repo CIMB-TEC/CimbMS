@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Link, SimpleGrid, Text } from "@chakra-ui/core";
+import { Button, Link, SimpleGrid, Text, Stack } from "@chakra-ui/core";
 import Image from "@chakra-ui/core/dist/Image";
 import Flex from "@chakra-ui/core/dist/Flex";
 
@@ -10,22 +10,24 @@ function NewsCard(props) {
   /*    date='Feb 2, 2018'*/
   return (
     <SimpleGrid
-      columns={[6, 6]}
-      bg="grey"
+      columns={2}
+      bg="white"
       color="green"
       padding="20px"
-      width="20em"
+      border="1px"
+      borderColor={props.bor}
+      margin="auto"
     >
-      <Image src={props.thumbnail} height="6em" />
-      <Flex paddingLeft={3} flexDirection="column">
+      <Image src={props.thumbnail} />
+      <Stack paddingLeft={3} flexDirection="column">
         <Text>{props.date}</Text>
-        <Link href={props.href} color="#75de45" fontSize="21px">
+        <Link href={props.href} color="black" fontSize="21px">
           {props.title}
         </Link>
-        <Button href={props.href} variantColor="green" size="md">
+        <Button href={props.href} variantColor={props.col} size="md">
           Read More
         </Button>
-      </Flex>
+      </Stack>
     </SimpleGrid>
   );
 }

@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/core";
 
-function DivulgationCardToggle() {
+function DivulgationCardToggle(props) {
   const [show, setShow] = React.useState(false);
   const [showImages, setShowImages] = React.useState(false);
 
@@ -20,18 +20,17 @@ function DivulgationCardToggle() {
     <Box marginTop="30px">
       <Button
         marginRight="25px"
-        variant="outline"
-        borderColor="#48BB78"
-        color="#48BB78"
+        variant="solid"
+        variantColor={props.col}
         onClick={handleToggle}
       >
         Abstract
       </Button>
 
       <Button
-        variant="outline"
-        borderColor="#48BB78"
-        color="#48BB78"
+        marginRight="25px"
+        variant="solid"
+        variantColor={props.col}
         onClick={handleToggleImages}
       >
         Images
