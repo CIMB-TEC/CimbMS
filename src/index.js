@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import admastimeline from "./Projects/ADMAS";
 
-import LandingPage from "./LandingPage";
-
-ReactDOM.render(<LandingPage />, document.getElementById("root"));
+ReactDOM.render(admastimeline , document.getElementById("root"));
