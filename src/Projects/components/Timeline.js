@@ -1,24 +1,43 @@
-import 'react-app-polyfill/stable';
 import React from 'react';
 import "./scss/style.css";
+import Link from "@chakra-ui/core/dist/Link";
 
 let TimelineItem = (props) => {
+    // const { isOpen, onOpen, onClose } = useDisclosure();
+    const [showResults, setShowResults] = React.useState(false);
+    const onClick = () => setShowResults(!showResults);
     return (
-        <li className="timeline-item">
+        <li className="timeline-item" onClick={onClick}>
             <div className="timeline-info">
                 <span>{props.date}</span>
             </div>
             <div className="timeline-marker"/>
             <div className="timeline-content">
                 <h3 className="timeline-title">{props.title}</h3>
-            </div>
-            <div className="timeline-description">
-                <p>{props.description}</p>
-                <a>Descargar Poster</a>
+                {showResults ? <Details description={props.description} poster={props.poster}/> : null}
             </div>
         </li>
-    )
+    );
 
+}
+let Details = (props) => {
+    return (
+        <div className="timeline-description">
+            <p>{props.description}</p>
+            {/*<Image src={props.images[0]}/>*/}
+            {/*<Button onClick={onOpen}>Open Modal</Button>*/}
+            {/*<Modal isOpen={isOpen} onClose={onClose}>*/}
+            {/*    <ModalOverlay />*/}
+            {/*    <ModalContent>*/}
+            {/*        <ModalCloseButton />*/}
+            {/*        <ModalBody>*/}
+            {/*            <p>This is the body</p>*/}
+            {/*        </ModalBody>*/}
+            {/*    </ModalContent>*/}
+            {/*</Modal>*/}
+            <Link href={props.poster}>Descargar Poster</Link>
+        </div>
+    )
 }
 
 let Timeline = (props) => {
@@ -40,7 +59,8 @@ let Timeline = (props) => {
                         {
                             props.items.map(item => {
                                 return (
-                                    <TimelineItem date={item.date} title={item.title} description={item.desc1} />
+                                    <TimelineItem date={item.date} title={item.title} description={item.desc1}
+                                                  images={item.images} poster={item.poster}/>
                                 )
                             })
                         }
