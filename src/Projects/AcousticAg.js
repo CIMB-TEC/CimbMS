@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 let strings = {
-    title : "ADMAS",
-    description : 'Advanced Driver Monitoring for Assistance System (ADMAS) es un sistema de asistencia al conductor que lo ayude basándose en su estado psico-fisiológico.',
+    title : "Agricultura Acústica",
+    description : 'Mediante estímulos acústicos controlados, estimular el crecimiento y reducir pestes en especies vegetales',
     milestones : [
         {
             date: 'Enero 2016',
@@ -80,16 +80,15 @@ let strings = {
 
 }
 
-let ADMASpage = () => {
+let AcousticAg = () => {
     return (
         <>
             <Navbar/>
-
-            <Timeline items={strings.milestones} title={strings.title} description={strings.description}/>
+            <Timeline items={strings.milestones} title={strings.title}
+                      description={strings.description}/>
             <Footer/>
         </>
     )
 }
 
-
-export default ADMASpage;
+export default AcousticAg;

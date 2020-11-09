@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 let strings = {
-    title : "ADMAS",
-    description : 'Advanced Driver Monitoring for Assistance System (ADMAS) es un sistema de asistencia al conductor que lo ayude basándose en su estado psico-fisiológico.',
-    milestones : [
+    title: "EXODUX",
+    description: '<++>',
+    milestones: [
         {
             date: 'Enero 2016',
             images: [
@@ -80,16 +80,15 @@ let strings = {
 
 }
 
-let ADMASpage = () => {
+let EXODUXPage = () => {
     return (
         <>
             <Navbar/>
-
-            <Timeline items={strings.milestones} title={strings.title} description={strings.description}/>
+            <Timeline items={strings.milestones} title={strings.title}
+                      description={strings.description}/>
             <Footer/>
         </>
     )
 }
 
-
-export default ADMASpage;
+export default EXODUXPage;

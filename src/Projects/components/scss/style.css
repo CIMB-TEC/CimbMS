@@ -283,4 +283,13 @@ a:hover {
   background: #6ba6ff;
 }
 
+.timeline-description {
+  background-color: lightgray;
+  padding: 2em;
+  max-width: 50vw;
+}
+.timeline-description p {
+  width: 30%;
+}
+
 /*# sourceMappingURL=style.css.map */
