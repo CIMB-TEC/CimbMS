@@ -1,90 +1,4 @@
-[
-  {
-    "date": "Enero 2019",
-    "projects": [
-      {
-        "title": "Simulador 3.0",
-        "desc": "\n<b>Objetivo general</b>\n<p> Se avanzo en el desarrollo de un simulador de manejo, migrando de la plataforma Unity hacia\n                        Unreal Engine, con la finalidad de utilizar herramientas para vehiculos autonomos open source\n                        como las que presenta el proyecto CARLA. Dicho trabajo se realizo con apoyo de alumnos de LAD e\n                        ITC durante su estancia de investigacion como parte de su Servicio Social.</p>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ene19/cam-slider-1.png",
-          "./../img/proyectos/ADMAS/ene19/cam-slider-2.png"
-        ],
-        "poster": "../img/proyectos/ADMAS/ene19/cam-poster.pdf"
-      },
-      {
-        "title": "Simulacion C2X",
-        "desc": "\n<b>Objetivo general</b>\n<p> Implementar un entorno de simulaci\u00f3n de comunicaci\u00f3n V2V aplicado a un escenario real en la\n                        Ciudad de M\u00e9xico, integrando herramientas de software de comunicaci\u00f3n inal\u00e1mbrica a trav\u00e9s de\n                        dos tecnolog\u00edas diferentes, para poder obtener la </p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Modelaci\u00f3n en SUMO y simulaci\u00f3n en 3D en \u201cWebots\u201dde una ruta vehicular desde campus CCM a\n                            campus CSF\n                        </li>\n<li>Tener un software capaz de simular comunicaciones vehiculares tanto con el protocolo 802.11p\n                            como con tecnolog\u00eda celular sobre veh\u00edculos en SUMO y Omnet++ y contar con una versi\u00f3n\n                            exportable de los simuladores de tr\u00e1fico y red en una m\u00e1quina virtual.\n                        </li>\n<li>Generar comparativas entre protocolos con respecto a capa 1 y 2 del modelo de OSI sobre el\n                            escenario planteado.\n                        </li>\n</ul>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ene19/c2c-slider-1.png"
-        ],
-        "poster": "../img/proyectos/ADMAS/ene19/c2c-poster.pdf"
-      },
-      {
-        "title": "Segmentacion Camino V2",
-        "desc": "\n<b>Objetivo general</b>\n<p> Usar vision por computadora asistida por redes neuronales para segmentar carriles de transito,\n                        vehiculos y letreros en vialidades mexicanas</p>\n<ul>\n<li>Generar una base de datos propia</li>\n<li>Etiquetar 3 objetivos para s reconocimiento</li>\n<li>Entrenar una red neuronal para realizar la segmentacion de objetivos etiquetados</li>\n</ul>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ene19/segmentacion-slider-1.png",
-          "./../img/proyectos/ADMAS/ene19/segmentacion-slider-2.gif",
-          "./../img/proyectos/ADMAS/ene19/segmentacion-slider-3.gif",
-          "./../img/proyectos/ADMAS/ene19/segmentacion-slider-4.png"
-        ],
-        "poster": "../img/proyectos/ADMAS/ene19/segmentacion-poster.pdf"
-      },
-      {
-        "title": "Protocolo OBD2 2piso",
-        "desc": "\n<b>Objetivo general</b>\n<p> Desarrollar una metodolog\u00eda para la comparaci\u00f3n de emisiones y eficiencia energ\u00e9tica entre un\n                        autom\u00f3vil h\u00edbrido y uno convencional de caracter\u00edsticas semejantes mediante el uso de la\n                        tecnolog\u00eda OBD-II.</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Identificar las variables necesarias para realizar la comparaci\u00f3n propuesta</li>\n<li>Determinar bajo qu\u00e9 escenarios un autom\u00f3vil h\u00edbrido tiene un mejor ahorro de combustible que\n                            un autom\u00f3vil convencional y viceversa\n                        </li>\n</ul>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ene19/obd2-slider-1.png",
-          "./../img/proyectos/ADMAS/ene19/obd2-slider-2.png",
-          "./../img/proyectos/ADMAS/ene19/obd2-slider-3.png"
-        ],
-        "poster": "../img/proyectos/ADMAS/ene19/obd2-poster.pdf"
-      },
-      {
-        "title": "direccion Camion",
-        "desc": "\n<b>Objetivo general</b>\n<p> Desarrollar un sistema de direcci\u00f3n que pueda ser implementado en el veh\u00edculo aut\u00f3nomo; y la\n                        quinta rueda y direcci\u00f3n para implementarse en un tracto cami\u00f3n a escala. </p>\n<ul>\n<li>Dise\u00f1ar y dibujar en CAD una direcci\u00f3n asistida con base en la estructura del veh\u00edculo\n                            aut\u00f3nomo que nos fue proporcionada.\n                        </li>\n<li>Dise\u00f1ar, dibujar e implementar una quinta rueda y direcci\u00f3n para un tracto cami\u00f3n a\n                            escala.\n                        </li>\n</ul>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ene19/camion-slider-1.png",
-          "./../img/proyectos/ADMAS/ene19/camion-slider-2.png",
-          "./../img/proyectos/ADMAS/ene19/camion-slider-3.png",
-          "./../img/proyectos/ADMAS/ene19/camion-slider-4.png",
-          "./../img/proyectos/ADMAS/ene19/camion-slider-5.png",
-          "./../img/proyectos/ADMAS/ene19/camion-slider-6.png"
-        ],
-        "poster": "../img/proyectos/ADMAS/ene19/camion-poster.pdf"
-      },
-      {
-        "title": "Direccion Street by Wire",
-        "desc": "\n<b>Objetivo general</b>\n<p> Desarrollar un sistema de direcci\u00f3n que pueda ser implementado en el veh\u00edculo aut\u00f3nomo; y la\n                        quinta rueda y direcci\u00f3n para implementarse en un tracto cami\u00f3n a escala.</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Dise\u00f1ar y dibujar en CAD una direcci\u00f3n asistida con base en la estructura del veh\u00edculo\n                            aut\u00f3nomo que nos fue proporcionada.\n                        </li>\n<li>Dise\u00f1ar, dibujar e implementar una quinta rueda y direcci\u00f3n para un tracto cami\u00f3n a\n                            escala.\n                        </li>\n</ul>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ene19/wire-slider-1.jpeg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-2.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-3.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-4.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-5.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-6.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-7.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-8.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-9.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-10.jpg",
-          "./../img/proyectos/ADMAS/ene19/wire-slider-11.jpg"
-        ],
-        "poster": "../img/proyectos/ADMAS/ene19/wire-poster.pdf"
-      }
-    ]
-  },
-  {
-    "date": "Agosto 2018",
-    "projects": [
-      {
-        "title": "Proyecto C2C",
-        "desc": "\n<b>Objetivo general</b>\n<p> Poner a prueba dos protocolos de comunicaci\u00f3n diferentes (Zigbee y 802.11p), en un escenario\n                        real y simulado, para determinar la viabilidad y eficiencia de cada uno en la comunicaci\u00f3n\n                        Vehicle to Vehicle (V2V) y Vehicle to Infrastructure (V2X)..</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Implementar transmisi\u00f3n y recepci\u00f3n de paquetes en ambos protocolos.</li>\n<li>Lograr la comunicaci\u00f3n V2V y/o V2X de forma f\u00edsica y por simulaci\u00f3n.</li>\n<li>Analizar el funcionamiento de ambos protocolos en entornos similares.</li>\n<li>Definir un escenario f\u00edsico y de simulaci\u00f3n para realizar pruebas de comunicaci\u00f3n.</li>\n</ul>\n",
-        "images": [
-          "./../img/proyectos/ADMAS/ago18/C2C-slider-1.jpg",
-          "./../img/proyectos/ADMAS/ago18/C2C-slider-2.png",
-          "./../img/proyectos/ADMAS/ago18/C2C-slider-3.png",
-          "./../img/proyectos/ADMAS/ago18/C2C-slider-4.jpg",
-          "./../img/proyectos/ADMAS/ago18/C2C-slider-5.png",
+[{"date": "Enero 2019", "projects": [{"title": "Simulador 3.0", "desc": "<b>Objetivo general</b><p> Se avanzo en el desarrollo de un simulador de manejo, migrando de la plataforma Unity hacia                        Unreal Engine, con la finalidad de utilizar herramientas para vehiculos autonomos open source                        como las que presenta el proyecto CARLA. Dicho trabajo se realizo con apoyo de alumnos de LAD e                        ITC durante su estancia de investigacion como parte de su Servicio Social.</p>", "images": ["./../img/proyectos/ADMAS/ene19/cam-slider-1.png", "./../img/proyectos/ADMAS/ene19/cam-slider-2.png"], "poster": "../img/proyectos/ADMAS/ene19/cam-poster.pdf"}, {"title": "Simulacion C2X", "desc": "<b>Objetivo general</b><p> Implementar un entorno de simulaci\u00f3n de comunicaci\u00f3n V2V aplicado a un escenario real en la                        Ciudad de M\u00e9xico, integrando herramientas de software de comunicaci\u00f3n inal\u00e1mbrica a trav\u00e9s de                        dos tecnolog\u00edas diferentes, para poder obtener la </p><b>Objetivo especifico</b><ul><li>Modelaci\u00f3n en SUMO y simulaci\u00f3n en 3D en \u201cWebots\u201dde una ruta vehicular desde campus CCM a                            campus CSF                        </li><li>Tener un software capaz de simular comunicaciones vehiculares tanto con el protocolo 802.11p                            como con tecnolog\u00eda celular sobre veh\u00edculos en SUMO y Omnet++ y contar con una versi\u00f3n                            exportable de los simuladores de tr\u00e1fico y red en una m\u00e1quina virtual.                        </li><li>Generar comparativas entre protocolos con respecto a capa 1 y 2 del modelo de OSI sobre el                            escenario planteado.                        </li></ul>", "images": ["./../img/proyectos/ADMAS/ene19/c2c-slider-1.png"], "poster": "../img/proyectos/ADMAS/ene19/c2c-poster.pdf"}, {"title": "Segmentacion Camino V2", "desc": "<b>Objetivo general</b><p> Usar vision por computadora asistida por redes neuronales para segmentar carriles de transito,                        vehiculos y letreros en vialidades mexicanas</p><ul><li>Generar una base de datos propia</li><li>Etiquetar 3 objetivos para s reconocimiento</li><li>Entrenar una red neuronal para realizar la segmentacion de objetivos etiquetados</li></ul>", "images": ["./../img/proyectos/ADMAS/ene19/segmentacion-slider-1.png", "./../img/proyectos/ADMAS/ene19/segmentacion-slider-2.gif", "./../img/proyectos/ADMAS/ene19/segmentacion-slider-3.gif", "./../img/proyectos/ADMAS/ene19/segmentacion-slider-4.png"], "poster": "../img/proyectos/ADMAS/ene19/segmentacion-poster.pdf"}, {"title": "Protocolo OBD2 2piso", "desc": "<b>Objetivo general</b><p> Desarrollar una metodolog\u00eda para la comparaci\u00f3n de emisiones y eficiencia energ\u00e9tica entre un                        autom\u00f3vil h\u00edbrido y uno convencional de caracter\u00edsticas semejantes mediante el uso de la                        tecnolog\u00eda OBD-II.</p><b>Objetivo especifico</b><ul><li>Identificar las variables necesarias para realizar la comparaci\u00f3n propuesta</li><li>Determinar bajo qu\u00e9 escenarios un autom\u00f3vil h\u00edbrido tiene un mejor ahorro de combustible que                            un autom\u00f3vil convencional y viceversa                        </li></ul>", "images": ["./../img/proyectos/ADMAS/ene19/obd2-slider-1.png", "./../img/proyectos/ADMAS/ene19/obd2-slider-2.png", "./../img/proyectos/ADMAS/ene19/obd2-slider-3.png"], "poster": "../img/proyectos/ADMAS/ene19/obd2-poster.pdf"}, {"title": "direccion Camion", "desc": "<b>Objetivo general</b><p> Desarrollar un sistema de direcci\u00f3n que pueda ser implementado en el veh\u00edculo aut\u00f3nomo; y la                        quinta rueda y direcci\u00f3n para implementarse en un tracto cami\u00f3n a escala. </p><ul><li>Dise\u00f1ar y dibujar en CAD una direcci\u00f3n asistida con base en la estructura del veh\u00edculo                            aut\u00f3nomo que nos fue proporcionada.                        </li><li>Dise\u00f1ar, dibujar e implementar una quinta rueda y direcci\u00f3n para un tracto cami\u00f3n a                            escala.                        </li></ul>", "images": ["./../img/proyectos/ADMAS/ene19/camion-slider-1.png", "./../img/proyectos/ADMAS/ene19/camion-slider-2.png", "./../img/proyectos/ADMAS/ene19/camion-slider-3.png", "./../img/proyectos/ADMAS/ene19/camion-slider-4.png", "./../img/proyectos/ADMAS/ene19/camion-slider-5.png", "./../img/proyectos/ADMAS/ene19/camion-slider-6.png"], "poster": "../img/proyectos/ADMAS/ene19/camion-poster.pdf"}, {"title": "Direccion Street by Wire", "desc": "<b>Objetivo general</b><p> Desarrollar un sistema de direcci\u00f3n que pueda ser implementado en el veh\u00edculo aut\u00f3nomo; y la                        quinta rueda y direcci\u00f3n para implementarse en un tracto cami\u00f3n a escala.</p><b>Objetivo especifico</b><ul><li>Dise\u00f1ar y dibujar en CAD una direcci\u00f3n asistida con base en la estructura del veh\u00edculo                            aut\u00f3nomo que nos fue proporcionada.                        </li><li>Dise\u00f1ar, dibujar e implementar una quinta rueda y direcci\u00f3n para un tracto cami\u00f3n a                            escala.                        </li></ul>", "images": ["./../img/proyectos/ADMAS/ene19/wire-slider-1.jpeg", "./../img/proyectos/ADMAS/ene19/wire-slider-2.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-3.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-4.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-5.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-6.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-7.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-8.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-9.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-10.jpg", "./../img/proyectos/ADMAS/ene19/wire-slider-11.jpg"], "poster": "../img/proyectos/ADMAS/ene19/wire-poster.pdf"}]}, {"date": "Agosto 2018", "projects": [{"title": "Proyecto C2C", "desc": "<b>Objetivo general</b><p> Poner a prueba dos protocolos de comunicaci\u00f3n diferentes (Zigbee y 802.11p), en un escenario                        real y simulado, para determinar la viabilidad y eficiencia de cada uno en la comunicaci\u00f3n                        Vehicle to Vehicle (V2V) y Vehicle to Infrastructure (V2X)..</p><b>Objetivo especifico</b><ul><li>Implementar transmisi\u00f3n y recepci\u00f3n de paquetes en ambos protocolos.</li><li>Lograr la comunicaci\u00f3n V2V y/o V2X de forma f\u00edsica y por simulaci\u00f3n.</li><li>Analizar el funcionamiento de ambos protocolos en entornos similares.</li><li>Definir un escenario f\u00edsico y de simulaci\u00f3n para realizar pruebas de comunicaci\u00f3n.</li></ul>", "images": ["./../img/proyectos/ADMAS/ago18/C2C-slider-1.jpg", "./../img/proyectos/ADMAS/ago18/C2C-slider-2.png", "./../img/proyectos/ADMAS/ago18/C2C-slider-3.png", "./../img/proyectos/ADMAS/ago18/C2C-slider-4.jpg", "./../img/proyectos/ADMAS/ago18/C2C-slider-5.png",
           "./../img/proyectos/ADMAS/ago18/C2C-slider-6.png",
           "./../img/proyectos/ADMAS/ago18/C2C-slider-7.jpg"
         ],
@@ -92,7 +6,7 @@
       },
       {
         "title": "Comunicaci\u00f3n entre sistema de conducci\u00f3n y actuadores en el veh\u00edculo",
-        "desc": "\n<b>Objetivo general</b>\n<p> Conformar un sistema de control y comunicaci\u00f3n que sea capaz de recibir se\u00f1ales y controlar\n                        actuadores para generar un veh\u00edculo de manejo semi-aut\u00f3nomo.</p>\n<b>Objetivo especifico</b>\n<p>Realizar una correcta comunicaci\u00f3n entre la tarjeta myRIO y el microcontrolador Arduino y\n                        Desarrollo de un sistema de control para la movilidad de los\n                        actuadores por medio de la tarjeta MyRIO.</p>\n",
+        "desc": "<b>Objetivo general</b><p> Conformar un sistema de control y comunicaci\u00f3n que sea capaz de recibir se\u00f1ales y controlar                        actuadores para generar un veh\u00edculo de manejo semi-aut\u00f3nomo.</p><b>Objetivo especifico</b><p>Realizar una correcta comunicaci\u00f3n entre la tarjeta myRIO y el microcontrolador Arduino y                        Desarrollo de un sistema de control para la movilidad de los                        actuadores por medio de la tarjeta MyRIO.</p>",
         "images": [
           "./../img/proyectos/ADMAS/ago18/comunicacion-slider-1.jpg",
           "./../img/proyectos/ADMAS/ago18/comunicacion-slider-2.jpg",
@@ -104,7 +18,7 @@
       },
       {
         "title": "Proyecto Sistema de Detecci\u00f3n de Emociones en Tiempo Real con Redes Neuronales",
-        "desc": "\n<b>Objetivo general</b>\n<p> Dise\u00f1ar y desarrollar un sistema de inteligencia artificial capaz de determinar el porcentaje de\n                        las 5 emociones b\u00e1sicas que un usuario presenta ante una\n                        c\u00e1mara frontal.</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Generar una data set de entrenamiento y de pruebas con los datos que nos proporcione el\n                            software de iMotion\u00ae\n                        </li>\n<li>Dise\u00f1ar la arquitectura de red neuronal capaz de determinar las emociones de un sujeto.</li>\n<li>Determinar el porcentaje que presente el usuario de cada una de las 5 emociones b\u00e1sicas.\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Dise\u00f1ar y desarrollar un sistema de inteligencia artificial capaz de determinar el porcentaje de                        las 5 emociones b\u00e1sicas que un usuario presenta ante una                        c\u00e1mara frontal.</p><b>Objetivo especifico</b><ul><li>Generar una data set de entrenamiento y de pruebas con los datos que nos proporcione el                            software de iMotion\u00ae                        </li><li>Dise\u00f1ar la arquitectura de red neuronal capaz de determinar las emociones de un sujeto.</li><li>Determinar el porcentaje que presente el usuario de cada una de las 5 emociones b\u00e1sicas.                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ago18/emociones-slider-1.png",
           "./../img/proyectos/ADMAS/ago18/emociones-slider-2.png",
@@ -118,7 +32,7 @@
       },
       {
         "title": "Proyecto Sistema de Segmentaci\u00f3n de carriles Regulares",
-        "desc": "\n<b>Objetivo general</b>\n<p> Desarollar un algoritmo capaz de identificar carriles de tr\u00e1nsito vehicular\n                        por medio de aplicaciones de visi\u00f3n por computadora y el uso de arquitecturas de\n                        machine learning</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Obtener una base de datos de videos de las vialidades de la Ciudad de Mexico.</li>\n<li>Hacer uso de herramientas de visi\u00f3n por computadora para la detecci\u00f3n\n                            de carriles.\n                        </li>\n<li>Crear una base de datos de etiquetas de los carriles vehiculares a partir\n                            de los videos.\n                        </li>\n<li>Entrenar una Red Neuronal Convolucional capaz de segmentar los pixeles de un\n                            carril vehicular.\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Desarollar un algoritmo capaz de identificar carriles de tr\u00e1nsito vehicular                        por medio de aplicaciones de visi\u00f3n por computadora y el uso de arquitecturas de                        machine learning</p><b>Objetivo especifico</b><ul><li>Obtener una base de datos de videos de las vialidades de la Ciudad de Mexico.</li><li>Hacer uso de herramientas de visi\u00f3n por computadora para la detecci\u00f3n                            de carriles.                        </li><li>Crear una base de datos de etiquetas de los carriles vehiculares a partir                            de los videos.                        </li><li>Entrenar una Red Neuronal Convolucional capaz de segmentar los pixeles de un                            carril vehicular.                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ago18/segmentacion-slider-1.png",
           "./../img/proyectos/ADMAS/ago18/segmentacion-slider-2.jpg",
@@ -131,7 +45,7 @@
       },
       {
         "title": "Simulador 2.0",
-        "desc": "\n<b>Objetivo general</b>\n<p> Utilizando el modelo ya existente, terminar el desarrollo e implementaci\u00f3n de la simulaci\u00f3n 3D\n                        del campus Ciudad de M\u00e9xico. Para esto es necesario finalizar la construcci\u00f3n y dise\u00f1o del\n                        modelo del campus, as\u00ed como optimizar e implementar las funcionalidades requeridas, como el\n                        manejo autom\u00e1tico o manual del autom\u00f3vil dentro de la simulaci\u00f3n. De igual forma se necesita\n                        poder almacenar la informaci\u00f3n en el sistema (persistencia de datos) para poder preservar la\n                        informaci\u00f3n deseada del usuario.</p>\n",
+        "desc": "<b>Objetivo general</b><p> Utilizando el modelo ya existente, terminar el desarrollo e implementaci\u00f3n de la simulaci\u00f3n 3D                        del campus Ciudad de M\u00e9xico. Para esto es necesario finalizar la construcci\u00f3n y dise\u00f1o del                        modelo del campus, as\u00ed como optimizar e implementar las funcionalidades requeridas, como el                        manejo autom\u00e1tico o manual del autom\u00f3vil dentro de la simulaci\u00f3n. De igual forma se necesita                        poder almacenar la informaci\u00f3n en el sistema (persistencia de datos) para poder preservar la                        informaci\u00f3n deseada del usuario.</p>",
         "images": [
           "./../img/proyectos/ADMAS/ago18/simulador-slider-1.png",
           "./../img/proyectos/ADMAS/ago18/simulador-slider-2.png"
@@ -140,7 +54,7 @@
       },
       {
         "title": "Proyecto Sistema de Direcci\u00f3n 3.0",
-        "desc": "\n<b>Objetivo general</b>\n<p> Redise\u00f1ar un sistema auxiliar en el control de la direcci\u00f3n que ocupe un menor espacio en\n                        comparaci\u00f3n al prototipo anterior, sin comprometer la seguridad del piloto o los pasajeros.</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Reducir espacio de instalaci\u00f3n.</li>\n<li>Reducir Peso.</li>\n<li>Homogeneizar materiales.</li>\n<li>Reducir dimensiones.</li>\n<li>Reducir desgaste de piezas.</li>\n<li>Hacer al prototipo menos invasivo.</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Redise\u00f1ar un sistema auxiliar en el control de la direcci\u00f3n que ocupe un menor espacio en                        comparaci\u00f3n al prototipo anterior, sin comprometer la seguridad del piloto o los pasajeros.</p><b>Objetivo especifico</b><ul><li>Reducir espacio de instalaci\u00f3n.</li><li>Reducir Peso.</li><li>Homogeneizar materiales.</li><li>Reducir dimensiones.</li><li>Reducir desgaste de piezas.</li><li>Hacer al prototipo menos invasivo.</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ago18/volante-slider-1.jpg",
           "./../img/proyectos/ADMAS/ago18/volante-slider-2.jpg",
@@ -162,7 +76,7 @@
     "projects": [
       {
         "title": "Verano",
-        "desc": "\n<b>Objetivo general</b>\n<p> Con ayuda de los estudiantes del servicio social, se lograr\u00e1 obtener informaci\u00f3n necesaria para\n                        poder seguir avanzando en el proyecto de ADMAS.</p>\n<b>Proyectos: </b>\n<ul>\n<li>El Carrito</li>\n<li>ComControl</li>\n<li>Base de Datos</li>\n<li>P\u00e1gina Web</li>\n<li>Emisiones</li>\n<li>C2C</li>\n<li>Escuderia</li>\n<li>Jetson - Rio</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Con ayuda de los estudiantes del servicio social, se lograr\u00e1 obtener informaci\u00f3n necesaria para                        poder seguir avanzando en el proyecto de ADMAS.</p><b>Proyectos: </b><ul><li>El Carrito</li><li>ComControl</li><li>Base de Datos</li><li>P\u00e1gina Web</li><li>Emisiones</li><li>C2C</li><li>Escuderia</li><li>Jetson - Rio</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ver17/verano-slider-1.jpg",
           "./../img/proyectos/ADMAS/ver17/verano-slider-2.jpg",
@@ -178,7 +92,7 @@
     "projects": [
       {
         "title": "Simulador Manejo",
-        "desc": "\n<p> Optimizaci\u00f3n del modelo de la red neuronal a trav\u00e9s de herramientas de open source y ambientes\n                        dise\u00f1ados a la medida para simular casos reales, correcci\u00f3n de errores al comportamiento que\n                        tenga el modelo en el simulador. Representar el campus ciudad de M\u00e9xico en un modelo 3D para\n                        implementarlo en un sistema de simulaci\u00f3n donde se puedan hacer pruebas seguras y\n                        confiables.</p>\n",
+        "desc": "<p> Optimizaci\u00f3n del modelo de la red neuronal a trav\u00e9s de herramientas de open source y ambientes                        dise\u00f1ados a la medida para simular casos reales, correcci\u00f3n de errores al comportamiento que                        tenga el modelo en el simulador. Representar el campus ciudad de M\u00e9xico en un modelo 3D para                        implementarlo en un sistema de simulaci\u00f3n donde se puedan hacer pruebas seguras y                        confiables.</p>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/simulador-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/simulador-slider-2.jpg"
@@ -187,7 +101,7 @@
       },
       {
         "title": "Sistema de control de direcci\u00f3n",
-        "desc": "\n<b>Objetivo general</b>\n<p>Generar un sistema de asistencia avanzada a la conducci\u00f3n basado en el estado psicofisiol\u00f3gico\n                        del conductor.</p>\n<b>Objetivos Especificos</b>\n<ul>\n<li>Redise\u00f1ar el sistema mec\u00e1nico para el control de la direcci\u00f3n de un veh\u00edculo.</li>\n<li>Mejorar las prestaciones de funcionalidad y seguridad, y reducir el nivel instruso.</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Generar un sistema de asistencia avanzada a la conducci\u00f3n basado en el estado psicofisiol\u00f3gico                        del conductor.</p><b>Objetivos Especificos</b><ul><li>Redise\u00f1ar el sistema mec\u00e1nico para el control de la direcci\u00f3n de un veh\u00edculo.</li><li>Mejorar las prestaciones de funcionalidad y seguridad, y reducir el nivel instruso.</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/controlador-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/controlador-slider-2.jpg",
@@ -199,7 +113,7 @@
       },
       {
         "title": "Pedales Autom\u00e1ticos",
-        "desc": "\n<b>Objetivo general</b>\n<p>Mejorar el dise\u00f1o, construcci\u00f3n e implementaci\u00f3n de un sistema mec\u00e1nico no intrusivo, que permita\n                        el control de un carro de manera aut\u00f3noma; es decir, sin la necesidad de una persona detr\u00e1s del\n                        volante.</p>\n",
+        "desc": "<b>Objetivo general</b><p>Mejorar el dise\u00f1o, construcci\u00f3n e implementaci\u00f3n de un sistema mec\u00e1nico no intrusivo, que permita                        el control de un carro de manera aut\u00f3noma; es decir, sin la necesidad de una persona detr\u00e1s del                        volante.</p>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/pedales-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/pedales-slider-2.jpg",
@@ -210,7 +124,7 @@
       },
       {
         "title": "\"El carrito\"",
-        "desc": "\n<b>Objetivo general</b>\n<p>Aportar al proyecto ADMAS, del Centro de Investigaci\u00f3n en Microsistemas y Biodise\u00f1o, una\n                        plataforma de simulaci\u00f3n de conducci\u00f3n h\u00edbrida mediante la instrumentaci\u00f3n de un veh\u00edculo a\n                        escala, cumpliendo con los criterios de dise\u00f1o \u00fatiles para la investigaci\u00f3n.</p>\n",
+        "desc": "<b>Objetivo general</b><p>Aportar al proyecto ADMAS, del Centro de Investigaci\u00f3n en Microsistemas y Biodise\u00f1o, una                        plataforma de simulaci\u00f3n de conducci\u00f3n h\u00edbrida mediante la instrumentaci\u00f3n de un veh\u00edculo a                        escala, cumpliendo con los criterios de dise\u00f1o \u00fatiles para la investigaci\u00f3n.</p>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/carrito-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/carrito-slider-2.jpg",
@@ -220,7 +134,7 @@
       },
       {
         "title": "Controlador del volante",
-        "desc": "\n<b>Objetivo general</b>\n<p>Integracion de un sistema mecatronico que controle los actuadores necesarios para el control de\n                        volantes y pedales.</p>\n<b>Objetivos especificos</b>\n<ul>\n<li>Implementar el sistema de control para el manejo semi-autonomo de un veh\u00edculo.</li>\n<li>Integrar los mecanismos del sistema de volantes y pedales con el sistema de vision.</li>\n<li>Implementar un controlador PID para el sistema del volante .</li>\n<li>Generar un sistema modular.</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Integracion de un sistema mecatronico que controle los actuadores necesarios para el control de                        volantes y pedales.</p><b>Objetivos especificos</b><ul><li>Implementar el sistema de control para el manejo semi-autonomo de un veh\u00edculo.</li><li>Integrar los mecanismos del sistema de volantes y pedales con el sistema de vision.</li><li>Implementar un controlador PID para el sistema del volante .</li><li>Generar un sistema modular.</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/volante-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/volante-slider-2.jpg"
@@ -229,7 +143,7 @@
       },
       {
         "title": "Comunicaci\u00f3n C2X",
-        "desc": "\n<b>Objetivo general</b>\n<p>Generar un sistema de asistencia avanzada a la conducci\u00f3n basado en el estado psicofisiol\u00f3gico\n                        del conductor.</p>\n<b>Objetivos Especificos</b>\n<ul>\n<li>Implementar transmisi\u00f3n y recepci\u00f3n de paquetes.</li>\n<li>Lograr la comunicaci\u00f3n V2V.</li>\n<li>Lograr la comunicaci\u00f3n V2X.</li>\n<li>Determinar el contenido de los paquetes.</li>\n<li>Determinar el OBU con un smartphone v\u00eda bluetooth.</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Generar un sistema de asistencia avanzada a la conducci\u00f3n basado en el estado psicofisiol\u00f3gico                        del conductor.</p><b>Objetivos Especificos</b><ul><li>Implementar transmisi\u00f3n y recepci\u00f3n de paquetes.</li><li>Lograr la comunicaci\u00f3n V2V.</li><li>Lograr la comunicaci\u00f3n V2X.</li><li>Determinar el contenido de los paquetes.</li><li>Determinar el OBU con un smartphone v\u00eda bluetooth.</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/c2c-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/c2c-slider-2.jpg"
@@ -238,7 +152,7 @@
       },
       {
         "title": "Emisi\u00f3n de gases",
-        "desc": "\n<b>Objetivo general</b>\n<p>Calcular el porcentaje de emisiones contaminantes de un automovil por medio de la obtenci\u00f3n de\n                        datos y su mismo an\u00e1lisis.</p>\n<b>Objetivos Especificos</b>\n<ul>\n<li>Obtener parte del ciclo Otto delmotor del autom\u00f3vil seleccioando.</li>\n<li>Generar una base de datos de emisiones contaminantes del motor.</li>\n<li>Comparar resultados con un analizador de gases.</li>\n<li>Elaborar herramientas para facilitar la b\u00fasqueda en la base de datos .</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Calcular el porcentaje de emisiones contaminantes de un automovil por medio de la obtenci\u00f3n de                        datos y su mismo an\u00e1lisis.</p><b>Objetivos Especificos</b><ul><li>Obtener parte del ciclo Otto delmotor del autom\u00f3vil seleccioando.</li><li>Generar una base de datos de emisiones contaminantes del motor.</li><li>Comparar resultados con un analizador de gases.</li><li>Elaborar herramientas para facilitar la b\u00fasqueda en la base de datos .</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene18/gas-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene18/gas-slider-2.jpg"
@@ -252,7 +166,7 @@
     "projects": [
       {
         "title": "Instrumentaci\u00f3n Pedal",
-        "desc": "\n<b>Objetivo general</b>\n<p> Disen\u0303o, construccio\u0301n e implementacio\u0301n de un sistema mecatro\u0301nico capaz de controlar\n                        actuadores necesarios para el manejo del equipo original del vehi\u0301culo (volante de direccio\u0301n,\n                        pedales de freno y acelerador) de forma remota.</p>\n<b>Objetivos Especificos</b>\n<ul>\n<li>Implementaci\u00f3n de un sistema de control para manejo aut\u00f3nomo del veh\u00edculo dentro de un \u00e1rea\n                            controlada.\n                        </li>\n<li>Mejora de mecanismos del sistema mecatr\u00f3nico del volante.</li>\n<li>Dise\u00f1o de electr\u00f3nica de potencia para el sistema de aceleraci\u00f3n y frenado.</li>\n<li>Implementaci\u00f3n de Data Dashboard para el control remoto de los actuadores de aceleraor y\n                            freno del veh\u00edculo\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Disen\u0303o, construccio\u0301n e implementacio\u0301n de un sistema mecatro\u0301nico capaz de controlar                        actuadores necesarios para el manejo del equipo original del vehi\u0301culo (volante de direccio\u0301n,                        pedales de freno y acelerador) de forma remota.</p><b>Objetivos Especificos</b><ul><li>Implementaci\u00f3n de un sistema de control para manejo aut\u00f3nomo del veh\u00edculo dentro de un \u00e1rea                            controlada.                        </li><li>Mejora de mecanismos del sistema mecatr\u00f3nico del volante.</li><li>Dise\u00f1o de electr\u00f3nica de potencia para el sistema de aceleraci\u00f3n y frenado.</li><li>Implementaci\u00f3n de Data Dashboard para el control remoto de los actuadores de aceleraor y                            freno del veh\u00edculo                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ago17/pedal-slider-1.gif"
         ],
@@ -260,7 +174,7 @@
       },
       {
         "title": "Detecci\u00f3n de velocidad",
-        "desc": "\n<b>Objetivo general</b>\n<p>Reconocimiento de sen\u0303ales viales de velocidad en tiempo real, para despue\u0301s comparar los\n                        resultados con los datos adquiridos de un auto. Una vez hecha la comparacio\u0301n, se mandara\u0301n\n                        sen\u0303ales de alerta al usuario del automo\u0301vil.</p>\n<b>Objetivos Especificos</b>\n<ul>\n<li>Generar la base de datos de las se\u00f1ales viales y hacer un preprocesamiento de las\n                            im\u00e1genes.\n                        </li>\n<li>Realizar el entrenamiento de una red neuronal con la base de datos obtenida para la\n                            detecci\u00f3n de las se\u00f1ales viales por medio de c\u00e1maras.\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Reconocimiento de sen\u0303ales viales de velocidad en tiempo real, para despue\u0301s comparar los                        resultados con los datos adquiridos de un auto. Una vez hecha la comparacio\u0301n, se mandara\u0301n                        sen\u0303ales de alerta al usuario del automo\u0301vil.</p><b>Objetivos Especificos</b><ul><li>Generar la base de datos de las se\u00f1ales viales y hacer un preprocesamiento de las                            im\u00e1genes.                        </li><li>Realizar el entrenamiento de una red neuronal con la base de datos obtenida para la                            detecci\u00f3n de las se\u00f1ales viales por medio de c\u00e1maras.                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ago17/speed-slider-1.jpg",
           "./../img/proyectos/ADMAS/ago17/speed-slider-2.jpg",
@@ -275,7 +189,7 @@
     "projects": [
       {
         "title": "Verano",
-        "desc": "\n<b>Objetivo general</b>\n<p> Con ayuda de los estudiantes del servicio social, se lograr\u00e1 obtener informaci\u00f3n necesaria para\n                        poder seguir avanzando en el proyecto de ADMAS.</p>\n<b>Proyectos: </b>\n<ul>\n<li>Adquisici\u00f3n de datos</li>\n<li>An\u00e1lisis de mercado</li>\n<li>P\u00e1gina Web</li>\n<li>Bioinstrumentaci\u00f3n</li>\n<li>Pulsoximetro</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Con ayuda de los estudiantes del servicio social, se lograr\u00e1 obtener informaci\u00f3n necesaria para                        poder seguir avanzando en el proyecto de ADMAS.</p><b>Proyectos: </b><ul><li>Adquisici\u00f3n de datos</li><li>An\u00e1lisis de mercado</li><li>P\u00e1gina Web</li><li>Bioinstrumentaci\u00f3n</li><li>Pulsoximetro</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ver17/verano-slider-1.jpg",
           "./../img/proyectos/ADMAS/ver17/verano-slider-2.jpg",
@@ -298,7 +212,7 @@
     "projects": [
       {
         "title": "An\u00e1lisis CAN",
-        "desc": "\n<b>Objetivo general</b>\n<p> Creaci\u00f3n de un algoritmo inteligente por medio de redes neurolanes, capaz de clasificar los ID's\n                        adquiridos a trav\u00e9s del puerto OBD2 de un autom\u00f3vil. Apoy\u00e1ndonos con un software dedicado a la\n                        simulaci\u00f3n de las computadoras del veh\u00edculo, con el fin de obtener informaci\u00f3n suficiente para\n                        entrenar una red neuronal, que reconozca los patrones del comportamiento del auto.</p>\n<b>Objetivos especifico</b>\n<ul>\n<li>Adquisici\u00f3n de datos del CAN Bus, por medio de una tarjeta Arduino y Mobileye.</li>\n<li>Validaci\u00f3n de datos, adquirido por arduino con datos adquiridos por Mobileye.</li>\n<li>Desarollo de un ambiente virtual en CANoe</li>\n<li>Desarollo y entrenamiento de una red neuronal en MatLab con datos obtenidos del ambiente\n                            virtual.\n                        </li>\n<li>Validaci\u00f3n de algoritmo con datos del veh\u00edculo</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p> Creaci\u00f3n de un algoritmo inteligente por medio de redes neurolanes, capaz de clasificar los ID's                        adquiridos a trav\u00e9s del puerto OBD2 de un autom\u00f3vil. Apoy\u00e1ndonos con un software dedicado a la                        simulaci\u00f3n de las computadoras del veh\u00edculo, con el fin de obtener informaci\u00f3n suficiente para                        entrenar una red neuronal, que reconozca los patrones del comportamiento del auto.</p><b>Objetivos especifico</b><ul><li>Adquisici\u00f3n de datos del CAN Bus, por medio de una tarjeta Arduino y Mobileye.</li><li>Validaci\u00f3n de datos, adquirido por arduino con datos adquiridos por Mobileye.</li><li>Desarollo de un ambiente virtual en CANoe</li><li>Desarollo y entrenamiento de una red neuronal en MatLab con datos obtenidos del ambiente                            virtual.                        </li><li>Validaci\u00f3n de algoritmo con datos del veh\u00edculo</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene17/can-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene17/can-slider-2.jpg"
@@ -307,7 +221,7 @@
       },
       {
         "title": "Comunicaci\u00f3n C2C",
-        "desc": "\n<b>Objetivo general</b>\n<p>Dise\u00f1ar e implementar una infraestructura de redes de telecomunicaciones enfocada a las\n                        comunicaciones automotrices, la cual sirva como plataforma para desarrollar aplicaciones\n                        enfocadas a la seguridad, tr\u00e1fico vial y comercial.</p>\n<b>Objetivos especificos</b>\n<ul>\n<li>Revisar los problemas de las comunicaciones inal\u00e1mbricas C3X y C2C.</li>\n<li>Investigar los antecedentes y protocolos de comunicaci\u00f3n utilizados en las comunicaciones\n                            C2C.\n                        </li>\n<li>Desarollar dos aplicaciones viales con base en la infraestructura propuesta.</li>\n<li>Proponer una infraestructura de comunicaciones Car to Car en M\u00e9xico que est\u00e9 estandarizada\n                            internacionalmente.\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Dise\u00f1ar e implementar una infraestructura de redes de telecomunicaciones enfocada a las                        comunicaciones automotrices, la cual sirva como plataforma para desarrollar aplicaciones                        enfocadas a la seguridad, tr\u00e1fico vial y comercial.</p><b>Objetivos especificos</b><ul><li>Revisar los problemas de las comunicaciones inal\u00e1mbricas C3X y C2C.</li><li>Investigar los antecedentes y protocolos de comunicaci\u00f3n utilizados en las comunicaciones                            C2C.                        </li><li>Desarollar dos aplicaciones viales con base en la infraestructura propuesta.</li><li>Proponer una infraestructura de comunicaciones Car to Car en M\u00e9xico que est\u00e9 estandarizada                            internacionalmente.                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene17/c2c-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene17/c2c-slider-2.jpg",
@@ -317,7 +231,7 @@
       },
       {
         "title": "Deteci\u00f3n de autos",
-        "desc": "\n<b>Objetivo general</b>\n<p>Desarrollar un sistema capaz de detectar aut\u00f3moviles cercanos y decidir \u00e1ngulo correcto de\n                        volante, para proporcionar austencia activa en situaciones de conducci\u00f3n</p>\n<b>Objetivos especificos</b>\n<ul>\n<li>Recolectar datos relevantes del entorno y prepararlos para ser consumidos por el algoritmo\n                            de aprendizaje.\n                        </li>\n<li>Desarrollar un algoritmo de aprendizaje que nos permita analizar los datos adquiridos del\n                            entorno que permita detectar los autos cercanos, as\u00ed como predecir el \u00e1ngulo que se debe\n                            girar el volante para seguir el coche de adelante.\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Desarrollar un sistema capaz de detectar aut\u00f3moviles cercanos y decidir \u00e1ngulo correcto de                        volante, para proporcionar austencia activa en situaciones de conducci\u00f3n</p><b>Objetivos especificos</b><ul><li>Recolectar datos relevantes del entorno y prepararlos para ser consumidos por el algoritmo                            de aprendizaje.                        </li><li>Desarrollar un algoritmo de aprendizaje que nos permita analizar los datos adquiridos del                            entorno que permita detectar los autos cercanos, as\u00ed como predecir el \u00e1ngulo que se debe                            girar el volante para seguir el coche de adelante.                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene17/carDetect-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene17/carDetect-slider-2.jpg",
@@ -329,7 +243,7 @@
       },
       {
         "title": "Din\u00e1mica auto",
-        "desc": "\n<b>Objetivo general</b>\n<p>Encontrar los l\u00edmites din\u00e1micos del veh\u00edculo de pruebas utilizado actualmente en el proyecto\n                        ADMAS</p>\n<b>Objetivos especificos</b>\n<ul>\n<li>Selecci\u00f3n de la metodolog\u00eda adecuada para realizar pruebas din\u00e1micas.</li>\n<li>Selecci\u00f3n del software de simulaci\u00f3n de din\u00e1mica de veh\u00edculos adecuados.</li>\n<li>Investigaci\u00f3n de elementos fisiol\u00f3gicos afectados por las aceleraciones del veh\u00edculo de\n                            pruebas y los efectos que estos tienen en la comodidad.\n                        </li>\n<li>Dise\u00f1o y ejecuci\u00f3n de simulaciones y pruebas experimentales.</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Encontrar los l\u00edmites din\u00e1micos del veh\u00edculo de pruebas utilizado actualmente en el proyecto                        ADMAS</p><b>Objetivos especificos</b><ul><li>Selecci\u00f3n de la metodolog\u00eda adecuada para realizar pruebas din\u00e1micas.</li><li>Selecci\u00f3n del software de simulaci\u00f3n de din\u00e1mica de veh\u00edculos adecuados.</li><li>Investigaci\u00f3n de elementos fisiol\u00f3gicos afectados por las aceleraciones del veh\u00edculo de                            pruebas y los efectos que estos tienen en la comodidad.                        </li><li>Dise\u00f1o y ejecuci\u00f3n de simulaciones y pruebas experimentales.</li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene17/carDynamic-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene17/carDynamic-slider-2.jpg",
@@ -341,7 +255,7 @@
       },
       {
         "title": "Instrumentaci\u00f3n Volante",
-        "desc": "\n<b>Objetivo general</b>\n<p>Implementar un sistema mecatr\u00f3nico en un veh\u00edculo para controlar el sistema de direcci\u00f3n y prover\n                        un nivel de autonomia sin la interacci\u00f3n e intervenci\u00f3n del usuario en el veh\u00edculo.</p>\n<b>Objetivo especifico</b>\n<ul>\n<li>Dise\u00f1ar un mecanismo y una interfaz de computadora, capaces de controlar la direcci\u00f3n de un\n                            veh\u00edculo sin la intervenci\u00f3n del conductor.\n                        </li>\n<li>Fabricar e instalar un mecanismo para controlar el sistema de direcci\u00f3n de un veh\u00edculo\n                            mediante la implementaci\u00f3n de actuadores.\n                        </li>\n<li>Integrar el mecanismo de direcci\u00f3n y la interfaz de control de motot en el veh\u00edculo sin ser\n                            invasivo y sin afectar la interacci\u00f3n con el veh\u00edculo.\n                        </li>\n<li>Control del sistema de direcci\u00f3n precisamente con la implementaci\u00f3n del mecanismo y la\n                            interfaz de control.\n                        </li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Implementar un sistema mecatr\u00f3nico en un veh\u00edculo para controlar el sistema de direcci\u00f3n y prover                        un nivel de autonomia sin la interacci\u00f3n e intervenci\u00f3n del usuario en el veh\u00edculo.</p><b>Objetivo especifico</b><ul><li>Dise\u00f1ar un mecanismo y una interfaz de computadora, capaces de controlar la direcci\u00f3n de un                            veh\u00edculo sin la intervenci\u00f3n del conductor.                        </li><li>Fabricar e instalar un mecanismo para controlar el sistema de direcci\u00f3n de un veh\u00edculo                            mediante la implementaci\u00f3n de actuadores.                        </li><li>Integrar el mecanismo de direcci\u00f3n y la interfaz de control de motot en el veh\u00edculo sin ser                            invasivo y sin afectar la interacci\u00f3n con el veh\u00edculo.                        </li><li>Control del sistema de direcci\u00f3n precisamente con la implementaci\u00f3n del mecanismo y la                            interfaz de control.                        </li></ul>",
         "images": [
           "./../img/proyectos/ADMAS/ene17/volante-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene17/volante-slider-2.jpg",
@@ -357,7 +271,7 @@
     "projects": [
       {
         "title": "Algoritmo Simulador",
-        "desc": "\n<b>Objetivo general</b>\n<p>Desarrollar un simulador de manejo con el fin de adquirir datos del tipo de conducci\u00f3n para un\n                        an\u00e1lisis por medio de algoritmo de aprendizaje con el fin de imitar el manejo del\n                        conductor. </p>\n<b>Objetivo especifico</b>\n<p>Instrumentar un veh\u00edculo controlado por RF para realizar un simulador de manejo hibrido y poder\n                        adquirir los datos de conducci\u00f3n por an\u00e1lisis</p>\n<p>Desarollar un algoritmo de parendizaje con ayuda de redes neuronales que nos permita analizar los\n                        datos adquirirdos del entorno y del conductor al momento de manejar, con la finalidad de\n                        identificar las caracter\u00edsticas del conductor</p>\n",
+        "desc": "<b>Objetivo general</b><p>Desarrollar un simulador de manejo con el fin de adquirir datos del tipo de conducci\u00f3n para un                        an\u00e1lisis por medio de algoritmo de aprendizaje con el fin de imitar el manejo del                        conductor. </p><b>Objetivo especifico</b><p>Instrumentar un veh\u00edculo controlado por RF para realizar un simulador de manejo hibrido y poder                        adquirir los datos de conducci\u00f3n por an\u00e1lisis</p><p>Desarollar un algoritmo de parendizaje con ayuda de redes neuronales que nos permita analizar los                        datos adquirirdos del entorno y del conductor al momento de manejar, con la finalidad de                        identificar las caracter\u00edsticas del conductor</p>",
         "images": [
           "./../img/proyectos/ADMAS/ago16/algoritmo-slider-1.jpg",
           "./../img/proyectos/ADMAS/ago16/algoritmo-slider-3.jpg",
@@ -367,7 +281,7 @@
       },
       {
         "title": "Tren Motriz",
-        "desc": "\n<b>Objetivo general</b>\n<p>Obtener los par\u00e1metros de conducci\u00f3n de un veh\u00edculo por medio de la interpretaci\u00f3n y an\u00e1lisis de\n                        las emociones del conductor.</p>\n<b>Objetivo especifico</b>\n<p>Obtener los distintos modos de manejo del veh\u00edculo mediante la reconfiguraci\u00f3n de los vlaores de\n                        la computadora (ECU) del veh\u00edculo.</p>\n",
+        "desc": "<b>Objetivo general</b><p>Obtener los par\u00e1metros de conducci\u00f3n de un veh\u00edculo por medio de la interpretaci\u00f3n y an\u00e1lisis de                        las emociones del conductor.</p><b>Objetivo especifico</b><p>Obtener los distintos modos de manejo del veh\u00edculo mediante la reconfiguraci\u00f3n de los vlaores de                        la computadora (ECU) del veh\u00edculo.</p>",
         "images": [
           "../img/proyectos/ADMAS/ago16/tren-slider-1.jpg",
           "../img/proyectos/ADMAS/ago16/tren-slider-2.jpg"
@@ -376,7 +290,7 @@
       },
       {
         "title": "Analisis CAN",
-        "desc": "\n<b>Objetivo general</b>\n<p>Obtener datos de la computadora central del veh\u00edculo para analizarlos m\u00e1s tarde. Posteriormente\n                        enviar de regreso la informaci\u00f3n y controlar ciertas funciones</p>\n<b>Objetivos especificos</b>\n<ul>\n<li>Instalar el software requerido para la recopilaci\u00f3n de datos correcta</li>\n<li>Adquerir los IDs para el bus CAN usando Mobileye</li>\n<li>Analizar los datos obtenidos</li>\n<li>Control de la computadora central del Ford Focus 2013</li>\n</ul>\n",
+        "desc": "<b>Objetivo general</b><p>Obtener datos de la computadora central del veh\u00edculo para analizarlos m\u00e1s tarde. Posteriormente                        enviar de regreso la informaci\u00f3n y controlar ciertas funciones</p><b>Objetivos especificos</b><ul><li>Instalar el software requerido para la recopilaci\u00f3n de datos correcta</li><li>Adquerir los IDs para el bus CAN usando Mobileye</li><li>Analizar los datos obtenidos</li><li>Control de la computadora central del Ford Focus 2013</li></ul>",
         "images": [
           "../img/proyectos/ADMAS/ago16/can-slider-1.jpg",
           "../img/proyectos/ADMAS/ago16/can-slider-2.jpg",
@@ -391,7 +305,7 @@
     "projects": [
       {
         "title": "Proyecto ADAS",
-        "desc": "\n<b>Objetivo general</b>\n<p> Obtener datos din\u00e1micos de un vehiculo y variables fisiol\u00f3gicas de conductores j\u00f3venes para\n                        analizar sus reacciones ante la aplicaci\u00f3n de est\u00edmulos producios por ADAS pasivo que permita\n                        conocer las reacciones ante tales advertencias.</p>\n<b>Objetivo especifico</b>\n<p> Instalar dispositivos para la adquisici\u00f3n de los datos del autom\u00f3vil para su futuro an\u00e1lisis,\n                        asi como para el para el monitoreo del entorno con el fin de realizar pruebas preliminares.</p>\n",
+        "desc": "<b>Objetivo general</b><p> Obtener datos din\u00e1micos de un vehiculo y variables fisiol\u00f3gicas de conductores j\u00f3venes para                        analizar sus reacciones ante la aplicaci\u00f3n de est\u00edmulos producios por ADAS pasivo que permita                        conocer las reacciones ante tales advertencias.</p><b>Objetivo especifico</b><p> Instalar dispositivos para la adquisici\u00f3n de los datos del autom\u00f3vil para su futuro an\u00e1lisis,                        asi como para el para el monitoreo del entorno con el fin de realizar pruebas preliminares.</p>",
         "images": [
           "./../img/proyectos/ADMAS/ene16/ADAS-slider-1.jpg",
           "./../img/proyectos/ADMAS/ene16/ADAS-slider-2.jpg",

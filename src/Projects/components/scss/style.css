@@ -284,12 +284,11 @@ a:hover {
 }
 
 .timeline-description {
-  background-color: lightgray;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  margin: 2em 0 1em 1em;
   padding: 2em;
   max-width: 50vw;
-}
-.timeline-description p {
-  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

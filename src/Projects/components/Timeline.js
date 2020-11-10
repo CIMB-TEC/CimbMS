@@ -24,7 +24,7 @@ let TimelineItem = (props) => {
 let Details = (props) => {
     return (
         <div className="timeline-description">
-            <p>{props.description}</p>
+            <p dangerouslySetInnerHTML={{__html: props.description}}/>
             {/*<Image src={props.images[0]}/>*/}
             {/*<Button onClick={onOpen}>Open Modal</Button>*/}
             {/*<Modal isOpen={isOpen} onClose={onClose}>*/}
@@ -47,12 +47,15 @@ let Timeline = (props) => {
     let items = [];
     props.items.forEach((item) => {
         let date = item.date;
+        let notFirst = false;
         return (
             item.projects.forEach((project) => {
+                notFirst ? date = "" : null;
                 items.push(
                     <TimelineItem date={date} title={project.title} description={project.desc}
                                   images={project.images} poster={project.poster}/>
                 )
+                notFirst = true;
             })
         )
     })
