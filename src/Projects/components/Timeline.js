@@ -1,6 +1,7 @@
 import React from 'react';
 import "./scss/style.css";
 import Link from "@chakra-ui/core/dist/Link";
+import Button from "@chakra-ui/core/dist/Button";
 
 let TimelineItem = (props) => {
     // const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,12 +36,26 @@ let Details = (props) => {
             {/*        </ModalBody>*/}
             {/*    </ModalContent>*/}
             {/*</Modal>*/}
-            <Link href={props.poster}>Descargar Poster</Link>
+            <Button>
+                <Link href={props.poster}>Descargar Poster</Link>
+            </Button>
         </div>
     )
 }
 
 let Timeline = (props) => {
+    let items = [];
+    props.items.forEach((item) => {
+        let date = item.date;
+        return (
+            item.projects.forEach((project) => {
+                items.push(
+                    <TimelineItem date={date} title={project.title} description={project.desc}
+                                  images={project.images} poster={project.poster}/>
+                )
+            })
+        )
+    })
     return (
         <>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
@@ -56,14 +71,7 @@ let Timeline = (props) => {
                 </div>
                 <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12">
                     <ul className="timeline timeline-split">
-                        {
-                            props.items.map(item => {
-                                return (
-                                    <TimelineItem date={item.date} title={item.title} description={item.desc1}
-                                                  images={item.images} poster={item.poster}/>
-                                )
-                            })
-                        }
+                        {items}
                     </ul>
                 </div>
             </div>
