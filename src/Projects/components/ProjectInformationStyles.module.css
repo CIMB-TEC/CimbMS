@@ -1,0 +1,53 @@
+.Wrapper {
+  width: auto;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  margin: auto;
+}
+.Wrapper h1 {
+  font-size: 70px;
+  text-align: center;
+}
+.Wrapper p {
+  text-align: center;
+  font-size: 35px;
+}
+.Wrapper h3 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -70px;
+}
+.Wrapper .ColabTitle {
+  margin-bottom: 10px;
+}
+
+.AreaWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.Area {
+  width: 400px;
+  margin-top: 100px;
+}
+.Area .AreaTitle {
+  font-size: 40px;
+  text-align: center;
+}
+.Area .AreaInfo {
+  font-size: 25px;
+}
+
+.CollaboratorsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.CollaboratorsWrapper a {
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=ProjectInformationStyles.module.css.map */
