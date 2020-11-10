@@ -14,11 +14,10 @@ let strings = es_strings;
 
 let EXODUXPage = () => {
     return (
-        // TODO REMOVE THEME PROV
         <>
-                <Navbar/>
-                <Timeline items={strings} title={title} description={description}/>
-                <Footer/>
+            <Navbar/>
+            <Timeline items={strings} title={title} description={description}/>
+            <Footer/>
         </>
     )
 }
