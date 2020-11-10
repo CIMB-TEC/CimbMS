@@ -2,10 +2,14 @@ import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/core";
 
 import PersonasCard from "./PersonasCard";
-
+import Navbar from "../components/Navbar";
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 function PersonasSite() {
   return (
     <Box w="100%">
+      <Navbar />
+      <Menu />
       <Box>
         <Box marginTop="25px" marginLeft="25px">
           <Text textAlign="center" fontSize="35px">
@@ -48,6 +52,7 @@ function PersonasSite() {
           <PersonasCard bor="#3685cf" col="blue" />
         </Flex>
       </Box>
+      <Footer />
     </Box>
   );
 }
