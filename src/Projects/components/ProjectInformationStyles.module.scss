@@ -1,0 +1,53 @@
+.Wrapper {
+  width: auto;
+  display: flex;
+  padding: 50px;
+
+  flex-direction: column;
+  margin: auto;
+  h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -70px;
+  }
+
+  .ColabTitle {
+    margin-bottom: 10px;
+  }
+}
+.AreaWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.Area {
+  width: 400px;
+  margin-top: 100px;
+  .AreaTitle {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .AreaInfo {
+    font-size: 25px;
+  }
+}
+
+.CollaboratorsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  a {
+    font-size: 40px;
+  }
+}
