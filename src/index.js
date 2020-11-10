@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import ADMASpage from "./Projects/ADMAS";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import LandingPage from './LandingPage';
 
-ReactDOM.render(<ADMASpage/> , document.getElementById("root"));
+ReactDOM.render(<LandingPage />, document.getElementById('root'));
