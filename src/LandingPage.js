@@ -4,6 +4,7 @@ import Main from "./Main/Homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DivulgationSite from "./Divulgation/DivulgationSite";
 import PersonasSite from "./Personas/PersonasSite";
+import Projects from "./Projects/Projects";
 function LandingPage() {
   return (
     <Router>
@@ -12,7 +13,8 @@ function LandingPage() {
 
         <Switch>
           <Route exact path="/">
-            <Main />
+            <Projects />
+            {/* <Main/> */}
           </Route>
           <Route exact path="/divulgation">
             <DivulgationSite />
