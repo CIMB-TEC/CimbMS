@@ -1,6 +1,6 @@
 import React from "react";
-import tec from "../img/tec.png";
-import cimb from "../img/cimb.png";
+//import tec from "../img/tec.png";
+//import cimb from "../img/cimb.png";
 import { FormControl, Input, Image, Box } from "@chakra-ui/core";
 import Flex from "@chakra-ui/core/dist/Flex";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ function navbar() {
       alignItems={"center"}
     >
       <Link to="/">
-        <Image src={cimb} alt="Logo" height={60} />
+        {/* <Image src={cimb} alt="Logo" height={60} /> */}
       </Link>
 
       <Flex direction="row">
@@ -23,7 +23,7 @@ function navbar() {
           <Input placeholder="Search" size="lg" />
         </FormControl>
         <a href="https://tec.mx/es">
-          <Image src={tec} alt="Logo" height={50} marginLeft="25px" />
+          {/* <Image src={tec} alt="Logo" height={50} marginLeft="25px" /> */}
         </a>
       </Flex>
     </Flex>

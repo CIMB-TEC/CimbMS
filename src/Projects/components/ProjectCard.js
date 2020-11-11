@@ -3,6 +3,7 @@ import classes from "./ProjectCardStyles.module.scss";
 
 import { FaCookie } from "react-icons/fa";
 import { RiPlantLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import {
   GiChurch,
   GiEnergyTank,
@@ -18,20 +19,17 @@ function ProjectCard(props) {
     <div className={classes.Wrapper}>
       <div className={classes.LogoTitleWrapper}>
         <GiCyberEye className={classes.Logo} />
-        <h1 className={classes.Title}> ADMAS</h1>
+        <h1 className={`${classes.Title} ${classes[props.project]}`}> {props.title}</h1>
       </div>
 
       <div className={classes.DescriptionWrapper}>
         {/* <h3>What is ADMAS?</h3> */}
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmo
-          dtempor incididunt ut labor et dolore magna aliqua. ut labor et dolore
-          magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit,sed do eiusmo dtempor incididunt ut labor et dolore magna aliqua.
+         {props.description}
         </p>
       </div>
       <div className={classes.ResearchWrapper}>
-        <h3>Research Areas </h3>
+        <h3 className={classes.ResearhAreas}>Research Areas </h3>
         <div className={classes.AreasWrapper}>
           <div className={classes.Area}>
             <GiEnergyTank className={classes.AreaLogo} />
@@ -60,7 +58,10 @@ function ProjectCard(props) {
         </div>
       </div>
 
-      <a className={classes.ReadMore}>Read More </a>
+
+        <Link to={{pathname: `/${props.link}`}} className={`${classes.ReadMore} ${classes[props.project]}`}>
+          Read More
+      </Link>
     </div>
   );
 }

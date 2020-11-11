@@ -1,8 +1,8 @@
 import React from "react";
 import Box from "@chakra-ui/core/dist/Box";
 import Stack from "@chakra-ui/core/dist/Stack";
-import tec from "../img/tec.png";
-import cimb from "../img/cimb.png";
+//import tec from "../img/tec.png";
+//import cimb from "../img/cimb.png";
 import { Text, Image, SimpleGrid } from "@chakra-ui/core";
 import { Link } from "react-router-dom";
 import { AiOutlineCar } from "react-icons/ai";
@@ -17,7 +17,7 @@ let footer = () => {
         {" "}
         <Link to="/">
           {" "}
-          <Image src={cimb} alt="Logo" width={200} />
+          {/* <Image src={cimb} alt="Logo" width={200} /> */}
         </Link>
       </Box>
 
@@ -54,7 +54,7 @@ let footer = () => {
       <Stack margin="auto">
         <Box>
           <a href="https://tec.mx/es">
-            <Image src={tec} alt="Logo" height={60} />
+            {/* <Image src={tec} alt="Logo" height={60} /> */}
           </a>
         </Box>
 

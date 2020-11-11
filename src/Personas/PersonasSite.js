@@ -2,13 +2,13 @@ import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/core";
 
 import PersonasCard from "./PersonasCard";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 function PersonasSite() {
   return (
     <Box w="100%">
-      <Navbar />
+      <Header/>
       <Menu />
       <Box>
         <Box marginTop="25px" marginLeft="25px">

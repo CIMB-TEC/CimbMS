@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DivulgationCard from "./DivulgationSiteComponents/DivulgationCard";
 import { Box, Stack } from "@chakra-ui/core";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 
@@ -9,7 +9,7 @@ export default class DivulgationSite extends Component {
   render() {
     return (
       <Box>
-        <Navbar />
+        <Header />
         <Menu />
         <Stack bg="white" padding="20px" spacing={8}>
           <Box>
