@@ -1,8 +1,14 @@
+$admas: #0073ff;
+$domotica: #d741a7;
+$exodux: #fdb833;
+$agricultura: #acd747;
+$vehiculos: #ee6c4d;
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo&family=Encode+Sans&display=swap");
 .Wrapper {
   font-family: "Encode Sans", sans-serif;
-  background-color: transparent;
-  border: 2px solid #f1f2f4;
+  background-color: #222222;
+  border: 2px solid transparent;
   width: 600px;
   height: auto;
   display: flex;
@@ -26,7 +32,26 @@
   }
   .Title {
     font-size: 50px;
-    color: #0073ff;
+    color: #f1f2f4;
+    &.Admas {
+      color: $admas;
+    }
+
+    &.Domotica {
+      color: $domotica;
+    }
+
+    &.Exodux {
+      color: $exodux;
+    }
+
+    &.Agricultura {
+      color: $agricultura;
+    }
+
+    &.Vehiculos {
+      color: $vehiculos;
+    }
   }
 }
 
@@ -34,8 +59,9 @@
   display: flex;
   flex-direction: column;
   font-size: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0px;
   text-align: center;
+  height: 260px;
   h3 {
     font-size: 35px;
     margin-bottom: 10px;
@@ -75,5 +101,29 @@
 .ReadMore {
   text-align: center;
   font-size: 40px;
-  color: #0073ff;
+  color: white;
+
+  &.Admas {
+    color: $admas;
+  }
+
+  &.Domotica {
+    color: $domotica;
+  }
+
+  &.Exodux {
+    color: $exodux;
+  }
+
+  &.Agricultura {
+    color: $agricultura;
+  }
+
+  &.Vehiculos {
+    color: $vehiculos;
+  }
+}
+
+.ResearhAreas {
+  color: #f1f2f4;
 }

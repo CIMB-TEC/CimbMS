@@ -1,7 +1,7 @@
 import { Text, Box, Stack, Divider, Image } from "@chakra-ui/core";
 import React from "react";
 import SimpleGrid from "@chakra-ui/core/dist/SimpleGrid";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Menu from "../components/Menu";
 import NewsCard from "./MainComponents/Card";
 import Footer from "../components/Footer";
@@ -13,7 +13,7 @@ import News2 from "../img/news2.PNG";
 function Main() {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Menu />
       <SimpleGrid bg="white" h="500px" textAlign="left" columns={2}>
         <Box marginTop="40px" marginLeft="25px">

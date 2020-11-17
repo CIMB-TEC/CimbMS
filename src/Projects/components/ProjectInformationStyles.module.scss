@@ -1,29 +1,77 @@
+$admas: #0073ff;
+$domotica: #d741a7;
+$exodux: #fdb833;
+$agricultura: #acd747;
+$vehiculos: #ee6c4d;
 .Wrapper {
   width: auto;
   display: flex;
   padding: 50px;
+  background-color: #141414;
+  color: #f1f2f4;
 
   flex-direction: column;
   margin: auto;
-  h1 {
+  .Title {
     font-size: 70px;
     text-align: center;
+
+    &.Admas {
+      color: $admas;
+    }
+
+    &.Domotica {
+      color: $domotica;
+    }
+
+    &.Exodux {
+      color: $exodux;
+    }
+
+    &.Agricultura {
+      color: $agricultura;
+    }
+
+    &.Vehiculos {
+      color: $vehiculos;
+    }
   }
   p {
     text-align: center;
     font-size: 35px;
   }
-  h3 {
+  .ColabTitle,
+  .ResearchTitle {
     font-size: 50px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: -70px;
+    &.Admas {
+      color: $admas;
+    }
+
+    &.Domotica {
+      color: $domotica;
+    }
+
+    &.Exodux {
+      color: $exodux;
+    }
+
+    &.Agricultura {
+      color: $agricultura;
+    }
+
+    &.Vehiculos {
+      color: $vehiculos;
+    }
   }
 
   .ColabTitle {
     margin-bottom: 10px;
   }
 }
+
 .AreaWrapper {
   display: flex;
   justify-content: space-between;
