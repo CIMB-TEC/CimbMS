@@ -7,9 +7,9 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 function PersonasSite() {
   return (
-    <Box w="100%">
+    <Box w="100%" bg="#141414" color="#f1f2f4">
       <Header/>
-      <Menu />
+      {/* <Menu /> */}
       <Box>
         <Box marginTop="25px" marginLeft="25px">
           <Text textAlign="center" fontSize="35px">
@@ -17,7 +17,7 @@ function PersonasSite() {
           </Text>
         </Box>
 
-        <Flex justify="center" wrap="wrap" direction="row">
+        <Flex justify="center" bg="#141414" wrap="wrap" direction="row">
           <PersonasCard bor="#d69e2e" col="yellow" />
           <PersonasCard bor="#d69e2e" col="yellow" />
           <PersonasCard bor="#d69e2e" col="yellow" />
@@ -29,7 +29,7 @@ function PersonasSite() {
             Colaboradores
           </Text>
         </Box>
-        <Flex bg="white" justify="center" direction="row" wrap="wrap">
+        <Flex  bg="#141414" justify="center" direction="row" wrap="wrap">
           <PersonasCard bor="#d53f8c" col="pink" />
           <PersonasCard bor="#d53f8c" col="pink" />
           <PersonasCard bor="#d53f8c" col="pink" />
@@ -42,7 +42,7 @@ function PersonasSite() {
             Encargados de proyecto
           </Text>
         </Box>
-        <Flex bg="white" justify="center" direction="row" wrap="wrap">
+        <Flex  bg="#141414" justify="center" direction="row" wrap="wrap">
           <PersonasCard bor="#3685cf" col="blue" />
           <PersonasCard bor="#3685cf" col="blue" />
           <PersonasCard bor="#3685cf" col="blue" />
@@ -52,7 +52,7 @@ function PersonasSite() {
           <PersonasCard bor="#3685cf" col="blue" />
         </Flex>
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </Box>
   );
 }
