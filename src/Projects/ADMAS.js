@@ -22,7 +22,7 @@ let ADMASpage = () => {
                 title="ADMAS"
                 description={description}
             />
-            <Timeline items={strings} title="Línea del Tiempo" />
+            <Timeline items={strings} title="Línea del Tiempo"/>
             <Footer/>
         </>
     )

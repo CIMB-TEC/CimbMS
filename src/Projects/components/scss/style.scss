@@ -2,7 +2,7 @@ $primary-color: #6ba6ff;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 body {
-  color: #768390;
+  color: white !important;
   background: #FFF;
   font-family: "Effra", Helvetica, sans-serif;
   padding: 0;
@@ -325,7 +325,7 @@ a {
 }
 
 .timeline-description {
-  background-color: #c4c4c4;
+  background-color: #2f2f2f;
   border-radius: 10px;
   margin: 2em 0 1em 1em;
   padding: 2em;
