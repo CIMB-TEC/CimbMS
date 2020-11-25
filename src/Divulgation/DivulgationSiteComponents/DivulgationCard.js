@@ -17,11 +17,13 @@ import DivulgationCardToggle from "./DivulgationCardToggle";
 function DivulgationCard(props) {
   return (
     <Box
-      bg="white"
-      border="1px"
+      bg="#222222"
+      border="2px"
       borderColor={props.bor}
-      color="black"
+      color="#f1f2f4"
       padding="20px"
+      marginTop="25px"
+      marginBottom="25px"
     >
       <Box marginBottom="25px">
         {" "}
