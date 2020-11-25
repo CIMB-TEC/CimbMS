@@ -1,33 +1,31 @@
-import React from "react" ;
-import classes from "./HeaderStyles.module.scss"
-import { Link } from "react-router-dom";
+import React from "react";
+import classes from "./HeaderStyles.module.css"
+import {Link} from "react-router-dom";
 
 
-function Header(){
+function Header() {
 
-    return(
+    return (
 
         <header className={classes.Wrapper}>
-        <nav>
-          <ul>
-      <Link className={classes.Link} to="/">
-      Inicio
-      </Link>
-      <Link className={classes.Link} to="/proyectos">
-      Proyectos
-      </Link>
+                <ul>
+                    <Link className={classes.Link} to="/">
+                        Inicio
+                    </Link>
+                    <Link className={classes.Link} to="/proyectos">
+                        Proyectos
+                    </Link>
 
-      <Link className={classes.Link} to="/divulgacion">
-     Divulgación
-      </Link>
-             <Link className={classes.Link} to="/equipo">
-     Equipo
-      </Link>
-          
-          </ul>
-        </nav>
-      </header>
-        
+                    <Link className={classes.Link} to="/divulgacion">
+                        Divulgación
+                    </Link>
+                    <Link className={classes.Link} to="/equipo">
+                        Equipo
+                    </Link>
+
+                </ul>
+        </header>
+
     );
 }
 

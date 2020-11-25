@@ -1,0 +1,117 @@
+.Wrapper {
+  width: auto;
+  display: flex;
+  color: #f1f2f4;
+  flex-direction: column;
+  margin: auto;
+}
+.Wrapper .container1 {
+  background-color: #666666;
+  padding: 50px;
+  height: 110vh;
+}
+.Wrapper .container2 {
+  background-color: #3d3d3d;
+  padding: 50px;
+  height: 110vh;
+}
+.Wrapper .container3 {
+  background-color: #333333;
+  padding: 50px;
+  height: 110vh;
+}
+.Wrapper .Title {
+  margin-top: 6em;
+  font-size: 3.5rem;
+}
+.Wrapper .Title.Admas {
+  color: #0073ff;
+}
+.Wrapper .Title.Domotica {
+  color: #d741a7;
+}
+.Wrapper .Title.Exodux {
+  color: #fdb833;
+}
+.Wrapper .Title.Agricultura {
+  color: #acd747;
+}
+.Wrapper .Title.Vehiculos {
+  color: #ee6c4d;
+}
+.Wrapper .description {
+  max-width: 40%;
+  margin-bottom: 15em;
+}
+.Wrapper p {
+  font-size: 1.5em;
+}
+.Wrapper .containera {
+  height: 100vh;
+}
+.Wrapper .ColabTitle,
+.Wrapper .ResearchTitle {
+  font-size: 2.6rem;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+.Wrapper .ColabTitle.Admas,
+.Wrapper .ResearchTitle.Admas {
+  color: #0073ff;
+}
+.Wrapper .ColabTitle.Domotica,
+.Wrapper .ResearchTitle.Domotica {
+  color: #d741a7;
+}
+.Wrapper .ColabTitle.Exodux,
+.Wrapper .ResearchTitle.Exodux {
+  color: #fdb833;
+}
+.Wrapper .ColabTitle.Agricultura,
+.Wrapper .ResearchTitle.Agricultura {
+  color: #acd747;
+}
+.Wrapper .ColabTitle.Vehiculos,
+.Wrapper .ResearchTitle.Vehiculos {
+  color: #ee6c4d;
+}
+.Wrapper .ColabTitle {
+  margin-bottom: 10px;
+}
+
+.AreaWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin-top: 10em;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Area {
+  width: 400px;
+  margin-top: 100px;
+}
+.Area .AreaTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.Area .AreaInfo {
+  font-size: 1rem;
+}
+
+.CollaboratorsWrapper {
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.CollaboratorsWrapper a {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=ProjectInformationStyles.module.css.map */

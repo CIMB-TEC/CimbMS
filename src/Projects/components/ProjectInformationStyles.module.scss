@@ -3,18 +3,25 @@ $domotica: #d741a7;
 $exodux: #fdb833;
 $agricultura: #acd747;
 $vehiculos: #ee6c4d;
+$bacco: #141414;
 .Wrapper {
+  @for $i from 1 through 3 {
+    .container#{$i} {
+      background-color: lighten($bacco, random(35));
+      padding: 50px;
+      height: 110vh;
+    }
+  }
+
   width: auto;
   display: flex;
-  padding: 50px;
-  background-color: #141414;
   color: #f1f2f4;
-
   flex-direction: column;
   margin: auto;
+
   .Title {
-    font-size: 70px;
-    text-align: center;
+    margin-top: 6em;
+    font-size: 3.5rem;
 
     &.Admas {
       color: $admas;
@@ -36,16 +43,27 @@ $vehiculos: #ee6c4d;
       color: $vehiculos;
     }
   }
-  p {
-    text-align: center;
-    font-size: 35px;
+
+  .description {
+    max-width: 40%;
+    margin-bottom: 15em;
   }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .containera {
+    height: 100vh;
+  }
+
   .ColabTitle,
   .ResearchTitle {
-    font-size: 50px;
-    text-align: center;
+    font-size: 2.6rem;
+    text-align: right;
     margin-top: 50px;
-    margin-bottom: -70px;
+    margin-bottom: -10px;
+
     &.Admas {
       color: $admas;
     }
@@ -76,26 +94,35 @@ $vehiculos: #ee6c4d;
   display: flex;
   justify-content: space-between;
   height: auto;
+  margin-top: 10em;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .Area {
   width: 400px;
   margin-top: 100px;
+
   .AreaTitle {
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
   }
 
   .AreaInfo {
-    font-size: 25px;
+    font-size: 1rem;
   }
 }
 
 .CollaboratorsWrapper {
+  margin-top: 10em;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 
   a {
-    font-size: 40px;
+    font-size: 2rem;
   }
 }

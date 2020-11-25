@@ -67,7 +67,7 @@ let Timeline = (props) => {
                 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
                 crossOrigin="anonymous"/>
 
-            <div className="container-fluid" >
+            <div className="container-fluid">
                 <div className="col-md-12 example-title">
                     <h2>{props.title}</h2>
                     <p>{props.description}</p>
