@@ -12,11 +12,11 @@ import News2 from "../img/news2.PNG";
 
 function Main() {
   return (
-    <div>
+    <Box bg="#141414">
       <Header />
       <Menu />
-      <SimpleGrid bg="white" h="500px" textAlign="left" columns={2}>
-        <Box marginTop="40px" marginLeft="25px">
+      <SimpleGrid bg="#141414" color="white" h="500px" textAlign="left" columns={2}>
+        <Box margin="25px"  bg="#222222" border='1px solid #222222' borderRadius="15px" padding="20px">
           <Text fontSize="45px">Acerca del CIMB</Text>
           <Text fontSize="25px">
             El Laboratorio de CIMB (Computing Intelligence, Mechatronics and
@@ -37,8 +37,8 @@ function Main() {
         </Box>
       </SimpleGrid>
 
-      <SimpleGrid bg="white" h="500px" textAlign="left" columns={2}>
-        <Box p="25px">
+      <SimpleGrid bg="#141414" color="white" h="500px" textAlign="left" columns={2}>
+        <Box p="25px" >
           <Image
             src={QuienesSomos}
             margin="auto"
@@ -47,9 +47,9 @@ function Main() {
           ></Image>
         </Box>
 
-        <Box>
+        <Box margin="25px" bg="#222222" border='1px solid #222222' borderRadius="15px" padding="20px">
           <Text fontSize="45px">¿Quiénes somos?</Text>
-          <Text fontSize="25px">
+          <Text fontSize="25px" >
             Nuestro grupo busca generar proyectos para la mejora de la calidad
             de vida de la sociedad mexicana y una mejora de la Experiencia del
             Usuario (UX) ante el uso de nuevas tecnologías. Él laboratorio
@@ -59,11 +59,11 @@ function Main() {
         </Box>
       </SimpleGrid>
 
-      <Text textAlign="center" fontSize="45px">
+      <Text textAlign="center" color="white" marginTop="50px" fontSize="45px"  bg="#141414">
         Ultimas noticias
       </Text>
 
-      <SimpleGrid margin="25px" columns={3} spacing={2}>
+      <SimpleGrid margin="25px" bg="#141414" columns={3} spacing={20}>
         <NewsCard
           href="https://www.google.com"
           thumbnail="https://i.imgur.com/rLFk5nd.jpg"
@@ -79,6 +79,7 @@ function Main() {
           date="06/07/2020"
           bor="#d53f8c"
           col="pink"
+          bg="#222222"
         />
 
         <NewsCard
@@ -117,8 +118,8 @@ function Main() {
         />
       </SimpleGrid>
 
-      <Footer />
-    </div>
+   
+    </Box>
   );
 }
 
