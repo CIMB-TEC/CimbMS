@@ -10,6 +10,7 @@ import ExoDUX from "./Projects/ExoDUX"
 import Domotics from "./Projects/Domotics"
 import AcousticAg from "./Projects/AcousticAg"
 import Platform from "./Projects/Platform"
+import Karen from "./Karen/Karen.jsx";
 
 
 function LandingPage() {
@@ -56,9 +57,11 @@ function LandingPage() {
     <Route exact path="/vehiculos">
             <Platform/>
           </Route>
+
+    <Route exact path="/karen">
+            <Karen/>
+          </Route>
         </Switch>
-
-
       </ThemeProvider>
     </Router>
   );
