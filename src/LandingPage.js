@@ -10,6 +10,7 @@ import ExoDUX from "./Projects/ExoDUX"
 import Domotics from "./Projects/Domotics"
 import AcousticAg from "./Projects/AcousticAg"
 import Platform from "./Projects/Platform"
+import Paola from "./Paola/Paola.jsx"
 
 
 function LandingPage() {
@@ -56,6 +57,11 @@ function LandingPage() {
     <Route exact path="/vehiculos">
             <Platform/>
           </Route>
+
+          <Route exact path="/paola">
+            <Paola />
+          </Route>
+
         </Switch>
 
 
