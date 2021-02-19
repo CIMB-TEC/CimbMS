@@ -5,12 +5,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DivulgationSite from "./Divulgation/DivulgationSite";
 import PersonasSite from "./Personas/PersonasSite";
 import Projects from "./Projects/Projects";
-import ADMAS from "./Projects/ADMAS"
-import ExoDUX from "./Projects/ExoDUX"
-import Domotics from "./Projects/Domotics"
-import AcousticAg from "./Projects/AcousticAg"
-import Platform from "./Projects/Platform"
 import Karen from "./Karen/Karen.jsx";
+
+
+import ADMAS from "./Projects/ADMAS";
+import ExoDUX from "./Projects/ExoDUX";
+import Domotics from "./Projects/Domotics";
+import AcousticAg from "./Projects/AcousticAg";
+import Platform from "./Projects/Platform";
+import Einar from "./Einar/Einar.jsx";
 
 
 function LandingPage() {
@@ -21,46 +24,51 @@ function LandingPage() {
 
         <Switch>
           <Route exact path="/">
-            <Main/>
+            <Main />
           </Route>
 
           <Route exact path="/divulgacion">
             <DivulgationSite />
           </Route>
 
-     <Route exact path="/proyectos">
-        <Projects />
+          <Route exact path="/proyectos">
+            <Projects />
           </Route>
 
           <Route exact path="/equipo">
             <PersonasSite />
           </Route>
 
-           <Route exact path="/admas">
+          <Route exact path="/admas">
             <ADMAS />
           </Route>
 
-           <Route exact path="/domotica">
+          <Route exact path="/domotica">
             <Domotics />
           </Route>
 
-              <Route exact path="/exodux">
-            <ExoDUX/>
+          <Route exact path="/exodux">
+            <ExoDUX />
           </Route>
 
-
-    <Route exact path="/agricultura">
-            <AcousticAg/>
+          <Route exact path="/agricultura">
+            <AcousticAg />
           </Route>
 
-
-    <Route exact path="/vehiculos">
-            <Platform/>
+          <Route exact path="/vehiculos">
+            <Platform />
           </Route>
+
+          <Route exact path="/einar">
+            <Einar />
+          </Route>
+
 
     <Route exact path="/karen">
             <Karen/>
           </Route>
+
+
         </Switch>
       </ThemeProvider>
     </Router>

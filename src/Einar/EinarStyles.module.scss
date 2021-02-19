@@ -1,0 +1,27 @@
+$varColor: orange;
+
+.Wrapper {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  border: 1px solid $varColor;
+  margin: 100px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px;
+}
+
+.Name {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.Description {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.Age {
+  font-size: 18px;
+  text-decoration: underline;
+}
