@@ -1,0 +1,13 @@
+.Wrapper {
+  width: 100%;
+  display: flex;
+  min-width: 300px;
+  max-width: 500px;
+  border: 1px solid blue;
+  margin: 50px auto;
+}
+
+p {
+  font-size: 20px;
+  color: Red;
+}

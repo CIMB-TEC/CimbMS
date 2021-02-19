@@ -5,12 +5,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DivulgationSite from "./Divulgation/DivulgationSite";
 import PersonasSite from "./Personas/PersonasSite";
 import Projects from "./Projects/Projects";
+import Karen from "./Karen/Karen.jsx";
+
+
 import ADMAS from "./Projects/ADMAS";
 import ExoDUX from "./Projects/ExoDUX";
 import Domotics from "./Projects/Domotics";
 import AcousticAg from "./Projects/AcousticAg";
 import Platform from "./Projects/Platform";
 import Einar from "./Einar/Einar.jsx";
+
 
 function LandingPage() {
   return (
@@ -58,6 +62,13 @@ function LandingPage() {
           <Route exact path="/einar">
             <Einar />
           </Route>
+
+
+    <Route exact path="/karen">
+            <Karen/>
+          </Route>
+
+
         </Switch>
       </ThemeProvider>
     </Router>
