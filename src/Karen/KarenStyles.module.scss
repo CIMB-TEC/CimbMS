@@ -2,12 +2,112 @@
   width: 100%;
   display: flex;
   min-width: 300px;
-  max-width: 500px;
-  border: 1px solid blue;
-  margin: 50px auto;
+  max-width: 1024px;
+  /*border: 1px solid blue;*/
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-p {
+.MenuContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  /*border: 1px solid pink;*/
+  margin: 30px;
+  align-items: center;
+}
+.Menu {
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #f6ae2d;
+  color: #f1f2f4;
+
+  &:focus {
+    outline: none;
+  }
+}
+.Menu:hover {
+  background-color: #f6ae2d; /*#141414 #222222*/
+  color: #141414;
+}
+
+.ThankTitle {
+  width: 100%;
+  justify-content: center;
+}
+.Title {
+  font-size: 40px;
+  text-align: center;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.ThankInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  /*border: 1px solid pink;*/
+  margin: 30px;
+  align-items: center;
+}
+.ThankImage {
+  width: 45%;
+}
+.Image {
+  width: 100%;
+  border-radius: 20px;
+  margin: 15px;
+}
+.ThankInfo {
+  width: 50%;
+}
+.Info {
   font-size: 20px;
-  color: Red;
+  text-align: left;
+}
+b {
+  color: #f6ae2d;
+}
+
+.PeopleContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  /*border: 1px solid pink;*/
+  margin: 30px;
+  align-items: center;
+}
+.People {
+  width: 100%;
+  justify-content: space-between;
+  /*border: 1px solid pink;*/
+  display: flex;
+  flex-direction: row;
+}
+.Telecomunicaciones,
+.Microsistemas,
+.Biodiseño,
+.Profesores {
+  width: 50%;
+  /*border: 2px solid red;*/
+  text-align: center;
+}
+.Subtitle {
+  font-size: 24px;
+  color: #86bbd8;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+p {
+  font-size: 18px;
 }
