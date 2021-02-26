@@ -6,7 +6,7 @@ import DivulgationSite from "./Divulgation/DivulgationSite";
 import PersonasSite from "./Personas/PersonasSite";
 import Projects from "./Projects/Projects";
 import Karen from "./Karen/Karen.jsx";
-
+import Paola from "./Paola/Paola.jsx";
 
 import ADMAS from "./Projects/ADMAS";
 import ExoDUX from "./Projects/ExoDUX";
@@ -14,7 +14,7 @@ import Domotics from "./Projects/Domotics";
 import AcousticAg from "./Projects/AcousticAg";
 import Platform from "./Projects/Platform";
 import Einar from "./Einar/Einar.jsx";
-
+import Jorge from "./Jorge/Jorge.jsx";
 
 function LandingPage() {
   return (
@@ -63,12 +63,17 @@ function LandingPage() {
             <Einar />
           </Route>
 
-
-    <Route exact path="/karen">
-            <Karen/>
+          <Route exact path="/karen">
+            <Karen />
           </Route>
 
+          <Route exact path="/paola">
+            <Paola />
+          </Route>
 
+          <Route exact path="/jorge">
+            <Jorge />
+          </Route>
         </Switch>
       </ThemeProvider>
     </Router>
