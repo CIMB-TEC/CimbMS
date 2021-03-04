@@ -16,7 +16,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/core";
 
-import rogelio from "../img/rogelio.jpg";
+//import rogelio from "../img/rogelio.jpg";
 import { FaResearchgate } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -38,10 +38,9 @@ function PersonasCard(props) {
           p="10px"
           bg="#222222"
           color="#f1f2f4"
-          
         >
           <Flex justify="center">
-            <Image w="200px" h="250px" src={rogelio}></Image>
+            <Image w="200px" h="250px" src=""></Image>
           </Flex>
 
           <Box>
@@ -56,7 +55,12 @@ function PersonasCard(props) {
             <Box as={FaResearchgate} color="white" size="30px" />
           </Flex>
 
-          <Button onClick={onOpen}  border="2px" variantColor={props.col} variant="outline">
+          <Button
+            onClick={onOpen}
+            border="2px"
+            variantColor={props.col}
+            variant="outline"
+          >
             Read More
           </Button>
 
