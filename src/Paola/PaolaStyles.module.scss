@@ -1,12 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 $lightGrey: #797878;
 $light: #eeeeee;
 $white: #ffffff;
 $color: #4a4a4a;
 $darkColor: #000000;
-$darkGrey: #1F1E1D;
+$darkGrey: #1f1e1d;
 
 .Container {
   background: linear-gradient(to bottom, #141414, #323232);
@@ -32,7 +31,6 @@ $darkGrey: #1F1E1D;
   padding: 5px;
   margin-bottom: 0.5em;
   text-decoration: underline;
-  
 }
 
 .Card {
@@ -45,19 +43,19 @@ $darkGrey: #1F1E1D;
   background: $lightGrey;
   border-radius: 10px;
   display: grid;
-  box-shadow: 3px 3px 7px rgba(#cecdcd, .5);
+  box-shadow: 3px 3px 7px rgba(#cecdcd, 0.5);
   grid-template-columns: 30% 70%;
-  grid-template-areas: "foto info "
-                        "tog tog "
+  grid-template-areas:
+    "foto info "
+    "tog tog ";
 }
 
-.Card img{
+.Card img {
   grid-area: foto;
   border-radius: 5px;
   width: 90%;
   margin: 5%;
 }
-
 
 .Information {
   grid-area: info;
@@ -106,8 +104,9 @@ $darkGrey: #1F1E1D;
   grid-area: tog;
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-areas: ". boton "
-                        "abstract abstract";
+  grid-template-areas:
+    ". boton "
+    "abstract abstract";
 }
 
 .Buttons {
@@ -136,7 +135,7 @@ $darkGrey: #1F1E1D;
   font-weight: 525;
   &:hover {
     background: $darkColor;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: $white;
   }
 }
@@ -156,7 +155,7 @@ $darkGrey: #1F1E1D;
   font-weight: 525;
   &:hover {
     background: $darkColor;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: $white;
   }
 }
@@ -178,16 +177,17 @@ $darkGrey: #1F1E1D;
   text-indent: 10px;
 }
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
   .Card {
     grid-template-columns: 100%;
     margin-bottom: 20px;
     width: 95%;
     margin-left: 5%;
-    box-shadow: 2px 2px 5px rgba($light, .5);
-    grid-template-areas: "foto"
-                        "info"
-                        "tog";
+    box-shadow: 2px 2px 5px rgba($light, 0.5);
+    grid-template-areas:
+      "foto"
+      "info"
+      "tog";
   }
   .Page h1 {
     font-size: 3.6em;
@@ -197,7 +197,7 @@ $darkGrey: #1F1E1D;
     font-size: 2.2em;
     line-height: 1.1em;
   }
-  .Card img{
+  .Card img {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -209,7 +209,7 @@ $darkGrey: #1F1E1D;
     padding-left: 7.5%;
     padding-right: 7.5%;
     padding-top: 1%;
-    padding-bottom: 3%
+    padding-bottom: 3%;
   }
   .Information p {
     font-size: 1.3em;
@@ -228,8 +228,9 @@ $darkGrey: #1F1E1D;
   }
   .Tog {
     grid-template-columns: 100%;
-    grid-template-areas: "boton"
-                          "abstract";
+    grid-template-areas:
+      "boton"
+      "abstract";
   }
   .Buttons {
     margin-bottom: 2%;

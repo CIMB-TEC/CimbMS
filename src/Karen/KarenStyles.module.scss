@@ -1,8 +1,8 @@
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-$primary: #86BBD8;
-$primary: #38B6FF;
-$tag: #CB6CE6;
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$primary: #86bbd8;
+$primary: #38b6ff;
+$tag: #cb6ce6;
 $background: #222222;
 $secondary: #703680;
 
@@ -67,7 +67,6 @@ $secondary: #703680;
   flex-direction: column;
 }
 
-
 .Tag {
   background-color: transparent;
   border: solid 2px $primary;
@@ -93,7 +92,6 @@ p {
   //position: absolute;
   //top: 50%;
   //left: 50%;
-  //transform: translate(-50%, -50%);
 }
 
 .Middle1 {
@@ -197,16 +195,19 @@ p {
 .Card {
   cursor: pointer;
   width: 340px; /*340*/
-  height: 600px; /*480*/
+
+  // height: 600px; /*480*/
+  // background-color: red;
 }
 
-.Front, .Back {
+.Front,
+.Back {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform .6s linear;
+  // backface-visibility: hidden;
+  //position: absolute;
+  // transition: transform 0.6s linear;
   border-radius: 15px;
 }
 
@@ -221,6 +222,7 @@ img {
 }
 
 .FrontContent {
+  width: 100%;
   color: $primary;
   text-align: center;
   justify-content: center;
@@ -229,19 +231,19 @@ img {
 
 .Front {
   /*background: $background;*/
-  transform: perspective(600px) rotateY(0deg);
+  // transform: perspective(600px) rotateY(0deg);
   background-color: transparent;
   background-image: url("./img/fondo8.png");
 }
 
 .Back {
-  /*background: $background;*/
-  transform: perspective(600px) rotateY(180deg);
+  background: $background;
+  //transform: perspective(600px) rotateY(180deg);
   background-image: url("./img/fondo8.png");
   background-color: transparent;
 }
 
-.BackContent{
+.BackContent {
   color: $primary;
   text-align: center;
   width: 100%;
@@ -270,11 +272,9 @@ img {
 }
 
 .Card:hover > .Front {
-  transform: perspective(600px) rotateY(-180deg);
 }
 
 .Card:hover > .Back {
-  transform: perspective(600px) rotateY(0deg);
 }
 
 .Description {
@@ -296,87 +296,82 @@ img {
   margin: 10px 25px 10px 25px;
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .Icons a:active {
     background: transparent;
     color: $primary;
     border: 2px solid $primary;
   }
-  
+
   .Card:active > .Front {
     transform: perspective(600px) rotateY(-180deg);
   }
-  
+
   .Card:active > .Back {
     transform: perspective(600px) rotateY(0deg);
   }
-  
 }
 
-@media(max-width:396px) {
+@media (max-width: 396px) {
   ////Card of the example
-.Title1 {
-  font-size: 22px;
-  margin: 15px 2.5px 2.5px 2.5px;
-}
+  .Title1 {
+    font-size: 22px;
+    margin: 15px 2.5px 2.5px 2.5px;
+  }
 
-.TagContainer {
-  width: 280px;//
-}
+  .TagContainer {
+    width: 280px; //
+  }
 
+  .Tag {
+    font-size: 12px;
+  }
 
-.Tag {
-  font-size: 12px;
-}
+  .Click {
+    height: 30px;
+    width: 60px;
+    margin-left: 220px; //
+  }
 
-.Click {
-  height: 30px;
-  width: 60px;
-  margin-left: 220px;//
-}
+  p {
+    font-size: 14px;
+  }
 
-p {
-  font-size: 14px;
-}
+  .Card {
+    cursor: pointer;
+    width: 280px; /*340*/
+    height: 550px; /*480*/
+  }
 
-.Card {
-  cursor: pointer;
-  width: 280px; /*340*/
-  height: 550px; /*480*/
-}
+  img {
+    padding: 20px 5px 20px 5px;
+  }
 
+  .Front {
+    background-image: url("./img/fondo9.png");
+  }
 
-img {
-  padding: 20px 5px 20px 5px;
-}
+  .Back {
+    background-image: url("./img/fondo9.png");
+  }
 
+  .Icons {
+    margin: 5px 0;
+  }
 
-.Front {
-  background-image: url("./img/fondo9.png");
-}
+  .Icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
 
-.Back {
-  background-image: url("./img/fondo9.png");
-}
+  .Description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-.Icons {
-  margin: 5px 0;
-}
-
-.Icons a {
-  width: 40px;
-  height: 40px;
-  font-size: 16px;
-}
-
-.Description {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.Title2 {
-  font-size: 16px;
-  margin: 10px 0px 5px 0px;
-}
+  .Title2 {
+    font-size: 16px;
+    margin: 10px 0px 5px 0px;
+  }
 }
