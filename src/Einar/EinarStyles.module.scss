@@ -1,7 +1,8 @@
-$varColor: orange;
+$primary: #2b81f3;
+$secundary: #f39d2b;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -11,7 +12,17 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-.Wrapper {
+//////////////First section///////////////////////
+.WaveContainer {
+  background: url("./Img/waves.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1f1e1d;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ContentContainer {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -19,79 +30,292 @@ html {
   max-width: 1024px;
   //border: 1px solid $varColor;
   font-family: "Roboto", sans-serif;
-  padding: 15px;
+  padding: 25px;
   color: white;
+  //background-image: url("./Img/wave.svg");
+  background-size: cover;
 }
 
-.TitDesContainer {
+.WeAre {
   width: 100%;
-  // border: 1px solid green;
-  height: auto;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-}
-
-.Title {
-  font-size: 7.8rem;
-  text-align: center;
+  font-size: 3rem;
+  color: #ff8200;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  // margin-left: -50px;
 }
 
 .Definition {
-  font-size: 1.6rem;
-  margin-top: -15px;
-  text-align: center;
+  font-size: 5rem;
+  width: 50%;
 }
 
 .Description {
-  font-size: 2.5rem;
-  margin: 0 auto;
-  text-align: center;
-
+  width: 60%;
   margin-top: 25px;
+  font-size: 2.2rem;
+  text-align: justify;
 }
-.AreaTitleContainer {
-  width: 100%;
-  //border: 1px solid orange;
 
-  margin-bottom: 50px;
+//////////////First section///////////////////////
+
+//////////////Seconnd section///////////////////////
+
+.WaveContainer2 {
+  height: 100vh;
+  background-color: #ffffff;
+
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      50px 50px,
+    linear-gradient(#eeeeee 4px, transparent 4px) 0 -2px,
+    linear-gradient(90deg, #eeeeee 4px, #ffffff 4px) -2px 0;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
-.AreaTitleContainer {
+
+.ContentContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  color: white;
+  //height: 100vh;
+}
+
+.ProyectosTitulo {
+  color: black;
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.AreasTitle {
+  width: 100%;
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 20px;
+  color: $secundary;
+}
+
+.TopicsTitle {
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: $secundary;
 }
 
 .Icon {
   width: 50px;
   height: 50px;
+  margin-bottom: 10px;
+  justify-self: start;
+}
+.TopicsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.Topic {
+  margin: 6px;
+  &::before {
+    content: "● ";
+  }
+}
+.AreasContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .AreaOneContainer,
 .AreaTwoContainer,
 .AreaThreeContainer,
 .AreaFourContainer {
-  border: 1px solid white;
+  border: 1px solid transparent;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //background-color: #1d1d1d;
-  width: 22%;
-  margin: 0 14px;
+  color: #1f1e1d;
+
+  background-color: rgba(11, 126, 17, 0.6);
+  //opacity: 0.5;
+  margin: 0 15px 25px 15px;
+
   //border: 1px solid blue;
-  height: auto;
-  margin-bottom: 250px;
+  height: 300px;
+
   padding: 10px;
+  width: 290px;
+  //max-width: 300px;
+  min-height: 220px;
+}
+
+.AreaOneContainer,
+.AreaFourContainer {
+  background-color: rgba(7, 138, 214, 0.6);
 }
 
 .AreaTitle {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .AreaLink {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: underline;
+}
+
+//////////////Seconnd section///////////////////////
+
+////////////////Third section ////////////////////
+.WaveContainer3 {
+  background-color: #1f1e1d;
+  background-image: radial-gradient(#444246 1px, #1f1e1d 1px);
+  background-size: 20px 20px;
+}
+
+.ContentContainer3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.ImageContainer {
+  width: 25%;
+}
+.ImageContainerTeam {
+  width: 100%;
+}
+
+.ImageContainerLast {
+  width: 50%;
+}
+
+.GalleryText {
+  font-size: 35px;
+  width: 100%;
+  margin: 25px 0;
+  text-align: center;
+}
+
+////////////////Third section ////////////////////
+
+//////////////Responsivness first section///////////////////////
+@media (max-width: 1440px) {
+  .WaveContainer2 {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .WaveContainer2 {
+    height: auto;
+  }
+}
+@media (max-width: 1023px) {
+  .ContentContainer {
+  }
+
+  .WeAre {
+    text-align: center;
+  }
+
+  .Definition {
+    width: 75%;
+    text-align: center;
+    margin: 25px auto 0 auto;
+  }
+
+  .Description {
+    width: 75%;
+    margin: 25px auto 0 auto;
+    text-align: center;
+  }
+
+  .WaveContainer2 {
+    height: auto;
+  }
+
+  .ImageContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ContentContainer {
+    padding: 15px;
+  }
+
+  .WeAre {
+    margin: 25px 0;
+    font-size: 25px;
+  }
+
+  .Definition {
+    font-size: 45px;
+  }
+}
+@media (max-width: 525px) {
+  .Definition {
+    font-size: 40px;
+  }
+  .WeAre {
+    margin: 25px 0;
+    font-size: 25px;
+  }
+
+  .Description {
+    font-size: 20px;
+    margin: 25px auto 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 424px) {
+  .Definition {
+    font-size: 35px;
+  }
+  .ImageContainer {
+    width: 100%;
+  }
+  .ImageContainerLast {
+    width: 100%;
+  }
+
+  .Definition {
+    margin: 0 auto;
+  }
 }
