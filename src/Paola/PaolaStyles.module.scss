@@ -1,24 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-$lightGrey: #797878;
-$light: #eeeeee;
+$card: #383838;
 $white: #ffffff;
-$color: #4a4a4a;
-$darkColor: #000000;
-$darkGrey: #1F1E1D;
-
-.Container {
-  background: linear-gradient(to bottom, #141414, #323232);
-}
+$heading: #a80068;
+$color: #850053;
+$secondColor: #260700;
+$background: #1f1e1d;
 
 .Page {
-  margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width:100%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 1%;
+  background: linear-gradient(to bottom, #141414, #323232);
 }
-
 .Page h1 {
   font-size: 4em;
   color: $white;
@@ -27,168 +24,19 @@ $darkGrey: #1F1E1D;
 }
 .Page h2 {
   font-size: 2.5em;
-  color: $white;
-  font-weight: 500;
+  color: $heading;
+  font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
-  text-decoration: underline;
-  
 }
 
-.Card {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
-  width: 98%;
-  margin-left: 2%;
-  height: auto;
-  background: $lightGrey;
-  border-radius: 10px;
-  display: grid;
-  box-shadow: 3px 3px 7px rgba(#cecdcd, .5);
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "foto info "
-                        "tog tog "
-}
-
-.Card img{
-  grid-area: foto;
-  border-radius: 5px;
-  width: 90%;
-  margin: 5%;
-}
-
-
-.Information {
-  grid-area: info;
-  width: 100%;
-  padding-left: 2%;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  padding-right: 5%;
-}
-
-.Information h1 {
-  font-size: 3em;
-  color: $white;
-  font-weight: 800;
-  padding: 0;
-  line-height: 1em;
-}
-
-.Information h2 {
-  font-size: 3em;
-  color: $white;
-  margin-top: -5px;
-  font-weight: 500;
-  padding: 0;
-}
-.Information h3 {
-  font-size: 2em;
-  color: $light;
-  text-decoration: underline;
-}
-.Information h4 {
-  font-size: 1.5em;
-  color: $light;
-  font-style: italic;
-}
-
-.Information ul {
-  margin-top: 5px;
-  list-style-type: "→ ";
-  list-style-position: inside;
-  line-height: 1.75em;
-  font-size: 1.5em;
-}
-
-.Tog {
-  grid-area: tog;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: ". boton "
-                        "abstract abstract";
-}
-
-.Buttons {
-  grid-area: boton;
-  padding-left: 2%;
-  padding-right: 2%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.Buttons .Article {
-  padding: 10px;
-  display: block;
-  margin-left: 0;
-  margin-top: 0;
-  border-radius: 3px;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  color: $white;
-  background: $color;
-  width: 75%;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 525;
-  &:hover {
-    background: $darkColor;
-    transition: all .3s ease-in-out;
-    color: $white;
+@media only screen and (min-width: 1000) {
+  .Page {
+    margin-right: 1%;
   }
 }
+@media only screen and (max-width: 991px) {
 
-.Buttons button {
-  padding: 10px;
-  width: 75%;
-  background: $color;
-  color: $white;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  border: $color;
-  border-radius: 3px;
-  font-size: 1.5em;
-  font-weight: 525;
-  &:hover {
-    background: $darkColor;
-    transition: all .3s ease-in-out;
-    color: $white;
-  }
-}
-.Buttons button:focus {
-  outline: none;
-}
-
-.Abstract {
-  grid-area: abstract;
-  padding: 0 3% 2% 2%;
-}
-
-.Abstract p {
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  line-height: 1.6em;
-  text-align: justify;
-  text-indent: 10px;
-}
-
-@media only screen and (max-width: 991px){
-  .Card {
-    grid-template-columns: 100%;
-    margin-bottom: 20px;
-    width: 95%;
-    margin-left: 5%;
-    box-shadow: 2px 2px 5px rgba($light, .5);
-    grid-template-areas: "foto"
-                        "info"
-                        "tog";
-  }
   .Page h1 {
     font-size: 3.6em;
     line-height: 1.2em;
@@ -196,59 +44,5 @@ $darkGrey: #1F1E1D;
   .Page h2 {
     font-size: 2.2em;
     line-height: 1.1em;
-  }
-  .Card img{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
-    margin-top: 5%;
-  }
-
-  .Information {
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-    padding-top: 1%;
-    padding-bottom: 3%
-  }
-  .Information p {
-    font-size: 1.3em;
-    line-height: 1.5em;
-  }
-  .Information h1 {
-    font-size: 2em;
-  }
-  .Information h2 {
-    font-size: 1.75em;
-  }
-  .Information ul {
-    margin-top: 3px;
-    line-height: 1.75em;
-    font-size: 1.5em;
-  }
-  .Tog {
-    grid-template-columns: 100%;
-    grid-template-areas: "boton"
-                          "abstract";
-  }
-  .Buttons {
-    margin-bottom: 2%;
-  }
-  .Buttons button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.3em;
-    &:focus {
-      background: $color;
-    }
-  }
-  .Buttons .Article {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.3em;
-    &:hover {
-      background: $color;
-    }
   }
 }
