@@ -60,7 +60,7 @@ function LandingPage() {
             <Platform />
           </Route> */}
 
-        <Route exact path="/einar">
+        <Route exact path="/">
           <Einar />
         </Route>
 
