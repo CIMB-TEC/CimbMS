@@ -1,3 +1,11 @@
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$primary: #86bbd8;
+$primary: #38b6ff;
+$tag: #cb6ce6;
+$background: #222222;
+$secondary: #703680;
+
 .Wrapper {
   width: 100%;
   display: flex;
@@ -7,107 +15,363 @@
   margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font;
+  padding: 0px;
+  text-decoration: none;
 }
 
-.MenuContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.Nav {
+  height: 50px;
+}
+
+.HeadingOne {
+  color: $primary;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
   width: 100%;
-  /*border: 1px solid pink;*/
-  margin: 30px;
+}
+
+.HeadingOne1 {
+  color: $primary;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 65%;
+}
+
+.HeadingOne2 {
+  color: $primary;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-top: 65%;
+}
+
+.Title1 {
+  font-size: 26px;
+  margin: 20px 5px 5px 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.TagContainer {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  flex-direction: column;
+}
+
+.Tag {
+  background-color: transparent;
+  border: solid 2px $primary;
+  border-radius: 20px;
+  color: $primary;
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Click {
+  color: $primary;
+  height: 25px;
+  width: 30px;
+  margin-left: 300px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.Middle {
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+}
+
+.Middle1 {
+  position: absolute;
+  top: 57%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle2 {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle3 {
+  position: absolute;
+  top: 57%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle4 {
+  position: absolute;
+  top: 155%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle5 {
+  position: absolute;
+  top: 155%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle6 {
+  position: absolute;
+  top: 155%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle7 {
+  position: absolute;
+  top: 155%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle8 {
+  position: absolute;
+  top: 250%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle9 {
+  position: absolute;
+  top: 250%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle10 {
+  position: absolute;
+  top: 250%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle11 {
+  position: absolute;
+  top: 250%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle12 {
+  position: absolute;
+  top: 335%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle13 {
+  position: absolute;
+  top: 335%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Middle14 {
+  position: absolute;
+  top: 335%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.Card {
+  cursor: pointer;
+  width: 340px; /*340*/
+
+  // height: 600px; /*480*/
+  // background-color: red;
+}
+
+.Front,
+.Back {
+  width: 100%;
+  // height: 100%;
+  overflow: hidden;
+  // backface-visibility: hidden;
+  //position: absolute;
+  // transition: transform 0.6s linear;
+  border-radius: 15px;
+}
+
+.Front img {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 5px 10px;
+}
+
+.FrontContent {
+  width: 100%;
+  color: $primary;
+  text-align: center;
+  justify-content: center;
   align-items: center;
 }
-.Menu {
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: transparent;
-  border: 2px solid #f6ae2d;
-  color: #f1f2f4;
 
-  &:focus {
-    outline: none;
+.Front {
+  /*background: $background;*/
+  // transform: perspective(600px) rotateY(0deg);
+  background-color: transparent;
+  background-image: url("./img/fondo8.png");
+}
+
+.Back {
+  background: $background;
+  //transform: perspective(600px) rotateY(180deg);
+  background-image: url("./img/fondo8.png");
+  background-color: transparent;
+}
+
+.BackContent {
+  color: $primary;
+  text-align: center;
+  width: 100%;
+}
+
+.Icons {
+  margin: 10px 0;
+}
+
+.Icons a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.Icons a:hover {
+  background: transparent;
+  color: $primary;
+  border: 2px solid $primary;
+}
+
+.Card:hover > .Front {
+}
+
+.Card:hover > .Back {
+}
+
+.Description {
+  text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Title2 {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 20px 0px 10px 0px;
+}
+
+.Text {
+  text-align: justify;
+  margin: 10px 25px 10px 25px;
+}
+
+@media (max-width: 768px) {
+  .Icons a:active {
+    background: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+  }
+
+  .Card:active > .Front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+
+  .Card:active > .Back {
+    transform: perspective(600px) rotateY(0deg);
   }
 }
-.Menu:hover {
-  background-color: #f6ae2d; /*#141414 #222222*/
-  color: #141414;
-}
 
-.ThankTitle {
-  width: 100%;
-  justify-content: center;
-}
-.Title {
-  font-size: 40px;
-  text-align: center;
-  margin: 15px;
-  font-weight: bold;
-}
+@media (max-width: 396px) {
+  ////Card of the example
+  .Title1 {
+    font-size: 22px;
+    margin: 15px 2.5px 2.5px 2.5px;
+  }
 
-.ThankInfoContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
-  /*border: 1px solid pink;*/
-  margin: 30px;
-  align-items: center;
-}
-.ThankImage {
-  width: 45%;
-}
-.Image {
-  width: 100%;
-  border-radius: 20px;
-  margin: 15px;
-}
-.ThankInfo {
-  width: 50%;
-}
-.Info {
-  font-size: 20px;
-  text-align: left;
-}
-b {
-  color: #f6ae2d;
-}
+  .TagContainer {
+    width: 280px; //
+  }
 
-.PeopleContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 100%;
-  /*border: 1px solid pink;*/
-  margin: 30px;
-  align-items: center;
-}
-.People {
-  width: 100%;
-  justify-content: space-between;
-  /*border: 1px solid pink;*/
-  display: flex;
-  flex-direction: row;
-}
-.Telecomunicaciones,
-.Microsistemas,
-.Biodiseño,
-.Profesores {
-  width: 50%;
-  /*border: 2px solid red;*/
-  text-align: center;
-}
-.Subtitle {
-  font-size: 24px;
-  color: #86bbd8;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px;
-}
-p {
-  font-size: 18px;
+  .Tag {
+    font-size: 12px;
+  }
+
+  .Click {
+    height: 30px;
+    width: 60px;
+    margin-left: 220px; //
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .Card {
+    cursor: pointer;
+    width: 280px; /*340*/
+    height: 550px; /*480*/
+  }
+
+  img {
+    padding: 20px 5px 20px 5px;
+  }
+
+  .Front {
+    background-image: url("./img/fondo9.png");
+  }
+
+  .Back {
+    background-image: url("./img/fondo9.png");
+  }
+
+  .Icons {
+    margin: 5px 0;
+  }
+
+  .Icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .Description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Title2 {
+    font-size: 16px;
+    margin: 10px 0px 5px 0px;
+  }
 }

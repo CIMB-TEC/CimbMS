@@ -1,12 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 $card: #383838;
 $white: #ffffff;
+
 $heading: #a80068;
 $color: #850053;
 $secondColor: #260700;
 $background: #1f1e1d;
+
 
 .Page {
   width:100%;
@@ -28,14 +29,17 @@ $background: #1f1e1d;
   font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
+
 }
 
 @media only screen and (min-width: 1000) {
   .Page {
     margin-right: 1%;
+
   }
 }
 @media only screen and (max-width: 991px) {
+
 
   .Page h1 {
     font-size: 3.6em;
