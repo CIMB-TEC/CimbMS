@@ -12,7 +12,7 @@ import main from "./main";
 
 function Karen() {
     return (
-        <div class="Wrapper">
+        <div className={styles.Wrapper}>
             <h1 className={styles.DirectoresH1}>Directores</h1>
             <div className={styles.Directores}>
                 <div className={styles.DirectoresOne}>

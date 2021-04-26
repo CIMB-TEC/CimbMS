@@ -9,13 +9,13 @@ $tertiary: #88e18c;
   width: 100%;
   display: flex;
   min-width: 300px;
-  max-width: 1024px;
   margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: $font;
   padding: 0px;
   text-decoration: none; 
+  background-color: #141414;
 }
 
 .Nav {
@@ -180,6 +180,7 @@ strong {
   font-size: 40px;
   text-align: center;
   width: 100%;
+  font-weight: 700;
 }
 
 .EncargadosProyecto {
@@ -244,6 +245,7 @@ strong {
   font-size: 40px;
   text-align: center;
   width: 100%;
+  font-weight: 700;
 }
 
 
@@ -281,6 +283,7 @@ strong {
   font-size: 40px;
   text-align: center;
   width: 100%;
+  font-weight: 700;
 }
 
 
