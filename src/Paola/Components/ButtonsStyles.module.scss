@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+$card: #797878;
+$white: #ffffff;
+$heading: #a80068;
+$color: #850053;
+$secondColor: #260700;
+$background: #1f1e1d;
+
+.Tog {
+    grid-area: tog;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+      ". boton "
+      "abstract abstract";
+}
+.Buttons {
+    grid-area: boton;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Buttons .Article {
+    padding: 10px;
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 3px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $white;
+    background: $color;
+    width: 75%;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 525;
+    &:hover {
+        background: $secondColor;
+        transition: all 0.25s ease-in-out;
+        color: $white;
+    }
+}
+.Buttons button {
+    padding: 10px;
+    width: 75%;
+    background: $color;
+    color: $white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: $color;
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: 525;
+    &:hover {
+        background: $secondColor;
+        transition: all 0.25s ease-in-out;
+        color: $white;
+    }
+}
+.Buttons button:focus {
+    outline: none;
+}
+.Abstract {
+    grid-area: abstract;
+    padding: 0 3% 2% 2%;
+}
+.Abstract p {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    line-height: 1.6em;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    .Tog {
+        grid-template-columns: 100%;
+        grid-template-areas:
+          "boton"
+          "abstract";
+    }
+    .Buttons {
+        margin-bottom: 2%;
+    }
+    .Buttons button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3em;
+        &:focus {
+            background: $color;
+        }
+    }
+    .Buttons .Article {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3em;
+        &:hover {
+            background: $color;
+        }
+    }
+}
