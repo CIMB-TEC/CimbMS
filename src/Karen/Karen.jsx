@@ -1,430 +1,343 @@
 import React from "react"
 import styles from "./KarenStyles.module.scss"
-import gracias from "./img/Gracias.jpg"
-import person from "./img/karen1.png"
 import { FaResearchgate } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
 import { ImLinkedin } from "react-icons/im"
 import { GiClick } from "react-icons/gi"
 import { GiDna2 } from "react-icons/gi"
 import { BsGearFill } from "react-icons/bs"
+import Image from "./img/persona.jpg";
+import main from "./main";
+
 
 function Karen() {
     return (
-        <div className={styles.Wrapper}>
-            <p className={styles.Nav}>Space for the navbar</p>
-            <p className={styles.HeadingOne}>Directores</p>
-
-
-            <div className={`${styles.Card}  `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <figure className={styles.ImageContainer}>
-                            <img src={person} alt="Karen" />
-                        </figure>
-
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+        <div class="Wrapper">
+            <h1 className={styles.DirectoresH1}>Directores</h1>
+            <div className={styles.Directores}>
+                <div className={styles.DirectoresOne}>
+                    <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image} />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-
-            {/* 
-            <div className={`${styles.Card} ${styles.Middle2} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                    <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image}  />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle3} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                <div className={styles.DirectoresTwo}>
+                <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image}  />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <p className={styles.HeadingOne1}>Colaboradores</p>
-            <div className={`${styles.Card} ${styles.Middle4} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+            <h1 className={styles.ColaboradoresH1}>Colaboradores</h1>
+            <div className={styles.Colaboradores}>
+                <div className={styles.ColaboradoresOne}>
+                <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image}  />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle5} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                    <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image}  />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle6} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                <div className={styles.ColaboradoresTwo}>
+                <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image}  />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle7} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                    <div className={styles.Card}>
+                        <div className={styles.CardInner}>
+                            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                <h2>Intereses</h2>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                            </div>
+                            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                <div className={styles.CardContent}>
+                                    <div className={styles.CardHeader}>
+                                        <img src={Image} alt="" className={styles.Image}  />
+                                        <h2>Karen Rocío Macías Ávila</h2>
+                                    </div>
+                                    <div className={styles.CardBody}>
+                                        <h3>JavaScript Wizard</h3>
+                                        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <p className={styles.HeadingOne2}>Encargados del proyecto</p>
-            <div className={`${styles.Card} ${styles.Middle8} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
+            <h1 className={styles.EncargadosH1}>Encargados de proyecto</h1>
+            <div className={styles.EncargadosProyecto}>
+                <div className={styles.EncargadosOne}>
+                    <div className={styles.Encargados1}>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle9} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle10} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                    <div className={styles.Encargados2}>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle11} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
+                <div className={styles.EncargadosTwo}>
+                    <div className={styles.Encargados3}>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle12} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className={`${styles.Card} ${styles.Middle13} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
+                    <div className={styles.Encargados4}>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
+                        <div className={styles.Card}>
+                            <div className={styles.CardInner}>
+                                <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
+                                    <h2>Intereses</h2>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                </div>
+                                <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
+                                    <div className={styles.CardContent}>
+                                        <div className={styles.CardHeader}>
+                                            <img src={Image} alt="" className={styles.Image}  />
+                                            <h2>Karen Rocío Macías Ávila</h2>
+                                        </div>
+                                        <div className={styles.CardBody}>
+                                            <h3>JavaScript Wizard</h3>
+                                            <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className={`${styles.Card} ${styles.Middle14} `}>
-                <div className={styles.Front}>
-                    <div className={styles.FrontContent}>
-                        <p className={styles.Title1}>Karen Rocio Macias Ávila</p>
-                        <div className={styles.TagContainer}>
-                            <p className={styles.Tag}>Programmer</p>
-                        </div>
-                        <img src={person} alt="Karen" />
-                        <GiClick className={styles.Click} />
-                    </div>
-                </div>
-                <div className={styles.Back}>
-                    <div className={`${styles.BackContent} ${styles.Middle} `}>
-                        <p className={styles.Title2}>About me</p>
-                        <p className={styles.Text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p className={styles.Text}>Luctus maecenas id eu tellus, egestas pellentesque ridiculus.</p>
-                        <p className={styles.Text}>Egestas lobortis habitant a, nunc per morbi consequat, parturient sollicitudin.</p>
-                        <p className={styles.Text}>Torquent etiam iaculis lacus mattis semper, hendrerit curabitur nibh dignissim.</p>
-                        <p className={styles.Text}>Dictumst arcu cubilia porta habitant pretium, ullamcorper proin mus vestibulum.</p>
-                        <p className={styles.Title2}>My social apps</p>
-                        <div className={styles.Icons}>
-                            <a href="#"><HiOutlineMail /></a>
-                            <a href="#"><ImLinkedin /></a>
-                            <a href="#"><FaResearchgate /></a>
-                        </div>
-                        </div>
-            </div>
-                    </div> */}
-
-        </div>
+            <script src={main}></script>
+	</div>
     );
 }
 
