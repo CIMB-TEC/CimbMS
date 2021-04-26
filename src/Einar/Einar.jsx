@@ -17,10 +17,6 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 function Einar() {
   return (
     <div>
-      <div>
-        {" "}
-        <p> hey</p>
-      </div>
       <div className={styles.WaveContainer}>
         <div className={styles.ContentContainer}>
           <p className={styles.WeAre}> We are the CIMB</p>

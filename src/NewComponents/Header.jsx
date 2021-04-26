@@ -19,7 +19,7 @@ function Header() {
                     </a>
                 </div>
                 <div className={styles.NavsContainer}>
-                    <Link to="/einar" className={styles.Nav}>Inicio</Link>
+                    <Link to="/" className={styles.Nav}>Inicio</Link>
                     <Link to="/jorge" className={styles.Nav}>Proyectos</Link>
                     <Link to="/paola" className={styles.Nav}>Divulgación</Link>
                     <Link to="/karen" className={styles.Nav}>Equipo de investigación </Link>
@@ -28,7 +28,7 @@ function Header() {
             </div>
 
             {ham ? <div className={styles.NavHamContainer}>
-                <Link to="/einar" className={styles.NavHam} onClick={handelHam}>Inicio</Link>
+                <Link to="/" className={styles.NavHam} onClick={handelHam}>Inicio</Link>
                 <Link to="/jorge" className={styles.NavHam} onClick={handelHam}>Proyectos</Link>
                 <Link to="/paola" className={styles.NavHam} onClick={handelHam}>Divulgación</Link>
                 <Link to="/karen" className={styles.NavHam} onClick={handelHam}>Equipo de investigación </Link>
