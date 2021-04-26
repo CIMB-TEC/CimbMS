@@ -1,8 +1,6 @@
-import React from 'react';
-
+import React from 'react'
 import styles from "./CardStyles.module.scss"
-import Buttons from "./Buttons"
-import styles from "../PaolaStyles.module.scss"
+import Buttons from "./Buttons.jsx"
 
 
 function Card(props) {
