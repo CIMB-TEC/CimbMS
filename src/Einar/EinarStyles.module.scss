@@ -15,7 +15,7 @@ html {
 //////////////First section///////////////////////
 .WaveContainer {
   background: url("./Img/waves.png");
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #1f1e1d;
@@ -196,6 +196,10 @@ html {
   text-decoration: underline;
 }
 
+img {
+  padding: 0;
+}
+
 //////////////Seconnd section///////////////////////
 
 ////////////////Third section ////////////////////
@@ -287,6 +291,7 @@ html {
 
   .Definition {
     font-size: 45px;
+    width: 100%;
   }
 }
 @media (max-width: 525px) {
@@ -306,7 +311,8 @@ html {
 }
 @media (max-width: 424px) {
   .Definition {
-    font-size: 35px;
+    font-size: 30px;
+    width: 100%;
   }
   .ImageContainer {
     width: 100%;

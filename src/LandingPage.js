@@ -15,6 +15,7 @@ import AcousticAg from "./Projects/AcousticAg";
 import Platform from "./Projects/Platform";
 import Einar from "./Einar/Einar.jsx";
 import Jorge from "./Jorge/Jorge.jsx";
+import Header from "./NewComponents/Header.jsx";
 
 function LandingPage() {
   return (
@@ -22,8 +23,8 @@ function LandingPage() {
       <ThemeProvider>
         <CSSReset />
 
-        <Switch>
-          <Route exact path="/">
+        <Header />
+        {/* <Route exact path="/">
             <Main />
           </Route>
 
@@ -57,24 +58,23 @@ function LandingPage() {
 
           <Route exact path="/vehiculos">
             <Platform />
-          </Route>
+          </Route> */}
 
-          <Route exact path="/einar">
-            <Einar />
-          </Route>
+        <Route exact path="/einar">
+          <Einar />
+        </Route>
 
-          <Route exact path="/karen">
-            <Karen />
-          </Route>
+        <Route exact path="/karen">
+          <Karen />
+        </Route>
 
-          <Route exact path="/paola">
-            <Paola />
-          </Route>
+        <Route exact path="/paola">
+          <Paola />
+        </Route>
 
-          <Route exact path="/jorge">
-            <Jorge />
-          </Route>
-        </Switch>
+        <Route exact path="/jorge">
+          <Jorge />
+        </Route>
       </ThemeProvider>
     </Router>
   );

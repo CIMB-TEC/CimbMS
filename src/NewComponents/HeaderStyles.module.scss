@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.Wrapper {
+  //   background-color: #272628;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+}
+.LogoContainer {
+  margin-left: 25px;
+}
+
+.Logo {
+  width: 175px;
+}
+
+.NavsContainer {
+}
+
+.Nav,
+.NavHam {
+  margin: 0 25px;
+  &:hover {
+    color: #ff8200;
+  }
+}
+
+.Ham {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  display: none;
+}
+
+.NavHamContainer {
+  // background-color: red;
+
+  flex-direction: column;
+  font-size: 2.2rem;
+  align-items: center;
+  display: none;
+}
+.NavHam {
+  padding: 15px 25px 15px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 1023px) {
+  .Nav {
+    display: none;
+  }
+  .Ham {
+    display: block;
+  }
+
+  .NavHamContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 424px) {
+  .Logo {
+    width: 120px;
+  }
+  .LogoContainer {
+    margin-left: 10px;
+  }
+  .Ham {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+}
