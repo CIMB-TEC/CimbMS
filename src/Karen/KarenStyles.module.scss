@@ -1,377 +1,315 @@
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-$primary: #86bbd8;
-$primary: #38b6ff;
-$tag: #cb6ce6;
-$background: #222222;
-$secondary: #703680;
+$font: montserrat, sans-serif;
+$fontcolor: #FFF;
+$backgroundTwo: #222222;
+$primary: #003a76;
+$secondary: #00b398;
+$tertiary: #88e18c;
 
 .Wrapper {
   width: 100%;
   display: flex;
   min-width: 300px;
   max-width: 1024px;
-  /*border: 1px solid blue;*/
   margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: $font;
   padding: 0px;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .Nav {
   height: 50px;
 }
 
-.HeadingOne {
-  color: $primary;
-  font-size: 42px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  width: 100%;
-}
-
-.HeadingOne1 {
-  color: $primary;
-  font-size: 42px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  width: 100%;
-  margin-top: 65%;
-}
-
-.HeadingOne2 {
-  color: $primary;
-  font-size: 42px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  width: 100%;
-  margin-top: 65%;
-}
-
-.Title1 {
-  font-size: 26px;
-  margin: 20px 5px 5px 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.TagContainer {
-  display: flex;
-  align-items: center;
-  width: 340px;
-  flex-direction: column;
-}
-
-.Tag {
-  background-color: transparent;
-  border: solid 2px $primary;
-  border-radius: 20px;
-  color: $primary;
-  width: 40%;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.Click {
-  color: $primary;
-  height: 25px;
-  width: 30px;
-  margin-left: 300px;
-}
-
-p {
-  font-size: 16px;
-}
-
-.Middle {
-  //position: absolute;
-  //top: 50%;
-  //left: 50%;
-}
-
-.Middle1 {
-  position: absolute;
-  top: 57%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle2 {
-  position: absolute;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle3 {
-  position: absolute;
-  top: 57%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle4 {
-  position: absolute;
-  top: 155%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle5 {
-  position: absolute;
-  top: 155%;
-  left: 63%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle6 {
-  position: absolute;
-  top: 155%;
-  left: 38%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle7 {
-  position: absolute;
-  top: 155%;
-  left: 13%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle8 {
-  position: absolute;
-  top: 250%;
-  left: 13%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle9 {
-  position: absolute;
-  top: 250%;
-  left: 38%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle10 {
-  position: absolute;
-  top: 250%;
-  left: 63%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle11 {
-  position: absolute;
-  top: 250%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle12 {
-  position: absolute;
-  top: 335%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle13 {
-  position: absolute;
-  top: 335%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.Middle14 {
-  position: absolute;
-  top: 335%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-
 .Card {
+  margin: 40px auto 40px;
+  width: 320px;
+  height: 520px;
+  perspective: 1000px;
+}
+
+.CardInner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
   cursor: pointer;
-  width: 340px; /*340*/
-
-  // height: 600px; /*480*/
-  // background-color: red;
+  position: relative;
+  background-color: $backgroundTwo;
+  border-radius: 16px;
 }
 
-.Front,
-.Back {
+.CardInner.is_flipped {
+  transform: rotateY(180deg);
+}
+
+
+.CardFace {
+  position: absolute;
   width: 100%;
-  // height: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   overflow: hidden;
-  // backface-visibility: hidden;
-  //position: absolute;
-  // transition: transform 0.6s linear;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
-.Front img {
-  height: 100%;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px 5px 10px;
-}
-
-.FrontContent {
-  width: 100%;
-  color: $primary;
-  text-align: center;
-  justify-content: center;
+.CardFacefront {
+  background-color: $primary;
+  background-image: linear-gradient(43deg, $primary 0%, $secondary 46%, $tertiary 100%);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.Front {
-  /*background: $background;*/
-  // transform: perspective(600px) rotateY(0deg);
-  background-color: transparent;
-  background-image: url("./img/fondo8.png");
-}
-
-.Back {
-  background: $background;
-  //transform: perspective(600px) rotateY(180deg);
-  background-image: url("./img/fondo8.png");
-  background-color: transparent;
-}
-
-.BackContent {
-  color: $primary;
-  text-align: center;
-  width: 100%;
-}
-
-.Icons {
-  margin: 10px 0;
-}
-
-.Icons a {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
   justify-content: center;
-  align-items: center;
+}
+
+.CardFacefront h2 {
   color: $primary;
+  font-size: 30px;
+}
+
+.CardFacefront p {
+  color: $backgroundTwo;
   font-size: 18px;
-  transition: 0.4s;
+  line-height: 1.4;
+  padding: 10px 20px 10px 20px;
+  text-align: justify;
+  font-weight: 450;
+}
+
+.CardFacefront strong {
+  color: $primary;
+}
+
+.CardFaceback {
+  background-color: transparent;
+}
+
+.CardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.CardHeader {
+  position: relative;
+  padding: 20px 20px 30px;
+}
+
+.CardHeader::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:$primary;
+  background-image: linear-gradient(43deg, $primary 0%, $secondary 46%, $tertiary 100%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.Image {
+  display: block;
+  width: 148px;
+  height: 148px;
+  margin: 0 auto 10px;
   border-radius: 50%;
+  border: 5px solid $fontcolor;
+  object-fit: cover;
 }
 
-.Icons a:hover {
-  background: transparent;
-  color: $primary;
-  border: 2px solid $primary;
-}
-
-.Card:hover > .Front {
-}
-
-.Card:hover > .Back {
-}
-
-.Description {
-  text-align: justify;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.Title2 {
-  font-weight: bold;
-  font-size: 18px;
+.CardHeader h2 {
+  color: $fontcolor;
+  font-size: 30px;
+  font-weight: 750;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  margin: 20px 0px 10px 0px;
+  text-align: center;
 }
 
-.Text {
+.CardBody {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.CardBody h3 {
+  color: $secondary;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.CardBody p {
+  color: $fontcolor;
+  font-size: 18px;
+  line-height: 1.4;
   text-align: justify;
-  margin: 10px 25px 10px 25px;
 }
 
-@media (max-width: 768px) {
-  .Icons a:active {
-    background: transparent;
-    color: $primary;
-    border: 2px solid $primary;
-  }
+strong {
+  color: $tertiary;
+   font-weight: 900;
+}
 
-  .Card:active > .Front {
-    transform: perspective(600px) rotateY(-180deg);
-  }
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*En esta parte se ponen todas las propiedades de las anidaciones*/
+.Wrapper {
+  width: 100%;
+  display: flex;
+  min-width: 300px;
+  /*max-width: 1024px;*/
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px;
+  text-decoration: none; 
+}
 
-  .Card:active > .Back {
-    transform: perspective(600px) rotateY(0deg);
+.Directores, .Colaboradores, .EncargadosOne, .EncargadosTwo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.EncargadosH1 {
+  color: $secondary;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.EncargadosProyecto {
+  width: 100%;
+}
+
+.DirectoresOne, .Encargados1{
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.DirectoresTwo, .Encargados2 {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.ColaboradoresOne, .ColaboradoresTwo, .Encargados3, .Encargados4 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Estilos por tarjetas*/
+
+.Directores .CardFacefront{
+  background-color: #99871b;
+  background-image: linear-gradient(43deg, #99871b 0%, #f95738 46%, #ff9cd8 100%);
+}
+
+.Directores .CardFacefront h2 {
+  color: #99871b;
+}
+
+.Directores .CardFacefront strong {
+  color: #99871b;
+}
+
+.Directores .CardHeader::after {
+  background-color: #99871b;
+  background-image: linear-gradient(43deg, #99871b 0%, #f95738 46%, #ff9cd8 100%);
+}
+
+.Directores .CardBody h3 {
+  color: #f95738;
+}
+
+.Directores strong {
+  color: #ff9cd8;
+}
+
+.DirectoresH1 {
+  color: #f95738;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Estilos por tarjetas*/
+
+.Colaboradores .CardFacefront{
+  background-color: #260700;
+  background-image: linear-gradient(43deg, #260700 0%, #850053 26%, #aa66ba 100%);
+}
+
+.Colaboradores .CardFacefront h2 {
+  color: #260700;
+}
+
+.Colaboradores .CardFacefront strong {
+  color: #260700;
+}
+
+.Colaboradores .CardHeader::after {
+  background-color: #260700;
+  background-image: linear-gradient(43deg, #260700 0%, #850053 46%, #aa66ba 100%);
+}
+
+.Colaboradores .CardBody h3 {
+  color: #850053;
+}
+
+.Colaboradores strong {
+  color: #aa66ba;
+}
+
+.ColaboradoresH1 {
+  color: #850053;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Responsive*/
+
+@media(max-width: 1440px) {
+  .Colaboradores, .EncargadosTwo{
+    flex-direction: column;
   }
 }
 
-@media (max-width: 396px) {
-  ////Card of the example
-  .Title1 {
-    font-size: 22px;
-    margin: 15px 2.5px 2.5px 2.5px;
+@media(max-width: 1044px) {
+  .Directores, .EncargadosOne{
+    flex-direction: column;
   }
 
-  .TagContainer {
-    width: 280px; //
+  .DirectoresOne, .Encargados1, .DirectoresTwo, .Encargados2{
+    width: 100%;
   }
+}
 
-  .Tag {
-    font-size: 12px;
+@media(max-width: 748px) {
+
+  .DirectoresOne, .Encargados1, .DirectoresTwo, .Encargados2{
+    width: 100%;
+    flex-direction: column;
   }
-
-  .Click {
-    height: 30px;
-    width: 60px;
-    margin-left: 220px; //
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .Card {
-    cursor: pointer;
-    width: 280px; /*340*/
-    height: 550px; /*480*/
-  }
-
-  img {
-    padding: 20px 5px 20px 5px;
-  }
-
-  .Front {
-    background-image: url("./img/fondo9.png");
-  }
-
-  .Back {
-    background-image: url("./img/fondo9.png");
-  }
-
-  .Icons {
-    margin: 5px 0;
-  }
-
-  .Icons a {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-  }
-
-  .Description {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .Title2 {
-    font-size: 16px;
-    margin: 10px 0px 5px 0px;
+  .ColaboradoresOne, .ColaboradoresTwo, .Encargados3, .Encargados4 {
+    flex-direction: column;
   }
 }
