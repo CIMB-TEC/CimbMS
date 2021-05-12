@@ -1,0 +1,125 @@
+$bluelight: #aa66ba;
+$blackGray: #222222;
+$bluemid: #850053;
+$bluedark: #260700;
+$white: #fff;
+/*
+.container {
+    width: 320px;
+    background: chartreuse;
+    margin: 70px auto 0;
+    //display: flex;
+    //flex-wrap: wrap;
+}*/
+
+.box h1 {
+    font-size: 2.8em;
+    color: $white;
+}
+
+.box {
+    position: relative;
+    width: 360px;
+    height: 400px;
+    background: $blackGray;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.arrow {
+    position: relative;
+    background: $blackGray;
+    display: flex;
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.box .icono2 .arrow {
+    position : relative;
+    overflow: hidden;
+    color: $bluelight;
+}
+
+.box .divicono .icono1 {
+    color: $bluelight;
+}
+
+.box h1 {
+    color: $bluelight;
+}
+
+.box .divicono .icono1 {
+    width: 150px;
+    height: 150px;
+    transition: transform 3s;
+}
+
+.box:hover .divicono .icono1 {
+    transform: scale(1.5);
+}
+
+.box .detalles {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: $white;
+    transform: scaleY(0);
+    transition: transform .5s;
+    border-radius: 20px;
+}
+
+.box:hover .detalles {
+    transform: scaleY(1);
+}
+
+.box .detalles .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+}
+
+.box .detalles .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: $bluemid;
+    font-weight: 1000;
+}
+
+.box .detalles .content p {
+    margin: 10px 0 ;
+    padding: 0;
+    font-size: 1.80em;
+    color: $blackGray;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.box .detalles .content .anchor1 {
+    margin: 0px 0px 0px 0px;
+    display:  inline-block;
+    text-align: center;
+    background: $white;
+    color: $bluemid;
+    padding: 3px;
+    border: 1px solid $bluemid;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 18px;
+}
+
+.box .detalles .content .anchor1:hover {
+    background: $bluemid;
+    border: $bluemid;
+    color: $white;
+}
