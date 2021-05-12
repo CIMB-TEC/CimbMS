@@ -1,0 +1,175 @@
+$font: montserrat, sans-serif;
+$fontcolor: #FFF;
+$backgroundTwo: #222222;
+$primary: #003a76;
+$secondary: #00b398;
+$tertiary: #88e18c;
+
+.Card {
+  margin: 40px auto 40px;
+  width: 300px;
+  height: 520px;
+  perspective: 1000px;
+}
+
+.CardInner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  background-color: $backgroundTwo;
+  border-radius: 16px;
+}
+
+.CardInner:hover {
+  transform: rotateY(180deg);
+}
+
+
+.CardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.CardFacefront {
+  background-color: $primary;
+  background-image: linear-gradient(43deg, $primary 0%, $secondary 46%, $tertiary 100%);
+  background-color: $secondary;
+  background-image: linear-gradient(62deg, $secondary 30%, $tertiary 100%);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardFacefront h2 {
+  color: $primary;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.CardFacefront h3 {
+  color: $primary;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.CardFacefront p {
+  color: $backgroundTwo;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 10px 20px 10px 20px;
+  text-align: justify;
+  font-weight: 450;
+}
+
+.CardFacefront strong {
+  color: $primary;
+  font-weight: 600;
+}
+
+.CardFaceback {
+  background-color: transparent;
+}
+
+.CardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.CardHeader {
+  position: relative;
+  padding: 20px 20px 30px;
+}
+
+.CardHeader::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:$primary;
+  background-image: linear-gradient(43deg, $primary 0%, $secondary 46%, $tertiary 100%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.Image {
+  display: block;
+  width: 148px;
+  height: 148px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 5px solid $fontcolor;
+  object-fit: cover;
+}
+
+.CardHeader h2 {
+  color: $fontcolor;
+  font-size: 30px;
+  font-weight: 750;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.CardBody {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.CardBody h3 {
+  color: $secondary;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.CardBody p {
+  color: $fontcolor;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+strong {
+  color: $tertiary;
+  font-weight: 900;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Icons*/
+.Icons a{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+
+.Icons a:hover{
+  border: 2px solid $primary;
+  color: $tertiary;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Responsive*/
+
+@media(max-width: 768px){
+  .CardInner:active {
+    transform: rotateY(180deg);
+  }
+}
