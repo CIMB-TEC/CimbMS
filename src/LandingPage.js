@@ -16,6 +16,8 @@ import Platform from "./Projects/Platform";
 import Einar from "./Einar/Einar.jsx";
 import Jorge from "./Jorge/Jorge.jsx";
 import Header from "./NewComponents/Header.jsx";
+import ProjectCard from "./Paola/ProjectCard";
+import Project from "./Karen/Project";
 
 function LandingPage() {
   return (
@@ -59,6 +61,14 @@ function LandingPage() {
           <Route exact path="/vehiculos">
             <Platform />
           </Route> */}
+
+        <Route exact path="/projectcard">
+          <ProjectCard />
+        </Route>
+
+        <Route exact path="/project">
+          <Project />
+        </Route>
 
         <Route exact path="/">
           <Einar />
