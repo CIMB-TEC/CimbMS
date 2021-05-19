@@ -4,6 +4,7 @@ import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
 import { BsCircle } from "react-icons/bs"
 import ProjectCard from "../Paola/ProjectCard"
+import admas from "../Projects/strings/admas-eng.html.json"
 
 
 
@@ -74,10 +75,10 @@ const Project = () => {
       </div>
       <div className={styles.TimeLineContainer}>
 
-        {timeLine.map((tl) => {
+        {admas.map((tl) => {
           return (
             <div className={styles.TimeLine}>
-              <h3 id="YearOne" className={styles.Title3}>{tl.year}</h3>
+              <h3 id="YearOne" className={styles.Title3}>{tl.date}</h3>
               <h4 className={styles.Title4}>{tl.month}</h4>
               {tl.projects.map((project) => {
 
