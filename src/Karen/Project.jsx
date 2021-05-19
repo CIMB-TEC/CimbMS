@@ -3,8 +3,55 @@ import styles from "./ProjectStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
 import { BsCircle } from "react-icons/bs"
+import ProjectCard from "../Paola/ProjectCard"
+
+
+
 
 const Project = () => {
+  const timeLine = [
+    {
+      "year": 2013,
+      "month": "March",
+      "projects": [
+        {
+          "title": "Mano",
+          "objective": "Este es el objetivo de mano"
+        },
+
+        {
+          "title": "Mano",
+          "objective": "Este es el objetivo de mano"
+        },
+
+
+
+      ]
+
+    },
+
+    {
+      "year": 2019,
+      "month": "December",
+      "projects": [
+        {
+          "title": "Pie",
+          "objective": "Este es el objetivo de pie "
+        },
+
+        {
+          "title": "Pie",
+          "objective": "Este es el objetivo de pie "
+        }
+
+
+      ]
+
+    }
+
+  ]
+
+
   return (
     <div className={styles.Wrapper}>
       <nav className={styles.SideNav}>
@@ -26,19 +73,29 @@ const Project = () => {
         </div>
       </div>
       <div className={styles.TimeLineContainer}>
-        <div className={styles.TimeLine}>
-          <h3 id="YearOne" className={styles.Title3}>2016</h3>
-          <h4 className={styles.Title4}>Enero</h4>
-          <div className={styles.TimeLine}>
-            <div className={styles.Circle}> </div>
-            <div className={styles.Line}></div>
-            <p className={styles.Paola}>Tarjeta de Pao</p>
 
-            <div className={styles.Line}></div>
-            <div className={styles.Circle}> </div>
-          </div>
+        {timeLine.map((tl) => {
+          return (
+            <div className={styles.TimeLine}>
+              <h3 id="YearOne" className={styles.Title3}>{tl.year}</h3>
+              <h4 className={styles.Title4}>{tl.month}</h4>
+              {tl.projects.map((project) => {
 
-        </div>
+                return (<div className={styles.TimeLine}>
+                  <div className={styles.Circle}> </div>
+                  <div className={styles.Line}></div>
+                  <ProjectCard Img="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" Title={project.title} ObjGen={project.objective} Date="Enero 2016" Group="AD" />
+                  <div className={styles.Line}></div>
+                  <div className={styles.Circle}> </div>
+                </div>)
+              })}
+
+            </div>
+          )
+
+        })}
+
+
       </div>
     </div>
   );
