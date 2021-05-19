@@ -1,5 +1,5 @@
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import Main from "./Main/Homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DivulgationSite from "./Divulgation/DivulgationSite";
@@ -19,14 +19,28 @@ import Header from "./NewComponents/Header.jsx";
 import ProjectCard from "./Paola/ProjectCard";
 import Project from "./Karen/Project";
 
-function LandingPage() {
-  return (
-    <Router>
-      <ThemeProvider>
-        <CSSReset />
+import researchEng from "./Einar/researchEng.json";
+import researchEsp from "./Einar/researchEsp.json";
 
-        <Header />
-        {/* <Route exact path="/">
+export const LanguageContext = React.createContext();
+
+function LandingPage() {
+  const [eng, setEng] = useState(true);
+
+  const changeLanguage = () => {
+    setEng(!eng);
+  };
+
+  // let home = eng ? homeEng : homeEsp;
+  // let research = eng ? researchEng : researchEsp;
+  return (
+    <LanguageContext.Provider value={eng}>
+      <Router>
+        <ThemeProvider>
+          <CSSReset />
+
+          <Header changeLanguage={() => changeLanguage()} />
+          {/* <Route exact path="/">
             <Main />
           </Route>
 
@@ -62,31 +76,32 @@ function LandingPage() {
             <Platform />
           </Route> */}
 
-        <Route exact path="/projectcard">
-          <ProjectCard />
-        </Route>
+          <Route exact path="/projectcard">
+            <ProjectCard />
+          </Route>
 
-        <Route exact path="/project">
-          <Project />
-        </Route>
+          <Route exact path="/project">
+            <Project />
+          </Route>
 
-        <Route exact path="/">
-          <Einar />
-        </Route>
+          <Route exact path="/">
+            <Einar />
+          </Route>
 
-        <Route exact path="/karen">
-          <Karen />
-        </Route>
+          <Route exact path="/karen">
+            <Karen />
+          </Route>
 
-        <Route exact path="/paola">
-          <Paola />
-        </Route>
+          <Route exact path="/paola">
+            <Paola />
+          </Route>
 
-        <Route exact path="/jorge">
-          <Jorge />
-        </Route>
-      </ThemeProvider>
-    </Router>
+          <Route exact path="/jorge">
+            <Jorge />
+          </Route>
+        </ThemeProvider>
+      </Router>
+    </LanguageContext.Provider>
   );
 }
 

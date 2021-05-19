@@ -4,7 +4,7 @@ import Logo from "./Img/logo.png"
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai"
 
-function Header() {
+function Header(props) {
     const [ham, setHam] = useState(false)
 
     const handelHam = () => {
@@ -23,6 +23,8 @@ function Header() {
                     <Link to="/jorge" className={styles.Nav}>Proyectos</Link>
                     <Link to="/paola" className={styles.Nav}>Divulgación</Link>
                     <Link to="/karen" className={styles.Nav}>Equipo de investigación </Link>
+
+                    <a onClick={props.changeLanguage} className={styles.Nav}> ENG/ESP</a>
                     <AiOutlineMenu className={styles.Ham} onClick={handelHam} />
                 </div>
             </div>
@@ -32,6 +34,8 @@ function Header() {
                 <Link to="/jorge" className={styles.NavHam} onClick={handelHam}>Proyectos</Link>
                 <Link to="/paola" className={styles.NavHam} onClick={handelHam}>Divulgación</Link>
                 <Link to="/karen" className={styles.NavHam} onClick={handelHam}>Equipo de investigación </Link>
+                <a onClick={props.changeLanguage} className={styles.NavHam}> ENG/ESP</a>
+
             </div> : <div></div>}
 
 
