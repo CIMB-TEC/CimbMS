@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../LandingPage"
 import styles from "./EinarStyles.module.scss";
 import i1 from "./Img/InventosMini/i1.jpg";
 import i2 from "./Img/InventosMini/i2.jpg";
@@ -13,61 +14,56 @@ import c4 from "./Img/CuentaMini/c4.jpg";
 import c5 from "./Img/CuentaMini/c5.jpg";
 import t1 from "./Img/TeamMini/t1.jpg";
 import { AiOutlineFileSearch } from "react-icons/ai";
+import homeEng from "./homeEng.json";
+import homeEsp from "./homeEsp.json";
+import ProjectCard from "./Components/ProjectCard"
 
-function Einar() {
+
+function Einar(props) {
+
+  const eng = useContext(LanguageContext)
+  let home = eng ? homeEng : homeEsp;
+
+
   return (
     <div>
       <div className={styles.WaveContainer}>
         <div className={styles.ContentContainer}>
-          <p className={styles.WeAre}> We are the CIMB</p>
+          <p className={styles.WeAre}> {home.title}</p>
           <p className={styles.Definition}>
-            Computing Intelligence, Mechatronics and Biodesign Laboratory
+            {home.definition}
           </p>
           <p className={styles.Description}>
-            Nuestro grupo busca generar proyectos para la mejora de la calidad
-            de vida de la sociedad mexicana y una mejora de la Experiencia del
-            Usuario (UX) ante el uso de nuevas tecnologías. Él laboratorio
-            trabaja a través de la generación de proyectos de Posgrados y
-            Pregrado sobre las distintas líneas de investigación de enfoque.
+            {home.description}
           </p>
         </div>
       </div>
 
       <div className={styles.WaveContainer2}>
+
+
         <div className={styles.ContentContainer2}>
-          <p className={styles.ProyectosTitulo}> Projectos activos</p>
+          <p className={styles.ProyectosTitulo}> {home.activeProjects}</p>
 
           <div className={styles.AreasContainer}>
-            <div className={styles.AreaOneContainer}>
-              <AiOutlineFileSearch className={styles.Icon} />
-              <p className={styles.AreaTitle}> Domótica Emocional </p>
-              <a className={styles.AreaLink}> Más información</a>
-            </div>
-            <div className={styles.AreaTwoContainer}>
-              <AiOutlineFileSearch className={styles.Icon} />
-              <p className={styles.AreaTitle}>
-                {" "}
-                Sistemas avanzados de monitoreo y asiatencia al coductor{" "}
-              </p>
 
-              <a className={styles.AreaLink}> Más información</a>
-            </div>
-            <div className={styles.AreaThreeContainer}>
-              <AiOutlineFileSearch className={styles.Icon} />
-              <p className={styles.AreaTitle}>Exoesqueleto </p>
-              <a className={styles.AreaLink}> Más información</a>
-            </div>
-            <div className={styles.AreaFourContainer}>
-              <AiOutlineFileSearch className={styles.Icon} />
-              <p className={styles.AreaTitle}>Agricultura Acúsitica </p>
-              <a className={styles.AreaLink}> Más información</a>
-            </div>
 
-            <div className={styles.AreaFourContainer}>
-              <AiOutlineFileSearch className={styles.Icon} />
-              <p className={styles.AreaTitle}>Agricultura Acúsitica </p>
-              <a className={styles.AreaLink}> Más información</a>
-            </div>
+            {home.projects.map((project) => {
+              return (
+
+                <div className={styles.AreaOneContainer}>
+                  <AiOutlineFileSearch className={styles.Icon} />
+                  <p className={styles.AreaTitle}> {project.title} </p>
+                  <a className={styles.AreaLink}> Más información</a>
+                </div>
+                // <ProjectCard />
+              );
+
+            })}
+
+
+
+
           </div>
         </div>
       </div>
