@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./ProjectStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
-import {BsCircle} from "react-icons/bs"
+import { BsCircle } from "react-icons/bs"
 
 const Project = () => {
   return (
@@ -29,9 +29,15 @@ const Project = () => {
         <div className={styles.TimeLine}>
           <h3 id="YearOne" className={styles.Title3}>2016</h3>
           <h4 className={styles.Title4}>Enero</h4>
-          <img src={initial} alt="" className={styles.image} />
-          <p className={styles.Paola}>Tarjeta de Pao</p>
-          <img src={final} alt="" className={styles.image} />
+          <div className={styles.TimeLine}>
+            <div className={styles.Circle}> </div>
+            <div className={styles.Line}></div>
+            <p className={styles.Paola}>Tarjeta de Pao</p>
+
+            <div className={styles.Line}></div>
+            <div className={styles.Circle}> </div>
+          </div>
+
         </div>
       </div>
     </div>
