@@ -2,10 +2,11 @@ import React from 'react';
 import styles from './JorgeStyles.module.scss'
 import CardPurple from './components/cardPurple'
 import CardLblue from './components/cardLblue'
-import CardNew from './components/cardNew'
+import CardTab from './components/cardTab'
 
 function Jorge() {
     return (
+    
     <div className={styles.wrapper}> 
         <h1 className={styles.heading}>
             Postgrado
@@ -60,39 +61,23 @@ function Jorge() {
                 />
             </div>
         </div>
-        <h1 className={styles.heading2}>
-            Otra opción
-        </h1>
-        <div className={styles.containernew}>
-            <div className={styles.cardNew}>
-                <CardNew
-                    Titulo = "Agricultura Acústica"
-                    Texto = "El proyecto busca desarrollar un espacio completamente autónomo y aislado para el estudio del crecimiento vegetal, donde las condiciones del entorno puedan ser monitoreadas de manera constante, así como alteradas de ser necesario para el desarrollo de diferentes especímenes de plantas."
-                    enlace = "#"
-                    enlaceTitulo = "Read More"
+        <div className={styles.containerTab}>
+            <div className={styles.cardTab}>
+                <CardTab
+                    TituloT0 = "Inteligencia Artificial"
+                    TextoT0 = "Eros mauris tincidunt litora varius nec porta feugiat magna, sollicitudin est eu curabitur torquent fringilla ullamcorper commodo, hac tempor tellus in odio accumsan auctor. Curae porttitor ultricies mi sem libero blandit litora ante suspendisse magnis, netus eu sed fames mattis hendrerit ad bibendum montes gravida, sodales convallis class pellentesque mus scelerisque erat sociosqu pharetra. Libero conubia quisque condimentum cursus curae nostra sociosqu nibh sapien donec, ac natoque ultrices sagittis elementum nam auctor penatibus ridiculus mollis suspendisse, parturient erat turpis orci ultricies enim neque tristique habitasse. Sagittis conubia nullam mi pharetra etiam ac consequat orci, commodo sed justo turpis quisque nascetur sociis per, ligula pulvinar varius pellentesque torquent proin ridiculus."
+                    TituloT1 = "Mecatrónica"
+                    TextoT1 = "Eros mauris tincidunt litora varius nec porta feugiat magna, sollicitudin est eu curabitur torquent fringilla ullamcorper commodo, hac tempor tellus in odio accumsan auctor. Curae porttitor ultricies mi sem libero blandit litora ante suspendisse magnis, netus eu sed fames mattis hendrerit ad bibendum montes gravida, sodales convallis class pellentesque mus scelerisque erat sociosqu pharetra. Libero conubia quisque condimentum cursus curae nostra sociosqu nibh sapien donec, ac natoque ultrices sagittis elementum nam auctor penatibus ridiculus mollis suspendisse, parturient erat turpis orci ultricies enim neque tristique habitasse. Sagittis conubia nullam mi pharetra etiam ac consequat orci, commodo sed justo turpis quisque nascetur sociis per, ligula pulvinar varius pellentesque torquent proin ridiculus."
+                    TituloT2 = "Energía"
+                    TextoT2 = "LoEros mauris tincidunt litora varius nec porta feugiat magna, sollicitudin est eu curabitur torquent fringilla ullamcorper commodo, hac tempor tellus in odio accumsan auctor. Curae porttitor ultricies mi sem libero blandit litora ante suspendisse magnis, netus eu sed fames mattis hendrerit ad bibendum montes gravida, sodales convallis class pellentesque mus scelerisque erat sociosqu pharetra. Libero conubia quisque condimentum cursus curae nostra sociosqu nibh sapien donec, ac natoque ultrices sagittis elementum nam auctor penatibus ridiculus mollis suspendisse, parturient erat turpis orci ultricies enim neque tristique habitasse. Sagittis conubia nullam mi pharetra etiam ac consequat orci, commodo sed justo turpis quisque nascetur sociis per, ligula pulvinar varius pellentesque torquent proin ridiculus.rem"
+                    TituloT3 = "Comunicación"
+                    TextoT3 = "Eros mauris tincidunt litora varius nec porta feugiat magna, sollicitudin est eu curabitur torquent fringilla ullamcorper commodo, hac tempor tellus in odio accumsan auctor. Curae porttitor ultricies mi sem libero blandit litora ante suspendisse magnis, netus eu sed fames mattis hendrerit ad bibendum montes gravida, sodales convallis class pellentesque mus scelerisque erat sociosqu pharetra. Libero conubia quisque condimentum cursus curae nostra sociosqu nibh sapien donec, ac natoque ultrices sagittis elementum nam auctor penatibus ridiculus mollis suspendisse, parturient erat turpis orci ultricies enim neque tristique habitasse. Sagittis conubia nullam mi pharetra etiam ac consequat orci, commodo sed justo turpis quisque nascetur sociis per, ligula pulvinar varius pellentesque torquent proin ridiculus."
+                    TituloT4 = "Bioinstrumentación"
+                    TextoT4 = "Eros mauris tincidunt litora varius nec porta feugiat magna, sollicitudin est eu curabitur torquent fringilla ullamcorper commodo, hac tempor tellus in odio accumsan auctor. Curae porttitor ultricies mi sem libero blandit litora ante suspendisse magnis, netus eu sed fames mattis hendrerit ad bibendum montes gravida, sodales convallis class pellentesque mus scelerisque erat sociosqu pharetra. Libero conubia quisque condimentum cursus curae nostra sociosqu nibh sapien donec, ac natoque ultrices sagittis elementum nam auctor penatibus ridiculus mollis suspendisse, parturient erat turpis orci ultricies enim neque tristique habitasse. Sagittis conubia nullam mi pharetra etiam ac consequat orci, commodo sed justo turpis quisque nascetur sociis per, ligula pulvinar varius pellentesque torquent proin ridiculus."
                 />
             </div>
         </div>
-        <div className={styles.containernew}>
-            <div className={styles.cardNew}>
-                <CardNew
-                    Titulo = "Agricultura Acústica"
-                    Texto = "El proyecto busca desarrollar un espacio completamente autónomo y aislado para el estudio del crecimiento vegetal, donde las condiciones del entorno puedan ser monitoreadas de manera constante, así como alteradas de ser necesario para el desarrollo de diferentes especímenes de plantas."
-                    enlace = "#"
-                    enlaceTitulo = "Read More"
-                />
-            </div>
-        </div>
-        <div className={styles.containernew}>
-            <div className={styles.cardNew}>
-                <CardNew
-                    Titulo = "Agricultura Acústica"
-                    Texto = "El proyecto busca desarrollar un espacio completamente autónomo y aislado para el estudio del crecimiento vegetal, donde las condiciones del entorno puedan ser monitoreadas de manera constante, así como alteradas de ser necesario para el desarrollo de diferentes especímenes de plantas."
-                    enlace = "#"
-                    enlaceTitulo = "Read More"
-                />
-            </div>
-        </div>
+        
     </div>);
 }
 

@@ -10,7 +10,7 @@ function cardPurple(props){
                 <div className= { `${styles.face} ${styles.face1} `}>
                     <div className={styles.content}>
                         <GiTechnoHeart className={styles.icono2} alt=""/>
-                        <h3>{props.Titulo}
+                        <h3 className={styles.cardh3}>{props.Titulo}
                         </h3>
                         <div className={styles.arrow}>
                             <GiClick alt=""/>
@@ -19,7 +19,7 @@ function cardPurple(props){
                 </div>
                 <div className= { `${styles.face} ${styles.face2} `}>
                     <div className={styles.content}>
-                        <p>{props.Texto}
+                        <p className={styles.parrafocard}>{props.Texto}
                         </p>
                         <a className={styles.anchor} href={props.enlace}>{props.enlaceTitulo}</a>
                     </div>
