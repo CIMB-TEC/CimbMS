@@ -2,146 +2,162 @@ $font: montserrat, sans-serif;
 $tertiary: #7af3f1;
 $secondary: #2a7de1;
 $primary: #1b1fae;
-$fontcolor: #FFF;
+$fontcolor: #fff;
 
 .Wrapper {
-    width: 100%;
-    display: flex;
-    min-width: 300px;
-    margin: 0 auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-family: $font;
-    padding: 0px;
-    text-decoration: none; 
-    background-color: #141414;
+  width: 100%;
+  display: flex;
+  min-width: 300px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: $font;
+  padding: 0px;
+  text-decoration: none;
+  background-color: #141414;
 }
 
 .SideNav {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    justify-content: center;
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 50%;
-    margin-top: 180px;
-    //background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 50%;
+  margin-top: 180px;
+  //background-color: red;
 }
 
 .SideNav a {
-    margin: 5px 0px 5px 7px;
-    font-size: 18px;
-    color: $tertiary;
+  margin: 5px 0px 5px 7px;
+  font-size: 18px;
+  color: $tertiary;
 }
 
 .SideNav a:hover + .HideText {
-    display: block;
-    color: $tertiary;
+  display: block;
+  color: $tertiary;
 }
 
 .HideText {
-    display: none;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 5px 0px 5px 7px;
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px 0px 5px 7px;
 }
 
 .InfoContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Title1 {
-    color: $secondary;
-    font-size: 70px;
-    text-align: center;
-    width: 100%;
-    font-weight: 400;
-    margin: 15px 0px 15px 0px;
+  color: $secondary;
+  font-size: 70px;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  margin: 15px 0px 15px 0px;
 }
 
 .Description {
-    width: 75%;
-    color: $fontcolor;
-    font-size: 18px;
-    //padding: 20px 20px 10px 20px;
-    text-align: center;
-    font-weight: 450;
+  width: 75%;
+  color: $fontcolor;
+  font-size: 18px;
+  //padding: 20px 20px 10px 20px;
+  text-align: center;
+  font-weight: 450;
 }
 
 .Title2 {
-    color: $secondary;
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-    font-weight: 400;
-    margin: 30px 0px 20px 30px;
-    text-transform: uppercase;
-    letter-spacing: 40px;
+  color: $secondary;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  margin: 30px 0px 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 40px;
 }
 
 .AreasContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Jorge {
-    height: 300px;
-    border: solid $tertiary 2px;
-    width: 75%;
+  height: 300px;
+  border: solid $tertiary 2px;
+  width: 75%;
 }
 
 .TimeLineContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .TimeLine {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Title3 {
-    color: $secondary;
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-    font-weight: 600;
-    margin: 30px 0px 30px 0px;
-    text-transform: uppercase;
-    letter-spacing: 40px;
-    margin-right: -40px;
+  color: $secondary;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  margin: 30px 0px 30px 0px;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  margin-right: -40px;
 }
 
 .Title4 {
-    color: $secondary;
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-    font-weight: 400;
-    margin: 0px 0px 10px 0px;
-    text-transform: uppercase;
+  color: $secondary;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  margin: 0px 0px 10px 0px;
+  text-transform: uppercase;
 }
 .image {
-    width: 40%;
+  width: 40%;
 }
 
 .Paola {
-    height: 300px;
-    border: solid $tertiary 2px;
-    width: 75%;
+  height: 300px;
+  border: solid $tertiary 2px;
+  width: 75%;
+}
+.Line {
+  border: 1px solid $tertiary;
+  width: 1px;
+  height: 100px;
+}
+
+.Circle {
+  border: 2px solid $tertiary;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: $secondary;
+  &:hover {
+    background-color: transparent;
+  }
 }
