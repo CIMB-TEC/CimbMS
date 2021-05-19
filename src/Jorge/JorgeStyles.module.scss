@@ -7,11 +7,14 @@ $purplelight: #aa66ba;
 $purplemid: #850053;
 $purpledark: #260700;
 
+
 .wrapper {
   margin: 0;
   padding: 0;
   //min-height: 100vh;
-  background:#141414;
+  background-color: #000;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #050505 150px ), repeating-linear-gradient( #00000055, #00000055 );
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -20,12 +23,16 @@ $purpledark: #260700;
   //max-width: 1440px;
 }
 
-.containerPostgrado, .containerPregrado, .containerNew, .containerNew {
+.containerPostgrado, .containerPregrado {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.containerPregrado {
+  margin-bottom: 20px;
 }
 
 .cardLblue, .cardPurple {
@@ -46,6 +53,7 @@ $purpledark: #260700;
   text-align: center;
   width: 100%;
   font-weight: 700;
+  margin-top: 100px;
 }
 /*otra linea de tarjetas
 .containerPostgrado2 {
@@ -57,7 +65,7 @@ $purpledark: #260700;
 }
 */
 @media (max-width: 1040px) {
-  .containerPostgrado, .containerPregrado, .containerNew {
+  .containerPostgrado, .containerPregrado {
     flex-direction: column;
   }
   .cardLblue, .cardPurple {
