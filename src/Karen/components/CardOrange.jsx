@@ -23,7 +23,9 @@ function CardOrange(props) {
                 <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
                     <div className={styles.CardContent}>
                         <div className={styles.CardHeader}>
-                            <img src={props.Image} alt="" className={styles.Image} />
+                            {/* <img src={require(`../ProfileImg/${props.image.toLowerCase()}.jpg`)} alt="" className={styles.Image} /> */}
+                            <img src={props.image} alt="" className={styles.Image} />
+
                             <h2>{props.NameFront}</h2>
                         </div>
                         <div className={styles.CardBody}>

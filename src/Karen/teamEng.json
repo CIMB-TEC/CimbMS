@@ -5,13 +5,13 @@
   "directorsTeam": [
     {
       "name": "Karen",
-      "picture": ".ProfileImg/gato.jpg",
+      "picture": "gato",
       "linkedIn": "https://github.com/EinarLop" 
 
     }, 
     {
       "name": "Paola",
-      "picture": ".ProfileImg/gato.jpg",
+      "picture": "perro",
       "linkedIn": "https://github.com/EinarLop" 
 
     }

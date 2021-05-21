@@ -1,11 +1,11 @@
 $font: montserrat, sans-serif;
-$fontcolor: #FFF;
+$fontcolor: #fff;
 $backgroundTwo: #222222;
 $primary: #99871b;
 $primary: #616110;
-$primary: #1F1F05;
+$primary: #1f1f05;
 $primary: #353309;
-$primary: #3C392C;
+$primary: #3c392c;
 $secondary: #f95738;
 $tertiary: #ff9cd8;
 
@@ -30,7 +30,6 @@ $tertiary: #ff9cd8;
 .CardInner:hover {
   transform: rotateY(180deg);
 }
-
 
 .CardFace {
   position: absolute;
@@ -93,7 +92,7 @@ $tertiary: #ff9cd8;
 }
 
 .CardHeader::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -150,7 +149,7 @@ strong {
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Icons*/
-.Icons a{
+.Icons a {
   display: inline-flex;
   width: 50px;
   height: 50px;
@@ -159,10 +158,10 @@ strong {
   color: $primary;
   font-size: 25px;
   transition: 0.4s;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
-.Icons a:hover{
+.Icons a:hover {
   border: 2px solid $primary;
   color: $tertiary;
 }
@@ -170,7 +169,7 @@ strong {
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
 
-@media(max-width: 768px){
+@media (max-width: 768px) {
   .CardInner:active {
     transform: rotateY(180deg);
   }
