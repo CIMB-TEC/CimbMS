@@ -11,6 +11,7 @@ import { LanguageContext } from "../LandingPage"
 import React, { useContext } from "react"
 
 
+
 function Karen() {
 
     const eng = useContext(LanguageContext)
@@ -33,7 +34,9 @@ function Karen() {
                                     NameFront={director.name}
                                     SubtitleFront="JavaScript Wizard"
                                     TextFront="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                                    Image={director.picture}
+                                    //Guardar todas las imagenes en la misma carpeta 
+                                    //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                    image={require(`./ProfileImg/${director.picture}.jpg`)}
                                     LinkedIn={director.linkedIn}
 
                                 />
