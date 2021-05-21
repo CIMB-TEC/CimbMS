@@ -1,4 +1,4 @@
-import React from "react"
+
 import CardGreen from "./components/CardGreen";
 import CardOrange from "./components/CardOrange";
 import CardPurple from "./components/CardPurple";
@@ -6,32 +6,43 @@ import Image from "./img/persona.jpg"
 import styles from "./KarenStyles.module.scss"
 
 
+import teamEng from "./teamEng.json"
+import { LanguageContext } from "../LandingPage"
+import React, { useContext } from "react"
+
+
 function Karen() {
+
+    const eng = useContext(LanguageContext)
+    let team = eng ? teamEng : teamEsp;
+
     return (
         <div className={styles.Wrapper}>
             <h1 className={styles.DirectoresH1}>Directores</h1>
             <div className={styles.Directores}>
                 <div className={styles.DirectoresOne}>
-                    <CardOrange
-                        TitleBack="Intereses"
-                        TextOneBack="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                        TextTwoBack="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                        SubtitleBack="Redes"
-                        NameFront="Karen Rocio Macias Avila"
-                        SubtitleFront="JavaScript Wizard"
-                        TextFront="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                        Image={Image}
-                    />
-                    <CardOrange
-                        TitleBack="Intereses"
-                        TextOneBack="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                        TextTwoBack="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                        SubtitleBack="Redes"
-                        NameFront="Karen Rocio Macias Avila"
-                        SubtitleFront="JavaScript Wizard"
-                        TextFront="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
-                        Image={Image}
-                    />
+
+                    {
+                        team.directorsTeam.map((director) => {
+                            return (
+                                <CardOrange
+                                    TitleBack="Intereses"
+                                    TextOneBack="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
+                                    TextTwoBack="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
+                                    SubtitleBack="Redes"
+                                    NameFront={director.name}
+                                    SubtitleFront="JavaScript Wizard"
+                                    TextFront="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id erat a magna lobortis dictum. Nunc est arcu, lacinia quis sapien placerat, laoreet tincidunt nulla."
+                                    Image={director.picture}
+                                    LinkedIn={director.linkedIn}
+
+                                />
+                            )
+                        })
+                    }
+
+
+
                 </div>
                 <div className={styles.DirectoresTwo}>
                     <CardOrange

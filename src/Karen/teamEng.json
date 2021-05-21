@@ -1,0 +1,24 @@
+{
+  "directors": "Directors",
+  "collaborators": "Collaborators",
+  "projectManagers": "Project managers",
+  "directorsTeam": [
+    {
+      "name": "Karen",
+      "picture": ".ProfileImg/gato.jpg",
+      "linkedIn": "https://github.com/EinarLop" 
+
+    }, 
+    {
+      "name": "Paola",
+      "picture": ".ProfileImg/gato.jpg",
+      "linkedIn": "https://github.com/EinarLop" 
+
+    }
+],
+  "collaboratorsTeam": [],
+  "projectManagersTeam": []
+
+
+
+}
