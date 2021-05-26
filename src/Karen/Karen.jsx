@@ -7,7 +7,7 @@ import styles from "./KarenStyles.module.scss"
 
 
 import teamEng from "./teamEng.json"
-import { LanguageContext } from "../LandingPage"
+import { LanguageContext } from "../App"
 import React, { useContext } from "react"
 
 

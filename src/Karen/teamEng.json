@@ -1,3 +1,5 @@
+
+
 {
   "directors": "Directors",
   "collaborators": "Collaborators",
@@ -13,8 +15,8 @@
       "name": "Paola",
       "picture": "perro",
       "linkedIn": "https://github.com/EinarLop" 
-
     }
+
 ],
   "collaboratorsTeam": [],
   "projectManagersTeam": []
