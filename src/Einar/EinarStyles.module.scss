@@ -1,5 +1,8 @@
 $primary: #2b81f3;
 $secundary: #f39d2b;
+$primary: #f95738;
+$primary: #00b398;
+$primary: #88e18c;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -39,11 +42,13 @@ html {
 .WeAre {
   width: 100%;
   font-size: 3rem;
-  color: #ff8200;
+  //color: #ff8200;
+  color: $primary;
   display: inline-block;
   margin-bottom: 25px;
   margin-top: 50px;
   // margin-left: -50px;
+  text-transform: uppercase;
 }
 
 .Definition {
@@ -63,7 +68,7 @@ html {
 //////////////Seconnd section///////////////////////
 
 .WaveContainer2 {
-  height: 100vh;
+  height: 110vh; //Cambie aquí para la altura
   background-color: #ffffff;
 
   background: radial-gradient(
@@ -181,7 +186,8 @@ html {
 
 .AreaOneContainer,
 .AreaFourContainer {
-  background-color: rgba(7, 138, 214, 0.6);
+  //background-color: rgba(7, 138, 214, 0.6);
+  background-color: rgba(136, 225, 140, 0.6);
 }
 
 .AreaTitle {
@@ -194,6 +200,17 @@ html {
 .AreaLink {
   font-size: 1.8rem;
   text-decoration: underline;
+}
+
+.AreaLink:link {
+  color: #1f1e1d;
+}
+
+.AreaLink:hover {
+  font-weight: 900;
+  color: #1f1e1d;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 img {

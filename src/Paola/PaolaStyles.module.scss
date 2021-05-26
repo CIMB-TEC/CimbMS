@@ -14,18 +14,18 @@ $background: #1f1e1d;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 1%;
-  background: linear-gradient(to bottom, #141414, #323232);
+  background: #141414;
 }
 .Page h1 {
-  font-size: 4em;
+  font-size: 3rem;
   color: $white;
-  font-weight: bold;
+  //font-weight: bold;
   padding: 5px;
 }
 .Page h2 {
-  font-size: 2.5em;
+  font-size: 4rem;
   color: $heading;
-  font-weight: 600;
+  //font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
 
