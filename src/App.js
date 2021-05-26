@@ -1,30 +1,26 @@
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 import React, { useState } from "react";
-import Main from "./Main/Homepage";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import DivulgationSite from "./Divulgation/DivulgationSite";
-import PersonasSite from "./Personas/PersonasSite";
-import Projects from "./Projects/Projects";
+
 import Karen from "./Karen/Karen.jsx";
 import Paola from "./Paola/Paola.jsx";
 
-import ADMAS from "./Projects/ADMAS";
-import ExoDUX from "./Projects/ExoDUX";
-import Domotics from "./Projects/Domotics";
-import AcousticAg from "./Projects/AcousticAg";
-import Platform from "./Projects/Platform";
 import Einar from "./Einar/Einar.jsx";
 import Jorge from "./Jorge/Jorge.jsx";
 import Header from "./NewComponents/Header.jsx";
 import ProjectCard from "./Paola/ProjectCard";
-import Project from "./Karen/Project";
+import SE from "./Karen/SE";
+import UCTD from "./Karen/UCTD";
+import HOBS from "./Karen/HOBS";
+import LP from "./Karen/LP";
 
 import researchEng from "./Einar/researchEng.json";
 import researchEsp from "./Einar/researchEsp.json";
 
 export const LanguageContext = React.createContext();
 
-function LandingPage() {
+function App() {
   const [eng, setEng] = useState(true);
 
   const changeLanguage = () => {
@@ -80,8 +76,20 @@ function LandingPage() {
             <ProjectCard />
           </Route>
 
-          <Route exact path="/project">
-            <Project />
+          <Route exact path="/se">
+            <SE />
+          </Route>
+
+          <Route exact path="/uctd">
+            <UCTD />
+          </Route>
+
+          <Route exact path="/hobs">
+            <HOBS />
+          </Route>
+
+          <Route exact path="/lp">
+            <LP />
           </Route>
 
           <Route exact path="/">
@@ -105,4 +113,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default App;

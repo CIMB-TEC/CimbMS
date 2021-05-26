@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "../LandingPage"
+import { LanguageContext } from "../App"
 import styles from "./EinarStyles.module.scss";
 import i1 from "./Img/InventosMini/i1.jpg";
 import i2 from "./Img/InventosMini/i2.jpg";
