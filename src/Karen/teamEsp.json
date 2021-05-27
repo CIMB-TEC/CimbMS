@@ -1,0 +1,229 @@
+{
+    "directors": "Directores",
+    "collaborators": "Colaboradores",
+    "projectManagers": "Encargados de Proyecto",
+    "directorsTeam": [
+      {
+        "title.Back":"Intereses",
+        "text1Back":"Sus investigaciones de interés son redes inalámbricas, dispositivos de uso biomédico, investigación en estados emocionales e interfaces humano computadora con aplicaciones terapéuticas",
+        "text2Back":"",
+        "subtitleBack":"Redes",
+        "name": "Dr. Rogelio Bustamante Bello",
+        "position":"Director",
+        "textFront":"Nació en Orizaba, Veracruz en 1965. Recibió su licenciatura en Instrumentación Electrónica por la Universidad Veracruzana, Xalapa; su maestria en Electrónica y Telecomunicaciones por CICESE, Ensenada, Baja California, México y su doctorado en Telecomunicaciones y Electrónica por SEPI, Instituto Politécnico Nacional.",
+        "picture": "rogelioBustamante",
+        "researchGateLink": "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
+        "mailLink": "mailto:rbustama@tec.mx",
+        "linkedInLink": "#" 
+  
+      }, 
+      {
+    "title.Back":"Intereses",
+      "text1Back":"Su doctorado Manufacturación de Sistemas por la Universidad de Leughborough, Reino Unido. Es vicepresidente de investigación en el Tecnológico de Monterrey.",
+      "text2Back":"Es miembro del Sistema Nacional de Investigadores de México en nivel 3. Ha publicado 4 llibros, 43 artículos en revistar arbitradas, 58 capítulos de libros y 60 artículos en conferencias arbitradas. Sus áreas de investigación inluyen ingeniería concurrente, modelos de información para diseño y manufactura, modelaje de tecnología e integración en manufactura y tecnologías para ingeniería colaborativa.",
+      "subtitleBack":"Sistemas Computacionales",
+      "name": "Dr. Arturo Molina",
+      "position":"Director",
+      "textFront":"Arturo Molina nació en Oaxaca, México el 1 de Febrero de 1964. Recibió su licenciatura y maestria en Sistemas Computacionales por el Tecnológico de Monterrey.",
+      "picture": "arturoMolina",
+      "researchGateLink": "https://www.researchgate.net/profile/Ricardo-A-Ramirez-Mendoza",
+      "mailLink": "#",
+      "linkedInLink": "#"
+      }
+    ],
+    "directorsTeam2":[
+      {
+        "title.Back":"Intereses",
+        "text1Back":"Recibió su licenciatura en Ingenieria Mecánico Electricista por el Tecnológico de Monterrey Campus Laguna, su maestria por la misma universidad pero por el Campus Monterrey. Su doctorado por Institut National Polytechnique de Grenoble, Francia. Pertenece a Sistema de Investigación Nacional de México en nivel 1.",
+        "text2Back":"Actualmente es el director de investigación en la Escuela Nacional de Ingeniería y Ciencia del Tecnológico de Monterrey, es responsable de investigación avanzada, innovación y emprendimiento.",
+        "subtitleBack":"Investigación",
+        "name": "Dr. Ricardo A. Ramirez",
+        "position":"Director",
+        "textFront":"Ricardo A. Ramirez Mendoza nació en Torreon, Coahuila el 3 de abril de 1967.",
+        "picture": "ricardoRamirez",
+        "researchGateLink": "https://www.researchgate.net/profile/Ricardo-A-Ramirez-Mendoza",
+        "mailLink": "#",
+        "linkedInLink": "#"
+      }
+    ],
+    "collaboratorsTeam": [
+      {
+        "title.Back":"Intereses",
+        "text1Back":"He received his Ph.D. in computer science from Universidad de Imperial College, United Kingdom, on january 2012. Work as Subdirector in risk methodologies  in CNBV. From 2012 to 2014 he was director of software development in Policia Federal.",
+        "text2Back":"Since july 2015 to date, he is professor of Instituto Tecnológico de Estudios Superiores de Monterrey (ITESM). His academic and investigation interests are: Machine learning, computer vision and data analysis.",
+        "subtitleBack":"Machine Learning",
+        "name": "Dr. Gerardo Carrera",
+        "position":"Colaboradores",
+        "textFront":"Received the B.S. degree Computer engineering and his master in science and computer engineering with honorific mention from UNAM, in 2004 and 2007, respectively.",
+        "picture": "gerardoCarrera",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }, 
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Dr. Adalberto Hernández Llarena",
+        "position":"Colaboradores",
+        "textFront":"",
+        "picture": "albertoHdz",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      },
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Robótica",
+        "name": "Dr. David Navarro",
+        "position":"Colaboradores",
+        "textFront":"",
+        "picture": "davidnavarro",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }
+    ],
+    "collaboratorsTeam2":[
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"UAV's",
+        "name": "Msc. Israel Cayetano",
+        "position":"Colaboradores",
+        "textFront":"",
+        "picture": "IsraelCayetan",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      },
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Research",
+        "name": "Msc. Rolando Bautista",
+        "position":"Colaboradores",
+        "textFront":"",
+        "picture": "rolando",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }
+    ],
+    "ProjectManagersTeam": [
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Msc. Gustavo Sebastián Navas Reascos",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "GustavoNava",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      },
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Eng. Javier Alberto de la Tejera de la Peña",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "JavierTejeda",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }
+    ],
+    "ProjectManagersTeam2": [
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Msc. Luis Alberto Curiel",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "luisCuriel",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }
+    ],
+    "ProjectManagersTeam3": [
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Dr. Javier Izquierdo",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "javierIzquierdo",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      },
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Eng. Ariel Alejandro López Aguilar",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "ArielLopez",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }
+    ],
+    "ProjectManagersTeam4": [
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Dr. Sergio Alberto Navarro Tuch",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "sergioNavarro",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      },
+      {
+        "title.Back":"Intereses",
+        "text1Back":"",
+        "text2Back":"",
+        "subtitleBack":"Networks",
+        "name": "Msc. Rolando Bautista Montesano",
+        "position":"Encargados de Proyecto",
+        "textFront":"",
+        "picture": "rolando",
+        "terminacion":"jpg",
+        "researchGateLink": "#",
+        "mailLink": "#",
+        "linkedInLink": "#" 
+      }
+    ]
+  }

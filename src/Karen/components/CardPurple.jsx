@@ -15,15 +15,15 @@ function CardPurple(props) {
                 <p>{props.TextTwoBack}</p>
                 <h3>{props.SubtitleBack}</h3>
                 <div className={styles.Icons}>
-                    <a href="#"><FaResearchgate className={styles.Icon}/></a>
-                    <a href="#"><HiOutlineMail className={styles.Icon}/></a>
-                    <a href="#"><ImLinkedin className={styles.Icon}/></a>
+                    <a href={props.ResearchGateLink} target="_blank"><FaResearchgate className={styles.Icon} /></a>
+                    <a href={props.MailLink} target="_blank"><HiOutlineMail className={styles.Icon} /></a>
+                    <a href={props.LinkedInLink} target="_blank"><ImLinkedin className={styles.Icon} /></a>
                 </div>
             </div>
             <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
                 <div className={styles.CardContent}>
                     <div className={styles.CardHeader}>
-                        <img src={props.Image} alt="" className={styles.Image} />
+                        <img src={props.image} alt="" className={styles.Image} />
                         <h2>{props.NameFront}</h2>
                     </div>
                     <div className={styles.CardBody}>
