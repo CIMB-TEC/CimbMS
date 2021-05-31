@@ -37,7 +37,7 @@ function Karen() {
                                     TextFront={director.textFront}
                                     //Guardar todas las imagenes en la misma carpeta 
                                     //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                    image={require(`./ProfileImg/${director.picture}.jpg`)}
+                                    image={require(`./ProfileImg/${director.pictureName}.${director.fileType}`)}
                                     ResearchGateLink={director.researchGateLink}
                                     MailLink={director.mailLink}
                                     LinkedInLink={director.linkedInLink}
@@ -61,7 +61,7 @@ function Karen() {
                                     TextFront={director.textFront}
                                     //Guardar todas las imagenes en la misma carpeta 
                                     //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                    image={require(`./ProfileImg/${director.picture}.jpg`)}
+                                    image={require(`./ProfileImg/${director.pictureName}.${director.fileType}`)}
                                     ResearchGateLink={director.researchGateLink}
                                     MailLink={director.mailLink}
                                     LinkedInLink={director.linkedInLink}
@@ -88,7 +88,7 @@ function Karen() {
                             TextFront={collaborator.textFront}
                             //Guardar todas las imagenes en la misma carpeta 
                             //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                            image={require(`./ProfileImg/${collaborator.picture}.${collaborator.terminacion}`)}
+                            image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
                             ResearchGateLink={collaborator.researchGateLink}
                             MailLink={collaborator.mailLink}
                             LinkedInLink={collaborator.linkedInLink}
@@ -111,7 +111,7 @@ function Karen() {
                             TextFront={collaborator.textFront}
                             //Guardar todas las imagenes en la misma carpeta 
                             //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                            image={require(`./ProfileImg/${collaborator.picture}.${collaborator.terminacion}`)}
+                            image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
                             ResearchGateLink={collaborator.researchGateLink}
                             MailLink={collaborator.mailLink}
                             LinkedInLink={collaborator.linkedInLink}
@@ -138,7 +138,7 @@ function Karen() {
                                 TextFront={managers.textFront}
                                 //Guardar todas las imagenes en la misma carpeta 
                                 //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.picture}.${managers.terminacion}`)}
+                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
                                 ResearchGateLink={managers.researchGateLink}
                                 MailLink={managers.mailLink}
                                 LinkedInLink={managers.linkedInLink}
@@ -161,7 +161,7 @@ function Karen() {
                                 TextFront={managers.textFront}
                                 //Guardar todas las imagenes en la misma carpeta 
                                 //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.picture}.${managers.terminacion}`)}
+                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
                                 ResearchGateLink={managers.researchGateLink}
                                 MailLink={managers.mailLink}
                                 LinkedInLink={managers.linkedInLink}
@@ -186,7 +186,7 @@ function Karen() {
                                 TextFront={managers.textFront}
                                 //Guardar todas las imagenes en la misma carpeta 
                                 //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.picture}.${managers.terminacion}`)}
+                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
                                 ResearchGateLink={managers.researchGateLink}
                                 MailLink={managers.mailLink}
                                 LinkedInLink={managers.linkedInLink}
@@ -209,7 +209,7 @@ function Karen() {
                                 TextFront={managers.textFront}
                                 //Guardar todas las imagenes en la misma carpeta 
                                 //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.picture}.${managers.terminacion}`)}
+                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
                                 ResearchGateLink={managers.researchGateLink}
                                 MailLink={managers.mailLink}
                                 LinkedInLink={managers.linkedInLink}
