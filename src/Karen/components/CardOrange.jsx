@@ -15,9 +15,9 @@ function CardOrange(props) {
                     <p>{props.TextTwoBack}</p>
                     <h3>{props.SubtitleBack}</h3>
                     <div className={styles.Icons}>
-                        <a href="p"><FaResearchgate className={styles.Icon} /></a>
-                        <a href="#"><HiOutlineMail className={styles.Icon} /></a>
-                        <a href={props.LinkedIn} target="_blank"><ImLinkedin className={styles.Icon} /></a>
+                        <a href={props.ResearchGateLink} target="_blank"><FaResearchgate className={styles.Icon} /></a>
+                        <a href={props.MailLink} target="_blank"><HiOutlineMail className={styles.Icon} /></a>
+                        <a href={props.LinkedInLink} target="_blank"><ImLinkedin className={styles.Icon} /></a>
                     </div>
                 </div>
                 <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
