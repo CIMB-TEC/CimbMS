@@ -1,0 +1,244 @@
+{
+    "title": "Artículos y Divulgaciones",
+    "smartElectromobility": "Electro-movilidad inteligente",
+    "userCenteredTechnologyDevelopment": "Desarrollo de Tecnologías centradas en el usuario",
+    "others": "Otros",
+    "Read": "Leer Artículo",
+    "smartElectromobilityProjects": [
+        {
+            "Image": "logo",
+            "Title": "Perspective of Autonomous Driving in Mexico",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743135",
+            "Abstract": "Autonomous Driving is a topic each time more relevant due to the great role that autonomous and connected vehicles could take in the development of smart cities around the world. And, even when some prototypes are now capable of driving alone in some scenarios, it is true that a fully autonomous car does not exist yet. The present work pretends to give to the reader a general context about autonomous vehicles and a perspective of this technology and its evolution in a really difficult context such as the Mexican, which is comparable with others like the Latin American. They are also presented some of the most relevant tests and/or works made around this topic with a direct impact in Mexico."
+        }, 
+        {
+            "Image": "logo",
+            "Title": "Analysis and Approach of Semi-Autonomous Driving Architectures",
+            "Author": "Msc. Luis Alberto Curiel Ramírez",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743141/",
+            "Abstract": "Advances in the development of autonomous and semi-autonomous driving vehicles in recent years has allowed to dazzle a near future in which the transportation systems will be based on this type of vehicles, especially focused for different types of services and a decrease in the particular use; generating with it the removal of the equation of the human error in road accidents and a reduce up to 90% deaths caused by this type of accident [1]. That is why this paper will generate an analysis and comparison of different architectures currently proposed in the academy as in the industry, and present our proposal and scope currently developed to semi-automate a car with a modular mechatronic system."
+        },
+        {
+            "Image": "modularFramework",
+            "Title": "Towards of a modular framework for semi-autonomous driving assistance systems",
+            "Author": "Msc. Luis Alberto Curiel Ramírez",
+            "Year": "2018",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/article/10.1007/s12008-018-0465-9",
+            "Abstract": "Road traffic accidents are a leading cause of deaths globally and represent the main cause of death among 15–29 years olds (World Health Organization in Global status report on road safety 2015, World Health Organization, Geneva, 2015). Efforts have been made to develop and improve advanced driver assistance systems as to provide better quality of driving and reduce the number of traffic accidents. However, most of the current solutions focus on developing systems for fully autonomous cars. This study investigates a modular architecture that could potentially assist drivers in situations such as traffic jams, autonomous parking, and detection of obstacles such as pedestrians. The aim is to develop a low-cost driver assistance system that could be acquired and easily incorporated by non-technical users. It is becoming increasingly feasible to build a powerful and low-cost system because of the low cost of big-sized cameras, electronics, and processing cards. As a proof of the concept, a hardware and software solution had been developed for autonomous steering-wheel actuation that only utilizes a stereoscopic camera sensor."
+        },
+        {
+            "Image": "emoRecog",
+            "Title": "Emotion recognition for semi-autonomous vehicles framework",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2018",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/article/10.1007/s12008-018-0473-9",
+            "Abstract": "The human being in his blessed curiosity has always wondered how to make machines feel, and, at the same time how a machine can detect emotions. Perhaps some of the tasks that cannot be replaced by machines are the ability of human beings to feel emotions. In the last year, this hypothesis is increasingly questioned by scientists who have done work that seeks to understand the phenomena of brain functioning using the state of the art in instrumentation, sensors, and signal processing. Today, the world scientists have powerful machine learning methods developed to challenge this issue.The field of emotion detection is gaining significance as the technology advances, and particularly due to the current developments in machine learning, the Internet of Things, industry 4.0 and Autonomous Vehicles. Machines will need to be equipped with the capacity to monitor the state of the human user and to change their behaviour in response. Machine learning offers a route to this and should be able to make use of data collected from questionnaires, facial expression scans, and physiological signals such as electroencephalograms (EEG), electrocardiograms, and galvanic skin response. In this study, an approach was proposed to identify the emotional state of a subject from the collected data in the elicited emotion experiments. An algorithm using EEG data was developed, using the power spectral density of the frequency cerebral bands (alpha, beta, theta, and gamma) as features for classifier training. A K Nearest Neighbors algorithm using Euclidian distance was used to predict the emotional state of the subject. This article proposes a novel approach for emotion recognition that not only depends on images of the face, as in the previous literature, but also on the physiological data. The algorithm was able to recognize nine different emotions (Neutral, Anger, Disgust, Fear, Joy, Sadness, Surprise, Amusement, and Anxiety), nine valence positions, and nine positions on arousal axes. Using the data from only 14 EEG electrodes, an accuracy of approximately 97% was achieved. An approach has been developed for evaluating the state of mind of an driver in the context of a semi-autonomous vehicle context, for example. However, the system has a much wider range of potential applications, from the design of products to the evaluation of the user experience."
+        },
+        {
+            "Image": "driverPerf",
+            "Title": "A study of the effects of advanced driver assistance systems alerts on driver performance",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2017",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/article/10.1007/s12008-016-0368-6",
+            "Abstract": "This paper deals with the application of interactive engineering through an electroencephalogram (EEG) to detect the level of distraction or concentration of drivers of automotive vehicles. In particular, for the case of alerts, signals or outputs emitted by an advanced driver assistance systems (ADAS) in the intelligent transportation systems context. To do that and based on the state-of-the-art, an experimental protocol to detect distraction by using EEG signals of driver has been developed. Finally, the goal is to detect if drivers paid attention on the road when different kinds of alerts are emitted by the ADAS. In terms of signal processing, the challenge was the noise level in EEG records due to quality of road that had some bumpers and potholes that add noise in records due to movements of drivers. With the proposed protocol, the efficiency and utility of ADAS can be evaluated by designers to create new adaptable cabins to provide the driver a better driving environment reducing distractions according to the neurological profile. New perspectives and discussion are formulated in this paper, for example, to enhance the interactive design of the automotive vehicle cabins."
+        },
+        {
+            "Image": "logicArch",
+            "Title": "A Logic Architecture for 360 ADAS-Alerts for Hazards Detection Based in Driver Action",
+            "Author": "Msc. Luis Alberto Curiel Ramírez",
+            "Year": "2017",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://www.matec-conferences.org/articles/matecconf/abs/2017/38/matecconf_ictte2017_04011/matecconf_ictte2017_04011.html",
+            "Abstract": "In this work is presented a novel approach for passive safety in vehicles by Advanced Driver Assistance Systems (ADAS) alert emission in 360° around driver to notify about hazards nearby the vehicle depending on the actions taken by driver per the context. This proposal would create a more robust system compared to current passive ADAS systems since the feedback to driver is in the same direction that hazard is detected (Punctual Sound Source Alert), compared with most assistance systems that emits sounds from the monitor or from the dashboard provoking distractions when emits alerts unnecessarily. The increase of security by this method will allow the driver to be aware of their surroundings even in a very quiet cabin or in a noisy environment. Also, it would detect the steering wheel angle, speed of movement and the activation of turning lights among other alerts, which would allow us to define a critical action during driving; apart from using sensors and cameras aimed at the driver to detect patterns of movement during these critical actions and have a prediction of a possible turn or manoeuvre when driving, refer to Figure 1. It will be necessary a reconfiguration of the alert in frequency, time of action depending upon the level of risk to prevent an accident or to reduce the consequences in an imminent accident."
+        },
+        {
+            "Image": "advDriver",
+            "Title": "Advanced driver monitoring for assistance system",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2016",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/article/10.1007/s12008-016-0349-9",
+            "Abstract": "The present study aimed to introduce an approach to implement facial analysis on monitoring driver emotional status in real time. For this purpose, an experimental setup had been performed based on commercial technologies. Such experimental protocol includes the main variables involved in driving and how those variables influence in the driver performance. The goal of the experimental design was to detect which emotions of the driver s face are present during driving and how those emotions can be changed in presence of stimuli from a passive advanced driver for assistance systems (ADAS). Finally, the idea is to investigate if the driver performance changes when some external stimuli are applied as hazards are reported to the driver. The experimental results suggest that the ADAS is not sufficient to enhance the driver’s performance. As a result, the authors propose a new framework for driver assistance systems based on driver state, especially emotions: advanced driver monitoring for assistance systems (ADMAS), refer to Fig. 1. With ADMAS implementation security and intelligence can be provided to a car and thus help to reduce traffic accidents."
+        },
+        {
+            "Image": "ADMASProj",
+            "Title": "ADMAS Project: Driver Learning Algorithm and Driving Simulator ITSE Luis Alberto Curiel Ramirez Advisors: Dr. Javier Izquierdo Reyes. Dr. Martín Rogelio Bustamante Bello.",
+            "Author": "Msc. Luis Alberto Curiel Ramírez",
+            "Year": "2016",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://www.researchgate.net/publication/310795277_ADMAS_Project_Driver_Learning_Algorithm_and_Driving_Simulator_ITSE_Luis_Alberto_Curiel_Ramirez_Advisors_Ing_Javier_Izquierdo_Reyes_Dr_Martin_Rogelio_Bustamante_Bello",
+            "Abstract": "Develop a driving simulator in order to acquire data of the driving type for an analysis with a learning algorithm in order to imitate the handling of the driver."
+        },
+        {
+            "Image": "logo",
+            "Title": "Advanced Driver_Monitoring for Assistance System ADMAS based on emotions",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2016",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://www.researchgate.net/publication/301892339_Advanced_Driver_Monitoring_for_Assistance_System_ADMAS_based_on_emotions",
+            "Abstract": "This work presents advances in research of emotions recognition by using facial expressions to be used in active security system focused in driver monitoring systems to provide efficient assistance through Advanced Driver Assistance Systems to drivers when poor driving performance is detected; researchers have called to this approach Advanced Driver Monitoring for Assistance Systems (ADMAS). This paper provides the state of the art and the framework for future experimentation and system development in a real driving environment."
+        },
+        {
+            "Image": "passiveBCI",
+            "Title": "Review of Passive BCI framework for Advanced Driver Assistance Systems in Intelligent Transportation",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2016",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://www.researchgate.net/publication/301892341_Review_of_Passive_BCI_framework_for_Advanced_Driver_Assistance_Systems_in_Intelligent_Transportation",
+            "Abstract": "Brain-Computer Interfaces (BCI) is a relative new way of communication between humans and automobiles, which allows alternatives ways of monitoring drivers or controlling systems only with brain signals. The use of BCI in intelligent transport systems (ITS) seem to be promising, since BCI systems can be used in active, reactive or passive way. In particular, passive systems pursue to identify the mental state of a driver in order to assist him with auto stop, line keeping (Advanced Driver Assistance Systems-ADAS) or to make a smart environment inside the automobile. This paper deals with a preliminary approach for ADAS in a passive BCI framework. A conceptual description of such framework is presented on the basis of functional blocks."
+        },
+        {
+            "Image": "logo",
+            "Title": "An industry-academia model for research",
+            "Author": "Dr. Javier Izquierdo Reyes",
+            "Year": "2011",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8363378",
+            "Abstract": "This study presents a simple projectized organization used in the Research Center on Microsystems and Biodesign at Tecnologico de Monterrey. The proposed work model aims to increase the interaction between undergraduate and postgraduate students in a project-management based industrial model applied to research. The main purpose of this study is to demonstrate how this organizational structure helps to increase innovation, speed-up research, and increase the students' skills. The roles assigned to students and advisors in multidisciplinary groups create a synergic interaction among members that allows for an interruption-free working environment. The strengths of this model and the methodology to implement it are presented. The model adds value to the curricula and helps to comply with the metrics established by national and international accreditation institutions. Knowledge transfer is an important aspect in the development of projects because of the high turnover rate in academia during the development of global products. Therefore, it is important to avoid repetitive tasks to save time. The implementation of this model has provided the development of functional prototypes, the graduation of participating students with project management experience, and a global increase in scientific production."
+        }
+    ],
+    "userCenteredTechnologyDevelopmentProjects": [
+        {
+            "Image": "logo",
+            "Title": "Communication system development for emotional domotics interactive space",
+            "Author": "Msc. Ariel Alejandro Lopez Aguilar",
+            "Year": "2020",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://www.springerprofessional.de/en/communication-system-development-for-emotional-domotics-interact/17338922",
+            "Abstract": "Domotic integrates different technologies to facilitate the task in the home area. Domotic tools lead to the design and construction of interactive space with potential fields of use. Emotion Domotics is a research in which it is sought to create an interactive space for testing that its main objective is to react to the emotional state of the user in order to modify the environment until reaching the appropriate stage in which the user enters a state of comfort. It is also sought that this interactive space can be used to increase labor and learning efficiency. Another potential application of this interactive space is that it can be used as a tool to evaluate the user experience of products and services. However, to achieve the objective of this research, a communication system must be developed that integrates the available domotic technologies with biometric systems for the detection of emotions. This communication system is important for the progress of the research because it will also be the one that will control the environmental variables such as temperature, light intensity and hue, and humidity within the interactive space to create a scenario according to the user’s needs. Throughout this work, the development of the communication system for the interactive space will be presented, as well as the tests carried out to validate the effectiveness of the communication system."
+        },
+        {
+            "Image": "UXImp",
+            "Title": "Emotional Domotics: a system and experimental model development for UX implementations",
+            "Author": "Dr. Sergio Alberto Navarro Tuch",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/article/10.1007/s12008-019-00598-z?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst&utm_source=ArticleAuthorOnlineFirst&utm_medium=email&utm_content=AA_en_06082018&ArticleAuthorOnlineFirst_20190606",
+            "Abstract": "The Emotional Domotics (home automation) is a concept that has been one of the main focus of our research team seeks to integrate the subject or user of an inhabitable space as central element for the modulation and control of the environmental variables in a house automation implementation for the life quality improvement and in consequence as a method to reduce stress. Even though this project is centered on domotics systems. The development and implementations proved useful as a User Experience analysis tool for products and services. The research originally proposed working with the analysis of the influence of environmental variables on the emotional and physiological response. The first experimental results led to the finding of the emotional response time dynamics (Navarro-Tuch et al., in: SAI Intelligent Systems Conference. London, pp 567–571, 2016). Such dynamics were important for further design and implementation of the testing methodology for response analysis to alternative stimuli. The final sections of the work present a final experiment in which the stimuli contemplated were the temperature, humidity, light intensity and visual stimuli with the corresponding testing methodology implementation. Which led to the final correlation equations for each of five basic emotions selected. These equations may allow us to propose an initial plant model for a control system to be developed by further research."
+        },
+        {
+            "Image": "logo",
+            "Title": "Interpretation and Emulation for Telegrams of the KNX Standard on MATLAB Simulink",
+            "Author": "Msc. Ariel Alejandro Lopez Aguilar",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743117",
+            "Abstract": "The KNX Standard was developed by the Konnex Association for the design of home automation applications, so the Engineering Tool Software (ETS) was created for the control of smart buildings and it works with its own protocol, the KNXnet/IP protocol. However, the KNXnet/IP protocol is designed exclusively for home automation applications and it is intended to be implemented in different areas, such as biometric applications, for future projects. To achieve this, it is proposed to understand and emulate the operation of the KNXnet/IP telegrams. Wireshark software was used to interpret the protocol telegrams and replicate their operation using MATLAB/Simulink tools. The development of the program on MATLAB/Simulink managed to effectively emulate the behavior of the KNXnet/IP protocol and establish an adequate communication between the computer and the KNX control board."
+        },
+        {
+            "Image": "logo",
+            "Title": "Variation of Facial Expression Produced by Acoustic Stimulization",
+            "Author": "Dr. Sergio Alberto Navarro Tuch",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743129",
+            "Abstract": "In this paper we will present the analyzed results of an experiment that relates the facial expression with acoustic stimuli. Music therapy can be used for treating autistic children, diseases and disorders, software development and personalized musical systems [5]. Through the data obtained using iMotions TM , the analyzed data was processed using Matlab TM and Excel. MatlabTM was used to analyze the raw data using the data analysis tools, in order to determine the impact of artificially synthesized versus human composed audios. The data was obtained from three experiments, each experiment had different conditions, each experiment had different number of participants, the length and type of audio segment changed for each experiment. The data obtained from these three experiments were analyzed using FACET of iMotions TM . For the next stage we analyzed Neutral Emotion, the purpose of this analysis is of outmost importance for future stages for a proper development of a recurrent neural network to develop an algorithm to create music sequences, with potential therapeutic, educational and productivity improvement implementations."
+        },
+        {
+            "Image": "inhabitable",
+            "Title": "Inhabitable space control for the creation of healthy interactive spaces through emotional domotics",
+            "Author": "Dr. Sergio Alberto Navarro Tuch",
+            "Year": "2018",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/epdf/10.1007/s12008-017-0410-3?shared_access_token=W9lgqYGalS6ZdirxqPm9CPe4RwlQNchNByi7wbcMAY4UFm0POpN3Nw4T5SqcBGF2F5klI6RXaDSlvCGtrnIhUwJzDxcRb44nvhGgTIFsYzPdlILZUkA3v66i1Sr9I4M-r-PIbQLg31FtnQJmyUFmx6A4zqbzK5Huuz_HPVTDeEc%3D",
+            "Abstract": "In recent years, Mexico’s level of different physiological and mental negative states, such as stress have increased. This has among its consequences, low work production and social problems including the alarming numbers that nearly 43% of adults report high levels of stress. The increase of stress incidence in people aged 15–29 years, and the lack of stress relief measures have an important impact on a person’s physical, mental and emotional health. In order to diminish these negative effects different approaches can be implemented for example, the use of audiovisual stimulus to induce emotions [1]. In this work the emotional analysis through facial expression is implemented [2,3]. We propose the use of domotics to influence the user’s emotional state, creating an interactive space that reacts to the users emotions adapting to the most suitable scenario. The first experiments we conducted occurred in an industrial production simulator in which lights’ hue was varied in order to perceive the impact of such lights on the emotions reflected by the subject. The emotional impact was analyzed through the FACETTM module of the biometric platform iMotionsTM . These experiments together with the experience of other investigators leaded to the design and construction of an experimental booth that let us experiment with other variables like humidity and temperature. The design of one of such experiments is presented in this work based on a stress profile. This experiment’s objective is to allow us to correlate the impact of the environmental variables over the emotional state reflected on subjects’ expressions in order to integrate it for a control loop. The final system has multiple potential applications, among them one is the implementation for the analysis of design prototypes of both products and architecture models."
+        },
+        {
+            "Image": "logo",
+            "Title": "Emotional Domotics: Inhabitable Space Variable Control for the Emotions Modulation",
+            "Author": "Dr. Sergio Alberto Navarro Tuch",
+            "Year": "2017",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/chapter/10.1007/978-3-319-56994-9_70",
+            "Abstract": "Throughout this document the details and progress of the research in emotional domotics, whose ultimate goal is the development of a controlled algorithm for living spaces based on the emotional state of the user, will be illustrated and detailed. The first section details the motivations and objectives of the project. The second section gives a brief introduction about what is domotics and emotional interpretation through the facial analysis. The third section details the direction and current progress of this research. Later in section four, the background and models that have influenced the project are detailed. Sections five and six detail the procedures and results of the first experiment conducted during the investigation. Finally, in section seven we will close with the conclusions currently achieved and a brief introduction to the future work are showed."
+        },
+        {
+            "Image": "logo",
+            "Title": "Emotional Domotics: Inhabitable Home Automation System for Emotion Modulation Through Facial Analysis",
+            "Author": "Dr. Sergio Alberto Navarro Tuch",
+            "Year": "2017",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://link.springer.com/chapter/10.1007/978-3-319-69266-1_11",
+            "Abstract": "This research proposed working with an influence on the subject mood, presenting an approach to state the subjects analysis when the light hue is varied. The experimental results led to the finding of the emotional response time dynamics. Such dynamics are important for future design and implementation of the control loops in-house automation systems for emotion modulation. Throughout this document, the details and progress of the research in emotional domotics, with the aim of developing a controlled algorithm for living space based on the user’s emotional state, will be illustrated and detailed. This project is centered on domotics (home automation) systems, which is, a set of elements installed, interconnected and controlled by a computer system. After introducing the investigation’s core, general preview, and the experiment’s description conducted with light hue variation, the description is followed by a presentative approach to state the subjects analysis when light hue is varied. The experimental results led to the time dynamics of emotional response findings. Such dynamics are important for future design and implementation of the control loops in house automation systems for emotion modulation."
+        }
+    ],
+    "othersProjects": [
+        {
+            "Image": "logo",
+            "Title": "Reduction of Stress Levels and Increased Productivity Inside Offices Using Emotional Domotics",
+            "Author": "",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743133",
+            "Abstract": "The aim of this report is to apply emotional domotics concepts to environmentally design workspaces in order to promote productivity and inspiration, and reduce stress levels through induced relaxation using ambient variables. Due to the fact that the highest stress levels are present within offices, this proposed design falls exclusively to workspaces. The first section of this report details the main goals of this research, whereas the second section defines the current problem related to high stress levels inside offices and the definition of emotional domotics. The third section details the suggested design. The fourth section elaborates on the obtained results. Finally, the last section includes the conclusions that came from the results and future work that must be done to improve this project."
+        },
+        {
+            "Image": "logo",
+            "Title": "Environmental Impact for Labor Stations Learning through Emotional Domotics Analysis and Workstation Simulation",
+            "Author": "",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743136",
+            "Abstract": "Ergonomic, Emotional and House Automation (Domotic) analysis, are essential for process planning, job design, the design of tools/machine/equipment and work station set up. Human safety and comfort have become a key factor in maximizes the labor productivity and life quality. With the evolution of digital technologies, the analysis and simulation of the human factor in work processes are acquiring a major role. The use of advanced approaches in innovative technologies, such as ergonomic analysis tools in the future digital factory and physical environment, contributes to achieving continuous improvement in the management of quality while searching for reserves in managing human factor reliability. This paper presents a teaching methodology for an integrated project related with industrial and systems engineering and mechatronic engineering; which the main objective is to set the stage when the work systems design begins. The paper comprises theoretical starting points, results of laboratory verification and results in outputs."
+        },
+        {
+            "Image": "logo",
+            "Title": "Smart Backpack ABE",
+            "Author": "",
+            "Year": "2019",
+            "highLight1": "",
+            "highLight2": "",
+            "highLight3": "",
+            "Link": "https://ieeexplore.ieee.org/document/8743138/",
+            "Abstract": "Nowadays, backpacks are a useful tool in a lot of areas, they can contain clothing, school supplies, electronic equipment, medicine or any personal stuff. One of the biggest problems is that they can be stolen easily, and sometimes the things inside could be very expensive and important to the user. This project aims to solve this problem in a technological way, to integrate some others smart features and to incorporate a way in which the owner can interact directly by using its smartphone. The prototype developed has a Bluetooth 5.0 and a GPS/GSM/UMTS module that allow the communication with the user and provide him the backpack's location, a locking system regulated by a RFID lector, an external and internal lightning system, a temperature and humidity sensor, laptop detection, and a wireless charging using the Qi standard. The prototype was developed and programmed using the Arduino Uno board and the apps used to test it were Bluefruit and iMessage. After all those tests, it was observed that all the systems had a good response and all the integrated features worked properly."
+        }
+    ]
+  }

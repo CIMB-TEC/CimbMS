@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 $card: #383838;
+$card: #222222;
 $white: #ffffff;
 $heading: #00b398;
 $color: #00b398;
@@ -28,6 +29,7 @@ grid-area: foto;
 border-radius: 5px;
 width: 90%;
 margin: 5%;
+max-height: 20rem;
 }
 
 .Information {
@@ -40,29 +42,31 @@ padding-right: 5%;
 }
 
 .Information h1 {
-font-size: 3em;
+font-size: 3rem;
 color: $white;
-font-weight: 800;
+//font-weight: 800;
 padding: 0;
 line-height: 1em;
 }
 
 .Information h2 {
-font-size: 3em;
+font-size: 2rem;
 color: $white;
 margin-top: -5px;
-font-weight: 500;
+//font-weight: 500;
 padding: 0;
 }
 .Information h3 {
-font-size: 2em;
+font-size: 2rem;
 color: $white;
 text-decoration: underline;
+//color: #88e18c;
 }
 .Information h4 {
-font-size: 1.5em;
+font-size: 1.5rem;
 color: $white;
 font-style: italic;
+color: $color;
 }
 
 .Information ul {
@@ -71,6 +75,10 @@ list-style-type: "→ ";
 list-style-position: inside;
 line-height: 1.75em;
 font-size: 1.5em;
+}
+
+.Information ul li::before {
+  color: #88e18c;
 }
 
 @media only screen and (max-width: 991px) {

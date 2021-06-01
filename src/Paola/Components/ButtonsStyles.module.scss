@@ -27,40 +27,55 @@ $background: #1f1e1d;
     display: block;
     margin-left: 0;
     margin-top: 0;
-    border-radius: 3px;
+    border-radius: 30px;
+    //border-radius: 3px;
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
     color: $white;
-    background: $color;
-    width: 75%;
+    //background: $color;
+    //width: 75%;
+    width: 55%;
     cursor: pointer;
     text-decoration: none;
     font-weight: 525;
+    border: 3px solid $color;
     &:hover {
-        background: $secondColor;
-        transition: all 0.25s ease-in-out;
-        color: $white;
+        //background: $secondColor;
+        //transition: all 0.25s ease-in-out;
+        //color: $white;
+        background: $color;
+        color: #222222;
+        font-weight: 549;
+        font-weight: bold;
     }
 }
 .Buttons button {
     padding: 10px;
-    width: 75%;
-    background: $color;
+    width: 55%;
+    //width: 75%;
+    //background: $color;
     color: $white;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    border: $color;
-    border-radius: 3px;
+    border: 3px solid $color;
+    //border: $color;
+    //border-radius: 3px;
+    border-radius: 30px;
     font-size: 1.5em;
     font-weight: 525;
     &:hover {
-        background: $secondColor;
-        transition: all 0.25s ease-in-out;
-        color: $white;
+        background: $color;
+        //background: $secondColor;
+        //transition: all 0.25s ease-in-out;
+        //color: $white;
+        color: #222222;
+        font-weight: 540;
+        //background: transparent;
+        font-weight: bold;
     }
 }
 .Buttons button:focus {

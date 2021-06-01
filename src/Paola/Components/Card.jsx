@@ -6,7 +6,7 @@ import Buttons from "./Buttons.jsx"
 function Card(props) {
     return (
         <div className={styles.Card}>
-            <img src={props.Img} />
+            <img src={props.Img} alt=""/>
             <div className={styles.Information}>
                 <h1>{props.Title}</h1>
                 <h3>{props.Author}</h3>
@@ -15,13 +15,13 @@ function Card(props) {
 
 
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Integer sodales magna quis metus ultrices, et pretium elit molestie.</li>
-                    <li>Aliquam gravida tristique sem.</li>
+                    <li>{props.main1}</li>
+                    <li>{props.main2}</li>
+                    <li>{props.main3}</li>
                 </ul>
             </div>
 
-            <Buttons Link={props.Link} Abs={props.Abs}/>
+            <Buttons Link={props.Link} Abs={props.Abs} Read={props.Read}/>
 
         </div>
     )

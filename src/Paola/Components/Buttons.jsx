@@ -10,7 +10,7 @@ function Buttons(props) {
       <div className={styles.Buttons}>
         <button onClick={handleToggle}>Abstract</button>
         <a className={styles.Article} target="_blank" href={props.Link}>
-          Leer artículo
+          {props.Read}
         </a>
       </div>
       <div className={styles.Abstract}>
