@@ -2,9 +2,8 @@
 
 $card: #383838;
 $white: #ffffff;
-$heading: #00b398;
 $color: #00b398;
-$secondColor: #003a76;
+$color: #f39d2b;
 $background: #1f1e1d;
 
 .Tog {
@@ -42,7 +41,6 @@ $background: #1f1e1d;
     font-weight: 525;
     border: 3px solid $color;
     &:hover {
-        //background: $secondColor;
         //transition: all 0.25s ease-in-out;
         //color: $white;
         background: $color;
@@ -69,7 +67,6 @@ $background: #1f1e1d;
     font-weight: 525;
     &:hover {
         background: $color;
-        //background: $secondColor;
         //transition: all 0.25s ease-in-out;
         //color: $white;
         color: #222222;
