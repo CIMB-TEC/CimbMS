@@ -7,7 +7,8 @@ import CardTab from './components/cardTab'
 function Jorge() {
     return (
     
-    <div className={styles.wrapper}> 
+    <div className={styles.wrapper}>
+        <h2 className={styles.Title}>Nuestros proyectos</h2>
         <h1 className={styles.heading}>
             Postgrado
         </h1>

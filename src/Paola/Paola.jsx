@@ -4,7 +4,8 @@ import Card from "./Components/Card"
 
 import articlesEng from "./articlesEng.json"
 import articlesEsp from "./articlesEsp.json"
-import { LanguageContext } from "../LandingPage"
+//import { LanguageContext } from "../LandingPage"
+import { LanguageContext } from "../App"
 import React, { useContext } from "react"
 
 
@@ -15,7 +16,7 @@ function Paola(props) {
 
     return (
         <div className={styles.Page}>
-            <h1>{project.title}</h1>
+            <h1 className={styles.Title}>{project.title}</h1>
             <h2>{project.smartElectromobility}</h2>
             {
                 project.smartElectromobilityProjects.map((proj) => {
