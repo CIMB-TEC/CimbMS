@@ -21,137 +21,138 @@ import ProjectCard from "./Components/ProjectCard"
 
 function Einar(props) {
 
-  const eng = useContext(LanguageContext)
-  let home = eng ? homeEng : homeEsp;
+	const eng = useContext(LanguageContext)
+	let home = eng ? homeEng : homeEsp;
 
 
-  return (
-    <div>
-      <div className={styles.WaveContainer}>
-        <div className={styles.ContentContainer}>
-          <p className={styles.WeAre}> {home.title}</p>
-          <p className={styles.Definition}>
-            {home.definition}
-          </p>
-          <p className={styles.Description}>
-            {home.description}
-          </p>
-        </div>
-      </div>
+	return (
+		<div>
 
-      <div className={styles.WaveContainer2}>
+			<div className={styles.WaveContainer}>
+				<div className={styles.ContentContainer}>
+					<p className={styles.WeAre}> {home.title}</p>
+					<p className={styles.Definition}>
+						{home.definition}
+					</p>
+					<p className={styles.Description}>
+						{home.description}
+					</p>
+				</div>
+			</div>
 
-
-        <div className={styles.ContentContainer2}>
-          <p className={styles.ProyectosTitulo}> {home.activeProjects}</p>
-
-          <div className={styles.AreasContainer}>
+			<div className={styles.WaveContainer2}>
 
 
-            {home.projects.map((project) => {
-              return (
+				<div className={styles.ContentContainer2}>
+					<p className={styles.ProyectosTitulo}> {home.activeProjects}</p>
 
-                <div className={styles.AreaOneContainer}>
-                  <AiOutlineFileSearch className={styles.Icon} />
-                  <p className={styles.AreaTitle}> {project.title} </p>
-                  <a className={styles.AreaLink}> Más información</a>
-                </div>
-                // <ProjectCard />
-              );
-
-            })}
+					<div className={styles.AreasContainer}>
 
 
+						{home.projects.map((project) => {
+							return (
+
+								<div className={styles.AreaOneContainer}>
+									<AiOutlineFileSearch className={styles.Icon} />
+									<p className={styles.AreaTitle}> {project.title} </p>
+									<a className={styles.AreaLink}> Más información</a>
+								</div>
+								// <ProjectCard />
+							);
+
+						})}
 
 
-          </div>
-        </div>
-      </div>
 
-      <div className={styles.WaveContainer3}>
-        <div className={styles.ContentContainer3}>
-          {/* <p className={styles.GalleryText}>Gallery</p> */}
 
-          <figure className={styles.ImageContainerTeam}>
-            <img
-              src={t1}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					</div>
+				</div>
+			</div>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={c1}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+			<div className={styles.WaveContainer3}>
+				<div className={styles.ContentContainer3}>
+					{/* <p className={styles.GalleryText}>Gallery</p> */}
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={i6}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainerTeam}>
+						<img
+							src={t1}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={c2}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={c1}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={c4}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={i6}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={i1}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={c2}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={i3}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={c4}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={i2}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={i1}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainer}>
-            <img
-              src={i5}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={i3}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainerLast}>
-            <img
-              src={c5}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
+					<figure className={styles.ImageContainer}>
+						<img
+							src={i2}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
 
-          <figure className={styles.ImageContainerLast}>
-            <img
-              src={c3}
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
-            />
-          </figure>
-        </div>
-      </div>
-    </div>
-  );
+					<figure className={styles.ImageContainer}>
+						<img
+							src={i5}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
+
+					<figure className={styles.ImageContainerLast}>
+						<img
+							src={c5}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
+
+					<figure className={styles.ImageContainerLast}>
+						<img
+							src={c3}
+							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+						/>
+					</figure>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default Einar;
