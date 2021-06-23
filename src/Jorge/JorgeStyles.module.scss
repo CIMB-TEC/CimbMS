@@ -1,26 +1,30 @@
-$bluelight: #7AF3F1;
 $blackGray: #222222;
-$bluemid: #2A7DE1;
-$bluedark: #1B1FAE;
 $white: #fff;
-$purplelight: #aa66ba;
-$purplemid: #850053;
-$purpledark: #260700;
+$primary: #2A7DE1;
+$primary: #f39d2b;
 
 
 .wrapper {
   margin: 0;
-  padding: 0;
   //min-height: 100vh;
-  background-color: #000;
-  opacity: 1;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #050505 150px ), repeating-linear-gradient( #00000055, #00000055 );
+  //background-color: #141414;
+  //opacity: 1;
+  //background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #141414 40px ), repeating-linear-gradient( #22222255, #222222 );
+  background-color: #141414;
+opacity: 1;
+background-image: radial-gradient(#222222 2px, #141414 2px);
+background-size: 60px 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  font-family: montserrat, sans-serif;
+  //font-family: montserrat, sans-serif;
   //max-width: 1440px;
+  width:100%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
 }
 
 .containerPostgrado, .containerPregrado {
@@ -40,20 +44,33 @@ $purpledark: #260700;
 }
 
 .heading {
-  color: $bluemid;
-  font-size: 40px;
-  text-align: center;
+  font-size: 4rem;
+  color: $primary;
+  //font-weight: 600;
+  padding: 5px;
+  margin-bottom: 0.5em;
+  text-align: left;
   width: 100%;
-  font-weight: 700;
+}
+
+.Title {
+  font-size: 3rem;
+  color: #f1eeee;
+  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
 }
 
 .heading2 {
-  color: $purplemid;
-  font-size: 40px;
-  text-align: center;
+  font-size: 4rem;
+  color: $primary;
+  //font-weight: 600;
+  padding: 5px;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  text-align: left;
   width: 100%;
-  font-weight: 700;
-  margin-top: 100px;
 }
 /*otra linea de tarjetas
 .containerPostgrado2 {
@@ -70,5 +87,24 @@ $purpledark: #260700;
   }
   .cardLblue, .cardPurple {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000) {
+  .Page {
+    margin-right: 1%;
+
+  }
+}
+@media only screen and (max-width: 991px) {
+
+
+  .Page h1 {
+    font-size: 3.6em;
+    line-height: 1.2em;
+  }
+  .Page h2 {
+    font-size: 2.2em;
+    line-height: 1.1em;
   }
 }

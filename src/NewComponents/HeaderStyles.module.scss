@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+$primary: #00b398;
+$primary: #f39d2b;
+
 .Wrapper {
   //   background-color: #272628;
   height: 10vh;
@@ -23,9 +26,10 @@
 .Nav,
 .NavHam {
   margin: 0 25px;
+  color: white;
 
   &:hover {
-    color: #ff8200;
+    color: $primary;
   }
 }
 
