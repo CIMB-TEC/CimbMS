@@ -29,10 +29,8 @@ background-size: 60px 60px;
 
 .containerPostgrado, .containerPregrado {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .containerPregrado {
@@ -40,7 +38,10 @@ background-size: 60px 60px;
 }
 
 .cardLblue, .cardPurple {
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .heading {
@@ -72,15 +73,48 @@ background-size: 60px 60px;
   text-align: left;
   width: 100%;
 }
-/*otra linea de tarjetas
-.containerPostgrado2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+
+@media (max-width: 1211px) { // 2 y 3
+  .containerPostgrado, .containerPregrado {
+    flex-direction: row;
+  }
+  .cardLblue, .cardPurple {
+    width: 100%;
+  }
 }
-*/
+
+@media (max-width: 900px) { // 1
+  .containerPostgrado, .containerPregrado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardLblue, .cardPurple {
+    width: 150%;
+  }
+}
+
+@media (max-width: 500px) { // titulo y subtitulo pequeños, aumenta letra dentro
+  .containerPostgrado, .containerPregrado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardLblue, .cardPurple {
+    width: 100%;
+  }
+  .heading {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 500;
+  }
+  
+  .heading2 {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 100px;
+  }
+}
+/*
 @media (max-width: 1040px) {
   .containerPostgrado, .containerPregrado {
     flex-direction: column;
@@ -88,7 +122,7 @@ background-size: 60px 60px;
   .cardLblue, .cardPurple {
     width: 100%;
   }
-}
+}*/
 
 @media only screen and (min-width: 1000) {
   .Page {

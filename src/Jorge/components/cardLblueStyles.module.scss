@@ -16,6 +16,7 @@ $white: #fff;
 }
 
 .container {
+  width: 350px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -182,7 +183,7 @@ $white: #fff;
     transform: translateY(0);
   }
 
-  a:active {
+  .anchor:active {
     background: $bluemid;
     color: $white;
     border-radius: 50px;
@@ -193,7 +194,7 @@ $white: #fff;
   }
 }
 
-@media (max-width: 502px) {
+@media (max-width: 500px) {
   .face {
     //caja texto
     width: 300px;
@@ -207,11 +208,11 @@ $white: #fff;
   }
 
   .parrafocard {
-    font-size: 0.42em;
+    font-size: 0.7em;
   }
 
   .anchor {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 
   .content .cardh3 {

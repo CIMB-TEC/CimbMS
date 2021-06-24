@@ -5,7 +5,6 @@ import CardPurple from "./components/CardPurple";
 //import Image from "./img/persona.jpg"
 import styles from "./KarenStyles.module.scss"
 
-
 import teamEng from "./teamEng.json"
 import teamEsp from "./teamEsp.json"
 
@@ -19,8 +18,8 @@ function Karen() {
     let team = eng ? teamEng : teamEsp;
 
     return (
-        <div className={styles.Wrapper}>
-            <h1 className={styles.DirectoresH1}>Directores</h1>
+        <div className={styles.Wrapper}>{}
+            <h1 className={styles.DirectoresH1}>{team.directors}</h1>
             <div className={styles.Directores}>
                 <div className={styles.DirectoresOne}>
 
@@ -72,7 +71,7 @@ function Karen() {
                     }
                 </div>
             </div>
-            <h1 className={styles.ColaboradoresH1}>Colaboradores</h1>
+            <h1 className={styles.ColaboradoresH1}>{team.collaborators}</h1>
             <div className={styles.Colaboradores}>
                 <div className={styles.ColaboradoresOne}>
                     {
@@ -121,7 +120,7 @@ function Karen() {
                     }
                 </div>
             </div>
-            <h1 className={styles.EncargadosH1}>Encargados de proyecto</h1>
+            <h1 className={styles.EncargadosH1}>{team.projectManagers}</h1>
             <div className={styles.EncargadosProyecto}>
                 <div className={styles.EncargadosOne}>
                     <div className={styles.Encargados1}>
