@@ -11,8 +11,7 @@ function CardOrange(props) {
             <div className={styles.CardInner}>
                 <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
                     <h2>{props.TitleBack}</h2>
-                    <p>{props.TextOneBack}</p>
-                    <p>{props.TextTwoBack}</p>
+                    <p>{props.TextFront}</p>
                     <h3>{props.SubtitleBack}</h3>
                     <div className={styles.Icons}>
                         <a href={props.ResearchGateLink} target="_blank"><FaResearchgate className={styles.Icon} /></a>
@@ -30,7 +29,6 @@ function CardOrange(props) {
                         </div>
                         <div className={styles.CardBody}>
                             <h3>{props.SubtitleFront}</h3>
-                            <p>{props.TextFront}</p>
                         </div>
                     </div>
                 </div>

@@ -9,10 +9,8 @@ function Card(props) {
             <img src={props.Img} alt=""/>
             <div className={styles.Information}>
                 <h1>{props.Title}</h1>
-                <h3>{props.Author}</h3>
-
-                <h4>{props.Year}</h4>
-
+                <h2>{props.Author}</h2>
+                <h3>{props.Year}</h3>
 
                 <ul>
                     <li>{props.main1}</li>

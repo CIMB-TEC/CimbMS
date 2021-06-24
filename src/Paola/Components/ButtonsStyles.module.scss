@@ -7,115 +7,127 @@ $color: #f39d2b;
 $background: #1f1e1d;
 
 .Tog {
-    grid-area: tog;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-areas:
-      ". boton "
-      "abstract abstract";
+  grid-area: tog;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    ". boton "
+    "abstract abstract";
 }
 .Buttons {
-    grid-area: boton;
-    padding-left: 2%;
-    padding-right: 2%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  grid-area: boton;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 .Buttons .Article {
-    padding: 10px;
-    display: block;
-    margin-left: 0;
-    margin-top: 0;
-    border-radius: 30px;
-    //border-radius: 3px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-    color: $white;
-    //background: $color;
-    //width: 75%;
-    width: 55%;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 525;
-    border: 3px solid $color;
-    &:hover {
-        //transition: all 0.25s ease-in-out;
-        //color: $white;
-        background: $color;
-        color: #222222;
-        font-weight: 549;
-        font-weight: bold;
-    }
+  padding: 10px;
+  display: block;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 30px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $white;
+  width: 55%;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 525;
+  border: 3px solid $color;
+  &:hover {
+    background: $color;
+    color: #222222;
+    font-weight: 549;
+    font-weight: bold;
+  }
 }
 .Buttons button {
-    padding: 10px;
-    width: 55%;
-    //width: 75%;
-    //background: $color;
-    color: $white;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    border: 3px solid $color;
-    //border: $color;
-    //border-radius: 3px;
-    border-radius: 30px;
-    font-size: 1.5em;
-    font-weight: 525;
-    &:hover {
-        background: $color;
-        //transition: all 0.25s ease-in-out;
-        //color: $white;
-        color: #222222;
-        font-weight: 540;
-        //background: transparent;
-        font-weight: bold;
-    }
+  padding: 10px;
+  width: 55%;
+  color: $white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid $color;
+  border-radius: 30px;
+  font-size: 1.5em;
+  font-weight: 525;
+  &:hover {
+    background: $color;
+    color: #222222;
+    font-weight: 540;
+    font-weight: bold;
+  }
 }
 .Buttons button:focus {
-    outline: none;
+  outline: none;
 }
 .Abstract {
-    grid-area: abstract;
-    padding: 0 3% 2% 2%;
+  grid-area: abstract;
+  padding: 0 3% 2% 2%;
 }
 .Abstract p {
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    margin-top: 5px;
-    line-height: 1.6em;
-    text-align: justify;
-    text-indent: 10px;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  line-height: 1.6em;
+  text-align: justify;
+  text-indent: 10px;
+  color: $white;
 }
 
-@media only screen and (max-width: 991px) {
-    .Tog {
-        grid-template-columns: 100%;
-        grid-template-areas:
-          "boton"
-          "abstract";
+@media only screen and (max-width: 993px) {
+  .Tog {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "boton"
+      "abstract";
+  }
+  .Buttons {
+    margin-bottom: 2%;
+  }
+  .Buttons button {
+    display: block;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    &:focus {
+      background: $color;
     }
-    .Buttons {
-        margin-bottom: 2%;
+  }
+  .Buttons .Article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    &:hover {
+      background: $color;
     }
-    .Buttons button {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.3em;
-        &:focus {
-            background: $color;
-        }
+  }
+}
+
+@media (max-width: 500px) {
+  .Buttons button {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    &:focus {
+      background: $color;
     }
-    .Buttons .Article {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.3em;
-        &:hover {
-            background: $color;
-        }
+  }
+  .Buttons .Article {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    &:hover {
+      background: $color;
     }
+  }
 }
