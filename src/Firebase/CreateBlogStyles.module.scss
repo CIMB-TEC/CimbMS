@@ -1,0 +1,22 @@
+.Wrapper {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.Input {
+  height: 30px;
+  color: black;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Button {
+  background-color: white;
+  color: black;
+}
