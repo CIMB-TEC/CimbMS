@@ -11,24 +11,18 @@ $purpledark: #260700;
 .wrapper {
   margin: 0;
   padding: 0;
-  //min-height: 100vh;
   background-color: #000;
   opacity: 1;
   background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #050505 150px ), repeating-linear-gradient( #00000055, #00000055 );
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  font-family: montserrat, sans-serif;
-  //max-width: 1440px;
+  //font-family: montserrat, sans-serif;
 }
 
 .containerPostgrado, .containerPregrado {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .containerPregrado {
@@ -36,7 +30,10 @@ $purpledark: #260700;
 }
 
 .cardLblue, .cardPurple {
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .heading {
@@ -55,15 +52,48 @@ $purpledark: #260700;
   font-weight: 700;
   margin-top: 100px;
 }
-/*otra linea de tarjetas
-.containerPostgrado2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+
+@media (max-width: 1211px) { // 2 y 3
+  .containerPostgrado, .containerPregrado {
+    flex-direction: row;
+  }
+  .cardLblue, .cardPurple {
+    width: 100%;
+  }
 }
-*/
+
+@media (max-width: 900px) { // 1
+  .containerPostgrado, .containerPregrado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardLblue, .cardPurple {
+    width: 150%;
+  }
+}
+
+@media (max-width: 500px) { // titulo y subtitulo pequeños, aumenta letra dentro
+  .containerPostgrado, .containerPregrado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardLblue, .cardPurple {
+    width: 100%;
+  }
+  .heading {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 500;
+  }
+  
+  .heading2 {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 100px;
+  }
+}
+/*
 @media (max-width: 1040px) {
   .containerPostgrado, .containerPregrado {
     flex-direction: column;
@@ -71,4 +101,4 @@ $purpledark: #260700;
   .cardLblue, .cardPurple {
     width: 100%;
   }
-}
+}*/

@@ -1,0 +1,38 @@
+{
+  "heading1": "Postgraduate",
+  "heading2_2": "Undergraduate",
+  "proyectBlue": [
+    {
+      "title" : "Admas",
+      "text" : "The Advanced Driver Monitoring for Assistance System (ADMAS) project, consists on the creation of a new driver assistance system that efficiently helps a conductive psycho-physiological state. It aims to increase the autonomy of a common car to a semi-autonomous one.",
+      "link" : "http://localhost:3000/HOBS",
+      "titleLink" : "Read More"
+    }, 
+    {
+      "title" : "Emotional Domotics",
+      "text" : "The project seeks the foundation and development of an habitable space where the user's state of mind can be modulated from the control of environmental variables and the insertion of positive pre-programmed stimuli.",
+      "link" : "http://localhost:3000/LP",
+      "titleLink" : "Read More"
+    },
+    {
+      "title" : "Exodux",
+      "text" : "The project seeks to help people whose motor functions are impaired, or find it difficult to perform simple daily tasks, such as walking. This, together with the fact that the population of older adults is constantly growing, makes the issue of muscle weakness a great opportunity to work.",
+      "link" : "http://localhost:3000/SE",
+      "titleLink" : "Read More"
+    }
+  ],
+  "proyectPurple": [
+    {
+      "title" : "Acoustic Agriculture",
+      "text" : "The project seeks to develop a completely autonomous and isolated space for the study of plant growth, where the environmental conditions can be constantly monitored, as well as altered if necessary for the development of different plant specimens.",
+      "link" : "#",
+      "titleLink" : "Read More"
+    }, 
+    {
+      "title" : "Intelligent Vehicles",
+      "text" : "The project seeks to develop a platform for an all-terrain vehicle, fully electric and instrumented. Seeking the application of intelligent algorithms and sensor fusion for processing and with them generating safety systems for driving assistance.",
+      "link" : "#",
+      "titleLink" : "Read More"
+    }
+  ]
+}

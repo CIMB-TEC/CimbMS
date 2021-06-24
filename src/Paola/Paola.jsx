@@ -4,7 +4,7 @@ import Card from "./Components/Card"
 
 import articlesEng from "./articlesEng.json"
 import articlesEsp from "./articlesEsp.json"
-import { LanguageContext } from "../LandingPage"
+import { LanguageContext } from "../App"
 import React, { useContext } from "react"
 
 
