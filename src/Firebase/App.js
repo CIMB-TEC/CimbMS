@@ -1,10 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-
-import firebase from "firebase";
-// require("firebase/auth");
-// require("firebase/firestore");
+var firebase = require("firebase/app");
+require("firebase/auth");
+require("firebase/firestore");
 
 var firebaseConfig = {
   apiKey: "AIzaSyBzFNI1lwCcREBn3lV2_GXLscTbT6owcjE",
@@ -18,4 +14,16 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-ReactDOM.render(<App />, document.getElementById("root"));
+let firestore = firebase.firestore();
+const docRef = firebase.doc("samples/blog");
+
+docRef
+  .set({
+    name: "Einar",
+  })
+  .then(() => {
+    console.log("Status saved");
+  })
+  .catch((error) => {
+    console.log(error);
+  });
