@@ -8,9 +8,8 @@ $primary: #f39d2b;
 $color: #f39d2b;
 $background: #1f1e1d;
 
-
 .Page {
-  width:100%;
+  width: 100%;
   padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
@@ -22,28 +21,24 @@ $background: #1f1e1d;
   //background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
   background-color: #141414;
   opacity: 1;
-  background-image:  radial-gradient(#222222 2px, transparent 2px), radial-gradient(#222222 2px, #141414 2px);
+  background-image: radial-gradient(#222222 2px, transparent 2px),
+    radial-gradient(#222222 2px, #141414 2px);
   background-size: 80px 80px;
-  background-position: 0 0,40px 40px;
+  background-position: 0 0, 40px 40px;
 }
-.Page h1 {
-  font-size: 3rem;
-  color: $white;
-  //font-weight: bold;
-  padding: 5px;
-}
+
 .Title {
   font-size: 3rem;
   color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
+  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary,
+    0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary,
+    0 0 12px $primary;
   text-transform: uppercase;
+  padding: 5px;
 }
 .Page h2 {
   font-size: 4rem;
   color: $primary;
-  //color: #f1eeee;
-  //text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
-  //font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
 }
@@ -51,18 +46,15 @@ $background: #1f1e1d;
 @media only screen and (min-width: 1000) {
   .Page {
     margin-right: 1%;
-
   }
 }
-@media only screen and (max-width: 991px) {
 
-
-  .Page h1 {
-    font-size: 3.6em;
-    line-height: 1.2em;
+@media (max-width: 500px) {
+  .Title {
+    font-size: 3rem;
   }
   .Page h2 {
-    font-size: 2.2em;
-    line-height: 1.1em;
+    font-size: 4rem;
+    line-height: 1.25em;
   }
 }

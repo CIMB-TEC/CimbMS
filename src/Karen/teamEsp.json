@@ -1,4 +1,5 @@
 {
+  "team": "Equipo de investigación",
   "directors": "Directores",
   "collaborators": "Colaboradores",
   "projectManagers": "Encargados de Proyecto",
@@ -19,7 +20,7 @@
 
     }, 
     {
-  "title.Back":"Intereses",
+    "title.Back":"Intereses",
     "text1Back":"Su doctorado Manufacturación de Sistemas por la Universidad de Leughborough, Reino Unido. Es vicepresidente de investigación en el Tecnológico de Monterrey.",
     "text2Back":"Es miembro del Sistema Nacional de Investigadores de México en nivel 3. Ha publicado 4 llibros, 43 artículos en revistar arbitradas, 58 capítulos de libros y 60 artículos en conferencias arbitradas. Sus áreas de investigación inluyen ingeniería concurrente, modelos de información para diseño y manufactura, modelaje de tecnología e integración en manufactura y tecnologías para ingeniería colaborativa.",
     "subtitleBack":"Sistemas Computacionales",
@@ -31,9 +32,7 @@
     "researchGateLink": "https://www.researchgate.net/profile/Ricardo-A-Ramirez-Mendoza",
     "mailLink": "#",
     "linkedInLink": "#"
-    }
-  ],
-  "directorsTeam2":[
+    },
     {
       "title.Back":"Intereses",
       "text1Back":"Recibió su licenciatura en Ingenieria Mecánico Electricista por el Tecnológico de Monterrey Campus Laguna, su maestria por la misma universidad pero por el Campus Monterrey. Su doctorado por Institut National Polytechnique de Grenoble, Francia. Pertenece a Sistema de Investigación Nacional de México en nivel 1.",
@@ -56,7 +55,7 @@
       "text2Back":"De 2014 a 2015 trabajó en el Instituto Federal de Telecomunicaciones, primero como Director de Estadística y después como Director de Análisis Técnico. De 2015 a 2017 trabajó como Director de TI de la empresa LUCA Desarrollos Integrales en Tecnología S.A de C.V. Desde julio de 2015 hasta la fecha, el Dr. Carrera es Profesor en el Instituto Tecnológico de Estudios Superiores de Monterrey (ITESM). Sus intereses académicos y de investigación son: aprendizaje de Máquina, visión por computadora y análisis de datos.",
       "subtitleBack":"Machine Learning",
       "name": "Dr. Gerardo Carrera",
-      "position":"Colaboradores",
+      "position":"Colaborador",
       "textFront":"Gerardo Carrera Mendoza recibió el grado de Ingeniero en Computación y el grado de Maestro en Ciencias e Ingeniería de la Computación con mención honorífica, ambos por la Universidad Nacional Autónoma de México, en 2004 y 2007, respectivamente. Recibió el grado de Doctor en Filosofía (PhD) en Ciencias de la Computación (Visión por Computadora) por la Universidad de Imperial College, Reino Unido, en enero de 2012. ",
       "pictureName": "gerardoCarrera",
       "fileType":"jpg",
@@ -91,9 +90,7 @@
       "researchGateLink": "#",
       "mailLink": "#",
       "linkedInLink": "https://www.linkedin.com/in/israel-ulises-cayetano-jiménez-194553b9/" 
-    }
-  ],
-  "collaboratorsTeam2":[
+    },
     {
       "title.Back":"Intereses",
       "text1Back":"Ha participado en proyectos de prototipado de producto, automatización, procesamiento digital de señales, sistemas hápticos, análisis de movimiento humano y fusión de sensores enfocada en sensores inerciales y GNSS con aplicaciones en robótica móvil, medicina y realidad virtual.",
@@ -151,9 +148,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Javier-De-La-Tejera-2",
       "mailLink": "mailto:delatejera@tec.mx",
       "linkedInLink": "https://www.linkedin.com/in/javier-de-la-tejera/" 
-    }
-  ],
-  "ProjectManagersTeam2": [
+    },
     {
       "title.Back":"Intereses",
       "text1Back":" Actualmente trabaja como ingeniero especialista en la Escuela de Ingeniería y Ciencias de la misma universidad.",
@@ -167,9 +162,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Luis-Curiel-Ramirez",
       "mailLink": "mailto:lacuriel55@tec.mx",
       "linkedInLink": "#" 
-    }
-  ],
-  "ProjectManagersTeam3": [
+    },
     {
       "title.Back":"Intereses",
       "text1Back":"Actualmente está buscando su doctorado en la Escuela de Ingeniería y Ciencias en el Tecnológico de Monterrey.",
@@ -197,9 +190,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Ariel-Lopez-Aguilar",
       "mailLink": "mailto:ariel.lopag@gmail.com",
       "linkedInLink": "https://www.linkedin.com/in/ariel-alejandro-lópez-aguilar-7979a513b/" 
-    }
-  ],
-  "ProjectManagersTeam4": [
+    },
     {
       "title.Back":"Intereses",
       "text1Back":"Obtuvo su Doctorado en Ciencias de la Ingeniería en la misma universidad en el 2018. Actualmente realiza sus estudios Posdoctorales en el MIT.",

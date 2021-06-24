@@ -1,4 +1,5 @@
 {
+  "team": "Research team",
   "directors": "Headmasters",
   "collaborators": "Collaborators",
   "projectManagers": "Project managers",
@@ -30,9 +31,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Arturo-Molina",
       "mailLink": "#",
       "linkedInLink": "#"
-    }
-  ],
-  "directorsTeam2":[
+    },
     {
       "title.Back":"Interests",
       "text1Back":"His master debree from Tecnologico de Monterrey, Monterrey and his Ph.D. from The Grenoble Institute of Technology, France.",
@@ -90,9 +89,7 @@
       "researchGateLink": "#",
       "mailLink": "#",
       "linkedInLink": "https://www.linkedin.com/in/israel-ulises-cayetano-jiménez-194553b9/" 
-    }
-  ],
-  "collaboratorsTeam2":[
+    },
     {
       "title.Back":"Interests",
       "text1Back":"He has participated in projects of product prototyping, automation, digital signal processing, haptic systems, human motion analysis and sensor fusion focused on inertial sensors and GNSS with applications in mobile robotics, medicine and virtual reality. ",
@@ -150,9 +147,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Javier-De-La-Tejera-2",
       "mailLink": "mailto:delatejera@tec.mx",
       "linkedInLink": "https://www.linkedin.com/in/javier-de-la-tejera/" 
-    }
-  ],
-  "ProjectManagersTeam2": [
+    },
     {
       "title.Back":"Interests",
       "text1Back":"He is currently working as specialist engineering in the School of Engineering and Science in the same university.",
@@ -166,9 +161,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Luis-Curiel-Ramirez",
       "mailLink": "mailto:lacuriel55@tec.mx",
       "linkedInLink": "#" 
-    }
-  ],
-  "ProjectManagersTeam3": [
+    },
     {
       "title.Back":"Interests",
       "text1Back":"He is currently pursuing the Ph. D. degree in the School of Engineering and Science in Tecnolgico de Monterrey.",
@@ -196,9 +189,7 @@
       "researchGateLink": "https://www.researchgate.net/profile/Ariel-Lopez-Aguilar",
       "mailLink": "mailto:ariel.lopag@gmail.com",
       "linkedInLink": "https://www.linkedin.com/in/ariel-alejandro-lópez-aguilar-7979a513b/" 
-    }
-  ],
-  "ProjectManagersTeam4": [
+    },
     {
       "title.Back":"Interests",
       "text1Back":"He is currently pursuing the Ph. D. degree in the School of Engineering and Science in the same university. ",

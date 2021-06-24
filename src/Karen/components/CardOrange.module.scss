@@ -6,19 +6,18 @@ $primary: #616110;
 $primary: #1f1f05;
 $primary: #353309;
 $primary: #3c392c;
-$secondary: #f95738;
-$tertiary: #ff9cd8;
+$secondary: #f39d2b;
+$tertiary: #f39d2b;
 
 .Card {
+  width: 33.3333%;
+}
+
+.CardInner {
   margin: 40px auto 40px;
   width: 300px;
   height: 520px;
   perspective: 1000px;
-}
-
-.CardInner {
-  width: 100%;
-  height: 100%;
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -42,30 +41,34 @@ $tertiary: #ff9cd8;
 }
 
 .CardFacefront {
-  background-color: $secondary;
-  background-image: linear-gradient(62deg, $secondary 30%, $tertiary 100%);
+  background-color: #222222;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 5px;
+}
+
+.CardFace:hover {
+  overflow: scroll;
 }
 
 .CardFacefront h2 {
-  color: $primary;
-  font-size: 30px;
+  color: $tertiary;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .CardFacefront h3 {
-  color: $primary;
-  font-size: 24px;
+  color: $tertiary;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .CardFacefront p {
-  color: $backgroundTwo;
-  font-size: 18px;
+  color: $fontcolor;
+  font-size: 1.5rem;
   line-height: 1.4;
   padding: 10px 20px 10px 20px;
   text-align: justify;
@@ -100,7 +103,6 @@ $tertiary: #ff9cd8;
   right: 0;
   bottom: 0;
   background-color: $secondary;
-  background-image: linear-gradient(62deg, $secondary 50%, $tertiary 100%);
   z-index: -1;
   border-radius: 0px 0px 50% 0px;
 }
@@ -111,13 +113,12 @@ $tertiary: #ff9cd8;
   height: 148px;
   margin: 0 auto 10px;
   border-radius: 50%;
-  border: 5px solid $fontcolor;
   object-fit: cover;
 }
 
 .CardHeader h2 {
   color: $fontcolor;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: 750;
   text-transform: uppercase;
   text-align: center;
@@ -130,14 +131,14 @@ $tertiary: #ff9cd8;
 
 .CardBody h3 {
   color: $secondary;
-  font-size: 24px;
+  font-size: 2.25rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .CardBody p {
   color: $fontcolor;
-  font-size: 18px;
+  font-size: 1.75rem;
   line-height: 1.4;
   text-align: justify;
 }
@@ -149,28 +150,59 @@ strong {
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Icons*/
+.Icons {
+  padding: 1.5em;
+  display: block;
+  text-align: center;
+}
+
 .Icons a {
   display: inline-flex;
   width: 50px;
   height: 50px;
   justify-content: center;
   align-items: center;
-  color: $primary;
+  color: #fff;
   font-size: 25px;
   transition: 0.4s;
   border-radius: 50%;
 }
 
 .Icons a:hover {
-  border: 2px solid $primary;
+  border: 2px solid $tertiary;
   color: $tertiary;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
 
-@media (max-width: 768px) {
+@media (max-width: 994px) {
+  .Card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 750px) {
   .CardInner:active {
     transform: rotateY(180deg);
+  }
+  .Card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .CardFacefront h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .CardFacefront h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .CardFacefront p {
+    font-size: 13px;
   }
 }

@@ -1,110 +1,58 @@
-$fontcolor: #FFF;
+$fontcolor: #fff;
 $backgroundTwo: #222222;
 $green: #00b398;
-$orange: #f95738;
+$orange: #f39d2b;
 $purple: #850053;
 
 .Wrapper {
   width: 100%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  background: #141414;
+  background-color: #141414;
+  opacity: 1;
+  background-image: radial-gradient(#222222 2px, transparent 2px),
+    radial-gradient(#222222 2px, #141414 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
   display: flex;
   min-width: 300px;
-  margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0px;
-  text-decoration: none; 
-  background-color: #141414;
 }
 
+.Title {
+  font-size: 3rem;
+  color: #f1eeee;
+  text-shadow: 0 0 8px $orange, 0 0 2px $orange, 0 0 10px $orange,
+    0 0 6px $orange, 0 0 20px $orange, 0 0 20px $orange, 0 0 1px $orange,
+    0 0 12px $orange;
+  text-transform: uppercase;
+  padding: 5px;
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*En esta parte se ponen todas las propiedades de las anidaciones*/
-.Directores, .Colaboradores, .EncargadosOne, .EncargadosTwo {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 0px;
-}
-
-.EncargadosH1 {
-  color: $green;
-  font-size: 4rem;
-  text-align: center;
-  width: 100%;
-  //font-weight: 700;
-}
-
-.ColaboradoresH1 {
-  color: $purple;
-  font-size: 40px;
-  text-align: center;
-  width: 100%;
-  font-weight: 700;
-}
-
-.DirectoresH1 {
-  color: $orange;
-  font-size: 40px;
-  text-align: center;
-  width: 100%;
-  font-weight: 700;
-}
-
+.Directores,
+.Colaboradores,
 .EncargadosProyecto {
   width: 100%;
-}
-
-.DirectoresOne, .Encargados1{
-  width: 65%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0px;
 }
 
-.DirectoresTwo, .Encargados2 {
-  width: 35%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 0px;
-}
-
-.ColaboradoresOne, .ColaboradoresTwo, .Encargados3, .Encargados4 {
+.DirectoresH1,
+.ColaboradoresH1,
+.EncargadosH1 {
+  color: $orange;
+  font-size: 4rem;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 0px;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
-
-@media(max-width: 1440px) {
-  .Colaboradores, .EncargadosTwo{
-    flex-direction: column;
-  }
-}
-
-@media(max-width: 1044px) {
-  .Directores, .EncargadosOne{
-    flex-direction: column;
-  }
-
-  .DirectoresOne, .Encargados1, .DirectoresTwo, .Encargados2{
-    width: 100%;
-  }
-}
-
-@media(max-width: 748px) {
-
-  .DirectoresOne, .Encargados1, .DirectoresTwo, .Encargados2{
-    width: 100%;
-    flex-direction: column;
-  }
-  .ColaboradoresOne, .ColaboradoresTwo, .Encargados3, .Encargados4 {
-    flex-direction: column;
-  }
-}
