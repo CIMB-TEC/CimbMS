@@ -2,7 +2,9 @@ $primary: #2b81f3;
 $secundary: #f39d2b;
 $primary: #f95738;
 $primary: #00b398;
-$primary: #88e18c;
+$primary: #f39d2b;
+
+
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -42,8 +44,9 @@ html {
 .WeAre {
   width: 100%;
   font-size: 3rem;
-  //color: #ff8200;
   color: $primary;
+  color: #f1eeee;
+  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
   display: inline-block;
   margin-bottom: 25px;
   margin-top: 50px;
@@ -113,7 +116,10 @@ html {
   color: black;
   margin-bottom: 40px;
 }
-
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////////
+NO SE UTILIZAN
+////////////////////////////////////////////////////////////////////////////////////////////////////
 .AreasTitle {
   width: 100%;
   font-size: 2.5rem;
@@ -129,13 +135,18 @@ html {
   margin-bottom: 10px;
   color: $secundary;
 }
-
+*/
 .Icon {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
   justify-self: start;
 }
+
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////////
+NO SE UTILIZAN
+////////////////////////////////////////////////////////////////////////////////////////////////////
 .TopicsContainer {
   width: 100%;
   display: flex;
@@ -151,6 +162,7 @@ html {
     content: "● ";
   }
 }
+*/
 .AreasContainer {
   width: 100%;
   display: flex;
@@ -170,14 +182,11 @@ html {
   align-items: center;
   justify-content: center;
   color: #1f1e1d;
-
-  background-color: rgba(11, 126, 17, 0.6);
+  //background-color: rgba(11, 126, 17, 0.6);
   //opacity: 0.5;
   margin: 0 15px 25px 15px;
-
   //border: 1px solid blue;
   height: 300px;
-
   padding: 10px;
   width: 290px;
   //max-width: 300px;
@@ -186,8 +195,8 @@ html {
 
 .AreaOneContainer,
 .AreaFourContainer {
-  //background-color: rgba(7, 138, 214, 0.6);
-  background-color: rgba(136, 225, 140, 0.6);
+  //background-color: rgba(0, 179, 152, 0.6);
+  background-color: rgba(243, 157, 43, 0.6);
 }
 
 .AreaTitle {

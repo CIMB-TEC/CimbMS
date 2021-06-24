@@ -7,9 +7,9 @@ import styles from "./KarenStyles.module.scss"
 
 import teamEng from "./teamEng.json"
 import teamEsp from "./teamEsp.json"
-import { LanguageContext } from "../App"
-import React, { useContext } from "react"
 
+import React, { useContext } from "react"
+import { LanguageContext } from "../App"
 
 
 function Karen() {
@@ -74,47 +74,47 @@ function Karen() {
             <h1 className={styles.ColaboradoresH1}>{team.collaborators}</h1>
             <div className={styles.Colaboradores}>
                 <div className={styles.ColaboradoresOne}>
-                {
-                    team.collaboratorsTeam.map((collaborator) => {
-                        return (
-                            <CardPurple
-                            TitleBack={collaborator.titleBack}
-                            TextOneBack={collaborator.text1Back}
-                            TextTwoBack={collaborator.text2Back}
-                            SubtitleBack={collaborator.subtitleBack}
-                            NameFront={collaborator.name}
-                            SubtitleFront={collaborator.position}
-                            TextFront={collaborator.textFront}
-                            //Guardar todas las imagenes en la misma carpeta 
-                            //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                            image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
-                            ResearchGateLink={collaborator.researchGateLink}
-                            MailLink={collaborator.mailLink}
-                            LinkedInLink={collaborator.linkedInLink}
-                            />
+                    {
+                        team.collaboratorsTeam.map((collaborator) => {
+                            return (
+                                <CardPurple
+                                    TitleBack={collaborator.titleBack}
+                                    TextOneBack={collaborator.text1Back}
+                                    TextTwoBack={collaborator.text2Back}
+                                    SubtitleBack={collaborator.subtitleBack}
+                                    NameFront={collaborator.name}
+                                    SubtitleFront={collaborator.position}
+                                    TextFront={collaborator.textFront}
+                                    //Guardar todas las imagenes en la misma carpeta 
+                                    //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                    image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
+                                    ResearchGateLink={collaborator.researchGateLink}
+                                    MailLink={collaborator.mailLink}
+                                    LinkedInLink={collaborator.linkedInLink}
+                                />
                             )
                         })
                     }
                 </div>
                 <div className={styles.ColaboradoresTwo}>
-                {
-                    team.collaboratorsTeam2.map((collaborator) => {
-                        return (
-                            <CardPurple
-                            TitleBack={collaborator.titleBack}
-                            TextOneBack={collaborator.text1Back}
-                            TextTwoBack={collaborator.text2Back}
-                            SubtitleBack={collaborator.subtitleBack}
-                            NameFront={collaborator.name}
-                            SubtitleFront={collaborator.position}
-                            TextFront={collaborator.textFront}
-                            //Guardar todas las imagenes en la misma carpeta 
-                            //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                            image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
-                            ResearchGateLink={collaborator.researchGateLink}
-                            MailLink={collaborator.mailLink}
-                            LinkedInLink={collaborator.linkedInLink}
-                            />
+                    {
+                        team.collaboratorsTeam2.map((collaborator) => {
+                            return (
+                                <CardPurple
+                                    TitleBack={collaborator.titleBack}
+                                    TextOneBack={collaborator.text1Back}
+                                    TextTwoBack={collaborator.text2Back}
+                                    SubtitleBack={collaborator.subtitleBack}
+                                    NameFront={collaborator.name}
+                                    SubtitleFront={collaborator.position}
+                                    TextFront={collaborator.textFront}
+                                    //Guardar todas las imagenes en la misma carpeta 
+                                    //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                    image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
+                                    ResearchGateLink={collaborator.researchGateLink}
+                                    MailLink={collaborator.mailLink}
+                                    LinkedInLink={collaborator.linkedInLink}
+                                />
                             )
                         })
                     }
@@ -124,98 +124,98 @@ function Karen() {
             <div className={styles.EncargadosProyecto}>
                 <div className={styles.EncargadosOne}>
                     <div className={styles.Encargados1}>
-                    {
-                        team.ProjectManagersTeam.map((managers) => {
-                        return (
-                            <CardGreen
-                                TitleBack={managers.titleBack}
-                                TextOneBack={managers.text1Back}
-                                TextTwoBack={managers.text2Back}
-                                SubtitleBack={managers.subtitleBack}
-                                NameFront={managers.name}
-                                SubtitleFront={managers.position}
-                                TextFront={managers.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
-                                ResearchGateLink={managers.researchGateLink}
-                                MailLink={managers.mailLink}
-                                LinkedInLink={managers.linkedInLink}
-                            />
-                            )
-                        })
-                    }   
+                        {
+                            team.ProjectManagersTeam.map((managers) => {
+                                return (
+                                    <CardGreen
+                                        TitleBack={managers.titleBack}
+                                        TextOneBack={managers.text1Back}
+                                        TextTwoBack={managers.text2Back}
+                                        SubtitleBack={managers.subtitleBack}
+                                        NameFront={managers.name}
+                                        SubtitleFront={managers.position}
+                                        TextFront={managers.textFront}
+                                        //Guardar todas las imagenes en la misma carpeta 
+                                        //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                        image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
+                                        ResearchGateLink={managers.researchGateLink}
+                                        MailLink={managers.mailLink}
+                                        LinkedInLink={managers.linkedInLink}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                     <div className={styles.Encargados2}>
-                    {
-                        team.ProjectManagersTeam2.map((managers) => {
-                        return (
-                            <CardGreen
-                                TitleBack={managers.titleBack}
-                                TextOneBack={managers.text1Back}
-                                TextTwoBack={managers.text2Back}
-                                SubtitleBack={managers.subtitleBack}
-                                NameFront={managers.name}
-                                SubtitleFront={managers.position}
-                                TextFront={managers.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
-                                ResearchGateLink={managers.researchGateLink}
-                                MailLink={managers.mailLink}
-                                LinkedInLink={managers.linkedInLink}
-                            />
-                            )
-                        })
-                    }   
+                        {
+                            team.ProjectManagersTeam2.map((managers) => {
+                                return (
+                                    <CardGreen
+                                        TitleBack={managers.titleBack}
+                                        TextOneBack={managers.text1Back}
+                                        TextTwoBack={managers.text2Back}
+                                        SubtitleBack={managers.subtitleBack}
+                                        NameFront={managers.name}
+                                        SubtitleFront={managers.position}
+                                        TextFront={managers.textFront}
+                                        //Guardar todas las imagenes en la misma carpeta 
+                                        //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                        image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
+                                        ResearchGateLink={managers.researchGateLink}
+                                        MailLink={managers.mailLink}
+                                        LinkedInLink={managers.linkedInLink}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className={styles.EncargadosTwo}>
                     <div className={styles.Encargados3}>
-                    {
-                        team.ProjectManagersTeam3.map((managers) => {
-                        return (
-                            <CardGreen
-                                TitleBack={managers.titleBack}
-                                TextOneBack={managers.text1Back}
-                                TextTwoBack={managers.text2Back}
-                                SubtitleBack={managers.subtitleBack}
-                                NameFront={managers.name}
-                                SubtitleFront={managers.position}
-                                TextFront={managers.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
-                                ResearchGateLink={managers.researchGateLink}
-                                MailLink={managers.mailLink}
-                                LinkedInLink={managers.linkedInLink}
-                            />
-                            )
-                        })
-                    }   
+                        {
+                            team.ProjectManagersTeam3.map((managers) => {
+                                return (
+                                    <CardGreen
+                                        TitleBack={managers.titleBack}
+                                        TextOneBack={managers.text1Back}
+                                        TextTwoBack={managers.text2Back}
+                                        SubtitleBack={managers.subtitleBack}
+                                        NameFront={managers.name}
+                                        SubtitleFront={managers.position}
+                                        TextFront={managers.textFront}
+                                        //Guardar todas las imagenes en la misma carpeta 
+                                        //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                        image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
+                                        ResearchGateLink={managers.researchGateLink}
+                                        MailLink={managers.mailLink}
+                                        LinkedInLink={managers.linkedInLink}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                     <div className={styles.Encargados4}>
-                    {
-                        team.ProjectManagersTeam4.map((managers) => {
-                        return (
-                            <CardGreen
-                                TitleBack={managers.titleBack}
-                                TextOneBack={managers.text1Back}
-                                TextTwoBack={managers.text2Back}
-                                SubtitleBack={managers.subtitleBack}
-                                NameFront={managers.name}
-                                SubtitleFront={managers.position}
-                                TextFront={managers.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
-                                ResearchGateLink={managers.researchGateLink}
-                                MailLink={managers.mailLink}
-                                LinkedInLink={managers.linkedInLink}
-                            />
-                            )
-                        })
-                    }   
+                        {
+                            team.ProjectManagersTeam4.map((managers) => {
+                                return (
+                                    <CardGreen
+                                        TitleBack={managers.titleBack}
+                                        TextOneBack={managers.text1Back}
+                                        TextTwoBack={managers.text2Back}
+                                        SubtitleBack={managers.subtitleBack}
+                                        NameFront={managers.name}
+                                        SubtitleFront={managers.position}
+                                        TextFront={managers.textFront}
+                                        //Guardar todas las imagenes en la misma carpeta 
+                                        //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
+                                        image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
+                                        ResearchGateLink={managers.researchGateLink}
+                                        MailLink={managers.mailLink}
+                                        LinkedInLink={managers.linkedInLink}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

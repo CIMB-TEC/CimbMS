@@ -15,7 +15,9 @@ function Jorge() {
     const eng = useContext(LanguageContext)
     let proyects = eng ? proyectsEng : proyectsEsp;
     return (
+
     <div className={styles.wrapper}> 
+
         <h1 className={styles.heading}>
             {proyects.heading1}
         </h1>

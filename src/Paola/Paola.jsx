@@ -4,6 +4,7 @@ import Card from "./Components/Card"
 
 import articlesEng from "./articlesEng.json"
 import articlesEsp from "./articlesEsp.json"
+
 import { LanguageContext } from "../App"
 import React, { useContext } from "react"
 
@@ -15,22 +16,22 @@ function Paola(props) {
 
     return (
         <div className={styles.Page}>
-            <h1>{project.title}</h1>
+            <h1 className={styles.Title}>{project.title}</h1>
             <h2>{project.smartElectromobility}</h2>
             {
                 project.smartElectromobilityProjects.map((proj) => {
                     return (
-                        <Card 
-                        Img={require(`./img/${proj.Image}.jpg`)}
-                        Title={proj.Title}
-                        Author={proj.Author}
-                        Year={proj.Year}
-                        Link={proj.Link}
-                        Abs={proj.Abstract}
-                        main1={proj.highLight1}
-                        main2={proj.highLight2}
-                        main3={proj.highLight3}
-                        Read={project.Read}
+                        <Card
+                            Img={require(`./img/${proj.Image}.jpg`)}
+                            Title={proj.Title}
+                            Author={proj.Author}
+                            Year={proj.Year}
+                            Link={proj.Link}
+                            Abs={proj.Abstract}
+                            main1={proj.highLight1}
+                            main2={proj.highLight2}
+                            main3={proj.highLight3}
+                            Read={project.Read}
                         />
                     )
                 })
@@ -39,17 +40,17 @@ function Paola(props) {
             {
                 project.userCenteredTechnologyDevelopmentProjects.map((proj) => {
                     return (
-                        <Card 
-                        Img={require(`./img/${proj.Image}.jpg`)}
-                        Title={proj.Title}
-                        Author={proj.Author}
-                        Year={proj.Year}
-                        Link={proj.Link}
-                        Abs={proj.Abstract}
-                        main1={proj.highLight1}
-                        main2={proj.highLight2}
-                        main3={proj.highLight3}
-                        Read={project.Read}
+                        <Card
+                            Img={require(`./img/${proj.Image}.jpg`)}
+                            Title={proj.Title}
+                            Author={proj.Author}
+                            Year={proj.Year}
+                            Link={proj.Link}
+                            Abs={proj.Abstract}
+                            main1={proj.highLight1}
+                            main2={proj.highLight2}
+                            main3={proj.highLight3}
+                            Read={project.Read}
                         />
                     )
                 })
@@ -58,17 +59,17 @@ function Paola(props) {
             {
                 project.othersProjects.map((proj) => {
                     return (
-                        <Card 
-                        Img={require(`./img/${proj.Image}.jpg`)}
-                        Title={proj.Title}
-                        Author={proj.Author}
-                        Year={proj.Year}
-                        Link={proj.Link}
-                        Abs={proj.Abstract}
-                        main1={proj.highLight1}
-                        main2={proj.highLight2}
-                        main3={proj.highLight3}
-                        Read={project.Read}
+                        <Card
+                            Img={require(`./img/${proj.Image}.jpg`)}
+                            Title={proj.Title}
+                            Author={proj.Author}
+                            Year={proj.Year}
+                            Link={proj.Link}
+                            Abs={proj.Abstract}
+                            main1={proj.highLight1}
+                            main2={proj.highLight2}
+                            main3={proj.highLight3}
+                            Read={project.Read}
                         />
                     )
                 })

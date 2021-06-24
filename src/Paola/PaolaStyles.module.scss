@@ -2,9 +2,10 @@
 
 $card: #383838;
 $white: #ffffff;
-$heading: #00b398;
 $color: #00b398;
-$secondColor: #003a76;
+$primary: #00b398;
+$primary: #f39d2b;
+$color: #f39d2b;
 $background: #1f1e1d;
 
 
@@ -15,6 +16,15 @@ $background: #1f1e1d;
   padding-right: 5%;
   padding-bottom: 1%;
   background: #141414;
+  //background-color: #141414;
+  //opacity: 1;
+  //background: radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#222222 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #222222 1.6px, #141414 1.6px) -0.8px 0;
+  //background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+  background-color: #141414;
+  opacity: 1;
+  background-image:  radial-gradient(#222222 2px, transparent 2px), radial-gradient(#222222 2px, #141414 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
 }
 .Page h1 {
   font-size: 3rem;
@@ -22,13 +32,20 @@ $background: #1f1e1d;
   //font-weight: bold;
   padding: 5px;
 }
+.Title {
+  font-size: 3rem;
+  color: #f1eeee;
+  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
+  text-transform: uppercase;
+}
 .Page h2 {
   font-size: 4rem;
-  color: $heading;
+  color: $primary;
+  //color: #f1eeee;
+  //text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
   //font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
-
 }
 
 @media only screen and (min-width: 1000) {
