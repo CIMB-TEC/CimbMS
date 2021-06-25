@@ -4,7 +4,7 @@ $bluemid: #f39d2b;
 $white: #fff;
 
 .parrafocard {
-  font-size: 13.5px;
+  font-size: 1.5rem;
   //font-weight: 1000;
   margin: 2px;
 }
@@ -17,7 +17,7 @@ $white: #fff;
 
 .container {
   width: 350px;
-  position: relative;
+  //position: relative;
   display: flex;
   justify-content: center;
 }
@@ -130,13 +130,13 @@ $white: #fff;
 
 .content .parrafocard {
   text-align: justify;
-  margin: 15px 15px 15px 15px;
+  margin: 15px;
 }
 
 .face,
 .face2,
 .anchor {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -195,6 +195,9 @@ $white: #fff;
 }
 
 @media (max-width: 500px) {
+  .container {
+    width: 300px;
+  }
   .face {
     //caja texto
     width: 300px;
@@ -208,11 +211,15 @@ $white: #fff;
   }
 
   .parrafocard {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   .anchor {
     font-size: 0.6em;
+  }
+
+  .arrow {
+    margin: 10px;
   }
 
   .content .cardh3 {
@@ -220,7 +227,7 @@ $white: #fff;
   }
 
   .content .icono2 {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
