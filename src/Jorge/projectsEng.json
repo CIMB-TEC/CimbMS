@@ -1,8 +1,8 @@
 {
-  "heading0": "Proyects",
+  "heading0": "Projects",
   "heading1": "Postgraduate",
   "heading2": "Undergraduate",
-  "proyectBlue": [
+  "projectBlue": [
     {
       "title" : "Admas",
       "text" : "The Advanced Driver Monitoring for Assistance System (ADMAS) project, consists on the creation of a new driver assistance system that efficiently helps a conductive psycho-physiological state. It aims to increase the autonomy of a common car to a semi-autonomous one.",
@@ -22,7 +22,7 @@
       "titleLink" : "Read More"
     }
   ],
-  "proyectPurple": [
+  "projectPurple": [
     {
       "title" : "Acoustic Agriculture",
       "text" : "The project seeks to develop a completely autonomous and isolated space for the study of plant growth, where the environmental conditions can be constantly monitored, as well as altered if necessary for the development of different plant specimens.",

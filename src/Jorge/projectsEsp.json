@@ -2,7 +2,7 @@
   "heading0": "Proyectos",
   "heading1": "Postgrado",
   "heading2": "Pregrado",
-  "proyectBlue": [
+  "projectBlue": [
     {
       "title" : "Admas",
       "text" : "El proyecto Advanced Driver Monitoring for Assistance System (ADMAS) consta en la creación de un nuevo sistema de asistencia al conductor que asista de forma eficiente a un conducto estado psico-fisiológico. Pretende aumentar la autonomía de un automóvil común a uno semi-autonomo.",
@@ -22,7 +22,7 @@
       "titleLink" : "Leer más"
     }
   ],
-  "proyectPurple": [
+  "projectPurple": [
     {
       "title" : "Agricultura Acústica",
       "text" : "El proyecto busca desarrollar un espacio completamente autónomo y aislado para el estudio del crecimiento vegetal, donde las condiciones del entorno puedan ser monitoreadas de manera constante, así como alteradas de ser necesario para el desarrollo de diferentes especímenes de plantas.",
