@@ -33,22 +33,28 @@ const Blog = () => {
 
 	return (
 		<div className={styles.Wrapper} >
-			{blogs.map((blog, index) => {
-				return (
-					<BlogCard
-						key={index}
-						author={blog.author}
-						date={blog.date}
-						description={blog.description}
-						img={blog.img}
-						tag={blog.tag}
-						title={blog.title}
+			{
+				blogs.length > 0 ? (
+					blogs.map((blog, index) => {
+						return (
+							<BlogCard
+								key={index}
+								author={blog.author}
+								date={blog.date}
+								description={blog.description}
+								img={blog.img}
+								tag={blog.tag}
+								title={blog.title}
 
-					/>
+							/>
 
-				);
+						);
 
-			})}
+					})
+				) : <p className={styles.LoadingMsg} > Loading...</p>
+			}
+
+
 
 
 		</div >
