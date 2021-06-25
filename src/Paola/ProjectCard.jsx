@@ -12,12 +12,12 @@ const ProjectCard = (props) => {
         <h3 className={styles.date}>{props.Date}</h3>
         <h3 className={styles.group}>{props.Group}</h3>
         <div className={styles.txt}>
-          <h3>Objetivo general</h3>
+          <h3>{props.ObjGenTi}</h3>
           <p>{props.ObjGen}</p>
-          <h3>Objetivo específico</h3>
+          <h3>{props.ObjEspTi}</h3>
           <p>{props.ObjEsp}</p>
         </div>
-        <a href={props.Link} className={styles.details}> Descargar póster </a>
+        <a href={props.Link} className={styles.details}> {props.linkTi} </a>
       </div>
     </article>
 

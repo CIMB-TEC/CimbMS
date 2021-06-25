@@ -1,7 +1,7 @@
 $white: #fff;
-$button-letter: #fff;
-$button: #4e958b;
+$primary: #f39d2b;
 $background: #000;
+$blackGray: #222222;
 
 $lite-grey: rgba($background, 0.2);
 
@@ -19,6 +19,7 @@ article.card {
   box-shadow: 0 1px 4px rgba($background, 0.3);
   overflow: hidden;
   max-width: 500px;
+  color: $white;
 }
 .thumb {
   width: 100%;
@@ -30,7 +31,7 @@ article.card {
   height: 100%;
   position: relative;
   padding: 3% 5%;
-  background: $white;
+  background: $blackGray;
   transition: $timing-1 $transition;
 }
 .title {
@@ -47,6 +48,7 @@ article.card {
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  color: $primary;
 }
 .seats {
   display: inline-block;
@@ -73,22 +75,27 @@ article.card {
 }
 
 .details {
-  display: block;
-  position: relative;
-  width: 30%;
-  padding: 2%;
-  border-radius: 3px;
-  text-align: center;
-  background: $button;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 1.5px;
-  color: $button-letter;
-  font-size: 1.25rem;
+  display: block;
+  position: relative;
+  padding: 2%;
+  width: 55%;
+  color: $white;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
-  opacity: 0;
-  transition: $timing-2 $transition;
+  border: 3px solid $primary;
+  border-radius: 30px;
+  font-size: 1.5em;
+  font-weight: 525;
+  &:hover {
+      background: $primary;
+      color: #222222;
+      font-weight: 540;
+      font-weight: bold;
+  }
 }
 
 .infos:hover {
@@ -115,21 +122,40 @@ article.card {
     margin-bottom: 1.5px;
     font-size: 1.25rem;
     letter-spacing: 1.25px;
+    color: $primary;
   }
   .seats {
     margin-bottom: 3%;
     padding-bottom: 3%;
   }
   .txt {
-    font-size: 2.25rem;
+    font-size: 1.25rem;
   }
   .txt h3 {
     font-size: 1.25rem;
   }
   .details {
-    width: 40%;
-    letter-spacing: 1.25px;
-    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    padding: 2%;
+    width: 55%;
+    color: $white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid $primary;
+    border-radius: 30px;
+    font-size: 1.5em;
+    font-weight: 525;
+    &:hover {
+        background: $primary;
+        color: #222222;
+        font-weight: 540;
+        font-weight: bold;
+    }
   }
   .infos:active {
     transform: translateY(-75%);
@@ -142,7 +168,7 @@ article.card {
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1000px) {
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
   article.card {
     height: 40vh;
   }
@@ -155,21 +181,22 @@ article.card {
     margin-bottom: 1.5px;
     font-size: 1.5rem;
     letter-spacing: 1.25px;
+    color: $primary;
   }
   .group {
     margin-bottom: 4%;
     padding-bottom: 4%;
   }
   .txt {
-    font-size: 2.25rem;
+    font-size: 1.25rem;
   }
   .txt h3 {
     font-size: 1.5rem;
   }
   .details {
-    width: 35%;
+    width: 55%;
     letter-spacing: 1.25px;
-    font-size: 1.25rem;
+    font-size: 0.92rem;
   }
   .infos:active {
     transform: translateY(-75%);

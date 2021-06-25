@@ -1,6 +1,7 @@
 {
+  "heading0": "Proyects",
   "heading1": "Postgraduate",
-  "heading2_2": "Undergraduate",
+  "heading2": "Undergraduate",
   "proyectBlue": [
     {
       "title" : "Admas",
@@ -25,13 +26,13 @@
     {
       "title" : "Acoustic Agriculture",
       "text" : "The project seeks to develop a completely autonomous and isolated space for the study of plant growth, where the environmental conditions can be constantly monitored, as well as altered if necessary for the development of different plant specimens.",
-      "link" : "#",
+      "link" : "http://localhost:3000/UCTD",
       "titleLink" : "Read More"
     }, 
     {
       "title" : "Intelligent Vehicles",
       "text" : "The project seeks to develop a platform for an all-terrain vehicle, fully electric and instrumented. Seeking the application of intelligent algorithms and sensor fusion for processing and with them generating safety systems for driving assistance.",
-      "link" : "#",
+      "link" : "http://localhost:3000/UCTD",
       "titleLink" : "Read More"
     }
   ]
