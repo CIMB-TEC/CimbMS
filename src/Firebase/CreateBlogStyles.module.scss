@@ -1,14 +1,46 @@
+$primary: #f39d2b;
+
 .Wrapper {
   font-size: 30px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 25px;
+  align-items: center;
+  //gap: 25px;
+  background-color: #141414;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#222222 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #222222 1.6px, #141414 1.6px) -0.8px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
 }
-.Input {
-  height: 30px;
-  color: black;
+
+.Title {
+  font-size: 4rem;
+  color: $primary;
+  padding: 3px;
+  text-align: left;
+  width: 100%;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  background-color: #222222;
+  margin: 2%;
+  border-radius: 20px;
+}
+
+.BlogForm {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 
 .InputContainer {
@@ -17,6 +49,101 @@
 }
 
 .Button {
-  background-color: white;
-  color: black;
+  padding: 10px;
+  width: 31%;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid $primary;
+  border-radius: 30px;
+  font-size: 0.6em;
+  font-weight: 525;
+  background-color: #222222;
+  &:hover {
+      background: $primary;
+      color: #222222;
+      font-weight: 540;
+      font-weight: bold;
+  }
+}
+
+.Submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.Rocket {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Image {
+  width: 100%;
+}
+
+.Span {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0;
+}
+
+.InputBlog {
+  color: #fff;
+  background-color: #222222;
+  width: 93%;
+  height: 40px;
+  border: 3px solid $primary;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.InputBlog::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+.InputDesBlog {
+  color: #fff;
+  background-color: #222222;
+  width: 93%;
+  height: 150px;
+  border: 3px solid $primary;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  left: 0px;
+  font-size: 1.5rem;
+}
+
+.buttonWrap {
+  position: relative;
+  border: 3px solid $primary;
+  border-radius: 10px;
+  font-size: 1.5rem; 
+  width: 93%;
+  height: 40px;
+  //color: red;
+}
+
+.newButton {
+  display: inline-block;
+  width: 20%;
+  height: 34px;
+  padding: 5px 5px; 
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: #fff;
 }
