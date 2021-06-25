@@ -1,0 +1,124 @@
+$blackGray: #222222;
+$white: #fff;
+$primary: #f39d2b;
+
+.conttabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 25px;
+}
+
+.manita {
+    position: relative;
+    display: flex;
+    margin-left: 7.5rem;
+    width: 18px;
+    height: 18px;
+}
+
+.conttabs .input0 {
+    display: none;
+
+}
+
+.conttabs .label0 {
+    width: 190px;
+    padding: 10px;
+    background: $primary;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: $blackGray;
+    text-align: center;
+    border-top: 1.5px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: $primary;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+//  order: 2;  //cambiar etiquetas arriba de la tab o abajo
+}
+
+.conttabs .tabs {
+    width: 100%;
+    padding: 20px;
+    background: $blackGray;
+    order: 1;
+    display: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.conttabs .tabs .tabsh2 {
+    font-size: 3em;
+    color: $primary;
+    text-align: center;
+}
+
+.conttabs .tabs .parrafoT0 {
+    font-size: 1.4em;
+    color: $white;
+    text-align: justify;
+    padding: 5px;
+}
+
+.conttabs .input0:checked + .label0 + .tabs {
+    display: block;
+}
+
+.conttabs .input0:checked + .label0 {
+    background: $blackGray;
+    border-color: $blackGray;
+    color: $white;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .conttabs {
+        max-width: 800px;
+    }
+    .conttabs .label0 {
+        width: 150px;
+    }
+    .manita {
+        margin-left: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    .conttabs {
+        max-width: 600px;
+    }
+    .conttabs .label0 {
+        width: 110px;
+    }
+    .manita {
+        margin-left: 3.5rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .conttabs {
+        max-width: 300px;
+        margin: 0;
+        padding: 20px;
+    }
+    .conttabs .label0 {
+        width: 52px;
+    }
+    .manita {
+        margin-left: 0.4rem;
+    }
+    .tabs {
+        padding: 0;
+        margin: 0;
+    }
+    .conttabs .tabs .tabsh2 {
+        font-size: 2em;
+    }
+    .conttabs .tabs .parrafoT0 {
+        font-size: 1.4em;
+        margin: 0;
+        padding: 0;
+    }
+}

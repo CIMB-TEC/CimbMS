@@ -1,19 +1,14 @@
 $blackGray: #222222;
 $white: #fff;
-$primary: #2A7DE1;
 $primary: #f39d2b;
 
 
 .wrapper {
   margin: 0;
-  //min-height: 100vh;
-  //background-color: #141414;
-  //opacity: 1;
-  //background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #141414 40px ), repeating-linear-gradient( #22222255, #222222 );
   background-color: #141414;
-opacity: 1;
-background-image: radial-gradient(#222222 2px, #141414 2px);
-background-size: 60px 60px;
+  opacity: 1;
+  background-image: radial-gradient(#222222 2px, #141414 2px);
+  background-size: 60px 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -42,19 +37,10 @@ background-size: 60px 60px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.heading {
-  font-size: 4rem;
-  color: $primary;
-  //font-weight: 600;
-  padding: 5px;
-  margin-bottom: 0.5em;
-  text-align: left;
   width: 100%;
 }
 
-.Title {
+.heading_0 {
   font-size: 3rem;
   color: #f1eeee;
   text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
@@ -63,7 +49,17 @@ background-size: 60px 60px;
   width: 100%;
 }
 
-.heading2 {
+.heading_1 {
+  font-size: 4rem;
+  color: $primary;
+  //font-weight: 600;
+  padding: 5px;
+  margin-bottom: 0.1em;
+  text-align: left;
+  width: 100%;
+}
+
+.heading_2 {
   font-size: 4rem;
   color: $primary;
   //font-weight: 600;
@@ -74,26 +70,24 @@ background-size: 60px 60px;
   width: 100%;
 }
 
-@media (max-width: 1211px) { // 2 y 3
-  .containerPostgrado, .containerPregrado {
-    flex-direction: row;
-  }
+@media (max-width: 1024px) { // 2 y 3
   .cardLblue, .cardPurple {
+    flex-direction: row;
     width: 100%;
   }
 }
 
-@media (max-width: 900px) { // 1
-  .containerPostgrado, .containerPregrado {
+@media (max-width: 768px) { // 1
+  .cardLblue, .cardPurple {
     flex-direction: column;
     align-items: center;
-  }
-  .cardLblue, .cardPurple {
-    width: 150%;
   }
 }
 
 @media (max-width: 500px) { // titulo y subtitulo pequeños, aumenta letra dentro
+  .wrapper {
+    padding: 0;
+  }
   .containerPostgrado, .containerPregrado {
     flex-direction: column;
     align-items: center;
@@ -101,17 +95,25 @@ background-size: 60px 60px;
   .cardLblue, .cardPurple {
     width: 100%;
   }
-  .heading {
+  .heading_0 {
     font-size: 25px;
     width: 100%;
-    font-weight: 500;
+    font-weight: 400;
+    margin-left: 15px;
+  }
+  .heading_1 {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 400;
+    margin-left: 10px;
   }
   
-  .heading2 {
+  .heading_2 {
     font-size: 25px;
     width: 100%;
-    font-weight: 500;
-    margin-top: 100px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }
 /*
