@@ -16,10 +16,12 @@ const CreateBlog = () => {
 
 
   const [blog, setBlog] = useState({
-    title: "",
-    description: "",
-    img: "",
-
+    title: "Curso Introductorio de Nanotech en MIT",
+    description: "En el marco de los acuerdos del MTL del MIT y del Tec de Monterrey, se estuvieron impartiendo cursos del Nanotecnologia con alumnos y profesores del Tecnologico de Monterrey. El Dr. Javier Izquierdo como instrustor asistente del curso y participacion en el curso del Dr. Sergio Navarro.En el curso se muestran las bases teoricas y practicas de la fabricacion de microcircuitos con metodos tradicionales y con tecnologias del estado del arte.",
+    date: "06/06/2019",
+    author: "Luis Alberto Curiel",
+    tag: "Noticias",
+    img: "https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/blog%2FblogMit.jpg?alt=media&token=ce7b35c6-2007-4adb-bcd4-e527b0cc763c",
   })
 
 
