@@ -16,7 +16,7 @@ import HOBS from "./Karen/HOBS";
 import LP from "./Karen/LP";
 import CreateBlog from "./Firebase/CreateBlog.jsx";
 import BlogPost from "./Firebase/BlogPost.jsx";
-
+import Blog from "./Firebase/Blog.jsx"
 import researchEng from "./Einar/researchEng.json";
 import researchEsp from "./Einar/researchEsp.json";
 
@@ -115,6 +115,9 @@ function App() {
           </Route>
 
           <Route exact path="/firebase/:id" component={BlogPost} />
+					
+					<Route exact path="/blog" component={Blog} />
+
         </ThemeProvider>
       </Router>
     </LanguageContext.Provider>
