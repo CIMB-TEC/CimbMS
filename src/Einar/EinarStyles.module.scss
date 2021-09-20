@@ -60,7 +60,7 @@ html {
 }
 
 .Description {
-  width: 60%;
+  width: 90%;
   margin-top: 25px;
   font-size: 2.2rem;
   text-align: justify;
@@ -186,9 +186,9 @@ NO SE UTILIZAN
   //opacity: 0.5;
   margin: 0 15px 25px 15px;
   //border: 1px solid blue;
-  height: 300px;
+  height: 28  0px;
   padding: 10px;
-  width: 290px;
+  width: 280px;
   //max-width: 300px;
   min-height: 220px;
 }
@@ -276,7 +276,7 @@ img {
     height: auto;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .ContentContainer {
   }
 
@@ -305,19 +305,34 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ContentContainer {
     padding: 15px;
   }
-
+  
   .WeAre {
     margin: 25px 0;
     font-size: 25px;
   }
 
   .Definition {
-    font-size: 45px;
+    margin: 0;
+    font-size: 40px;
     width: 100%;
+  }
+
+  .Description {
+    margin: 30px 30px 20px 30px;
+    font-size: 21px;
+    width: 100%;
+  }
+
+  .ContentContainer2 {
+    padding: 15px;
+  }
+
+  .ProyectosTitulo {
+    margin-top: 20px;
   }
 }
 @media (max-width: 525px) {

@@ -27,7 +27,7 @@ function Einar(props) {
 
 	return (
 		<div>
-
+			
 			<div className={styles.WaveContainer}>
 				<div className={styles.ContentContainer}>
 					<p className={styles.WeAre}> {home.title}</p>
@@ -55,16 +55,12 @@ function Einar(props) {
 								<div className={styles.AreaOneContainer}>
 									<AiOutlineFileSearch className={styles.Icon} />
 									<p className={styles.AreaTitle}> {project.title} </p>
-									<a className={styles.AreaLink}> Más información</a>
+									<a className={styles.AreaLink}> {project.info}</a>
 								</div>
 								// <ProjectCard />
 							);
 
 						})}
-
-
-
-
 					</div>
 				</div>
 			</div>
@@ -134,7 +130,7 @@ function Einar(props) {
 							src={i5}
 							alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
 						/>
-					</figure>
+					</figure>		
 
 					<figure className={styles.ImageContainerLast}>
 						<img

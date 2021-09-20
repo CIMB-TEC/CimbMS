@@ -1,20 +1,24 @@
   {
   "title": "We are the CIMB",
   "definition": "Computing Intelligence, Mechatronics and Biodesign Laboratory",
-  "description": "Our group seeks to generate quality projects to improve the quality of life of Mexican society. Our center works through the generation of Postgraduate and Undergraduate projects on different lines of research.",
+  "description": "Our group seeks to generate projects to improve the quality of life of Mexican society and an improvement of the User Experience (UX) with the use of new technologies. The laboratory works through the generation of Postgraduate and Undergraduate projects on the different lines of research focus.",
   "activeProjects": "Active projects", 
   "projects": [
     { 
-       "title":  "User Centered Technology Development"
+      "title":  "User Centered Technology Development",
+      "info": "More information"
     },
     { 
-      "title":  "Smart electromobility"
+      "title":  "Smart electromobility",
+      "info": "More information"
     },
     {
-      "title": "Human Oriented Biomechatronic Systems"
+      "title": "Human Oriented Biomechatronic Systems",
+      "info": "More information"
     },
     {
-      "title": "Linked projects"
+      "title": "Linked projects",
+      "info": "More information"
     }
 ]
 }
