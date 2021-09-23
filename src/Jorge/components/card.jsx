@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from "./cardLblueStyles.module.scss"
+import styles from "./cardStyles.module.scss"
 import {GiClick} from "react-icons/gi"
 import {AiOutlineCar} from "react-icons/ai"
 
-function cardLblue(props){
+function card(props){
     return(
         <div className={styles.container}>
             <div className={styles.card}>
-                <div className= { `${styles.face} ${styles.face1} `}>
+                <div className= {[`${styles.face} ${styles.face1} `]}>
                     <div className={styles.content}>
                         <AiOutlineCar className={styles.icono2} alt=""/>
                         <h3 className={styles.cardh3}>{props.Titulo}
@@ -18,9 +18,8 @@ function cardLblue(props){
                     </div>
                 </div>
                 <div className= { `${styles.face} ${styles.face2} `}>
-        <div className={styles.content            }>
-                        <p className={styles.parrafocard}>{props.Texto}
-                        </p>
+                    <div className={styles.content}>
+                        <p className={styles.parrafocard}>{props.Texto}</p>
                         <a className={styles.anchor}href={props.enlace}>{props.enlaceTitulo}</a>
                     </div>
                 </div>
@@ -29,5 +28,5 @@ function cardLblue(props){
     )
 }
     
-export default cardLblue;
+export default card;
     

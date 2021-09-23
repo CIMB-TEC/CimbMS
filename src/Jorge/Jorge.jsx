@@ -1,6 +1,5 @@
 
-import CardPurple from './components/cardPurple'
-import CardLblue from './components/cardLblue'
+import Card from './components/card'
 import styles from './JorgeStyles.module.scss'
 
 import projectsEng from "./projectsEng.json"
@@ -24,15 +23,16 @@ function Jorge() {
             {projects.heading1}
         </h1>
         <div className={styles.containerPostgrado}>
-            <div className={styles.cardLblue}>
+            <div className={styles.card}>
             {
-                projects.projectBlue.map((project) => {
+                projects.projectPostgraduate.map((project) => {
                     return (
-                        <CardLblue 
+                        <Card
                             Titulo = {project.title}
                             Texto = {project.text}
                             enlace = {project.link}
                             enlaceTitulo = {project.titleLink}
+                            color = {project.color}
                         />
                     )
                 })
@@ -44,11 +44,11 @@ function Jorge() {
             {projects.heading2}
         </h1>
         <div className={styles.containerPregrado}>
-            <div className={styles.cardPurple}>
+            <div className={styles.card}>
             {
-                projects.projectPurple.map((project2) => {
+                projects.projectUndergraduate.map((project2) => {
                     return (
-                        <CardPurple 
+                        <Card
                             Titulo = {project2.title}
                             Texto = {project2.text}
                             enlace = {project2.link}
