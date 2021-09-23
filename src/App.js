@@ -17,6 +17,8 @@ import LP from "./Karen/LP";
 import CreateBlog from "./Firebase/CreateBlog.jsx";
 import BlogPost from "./Firebase/BlogPost.jsx";
 import Blog from "./Firebase/Blog.jsx"
+import CreateArticle from "./Firebase/CreateArticle.jsx";
+import CreateProject  from "./Firebase/CreateProject.jsx";
 import researchEng from "./Einar/researchEng.json";
 import researchEsp from "./Einar/researchEsp.json";
 
@@ -112,6 +114,14 @@ function App() {
 
           <Route exact path="/firebase">
             <CreateBlog />
+          </Route>
+
+          <Route exact path="/firebase/article">
+            <CreateArticle />
+          </Route>
+
+          <Route exact path="/firebase/project">
+            <CreateProject />
           </Route>
 
           <Route exact path="/firebase/:id" component={BlogPost} />

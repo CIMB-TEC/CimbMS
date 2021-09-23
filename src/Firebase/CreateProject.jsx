@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import firebase from "firebase"
-import image from "../Karen/ProfileImg/ArielLopez.jpg"
 import styles from "./CreateBlogStyles.module.scss"
 import rocket from "./img/cohete.png"
 
 
-const CreateBlog = () => {
+const CreateProject = () => {
 
 
   const db = firebase.firestore()
@@ -16,24 +15,25 @@ const CreateBlog = () => {
   const [file, setFile] = useState("hj");
 
 
-  const [blog, setBlog] = useState({
+  const [project, setProject] = useState({
+    school:"",
+    titulo:"",
     title:"",
-    date:"",
-    author:"",
-    tag:"",
-    description:"",
     img:"",
+    descripcion:"",
+    description:"",
+    link:""
   })
 
 
 
 
-  const addValue = async (currentBlog) => {
+  const addValue = async (currentProject) => {
     try {
-      const newBlog = await db.collection("blog").add(currentBlog)
+      const newProject = await db.collection("project").add(currentProject)
+      console.log("New project Id", newProject.id)
 
-      currentId = newBlog.id
-      console.log("Current Blog Id", newBlog.id)
+      currentId = newProject.id
     }
     catch (error) {
       console.log(error)
@@ -45,41 +45,30 @@ const CreateBlog = () => {
 
 
   const getValue = async () => {
-    const blogRef = db.collection("blog");
-    const blogs = await blogRef.get()
-    if (blogs.empty) {
-      console.log("No blogs")
+    const projectRef = db.collection("article");
+    const projects = await projectRef.get()
+    if (projects.empty) {
+      console.log("No articles")
       return
     }
-    blogs.forEach(blog => {
-      console.log(blog.data())
+    projects.forEach(project => {
+      console.log(project.data())
     })
   }
-
-
-
-
 
   const addImage = async (e) => {
     let f = e.target.files[0]
     setFile(f)
     document.getElementById('fileSelect').innerHTML = f.name;
-    console.log("Add image", currentId)
+    console.log("Add image")
   }
 
-
   const logFile = async (e) => {
-
     console.log(file)
     console.log("log", currentId)
-
-
     let storageRef = storage.ref()
-    let blogRef = storageRef.child("blog").child(currentId)
-    let fileRef = blogRef.child(currentId)
-
-
-
+    let projectRef = storageRef.child("project").child(currentId)
+    let fileRef = projectRef.child(currentId)
 
     try {
       await fileRef.put(file)
@@ -95,8 +84,7 @@ const CreateBlog = () => {
 
   const addImgToEvent = async () => {
     try {
-      const postRef = db.collection("blog").doc(currentId);
-
+      const postRef = db.collection("project").doc(currentId);
 
       const doc = await postRef.get()
 
@@ -108,15 +96,11 @@ const CreateBlog = () => {
     catch (error) {
       console.log(error)
     }
-
-
-
-
   }
 
   const handelOnChange = (e) => {
-    setBlog({
-      ...blog,
+    setProject({
+      ...project,
       [e.target.name]: e.target.value
     })
     console.log(e.target.name, e.target.value)
@@ -125,14 +109,13 @@ const CreateBlog = () => {
 
   const handelOnSubmit = async (e) => {
 
-
-    if (blog.title === "" && blog.author == "" && blog.date == "" && blog.description == "" && blog.tag == "") {
+    if (project.school == "" && project.titulo == "" && project.title == "" && project.img == "" && project.descripcion == "" && project.description == "" && project.link == "") {
       return
     }
-    console.log(blog, "This is a complete blog")
+    console.log(project, "This is a complete project")
 
-    await addValue(blog)
-    console.log("Se añadió el valor", currentId)
+    await addValue(project)
+
     await logFile()
     await addImgToEvent()
     window.location.reload()
@@ -154,37 +137,44 @@ const CreateBlog = () => {
       <div className={styles.Container}>
         <div className={styles.BlogForm}>
           <label className={styles.InputContainer}>
+            <span className={styles.Span}>Escolaridad</span>
+            <select className={styles.InputBlog} name="school" onChange={handelOnChange}>
+              <option value="" selected disabled hidde>Indique la escolaridad</option>
+              <option value="1">Postgrado</option>
+              <option value="2">Pregrado</option>
+            </select>
+          </label>
+
+          <label className={styles.InputContainer}>
+            <span className={styles.Span}>Título</span>
+            <input className={styles.InputBlog} name="titulo" onChange={handelOnChange} />
+          </label>
+          <label className={styles.InputContainer}>
             <span className={styles.Span}>Title</span>
             <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
           </label>
-          
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Fecha</span>
-            <input className={styles.InputBlog} name="date" type="date" onChange={handelOnChange} />
-          </label>
-
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Autor</span>
-            <input className={styles.InputBlog} name="author" onChange={handelOnChange} />
-          </label>
-
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Etiqueta</span>
-            <input className={styles.InputBlog} name="tag" onChange={handelOnChange} />
-          </label>
-
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}> Description</span>
-            <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
-          </label>
 
           <div className={styles.InputContainer}>
-            <span className={styles.Span}>Imagen</span>
+            <span className={styles.Span}>Icon</span>
             <div className={styles.buttonWrap}>
               <label className={styles.newButton} for="upload" id="fileSelect"> Seleccionar archivo </label>
               <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
             </div>
           </div>
+
+          <label className={styles.InputContainer}>
+            <span className={styles.Span}>Descripción</span>
+            <textarea className={styles.InputDesBlog} name="descripcion" onChange={handelOnChange}  />
+          </label>
+          <label className={styles.InputContainer}>
+            <span className={styles.Span}>Description</span>
+            <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
+          </label>
+
+          <label className={styles.InputContainer}>
+            <span className={styles.Span}>Link</span>
+            <input className={styles.InputBlog} name="link" onChange={handelOnChange} />
+          </label>
 
           <div className={styles.Submit}>
           <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
@@ -201,4 +191,4 @@ const CreateBlog = () => {
 
 }
 
-export default CreateBlog;
+export default CreateProject;

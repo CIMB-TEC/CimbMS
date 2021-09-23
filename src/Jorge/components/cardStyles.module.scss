@@ -1,19 +1,6 @@
 $blackGray: #222222;
-$bluemid: #2a7de1;
 $bluemid: #f39d2b;
 $white: #fff;
-
-.parrafocard {
-  font-size: 1.5rem;
-  //font-weight: 1000;
-  margin: 2px;
-}
-
-.anchor {
-  font-size: 0.8em;
-  //font-weight: 900;
-  margin: 2px;
-}
 
 .container {
   width: 350px;
@@ -131,17 +118,18 @@ $white: #fff;
 .content .parrafocard {
   text-align: justify;
   margin: 15px;
+  font-size: 1.4rem;
+  //font-weight: 1000;
+  top: 1em;
+  position: fixed;
 }
 
 .face,
-.face2,
-.anchor {
+.face2 {
   margin: 0;
-  display: inline-block;
   text-decoration: none;
   text-align: center;
   color: $blackGray;
-  padding: 5px;
   border: 1px solid $blackGray;
   border-radius: 20px;
 }
@@ -150,12 +138,17 @@ $white: #fff;
   border: 3px solid $bluemid;
   color: $white;
   text-transform: uppercase;
+  padding: 5px;
   width: 55%;
   cursor: pointer;
   border-radius: 30px;
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 525;
+  display: block;
+  bottom: 1em;
+  font-size: 0.8em;
+  position: fixed;
 }
 
 .anchor:hover {

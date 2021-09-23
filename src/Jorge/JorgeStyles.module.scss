@@ -2,7 +2,6 @@ $blackGray: #222222;
 $white: #fff;
 $primary: #f39d2b;
 
-
 .wrapper {
   margin: 0;
   background-color: #141414;
@@ -15,14 +14,15 @@ $primary: #f39d2b;
   align-items: center;
   //font-family: montserrat, sans-serif;
   //max-width: 1440px;
-  width:100%;
+  width: 100%;
   padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 1%;
 }
 
-.containerPostgrado, .containerPregrado {
+.containerPostgrado,
+.containerPregrado {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ $primary: #f39d2b;
   margin-bottom: 20px;
 }
 
-.cardLblue, .cardPurple {
+.card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -43,7 +43,9 @@ $primary: #f39d2b;
 .heading_0 {
   font-size: 3rem;
   color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
+  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary,
+    0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary,
+    0 0 12px $primary;
   text-transform: uppercase;
   text-align: left;
   width: 100%;
@@ -65,34 +67,38 @@ $primary: #f39d2b;
   //font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-top: 2em;
   text-align: left;
   width: 100%;
 }
 
-@media (max-width: 1024px) { // 2 y 3
-  .cardLblue, .cardPurple {
+@media (max-width: 1024px) {
+  // 2 y 3
+  .card {
     flex-direction: row;
     width: 100%;
   }
 }
 
-@media (max-width: 768px) { // 1
-  .cardLblue, .cardPurple {
+@media (max-width: 768px) {
+  // 1
+  .card {
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media (max-width: 500px) { // titulo y subtitulo pequeños, aumenta letra dentro
+@media (max-width: 500px) {
+  // titulo y subtitulo pequeños, aumenta letra dentro
   .wrapper {
     padding: 0;
   }
-  .containerPostgrado, .containerPregrado {
+  .containerPostgrado,
+  .containerPregrado {
     flex-direction: column;
     align-items: center;
   }
-  .cardLblue, .cardPurple {
+  .card {
     width: 100%;
   }
   .heading_0 {
@@ -107,34 +113,22 @@ $primary: #f39d2b;
     font-weight: 400;
     margin-left: 10px;
   }
-  
+
   .heading_2 {
     font-size: 25px;
     width: 100%;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 2em;
     margin-left: 10px;
   }
 }
-/*
-@media (max-width: 1040px) {
-  .containerPostgrado, .containerPregrado {
-    flex-direction: column;
-  }
-  .cardLblue, .cardPurple {
-    width: 100%;
-  }
-}*/
 
 @media only screen and (min-width: 1000) {
   .Page {
     margin-right: 1%;
-
   }
 }
 @media only screen and (max-width: 991px) {
-
-
   .Page h1 {
     font-size: 3.6em;
     line-height: 1.2em;
