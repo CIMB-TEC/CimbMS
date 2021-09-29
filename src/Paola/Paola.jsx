@@ -38,7 +38,8 @@ function Paola(props) {
 
     const getValue = async () => {
 		const articleRef = db.collection("article");
-		const articlesSEDB = await articleRef.where("project", "==", "1").get()
+		const articlesSEDB = await articleRef.where("project", "==", "1").orderBy( "year", "desc" ).get()
+        console.log(articlesSEDB)
 		if (articlesSEDB.empty) {
 			console.log("No blogs")
 			return
@@ -70,7 +71,7 @@ function Paola(props) {
             }
             setArticulosSE(articulosSE => [...articulosSE, Article])
 		})
-        const articlesUCTDB = await articleRef.where("project", "==", "2").get()
+        const articlesUCTDB = await articleRef.where("project", "==", "2").orderBy( "year", "desc" ).get()
 		if (articlesUCTDB.empty) {
 			console.log("No blogs")
 			return

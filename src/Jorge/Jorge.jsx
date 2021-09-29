@@ -5,13 +5,89 @@ import styles from './JorgeStyles.module.scss'
 import projectsEng from "./projectsEng.json"
 import projectsEsp from "./projectsEsp.json"
 import { LanguageContext } from "../App"
-import React, { useContext } from "react"
+import React, { useContext, useEffect, useState } from "react"
+import firebase from "firebase"
 
 
 function Jorge() {
 
+    const [projectsPost, setProjectsPost] = useState([])
+    const [proyectosPost, setProyectosPost] = useState([])
+    const [projectsUnder, setProjectsUnder] = useState([])
+    const [proyectosUnder, setProyectosUnder] = useState([])
+
+    let Project = {
+      title: "",
+      text: "",
+      link: "",
+      icon: "",
+    }
+
+    const db = firebase.firestore()
+
     const eng = useContext(LanguageContext)
+
+    const getValue = async () => {
+		const projectRef = db.collection("project");
+		const projectsPostDB = await projectRef.where("school", "==", "1").get()
+        console.log(projectsPostDB)
+		if (projectsPostDB.empty) {
+			console.log("No projects")
+			return
+		}
+		projectsPostDB.forEach(project => {
+            project = project.data()
+			Project = {
+                title: project.title,
+                text: project.description,
+                link: project.link,
+                icon: project.img
+            }
+            setProjectsPost(projectsPost => [...projectsPost, Project])
+            Project = {
+                title: project.titulo,
+                text: project.descripcion,
+                link: project.link,
+                icon: project.img
+            }
+            setProyectosPost(proyectosPost => [...proyectosPost, Project])
+		})
+
+        const projectsUnderDB = await projectRef.where("school", "==", "2").get()
+		if (projectsUnderDB.empty) {
+			console.log("No projects")
+			return
+		}
+		projectsUnderDB.forEach(project => {
+            project = project.data()
+			Project = {
+                title: project.title,
+                text: project.description,
+                link: project.link,
+                icon: project.img
+            }
+            setProjectsUnder(projectsUnder => [...projectsUnder, Project])
+            Project = {
+                title: project.titulo,
+                text: project.descripcion,
+                link: project.link,
+                icon: project.img
+            }
+            setProyectosUnder(proyectosUnder => [...proyectosUnder, Project])
+		})
+    }
+
     let projects = eng ? projectsEng : projectsEsp;
+
+    let projectsP = eng ? projectsPost : proyectosPost
+
+    let projectsU = eng ? projectsUnder : proyectosUnder
+
+    useEffect(() => {
+		getValue()
+
+	}, [])
+
     return (
 
     <div className={styles.wrapper}> 
@@ -25,14 +101,13 @@ function Jorge() {
         <div className={styles.containerPostgrado}>
             <div className={styles.card}>
             {
-                projects.projectPostgraduate.map((project) => {
+                projectsP.map((proj) => {
                     return (
                         <Card
-                            Titulo = {project.title}
-                            Texto = {project.text}
-                            enlace = {project.link}
-                            enlaceTitulo = {project.titleLink}
-                            color = {project.color}
+                            Titulo = {proj.title}
+                            Texto = {proj.text}
+                            enlace = {proj.link}
+                            enlaceTitulo = {projects.titleLink}
                         />
                     )
                 })
@@ -46,13 +121,13 @@ function Jorge() {
         <div className={styles.containerPregrado}>
             <div className={styles.card}>
             {
-                projects.projectUndergraduate.map((project2) => {
+                projectsU.map((proj) => {
                     return (
                         <Card
-                            Titulo = {project2.title}
-                            Texto = {project2.text}
-                            enlace = {project2.link}
-                            enlaceTitulo = {project2.titleLink}
+                            Titulo = {proj.title}
+                            Texto = {proj.text}
+                            enlace = {proj.link}
+                            enlaceTitulo = {projects.titleLink}
                         />
                     )
                 })
