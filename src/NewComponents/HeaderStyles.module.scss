@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+//@import "../global";
 
 $primary: #f39d2b;
 
@@ -25,10 +26,14 @@ $primary: #f39d2b;
 .Nav,
 .NavHam {
   margin: 0 25px;
-  color: white;
+  //color: white;
+  color: black;
+  //font-family: $font_text;
+  font-weight: bold;
 
   &:hover {
-    color: $primary;
+    //color: $primary;
+    //color: $highlight;
   }
 }
 

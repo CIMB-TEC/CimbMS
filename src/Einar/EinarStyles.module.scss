@@ -1,3 +1,4 @@
+//@import "../global";
 $primary: #2b81f3;
 $secundary: #f39d2b;
 $primary: #f95738;
@@ -6,18 +7,20 @@ $primary: #f39d2b;
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html {
   font-size: 62.5%;
 }
-
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+*/
 //////////////First section///////////////////////
+/*
 .WaveContainer {
   background: url("./Img/waves.png");
   height: 90vh;
@@ -26,20 +29,71 @@ html {
   background-color: #1f1e1d;
   font-family: "Open Sans", sans-serif;
 }
+*/
+/*
+.Subtitle {@include Subtitle}
+.H1 {
+  width: 70%;
+  @include H1}
+.Text {
+  width: 80%;
+  @include Text}
 
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include Wrapper
+}
+*/
+.ImageOne {
+  width: 90%;
+}
+
+.WaveContainer {
+  width: 90%;
+  //background: $card;
+  border-radius: 10px;
+  //box-shadow: 0px 30px 40px -20px $grayishBlue;
+  //border-left: 5px solid $highlight;
+}
 .ContentContainer {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   margin: 0 auto;
+  flex-direction: row;
   width: 100%;
-  max-width: 1024px;
+  //max-width: 1024px;
   //border: 1px solid $varColor;
   font-family: "Roboto", sans-serif;
-  padding: 25px;
-  color: white;
+  padding: 15px;
+  //color: white;
   //background-image: url("./Img/wave.svg");
   background-size: cover;
 }
+
+.Content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Image {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //position: relative;
+}
+
+//RESPONSIVE
+@media (max-width: 1389px) {
+  .ImageOne {
+    width: 80%;
+  }
+} 
 
 .WeAre {
   width: 100%;
@@ -69,7 +123,7 @@ html {
 //////////////First section///////////////////////
 
 //////////////Seconnd section///////////////////////
-
+/*
 .WaveContainer2 {
   height: 110vh; //Cambie aquí para la altura
   background-color: #ffffff;
@@ -95,19 +149,22 @@ html {
     linear-gradient(90deg, #eeeeee 4px, #ffffff 4px) -2px 0;
   background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
+*/
+
 
 .ContentContainer2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1024px;
-  font-family: "Roboto", sans-serif;
+  //font-family: "Roboto", sans-serif;
   padding: 20px;
   color: white;
   //height: 100vh;
 }
 
 .ProyectosTitulo {
+  /*
   color: black;
   width: 100%;
   font-size: 4rem;
@@ -115,6 +172,11 @@ html {
   margin-top: 40px;
   color: black;
   margin-bottom: 40px;
+  */
+  //@include H1;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
 }
 /*
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +237,7 @@ NO SE UTILIZAN
 .AreaTwoContainer,
 .AreaThreeContainer,
 .AreaFourContainer {
-  border: 1px solid transparent;
+  //border: 1px solid transparent;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -191,12 +253,15 @@ NO SE UTILIZAN
   width: 280px;
   //max-width: 300px;
   min-height: 220px;
+  //border-top: 5px solid $highlight;
+  //box-shadow: 0px 30px 40px -20px $grayishBlue;
 }
 
 .AreaOneContainer,
 .AreaFourContainer {
   //background-color: rgba(0, 179, 152, 0.6);
-  background-color: rgba(243, 157, 43, 0.6);
+  //background-color: rgba(243, 157, 43, 0.6);
+  //background-color: $card;
 }
 
 .AreaTitle {
@@ -230,8 +295,8 @@ img {
 
 ////////////////Third section ////////////////////
 .WaveContainer3 {
-  background-color: #1f1e1d;
-  background-image: radial-gradient(#444246 1px, #1f1e1d 1px);
+  //background-color: #1f1e1d;
+  //background-image: radial-gradient(#444246 1px, #1f1e1d 1px);
   background-size: 20px 20px;
 }
 

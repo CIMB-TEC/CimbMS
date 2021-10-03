@@ -1,40 +1,50 @@
-import React from 'react';
-import styles from "./CardGreen.module.scss"
-import { FaResearchgate } from "react-icons/fa"
-import { HiOutlineMail } from "react-icons/hi"
-import { ImLinkedin } from "react-icons/im"
-import { GiClick } from "react-icons/gi"
+import React, { useState } from "react";
+import ReactCardFlip from 'react-card-flip';
 
-function CardGreen(props) {
-    return(
-    <div className={styles.Card}>
-        <div className={styles.CardInner}>
-            <div className={`${styles.CardFace} ${styles.CardFacefront}`}>
-                <h2>{props.TitleBack}</h2>
-                <p>{props.TextOneBack}</p>
-                <p>{props.TextTwoBack}</p>
-                <h3>{props.SubtitleBack}</h3>
-                <div className={styles.Icons}>
-                    <a href={props.ResearchGateLink} target="_blank"><FaResearchgate className={styles.Icon} /></a>
-                    <a href={props.MailLink} target="_blank"><HiOutlineMail className={styles.Icon} /></a>
-                    <a href={props.LinkedInLink} target="_blank"><ImLinkedin className={styles.Icon} /></a>
-                </div>
+import styles from "./CardGreen.module.scss"
+
+import { GiClick } from "react-icons/gi"
+import { FaResearchgate } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { ImLinkedin } from "react-icons/im";
+
+import rogelio from "../ProfileImg/rogelioBustamante.jpg"
+
+function FlipCard( {card} ) {
+    const [showBack, setShowBack] = useState(false); 
+  
+    function handleClick() { 
+        setShowBack(!showBack); 
+    } 
+
+    return (
+      <ReactCardFlip isFlipped={showBack} flipDirection="vertical" flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9">
+        <div className={`${styles.Front} ${styles.Cyan}`}>
+          <img src={rogelio} alt={card.pictureName} className={styles.Image} />
+          <div className={styles.Content}>
+            <h4 className={styles.TitleCard2}>{card.name}</h4>
+            <div className={styles.Icons}>
+              <a href={card.researchGateLink} ><FaResearchgate className={styles.Icon} /></a>
+              <a href={card.mailLink} ><HiOutlineMail className={styles.Icon} /></a>
+              <a href={card.linkedInLink}><ImLinkedin className={styles.Icon} /></a>
             </div>
-            <div className={`${styles.CardFace} ${styles.CardFaceback}`}>
-                <div className={styles.CardContent}>
-                    <div className={styles.CardHeader}>
-                        <img src={props.image} alt="" className={styles.Image} />
-                        <h2>{props.NameFront}</h2>
-                    </div>
-                    <div className={styles.CardBody}>
-                        <h3>{props.SubtitleFront}</h3>
-                        <p>{props.TextFront}</p>
-                    </div>
-                </div>
+            <div className={styles.ButtonContainer}>
+              <button className={styles.ButtonOne} onClick={handleClick}>Click to flip</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.Front} ${styles.Cyan}`}>
+            <div className={styles.Content}>
+              <h4 className={styles.TitleCard2}>{card.titleBack}</h4>
+              <p className={styles.Text}>{card.text1Back}</p>
+              <div className={styles.ButtonContainer}>
+                <button className={styles.ButtonOne} onClick={handleClick}>Click to flip</button>
+              </div>
             </div>
         </div>
-    </div>
-    )
-}
-
-export default CardGreen;
+      </ReactCardFlip>
+    );
+  }
+  
+export default FlipCard;
