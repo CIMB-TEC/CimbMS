@@ -1,3 +1,4 @@
+@import "../global";
 $primary: #2b81f3;
 $secundary: #f39d2b;
 $primary: #f95738;
@@ -18,6 +19,7 @@ html {
   box-sizing: border-box;
 }
 //////////////First section///////////////////////
+/*
 .WaveContainer {
   background: url("./Img/waves.png");
   height: 90vh;
@@ -25,7 +27,7 @@ html {
   background-size: cover;
   background-color: #1f1e1d;
   font-family: "Open Sans", sans-serif;
-}
+}*/
 
 .ContentContainer {
   display: flex;
@@ -41,6 +43,10 @@ html {
   background-size: cover;
 }
 
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
+
+/*
 .WeAre {
   width: 100%;
   font-size: 3rem;
@@ -57,7 +63,7 @@ html {
 .Definition {
   font-size: 5rem;
   width: 50%;
-}
+}*/
 
 .Description {
   width: 90%;
@@ -107,6 +113,7 @@ html {
   //height: 100vh;
 }
 
+/*
 .ProyectosTitulo {
   color: black;
   width: 100%;
@@ -115,7 +122,8 @@ html {
   margin-top: 40px;
   color: black;
   margin-bottom: 40px;
-}
+}*/
+
 /*
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 NO SE UTILIZAN

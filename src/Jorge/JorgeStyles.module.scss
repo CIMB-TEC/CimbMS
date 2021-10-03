@@ -1,14 +1,12 @@
-$blackGray: #222222;
-$white: #fff;
-$primary: #f39d2b;
+@import "../global";
 
-
+/*
 .wrapper {
   margin: 0;
   background-color: #141414;
   opacity: 1;
-  background-image: radial-gradient(#222222 2px, #141414 2px);
-  background-size: 60px 60px;
+  //background-image: radial-gradient(#222222 2px, #141414 2px);
+  //background-size: 60px 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -20,7 +18,7 @@ $primary: #f39d2b;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 1%;
-}
+}*/
 
 .containerPostgrado, .containerPregrado {
   width: 100%;
@@ -40,35 +38,8 @@ $primary: #f39d2b;
   width: 100%;
 }
 
-.heading_0 {
-  font-size: 3rem;
-  color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
-  text-transform: uppercase;
-  text-align: left;
-  width: 100%;
-}
-
-.heading_1 {
-  font-size: 4rem;
-  color: $primary;
-  //font-weight: 600;
-  padding: 5px;
-  margin-bottom: 0.1em;
-  text-align: left;
-  width: 100%;
-}
-
-.heading_2 {
-  font-size: 4rem;
-  color: $primary;
-  //font-weight: 600;
-  padding: 5px;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-  text-align: left;
-  width: 100%;
-}
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
 
 @media (max-width: 1024px) { // 2 y 3
   .cardLblue, .cardPurple {
@@ -84,7 +55,7 @@ $primary: #f39d2b;
   }
 }
 
-@media (max-width: 500px) { // titulo y subtitulo pequeños, aumenta letra dentro
+@media (max-width: 500px) { 
   .wrapper {
     padding: 0;
   }
@@ -95,26 +66,9 @@ $primary: #f39d2b;
   .cardLblue, .cardPurple {
     width: 100%;
   }
-  .heading_0 {
-    font-size: 25px;
-    width: 100%;
-    font-weight: 400;
-    margin-left: 15px;
-  }
-  .heading_1 {
-    font-size: 25px;
-    width: 100%;
-    font-weight: 400;
-    margin-left: 10px;
-  }
-  
-  .heading_2 {
-    font-size: 25px;
-    width: 100%;
-    font-weight: 400;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+  .H1 {
+    font-size: $heading1r;
+  } 
 }
 /*
 @media (max-width: 1040px) {
@@ -136,11 +90,11 @@ $primary: #f39d2b;
 
 
   .Page h1 {
-    font-size: 3.6em;
+    font-size: $text;
     line-height: 1.2em;
   }
   .Page h2 {
-    font-size: 2.2em;
+    font-size: $text;
     line-height: 1.1em;
   }
 }

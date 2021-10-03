@@ -101,8 +101,8 @@ let HOBS_ = eng ? HOBS_Eng : HOBS_Esp;
         </div>
       </nav>
       <div className={styles.InfoContainer}>
-        <h1 className={styles.Title0}>{HOBS_.Title_0}</h1>
-        <h1 className={styles.Title1}>{HOBS_.Title_1}</h1>
+        <h1 className={styles.Subtitle}>{HOBS_.Title_0}</h1>
+        <h1 className={styles.H1}>{HOBS_.Title_1}</h1>
         <p className={styles.Description}>{HOBS_.Description_}</p>
         <h2 className={styles.Title2}>{HOBS_.Title_2}</h2>
         <div className={styles.AreasContainer}>

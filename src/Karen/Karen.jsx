@@ -19,7 +19,7 @@ function Karen() {
 
     return (
         <div className={styles.Wrapper}>{}
-            <h1 className={styles.DirectoresH1}>{team.directors}</h1>
+            <h1 className={styles.H1}>{team.directors}</h1>
             <div className={styles.Directores}>
                 <div className={styles.DirectoresOne}>
 
@@ -71,7 +71,7 @@ function Karen() {
                     }
                 </div>
             </div>
-            <h1 className={styles.ColaboradoresH1}>{team.collaborators}</h1>
+            <h1 className={styles.H1}>{team.collaborators}</h1>
             <div className={styles.Colaboradores}>
                 <div className={styles.ColaboradoresOne}>
                     {
@@ -120,7 +120,7 @@ function Karen() {
                     }
                 </div>
             </div>
-            <h1 className={styles.EncargadosH1}>{team.projectManagers}</h1>
+            <h1 className={styles.H1}>{team.projectManagers}</h1>
             <div className={styles.EncargadosProyecto}>
                 <div className={styles.EncargadosOne}>
                     <div className={styles.Encargados1}>

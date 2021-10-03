@@ -30,8 +30,8 @@ function Einar(props) {
 			
 			<div className={styles.WaveContainer}>
 				<div className={styles.ContentContainer}>
-					<p className={styles.WeAre}> {home.title}</p>
-					<p className={styles.Definition}>
+					<p className={styles.Subtitle}> {home.title}</p>
+					<p className={styles.H1}>
 						{home.definition}
 					</p>
 					<p className={styles.Description}>
@@ -44,7 +44,7 @@ function Einar(props) {
 
 
 				<div className={styles.ContentContainer2}>
-					<p className={styles.ProyectosTitulo}> {home.activeProjects}</p>
+					<p className={styles.H1}> {home.activeProjects}</p>
 
 					<div className={styles.AreasContainer}>
 

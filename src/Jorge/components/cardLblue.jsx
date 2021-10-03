@@ -10,7 +10,7 @@ function cardLblue(props){
                 <div className= { `${styles.face} ${styles.face1} `}>
                     <div className={styles.content}>
                         <AiOutlineCar className={styles.icono2} alt=""/>
-                        <h3 className={styles.cardh3}>{props.Titulo}
+                        <h3 className={styles.H2}>{props.Titulo}
                         </h3>
                         <div className={styles.arrow}>
                             <GiClick  alt=""/>

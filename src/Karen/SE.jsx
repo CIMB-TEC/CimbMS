@@ -100,8 +100,8 @@ let SE_ = eng ? SE_Eng : SE_Esp;
         </div>
       </nav>
       <div className={styles.InfoContainer}>
-        <h1 className={styles.Title0}>{SE_.Title_0}</h1>
-        <h1 className={styles.Title1}>{SE_.Title_1}</h1>
+        <h1 className={styles.Subtitle}>{SE_.Title_0}</h1>
+        <h1 className={styles.H1}>{SE_.Title_1}</h1>
         <p className={styles.Description}>{SE_.Description_}</p>
         <h2 className={styles.Title2}>{SE_.Title_2}</h2>
         <div className={styles.AreasContainer}>

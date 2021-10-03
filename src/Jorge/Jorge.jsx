@@ -17,10 +17,10 @@ function Jorge() {
 
     <div className={styles.wrapper}> 
         
-        <h1 className={styles.heading_0}>
+        <h1 className={styles.Subtitle}>
             {projects.heading0}
         </h1>
-        <h1 className={styles.heading_1}>
+        <h1 className={styles.H1}>
             {projects.heading1}
         </h1>
         <div className={styles.containerPostgrado}>
@@ -40,7 +40,7 @@ function Jorge() {
                 
             </div>
         </div>
-        <h1 className={styles.heading_2}>
+        <h1 className={styles.H1}>
             {projects.heading2}
         </h1>
         <div className={styles.containerPregrado}>

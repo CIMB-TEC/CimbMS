@@ -1,9 +1,9 @@
-$font: montserrat, sans-serif;
+@import "../global";
 $tertiary: #f39d2b;
 $secondary: #f39d2b;
 $primary: #f39d2b;
 $fontcolor: #fff;
-
+/*
 .Wrapper {
   width: 100%;
   display: flex;
@@ -18,7 +18,7 @@ $fontcolor: #fff;
   opacity: 1;
   background: radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#222222 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #222222 1.4000000000000001px, #141414 1.4000000000000001px) -0.7000000000000001px 0;
   background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
-}
+}*/
 
 .SideNav {
   display: flex;
@@ -62,9 +62,13 @@ $fontcolor: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
 }
 
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
+
+/*
 .Title0 {
   font-size: 3rem;
   color: #f1eeee;
@@ -82,10 +86,10 @@ $fontcolor: #fff;
   margin: 0 0 0.5em 0.7em;
   text-align: left;
   width: 80%;
-}
+}*/
 
 .Description {
-  width: 75%;
+  width: 100%;
   color: $fontcolor;
   font-size: 2.2rem;
   text-align: justify;
@@ -96,7 +100,7 @@ $fontcolor: #fff;
   color: $secondary;
   font-size: 30px;
   text-align: center;
-  width: 80%;
+  width: 100%;
   font-weight: 400;
   margin: 30px 0 0 30px;
   text-transform: uppercase;
@@ -175,27 +179,9 @@ $fontcolor: #fff;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .Title0 {
-    margin-left: 1.2rem;
-  }
-  .Title1 {
-    margin-left: 0.6rem;
-  }
-}
-
 @media only screen and (max-width: 768px)  {
   .Description {
     font-size: 1.8rem;
-  }
-  
-  .Title0 {
-    font-size: 2.7rem;
-    margin-left: 1.2rem;
-  }
-  .Title1 {
-    font-size: 3.2rem;
-    margin-left: 0.6rem;
   }
 }
 
@@ -203,12 +189,9 @@ $fontcolor: #fff;
   .Description {
     font-size: 1.3rem;
   }
-  .Title0 {
-    font-size: 1.8rem;
-  }
-  .Title1 {
-    font-size: 2rem;
-  }
+  .H1 {
+    font-size: $heading1r;
+  } 
   .Title2 {
     font-size: 2rem;
     letter-spacing: 20px;
