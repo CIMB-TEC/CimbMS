@@ -8,14 +8,47 @@ import styles from "./KarenStyles.module.scss"
 import teamEng from "./teamEng.json"
 import teamEsp from "./teamEsp.json"
 
-import React, { useContext } from "react"
-import { LanguageContext } from "../App"
 
+import React, { useContext } from "react";
+import { LanguageContext } from "../App";
 
 function Karen() {
 
     const eng = useContext(LanguageContext)
     let team = eng ? teamEng : teamEsp;
+
+    const cards = [
+        {
+            titleBack:"About me",
+            text1Back:"His research interests are wireless networks, biomedical wereables devices, research on emotional states and human computer interfaces with terapeutic applications.",
+            name: "Ph.D. Rogelio Bustamante Bello",
+            pictureName: "rogelioBustamante",
+            fileType: "jpg",
+            researchGateLink: "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
+            mailLink: "mailto:rbustama@tec.mx",
+            linkedInLink: "https://cimb.com.mx/index.html"  
+        },
+        {
+            titleBack:"About me",
+            text1Back:"His research interests are wireless networks, biomedical wereables devices, research on emotional states and human computer interfaces with terapeutic applications.",
+            name: "Ph.D. Rogelio Bustamante Bello",
+            pictureName: "rogelioBustamante",
+            fileType: "jpg",
+            researchGateLink: "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
+            mailLink: "mailto:rbustama@tec.mx",
+            linkedInLink: "https://cimb.com.mx/index.html" 
+        },
+        {
+            titleBack:"About me",
+            text1Back:"His research interests are wireless networks, biomedical wereables devices, research on emotional states and human computer interfaces with terapeutic applications.",
+            name: "Ph.D. Rogelio Bustamante Bello",
+            pictureName: "rogelioBustamante",
+            fileType: "jpg",
+            researchGateLink: "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
+            mailLink: "mailto:rbustama@tec.mx",
+            linkedInLink: "https://cimb.com.mx/index.html" 
+        }
+      ];
 
     return (
         <div className={styles.Wrapper}>{}
@@ -92,6 +125,13 @@ function Karen() {
                         )
                     })
                 }
+            </div>
+            <div className={styles.NewStyles}>
+                <div className={styles.ContainerOne}>
+                {cards.map((card) => (
+                <CardGreen card={card} />
+                ))}
+                </div>
             </div>
         </div>
     );

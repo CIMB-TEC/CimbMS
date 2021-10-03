@@ -4,6 +4,15 @@ $green: #00b398;
 $orange: #f39d2b;
 $purple: #850053;
 
+//@import "../global";
+
+//Nuevas tarjetas
+$grayishBlue: hsl(229, 6%, 66%);
+$veryLightGray: hsl(0, 0%, 98%);
+$cyan: hsl(180, 62%, 55%);
+$cyan1: #03A9F4;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 .Wrapper {
   width: 100%;
   padding-top: 2%;
@@ -56,3 +65,20 @@ $purple: #850053;
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
+
+
+////////////////////////////////
+//Nuevas tarjetas
+.NewStyles {
+  display: flex;
+  flex-direction: column;
+  //background-color: $background;
+  //@include Wrapper
+}
+
+.ContainerOne {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}

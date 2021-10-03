@@ -17,6 +17,11 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 import homeEng from "./homeEng.json";
 import homeEsp from "./homeEsp.json";
 import ProjectCard from "./Components/ProjectCard"
+import { GiArtificialIntelligence } from "react-icons/gi";
+import {BiNetworkChart} from "react-icons/bi";
+import {GrTechnology} from "react-icons/gr";
+import {GiMonoWheelRobot} from "react-icons/gi";
+
 
 
 function Einar(props) {
@@ -27,16 +32,22 @@ function Einar(props) {
 
 	return (
 		<div>
-			
-			<div className={styles.WaveContainer}>
-				<div className={styles.ContentContainer}>
-					<p className={styles.WeAre}> {home.title}</p>
-					<p className={styles.Definition}>
-						{home.definition}
-					</p>
-					<p className={styles.Description}>
-						{home.description}
-					</p>
+			<div className={styles.Wrapper}>
+				<div className={styles.WaveContainer}>
+					<div className={styles.ContentContainer}>
+						<div className={styles.Content}>
+							<p className={styles.Subtitle}> {home.title}</p>
+							<p className={styles.H1}>
+								{home.definition}
+							</p>
+							<p className={styles.Text}>
+								{home.description}
+							</p>
+						</div>
+						<div className={styles.Image}>
+							<img className={styles.ImageOne} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2FHome.png?alt=media&token=2d178c03-b920-407b-b014-55f684fdf943" alt="" />
+						</div>
+					</div>
 				</div>
 			</div>
 
