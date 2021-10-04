@@ -1,0 +1,83 @@
+@import "../../global";
+
+.Front {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px $grayishBlue;
+  margin: 20px;
+  width: 300px;
+  height: 550px;
+  background-color: $card;
+}
+
+.Cyan {
+  border-top: 5px solid $highlight;
+}
+
+.H1 {
+  width: 70%;
+  @include H1}
+
+.Text {
+  width: 80%;
+  @include Text}
+
+.TitleCard2 {
+  @include H2
+}
+
+.Image {
+  width: 300px;
+  height: 350px;
+}
+
+.Content {
+  padding: 1rem;
+}
+
+.Icons {
+  display: block;
+  text-align: center;
+}
+
+.Icons a {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  color: $highlight;
+  font-size: 25px;
+  transition: 0.4s;
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
+}
+
+.Icons a:hover {
+  border: 2px solid $highlight;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.ButtonOne {
+  border: 3px solid $highlight;
+  color: $black;
+  text-transform: uppercase;
+  width: 55%;
+  cursor: pointer;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 525;
+  justify-content: center;
+}
+
+.ButtonOne:hover {
+  background-color: $highlight;
+  color: $card;
+  font-weight: 549;
+  font-weight: bold;
+}
