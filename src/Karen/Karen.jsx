@@ -1,8 +1,5 @@
 
 import CardGreen from "./components/CardGreen";
-import CardOrange from "./components/CardOrange";
-import CardPurple from "./components/CardPurple";
-//import Image from "./img/persona.jpg"
 import styles from "./KarenStyles.module.scss"
 
 import teamEng from "./teamEng.json"
@@ -17,39 +14,6 @@ function Karen() {
     const eng = useContext(LanguageContext)
     let team = eng ? teamEng : teamEsp;
 
-    const cards = [
-        {
-            titleBack:"About me",
-            text1Back:"His research interests are wireless networks, biomedical wereables devices, research on emotional states and human computer interfaces with terapeutic applications.",
-            name: "Ph.D. Rogelio Bustamante Bello",
-            pictureName: "rogelioBustamante",
-            fileType: "jpg",
-            researchGateLink: "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
-            mailLink: "mailto:rbustama@tec.mx",
-            linkedInLink: "https://cimb.com.mx/index.html"  
-        },
-        {
-            titleBack:"About me",
-            text1Back:"His research interests are wireless networks, biomedical wereables devices, research on emotional states and human computer interfaces with terapeutic applications.",
-            name: "Ph.D. Rogelio Bustamante Bello",
-            pictureName: "rogelioBustamante",
-            fileType: "jpg",
-            researchGateLink: "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
-            mailLink: "mailto:rbustama@tec.mx",
-            linkedInLink: "https://cimb.com.mx/index.html" 
-        },
-        {
-            titleBack:"About me",
-            text1Back:"His research interests are wireless networks, biomedical wereables devices, research on emotional states and human computer interfaces with terapeutic applications.",
-            name: "Ph.D. Rogelio Bustamante Bello",
-            pictureName: "rogelioBustamante",
-            fileType: "jpg",
-            researchGateLink: "https://www.researchgate.net/profile/Rogelio-Bustamante-Bello",
-            mailLink: "mailto:rbustama@tec.mx",
-            linkedInLink: "https://cimb.com.mx/index.html" 
-        }
-      ];
-
     return (
         <div className={styles.Wrapper}>{}
             <h1 className={styles.Title}>{team.team}</h1>
@@ -58,22 +22,7 @@ function Karen() {
                 {
                     team.directorsTeam.map((director) => {
                         return (
-                            <CardOrange
-                                TitleBack={director.titleBack}
-                                TextOneBack={director.text1Back}
-                                TextTwoBack={director.text2Back}
-                                SubtitleBack={director.subtitleBack}
-                                NameFront={director.name}
-                                SubtitleFront={director.position}
-                                TextFront={director.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${director.pictureName}.${director.fileType}`)}
-                                ResearchGateLink={director.researchGateLink}
-                                MailLink={director.mailLink}
-                                LinkedInLink={director.linkedInLink}
-
-                            />
+                            <CardGreen card={director}/>
                         )
                     })
                 }
@@ -83,21 +32,7 @@ function Karen() {
                 {
                     team.collaboratorsTeam.map((collaborator) => {
                         return (
-                            <CardOrange
-                                TitleBack={collaborator.titleBack}
-                                TextOneBack={collaborator.text1Back}
-                                TextTwoBack={collaborator.text2Back}
-                                SubtitleBack={collaborator.subtitleBack}
-                                NameFront={collaborator.name}
-                                SubtitleFront={collaborator.position}
-                                TextFront={collaborator.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${collaborator.pictureName}.${collaborator.fileType}`)}
-                                ResearchGateLink={collaborator.researchGateLink}
-                                MailLink={collaborator.mailLink}
-                                LinkedInLink={collaborator.linkedInLink}
-                            />
+                            <CardGreen card={collaborator}/>
                         )
                     })
                 }
@@ -107,31 +42,10 @@ function Karen() {
                 {
                     team.ProjectManagersTeam.map((managers) => {
                         return (
-                            <CardOrange
-                                TitleBack={managers.titleBack}
-                                TextOneBack={managers.text1Back}
-                                TextTwoBack={managers.text2Back}
-                                SubtitleBack={managers.subtitleBack}
-                                NameFront={managers.name}
-                                SubtitleFront={managers.position}
-                                TextFront={managers.textFront}
-                                //Guardar todas las imagenes en la misma carpeta 
-                                //Solo agregar el nombre de la imagen (sin la ruta o el .jpg) en el json
-                                image={require(`./ProfileImg/${managers.pictureName}.${managers.fileType}`)}
-                                ResearchGateLink={managers.researchGateLink}
-                                MailLink={managers.mailLink}
-                                LinkedInLink={managers.linkedInLink}
-                            />
+                            <CardGreen card={managers}/>
                         )
                     })
                 }
-            </div>
-            <div className={styles.NewStyles}>
-                <div className={styles.ContainerOne}>
-                {cards.map((card) => (
-                <CardGreen card={card} />
-                ))}
-                </div>
             </div>
         </div>
     );

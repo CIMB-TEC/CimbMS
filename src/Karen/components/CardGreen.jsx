@@ -8,7 +8,7 @@ import { FaResearchgate } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImLinkedin } from "react-icons/im";
 
-import rogelio from "../ProfileImg/rogelioBustamante.jpg"
+//import rogelio from "../ProfileImg/rogelioBustamante.jpg"
 
 function FlipCard( {card} ) {
     const [showBack, setShowBack] = useState(false); 
@@ -20,7 +20,7 @@ function FlipCard( {card} ) {
     return (
       <ReactCardFlip isFlipped={showBack} flipDirection="vertical" flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9">
         <div className={`${styles.Front} ${styles.Cyan}`}>
-          <img src={rogelio} alt={card.pictureName} className={styles.Image} />
+          <img src={require(`../ProfileImg/${card.pictureName}.${card.fileType}`)} alt={card.pictureName} className={styles.Image} />
           <div className={styles.Content}>
             <h4 className={styles.TitleCard2}>{card.name}</h4>
             <div className={styles.Icons}>
