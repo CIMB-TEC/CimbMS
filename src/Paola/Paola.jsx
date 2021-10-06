@@ -152,8 +152,8 @@ function Paola(props) {
 
     return (
         <div className={styles.Page}>
-            <h1 className={styles.Title}>{project.title}</h1>
-            <h2>{project.smartElectromobility}</h2>
+            <h1 className={styles.Subtitle}>{project.title}</h1>
+            <h2 className={styles.H1}>{project.smartElectromobility}</h2>
             {
                 projectSE.map((proj) => {
                     return (

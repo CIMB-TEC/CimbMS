@@ -1,7 +1,7 @@
+@import "../global";
 $blackGray: #222222;
 $white: #fff;
-$primary: #f39d2b;
-
+/*
 .wrapper {
   margin: 0;
   background-color: #141414;
@@ -19,7 +19,7 @@ $primary: #f39d2b;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 1%;
-}
+}*/
 
 .containerPostgrado,
 .containerPregrado {
@@ -40,12 +40,15 @@ $primary: #f39d2b;
   width: 100%;
 }
 
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
+/*
 .heading_0 {
   font-size: 3rem;
   color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary,
-    0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary,
-    0 0 12px $primary;
+  text-shadow: 0 0 8px $highlight, 0 0 2px $highlight, 0 0 10px $highlight,
+    0 0 6px $highlight, 0 0 20px $highlight, 0 0 20px $highlight, 0 0 1px $highlight,
+    0 0 12px $highlight;
   text-transform: uppercase;
   text-align: left;
   width: 100%;
@@ -53,7 +56,7 @@ $primary: #f39d2b;
 
 .heading_1 {
   font-size: 4rem;
-  color: $primary;
+  color: $highlight;
   //font-weight: 600;
   padding: 5px;
   margin-bottom: 0.1em;
@@ -63,14 +66,14 @@ $primary: #f39d2b;
 
 .heading_2 {
   font-size: 4rem;
-  color: $primary;
+  color: $highlight;
   //font-weight: 600;
   padding: 5px;
   margin-bottom: 0.5em;
   margin-top: 2em;
   text-align: left;
   width: 100%;
-}
+}*/
 
 @media (max-width: 1024px) {
   // 2 y 3
@@ -101,6 +104,7 @@ $primary: #f39d2b;
   .card {
     width: 100%;
   }
+  /*
   .heading_0 {
     font-size: 25px;
     width: 100%;
@@ -120,6 +124,9 @@ $primary: #f39d2b;
     font-weight: 400;
     margin-top: 2em;
     margin-left: 10px;
+  }*/
+  .H1 {
+    font-size: $heading1r;
   }
 }
 

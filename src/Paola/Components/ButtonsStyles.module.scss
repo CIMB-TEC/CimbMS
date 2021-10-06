@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-
+@import "../../global";
 $card: #383838;
 $white: #ffffff;
 $color: #00b398;
@@ -36,9 +36,9 @@ $background: #1f1e1d;
   cursor: pointer;
   text-decoration: none;
   font-weight: 525;
-  border: 3px solid $color;
+  border: 3px solid $highlight;
   &:hover {
-    background: $color;
+    background: $highlight;
     color: #222222;
     font-weight: 549;
     font-weight: bold;
@@ -52,12 +52,12 @@ $background: #1f1e1d;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  border: 3px solid $color;
+  border: 3px solid $highlight;
   border-radius: 30px;
   font-size: 1.5em;
   font-weight: 525;
   &:hover {
-    background: $color;
+    background: $highlight;
     color: #222222;
     font-weight: 540;
     font-weight: bold;
@@ -97,7 +97,7 @@ $background: #1f1e1d;
     margin-right: auto;
     font-size: 1.5em;
     &:focus {
-      background: $color;
+      background: $highlight;
     }
   }
   .Buttons .Article {
@@ -106,7 +106,7 @@ $background: #1f1e1d;
     margin-right: auto;
     font-size: 1.5em;
     &:hover {
-      background: $color;
+      background: $highlight;
     }
   }
 }
@@ -118,7 +118,7 @@ $background: #1f1e1d;
     margin-right: auto;
     font-size: 1.3em;
     &:focus {
-      background: $color;
+      background: $highlight;
     }
   }
   .Buttons .Article {
@@ -127,7 +127,7 @@ $background: #1f1e1d;
     margin-right: auto;
     font-size: 1.3em;
     &:hover {
-      background: $color;
+      background: $highlight;
     }
   }
 }

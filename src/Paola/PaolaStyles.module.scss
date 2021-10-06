@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-
+@import "../global";
 $card: #383838;
 $white: #ffffff;
 $color: #00b398;
@@ -7,7 +7,7 @@ $primary: #00b398;
 $primary: #f39d2b;
 $color: #f39d2b;
 $background: #1f1e1d;
-
+/*
 .Page {
   width: 100%;
   padding-top: 2%;
@@ -25,7 +25,10 @@ $background: #1f1e1d;
     radial-gradient(#222222 2px, #141414 2px);
   background-size: 80px 80px;
   background-position: 0 0, 40px 40px;
-}
+}*/
+
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
 
 .Title {
   font-size: 3rem;
@@ -36,13 +39,16 @@ $background: #1f1e1d;
   text-transform: uppercase;
   padding: 5px;
 }
+/*
 .Page h2 {
   font-size: 4rem;
   color: $primary;
   padding: 5px;
   margin-bottom: 0.5em;
-}
+}*/
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Responsive*/
 @media only screen and (min-width: 1000) {
   .Page {
     margin-right: 1%;
