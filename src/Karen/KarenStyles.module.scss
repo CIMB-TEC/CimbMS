@@ -4,7 +4,7 @@ $green: #00b398;
 $orange: #f39d2b;
 $purple: #850053;
 
-//@import "../global";
+@import "../global";
 
 //Nuevas tarjetas
 $grayishBlue: hsl(229, 6%, 66%);
@@ -12,7 +12,7 @@ $veryLightGray: hsl(0, 0%, 98%);
 $cyan: hsl(180, 62%, 55%);
 $cyan1: #03A9F4;
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
+/*
 .Wrapper {
   width: 100%;
   padding-top: 2%;
@@ -30,8 +30,8 @@ $cyan1: #03A9F4;
   min-width: 300px;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
+}*/
+/*
 .Title {
   font-size: 3rem;
   color: #f1eeee;
@@ -40,7 +40,7 @@ $cyan1: #03A9F4;
     0 0 12px $orange;
   text-transform: uppercase;
   padding: 5px;
-}
+}*/
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*En esta parte se ponen todas las propiedades de las anidaciones*/
@@ -54,18 +54,25 @@ $cyan1: #03A9F4;
   justify-content: center;
   margin-top: 0px;
 }
-
+/*
 .DirectoresH1,
 .ColaboradoresH1,
 .EncargadosH1 {
   color: $orange;
   font-size: 4rem;
   width: 100%;
-}
+}*/
+
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
-
+@media (max-width: 500px) { 
+  .H1 {
+    font-size: $heading1r;
+  }
+}
 
 ////////////////////////////////
 //Nuevas tarjetas

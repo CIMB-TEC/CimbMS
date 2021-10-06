@@ -1,5 +1,5 @@
+@import "../../global";
 $blackGray: #222222;
-$bluemid: #f39d2b;
 $white: #fff;
 
 .container {
@@ -38,7 +38,7 @@ $white: #fff;
 
 .card:hover .face.face1,
 .card:hover .arrow {
-  background: $bluemid;
+  background: $highlight;
   transform: translateY(0);
   color: $blackGray;
 }
@@ -135,7 +135,7 @@ $white: #fff;
 }
 
 .anchor {
-  border: 3px solid $bluemid;
+  border: 3px solid $highlight;
   color: $white;
   text-transform: uppercase;
   padding: 5px;
@@ -152,7 +152,7 @@ $white: #fff;
 }
 
 .anchor:hover {
-  background-color: $bluemid;
+  background-color: $highlight;
   color: $blackGray;
   font-weight: 549;
   font-weight: bold;
@@ -177,7 +177,7 @@ $white: #fff;
   }
 
   .anchor:active {
-    background: $bluemid;
+    background: $highlight;
     color: $white;
     border-radius: 50px;
   }
