@@ -1,7 +1,9 @@
+@import '../../global';
+/*
 $blackGray: #222222;
 $white: #fff;
 $primary: #f39d2b;
-
+*/
 .conttabs {
     display: flex;
     flex-wrap: wrap;
@@ -26,39 +28,39 @@ $primary: #f39d2b;
 .conttabs .label0 {
     width: 190px;
     padding: 10px;
-    background: $primary;
+    background: $highlight;
     font-size: 1.7em;
     font-weight: bold;
-    color: $blackGray;
+    color: $card;
     text-align: center;
-    border-top: 1.5px solid;
-    border-left: 1px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
     border-right: 1px solid;
-    border-color: $primary;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-color: $highlight;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 //  order: 2;  //cambiar etiquetas arriba de la tab o abajo
 }
 
 .conttabs .tabs {
     width: 100%;
     padding: 20px;
-    background: $blackGray;
+    background: $card;
     order: 1;
     display: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .conttabs .tabs .tabsh2 {
     font-size: 3em;
-    color: $primary;
+    color: $highlight;
     text-align: center;
 }
 
 .conttabs .tabs .parrafoT0 {
     font-size: 1.4em;
-    color: $white;
+    color: $black;
     text-align: justify;
     padding: 5px;
 }
@@ -68,9 +70,9 @@ $primary: #f39d2b;
 }
 
 .conttabs .input0:checked + .label0 {
-    background: $blackGray;
-    border-color: $blackGray;
-    color: $white;
+    background: $card;
+    border-color: $card;
+    color: $black;
 }
 
 @media only screen and (max-width: 1024px)  {

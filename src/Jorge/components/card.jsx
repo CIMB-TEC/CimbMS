@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./cardStyles.module.scss"
 import {GiClick} from "react-icons/gi"
-import {AiOutlineCar} from "react-icons/ai"
+
 
 function card(props){
     return(
@@ -9,7 +9,7 @@ function card(props){
             <div className={styles.card}>
                 <div className= {[`${styles.face} ${styles.face1} `]}>
                     <div className={styles.content}>
-                        <AiOutlineCar className={styles.icono2} alt=""/>
+                        <img src={props.IconCard} className={styles.icono2} alt=""/>
                         <h3 className={styles.cardh3}>{props.Titulo}
                         </h3>
                         <div className={styles.arrow}>
@@ -19,7 +19,7 @@ function card(props){
                 </div>
                 <div className= { `${styles.face} ${styles.face2} `}>
                     <div className={styles.content}>
-                        <p className={styles.parrafocard}>{props.Texto}</p>
+                        <p className={styles.Text}>{props.Texto}</p>
                         <a className={styles.anchor}href={props.enlace}>{props.enlaceTitulo}</a>
                     </div>
                 </div>

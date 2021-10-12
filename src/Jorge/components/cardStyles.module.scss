@@ -1,6 +1,6 @@
 @import "../../global";
 $blackGray: #222222;
-$white: #fff;
+$card: #fff;
 
 .container {
   width: 350px;
@@ -16,8 +16,8 @@ $white: #fff;
 
 .face {
   //caja texto
-  width: 350px;
-  height: 240px;
+  width: 400px;
+  height: 300px;
   transition: 0.5s;
 }
 
@@ -28,23 +28,23 @@ $white: #fff;
 
 .face.face1 {
   position: relative;
-  background: $blackGray;
+  background: $card;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  transform: translateY(240px);
+  transform: translateY(300px);
 }
 
 .card:hover .face.face1,
 .card:hover .arrow {
   background: $highlight;
   transform: translateY(0);
-  color: $blackGray;
+  color: $card;
 }
 
 .card:hover .cardh3 {
-  color: $blackGray;
+  color: $card;
   font-weight: 578;
 }
 
@@ -78,29 +78,28 @@ $white: #fff;
 .content .cardh3 {
   margin: 0 0 0 0;
   padding: 0;
-  color: $white;
+  color: $highlight;
   text-align: center;
-  font-size: 1.28em;
+  font-size: 1.4em;
 }
 
 .arrow {
   position: relative;
-  background: $blackGray;
+  background: $card;
   display: flex;
-  opacity: 0.9;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .face.face2 {
   position: relative;
-  background: $blackGray;
-  color: $white;
+  background: $card;
+  color: $black;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  //box-shadow: 0 $white;
+  //box-shadow: 0px 0px 10px 2px $highlight;
   transform: translateY(-100px);
 }
 
@@ -110,18 +109,19 @@ $white: #fff;
 }
 
 .face.face2,
-.content .parrafocard {
+.content .Text {
   margin: 0;
   padding: 0;
 }
 
-.content .parrafocard {
+.Text {@include Text}
+
+.content .Text {
   text-align: justify;
   margin: 15px;
-  font-size: 1.4rem;
-  //font-weight: 1000;
   top: 1em;
   position: fixed;
+  font-weight: 600;
 }
 
 .face,
@@ -129,14 +129,14 @@ $white: #fff;
   margin: 0;
   text-decoration: none;
   text-align: center;
-  color: $blackGray;
-  border: 1px solid $blackGray;
+  border-top: 5px solid $highlight;
+  border-left: 3px solid $highlight;
   border-radius: 20px;
 }
 
 .anchor {
   border: 3px solid $highlight;
-  color: $white;
+  color: $highlight;
   text-transform: uppercase;
   padding: 5px;
   width: 55%;
@@ -153,7 +153,7 @@ $white: #fff;
 
 .anchor:hover {
   background-color: $highlight;
-  color: $blackGray;
+  color: $card;
   font-weight: 549;
   font-weight: bold;
 }
@@ -178,7 +178,7 @@ $white: #fff;
 
   .anchor:active {
     background: $highlight;
-    color: $white;
+    color: $card;
     border-radius: 50px;
   }
 
@@ -201,10 +201,6 @@ $white: #fff;
   .face.face1 {
     z-index: 1;
     transform: translateY(200px);
-  }
-
-  .parrafocard {
-    font-size: 0.8em;
   }
 
   .anchor {
