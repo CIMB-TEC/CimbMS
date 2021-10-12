@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import "../../global";
-$card: #383838;
-$card: #222222;
-$white: #ffffff;
-$color: #00b398;
-$color: #f39d2b;
+
+
+//$color: #00b398;
+//$color: #f39d2b;
 $background: #1f1e1d;
 
 .Card {
@@ -16,6 +15,8 @@ $background: #1f1e1d;
   height: auto;
   background: $card;
   border-radius: 10px;
+  border-top: 3px solid $highlight;
+  border-left: 2.5px solid $highlight;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-areas:
@@ -43,7 +44,7 @@ $background: #1f1e1d;
 .Information h1 {
   font-size: 3em;
   font-weight: 700;
-  color: $white;
+  color: $highlight;
   padding: 0;
   line-height: 1em;
   padding-bottom: 0.25em;
@@ -51,7 +52,7 @@ $background: #1f1e1d;
 
 .Information h2 {
   font-size: 2em;
-  color: $white;
+  color: $black;
   text-decoration: underline;
   margin-bottom: 0;
   padding: 0;
@@ -69,7 +70,7 @@ $background: #1f1e1d;
   list-style-position: inside;
   line-height: 1.75em;
   font-size: 1.5em;
-  color: $white;
+  color: $black;
 }
 
 @media only screen and (max-width: 993px) {

@@ -7,7 +7,7 @@ import projectsEsp from "./projectsEsp.json"
 import { LanguageContext } from "../App"
 import React, { useContext, useEffect, useState } from "react"
 import firebase from "firebase"
-
+import {AiOutlineCar} from "react-icons/ai"
 
 function Jorge() {
 
@@ -107,6 +107,7 @@ function Jorge() {
                             Titulo = {proj.title}
                             Texto = {proj.text}
                             enlace = {proj.link}
+                            IconCard = {AiOutlineCar}
                             enlaceTitulo = {projects.titleLink}
                         />
                     )
@@ -127,6 +128,7 @@ function Jorge() {
                             Titulo = {proj.title}
                             Texto = {proj.text}
                             enlace = {proj.link}
+                            IconCard = {AiOutlineCar}
                             enlaceTitulo = {projects.titleLink}
                         />
                     )
