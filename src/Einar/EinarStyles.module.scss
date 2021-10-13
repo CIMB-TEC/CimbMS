@@ -1,42 +1,12 @@
-//@import "../global";
-$primary: #2b81f3;
-$secundary: #f39d2b;
-$primary: #f95738;
-$primary: #00b398;
-$primary: #f39d2b;
+@import "../global";
 
-
-
-//@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-//@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-html {
-  font-size: 62.5%;
-}
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-*/
-//////////////First section///////////////////////
-/*
-.WaveContainer {
-  background: url("./Img/waves.png");
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #1f1e1d;
-  font-family: "Open Sans", sans-serif;
-}
-*/
-/*
 .Subtitle {@include Subtitle}
 .H1 {
   width: 70%;
   @include H1}
 .Text {
   width: 80%;
+  text-align: justify;
   @include Text}
 
 .Wrapper {
@@ -44,19 +14,28 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
   @include Wrapper
 }
-*/
+
 .ImageOne {
   width: 90%;
 }
 
+.WaveCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .WaveContainer {
   width: 90%;
-  //background: $card;
+  background: $card;
   border-radius: 10px;
-  //box-shadow: 0px 30px 40px -20px $grayishBlue;
-  //border-left: 5px solid $highlight;
+  box-shadow: 0px 30px 40px -20px $grayishBlue;
+  border-left: 5px solid $highlight;
 }
 .ContentContainer {
   display: flex;
@@ -66,10 +45,10 @@ html {
   width: 100%;
   //max-width: 1024px;
   //border: 1px solid $varColor;
-  font-family: "Roboto", sans-serif;
+  //font-family: "Roboto", sans-serif;
+  font-family: $font_text;
   padding: 15px;
-  //color: white;
-  //background-image: url("./Img/wave.svg");
+  color: white;
   background-size: cover;
 }
 
@@ -85,7 +64,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //position: relative;
+}
+
+.ProyectosTitulo {
+  @include H1;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
 }
 
 //RESPONSIVE
@@ -95,19 +80,104 @@ html {
   }
 } 
 
-.WeAre {
-  width: 100%;
-  font-size: 3rem;
-  color: $primary;
-  color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
-  display: inline-block;
-  margin-bottom: 25px;
-  margin-top: 50px;
-  // margin-left: -50px;
-  text-transform: uppercase;
+@media (max-width: 1330px) {
+  .H1 {
+    width: 60%;
+    font-size: $heading1r;
+  }
+  .ProyectosTitulo {
+    font-size: $heading1r;
+  }
 }
 
+@media (max-width: 1261px) {
+  .H1 {
+    width: 70%;
+  }
+  .Text {
+    width: 90%;
+  }
+  .ImageOne {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .H1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1016px) {
+  .H1 {
+    width: 50%;
+  }
+  .ImageOne {
+    width: 0%;
+  }
+  .Content {
+    width: 100%;
+  }
+  .Image {
+    width: 0%;
+  }
+}
+
+@media (max-width: 917px) {
+  .H1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 677px) {
+  .H1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 597px) {
+  .H1 {
+    width: 90%;
+    @include H2
+  }
+  .Text {
+    width: 100%;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+  .ProyectosTitulo {
+    @include H2
+  }
+}
+
+@media (max-width: 440px) {
+  .H1 {
+    width: 90%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 392px) {
+  .H1 {
+    width: 100%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+/*
 .Definition {
   font-size: 5rem;
   width: 50%;
@@ -119,7 +189,7 @@ html {
   font-size: 2.2rem;
   text-align: justify;
 }
-
+*/
 //////////////First section///////////////////////
 
 //////////////Seconnd section///////////////////////
@@ -163,21 +233,6 @@ html {
   //height: 100vh;
 }
 
-.ProyectosTitulo {
-  /*
-  color: black;
-  width: 100%;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 40px;
-  color: black;
-  margin-bottom: 40px;
-  */
-  //@include H1;
-  text-align: center;
-  width: 100%;
-  margin: 20px;
-}
 /*
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 NO SE UTILIZAN
@@ -253,26 +308,30 @@ NO SE UTILIZAN
   width: 280px;
   //max-width: 300px;
   min-height: 220px;
-  //border-top: 5px solid $highlight;
-  //box-shadow: 0px 30px 40px -20px $grayishBlue;
+  border-top: 5px solid $highlight;
+  box-shadow: 0px 30px 40px -20px $grayishBlue;
 }
 
 .AreaOneContainer,
 .AreaFourContainer {
   //background-color: rgba(0, 179, 152, 0.6);
   //background-color: rgba(243, 157, 43, 0.6);
-  //background-color: $card;
+  background-color: $card;
 }
 
 .AreaTitle {
-  font-size: 1.8rem;
-  font-weight: 600;
+  //font-size: 1.8rem;
+  //font-weight: 600;
+  font-family: $font_text;
+  font-size: $heading2;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .AreaLink {
-  font-size: 1.8rem;
+  //font-size: 1.8rem;
+  font-size: $heading2;
   text-decoration: underline;
 }
 
@@ -281,8 +340,8 @@ NO SE UTILIZAN
 }
 
 .AreaLink:hover {
-  font-weight: 900;
-  color: #1f1e1d;
+  //font-weight: 900;
+  color: $highlight;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -306,7 +365,7 @@ img {
   justify-content: space-between;
   // max-width: 1440px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  //font-family: "Roboto", sans-serif;
 }
 
 .ImageContainer {

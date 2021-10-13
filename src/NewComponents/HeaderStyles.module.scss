@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-//@import "../global";
+//@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "../global";
 
 $primary: #f39d2b;
 
@@ -9,8 +9,10 @@ $primary: #f39d2b;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-size: 2.2rem;
+  //font-family: "Roboto", sans-serif;
+  //font-size: 2.2rem;
+  font-family: $font_text;
+  font-size: $heading2;
 }
 .LogoContainer {
   margin-left: 25px;
@@ -28,12 +30,12 @@ $primary: #f39d2b;
   margin: 0 25px;
   //color: white;
   color: black;
-  //font-family: $font_text;
+  font-family: $font_text;
   font-weight: bold;
 
   &:hover {
     //color: $primary;
-    //color: $highlight;
+    color: $highlight;
   }
 }
 
@@ -47,7 +49,8 @@ $primary: #f39d2b;
 
 .NavHamContainer {
   flex-direction: column;
-  font-size: 2.2rem;
+  //font-size: 2.2rem;
+  font-size: $subtitle;
   align-items: center;
   display: none;
 }

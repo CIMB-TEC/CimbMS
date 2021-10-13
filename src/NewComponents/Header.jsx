@@ -15,7 +15,7 @@ function Header(props) {
             <div className={styles.Wrapper}>
                 <div className={styles.LogoContainer}>
                     <a>
-                        <img className={styles.Logo} src={Logo} />
+                        <img className={styles.Logo} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2Fcimb-negro.png?alt=media&token=dc4e2395-e360-4ce6-a943-cf5b8ce3a3dc" />
                     </a>
                 </div>
                 <div className={styles.NavsContainer}>
