@@ -1,4 +1,5 @@
-import styles from "./UCTDStyles.module.scss"
+import styles from "./HOBSStyles.module.scss"
+//import styles from "./UCTDStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
 import { BsCircle } from "react-icons/bs"
@@ -100,9 +101,9 @@ let UCTD_ = eng ? UCTD_Eng : UCTD_Esp;
         </div>
       </nav>
       <div className={styles.InfoContainer}>
-        <h1 className={styles.Title0}>{UCTD_.Title_0}</h1>
-        <h1 className={styles.Title1}>{UCTD_.Title_1}</h1>
-        <p className={styles.Description}>{UCTD_.Description_}</p>
+        <h1 className={styles.Subtitle}>{UCTD_.Title_0}</h1>
+        <h1 className={styles.H1}>{UCTD_.Title_1}</h1>
+        <p className={styles.Text}>{UCTD_.Description_}</p>
         <h2 className={styles.Title2}>{UCTD_.Title_2}</h2>
         <div className={styles.AreasContainer}>
         <div className={styles.cardTab}>

@@ -23,6 +23,7 @@
 
 .TitleCard2 {
   @include H2
+  
 }
 
 .Image {
@@ -31,12 +32,14 @@
 }
 
 .Content {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .Icons {
   display: block;
-  text-align: center;
+  position: fixed;
+  bottom: 15%;
+  left: 16%;
 }
 
 .Icons a {
@@ -73,6 +76,8 @@
   text-decoration: none;
   font-weight: 525;
   justify-content: center;
+  position: fixed;
+  bottom: 10%;
 }
 
 .ButtonOne:hover {

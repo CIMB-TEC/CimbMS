@@ -4,7 +4,6 @@ $card: #fff;
 
 .container {
   width: 350px;
-  //position: relative;
   display: flex;
   justify-content: center;
 }
@@ -16,8 +15,8 @@ $card: #fff;
 
 .face {
   //caja texto
-  width: 400px;
-  height: 300px;
+  width: 330px;
+  height: 320px;
   transition: 0.5s;
 }
 
@@ -26,6 +25,9 @@ $card: #fff;
   height: 100px;
 }
 
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
+
 .face.face1 {
   position: relative;
   background: $card;
@@ -33,7 +35,7 @@ $card: #fff;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  transform: translateY(300px);
+  transform: translateY(320px);
 }
 
 .card:hover .face.face1,
@@ -43,7 +45,7 @@ $card: #fff;
   color: $card;
 }
 
-.card:hover .cardh3 {
+.card:hover .H1 {
   color: $card;
   font-weight: 578;
 }
@@ -75,12 +77,12 @@ $card: #fff;
 .container,
 .card,
 .face.face1,
-.content .cardh3 {
-  margin: 0 0 0 0;
+.content .H1 {
+  margin: 0;
   padding: 0;
   color: $highlight;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .arrow {
@@ -96,7 +98,6 @@ $card: #fff;
   color: $black;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   box-sizing: border-box;
   //box-shadow: 0px 0px 10px 2px $highlight;
@@ -118,8 +119,8 @@ $card: #fff;
 
 .content .Text {
   text-align: justify;
-  margin: 15px;
-  top: 1em;
+  margin: 0px 15px 15px 15px;
+  top: 3%;
   position: fixed;
   font-weight: 600;
 }
@@ -129,7 +130,7 @@ $card: #fff;
   margin: 0;
   text-decoration: none;
   text-align: center;
-  border-top: 5px solid $highlight;
+  //border-top: 5px solid $highlight;
   border-left: 3px solid $highlight;
   border-radius: 20px;
 }
@@ -143,12 +144,13 @@ $card: #fff;
   cursor: pointer;
   border-radius: 30px;
   letter-spacing: 1px;
-  text-decoration: none;
+  //text-decoration: none;
   font-weight: 525;
   display: block;
   bottom: 1em;
   font-size: 0.8em;
   position: fixed;
+  bottom: 3%;
 }
 
 .anchor:hover {
@@ -193,14 +195,14 @@ $card: #fff;
   }
   .face {
     //caja texto
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 300px; //si se modifica cambiar .face.face1{transform}
     transition: 0.5s;
   }
 
   .face.face1 {
     z-index: 1;
-    transform: translateY(200px);
+    transform: translateY(300px); //si se modifica cambiar .face{height}
   }
 
   .anchor {
@@ -211,10 +213,10 @@ $card: #fff;
     margin: 10px;
   }
 
-  .content .cardh3 {
+  .content .H1 {
     font-size: 0.9em;
   }
-
+ 
   .content .icono2 {
     max-width: 100%;
     max-height: 100%;

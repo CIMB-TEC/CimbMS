@@ -35,6 +35,7 @@ $font_heading: 'Merriweather Sans', sans-serif;
     font-size: $heading1;
     padding: 5px;
     color: $black;
+    margin-left: 10px;
 }
 
 @mixin H2 {
@@ -42,6 +43,8 @@ $font_heading: 'Merriweather Sans', sans-serif;
     font-size: $heading2;
     padding: 5px;
     color: $black;
+    //margin-top: 10px;
+    //margin-left: 200px;
 }
 
 @mixin Subtitle {

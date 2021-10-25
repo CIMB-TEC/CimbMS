@@ -1,8 +1,8 @@
 import styles from "./HOBSStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
-import CardTab from '../Karen/components/cardTab'
 import { BsCircle } from "react-icons/bs"
+import CardTab from '../Karen/components/cardTab'
 import ProjectCard from "../Paola/ProjectCard"
 import HOBS_Eng from "./HOBS_Eng.json"
 import HOBS_Esp from "./HOBS_Esp.json"
@@ -101,9 +101,9 @@ let HOBS_ = eng ? HOBS_Eng : HOBS_Esp;
         </div>
       </nav>
       <div className={styles.InfoContainer}>
-        <h1 className={styles.Title0}>{HOBS_.Title_0}</h1>
-        <h1 className={styles.Title1}>{HOBS_.Title_1}</h1>
-        <p className={styles.Description}>{HOBS_.Description_}</p>
+        <h1 className={styles.Subtitle}>{HOBS_.Title_0}</h1>
+        <h1 className={styles.H1}>{HOBS_.Title_1}</h1>
+        <p className={styles.Text}>{HOBS_.Description_}</p>
         <h2 className={styles.Title2}>{HOBS_.Title_2}</h2>
         <div className={styles.AreasContainer}>
           <div className={styles.cardTab}>

@@ -1,4 +1,5 @@
-import styles from "./SEStyles.module.scss"
+import styles from "./HOBSStyles.module.scss"
+//import styles from "./SEStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
 import { BsCircle } from "react-icons/bs"

@@ -1,3 +1,5 @@
+@import '../global';
+/*
 $font: montserrat, sans-serif;
 $tertiary: #f39d2b;
 $secondary: #f39d2b;
@@ -32,6 +34,20 @@ $fontcolor: #fff;
   height: 50%;
   margin-top: 180px;
   //background-color: red;
+}*/
+
+.SideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 50%;
+  margin-top: 180px;
+  //background-color: red;
 }
 
 .SideNav .circleContainer {
@@ -42,12 +58,12 @@ $fontcolor: #fff;
 .SideNav .circleContainer a {
   margin: 5px 0px 5px 7px;
   font-size: 18px;
-  color: $tertiary;
+  color: $highlight;
 }
 
 .SideNav .circleContainer a:hover + .HideText {
   display: block;
-  color: $tertiary;
+  color: $highlight;
 }
 
 .HideText {
@@ -58,17 +74,22 @@ $fontcolor: #fff;
 }
 
 .InfoContainer {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  margin-left: 2.5%;
 }
 
+.H1 {@include H1}
+.Subtitle {@include Subtitle}
+.Text {@include Text}
+/*
 .Title0 {
   font-size: 3rem;
   color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary, 0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary, 0 0 12px $primary;
+  text-shadow: 0 0 8px $black, 0 0 2px $black, 0 0 10px $black, 0 0 6px $black, 0 0 20px $black, 0 0 20px $black, 0 0 1px $black, 0 0 12px $black;
   text-transform: uppercase;
   text-align: left;
   margin: 0.5em 0 0 1.3em;
@@ -76,7 +97,7 @@ $fontcolor: #fff;
 }
 
 .Title1 {
-  color: $secondary;
+  color: $highlight;
   font-size: 4rem;
   padding: 5px;
   margin: 0 0 0.5em 0.7em;
@@ -85,26 +106,26 @@ $fontcolor: #fff;
 }
 
 .Description {
-  width: 75%;
-  color: $fontcolor;
+  width: 100%;
+  color: $black;
   font-size: 2.2rem;
   text-align: justify;
   //padding: 20px 20px 10px 20px;
-}
+}*/
 
 .Title2 {
-  color: $secondary;
+  color: $highlight;
   font-size: 30px;
   text-align: center;
-  width: 80%;
+  width: 98.5%;
   font-weight: 400;
-  margin: 30px 0 0 30px;
+  //margin: 30px 0 0 30px;
   text-transform: uppercase;
   letter-spacing: 40px;
 }
 
 .AreasContainer {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -113,7 +134,7 @@ $fontcolor: #fff;
 }
 
 .TimeLineContainer {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,14 +146,14 @@ $fontcolor: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 .Title3 {
-  color: $secondary;
+  color: $highlight;
   font-size: 30px;
   text-align: center;
-  width: 80%;
+  width: 95%;
   font-weight: 600;
   margin: 0 0px 10px 0px;
   text-transform: uppercase;
@@ -141,10 +162,10 @@ $fontcolor: #fff;
 }
 
 .Title4 {
-  color: $secondary;
+  color: $highlight;
   font-size: 30px;
   text-align: center;
-  width: 100%;
+  width: 95%;
   font-weight: 400;
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
@@ -155,26 +176,26 @@ $fontcolor: #fff;
 
 .Paola {
   height: 300px;
-  border: solid $tertiary 2px;
+  border: solid $highlight 2px;
   width: 75%;
 }
 .Line {
-  border: 1px solid $tertiary;
+  border: 1px solid $highlight;
   width: 1px;
   height: 50px;
 }
 
 .Circle {
-  border: 2px solid $tertiary;
+  border: 2px solid $highlight;
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  //background-color: $secondary;
+  //background-color: $highlight;
   &:hover {
     background-color: transparent;
   }
 }
-
+/*
 @media only screen and (max-width: 1024px) {
   .Title0 {
     margin-left: 1.2rem;
@@ -182,14 +203,13 @@ $fontcolor: #fff;
   .Title1 {
     margin-left: 0.6rem;
   }
-}
-
+}*/
+/*
 @media only screen and (max-width: 768px)  {
   .Description {
     font-size: 1.8rem;
   }
-  
-  .Title0 {
+    .Title0 {
     font-size: 2.7rem;
     margin-left: 1.2rem;
   }
@@ -197,18 +217,21 @@ $fontcolor: #fff;
     font-size: 3.2rem;
     margin-left: 0.6rem;
   }
-}
+}*/
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   .Description {
     font-size: 1.3rem;
   }
-  .Title0 {
+  .H1 {
+    font-size: $heading1r;
+  }
+/*  .Title0 {
     font-size: 1.8rem;
   }
   .Title1 {
     font-size: 2rem;
-  }
+  }*/
   .Title2 {
     font-size: 2rem;
     letter-spacing: 20px;

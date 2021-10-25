@@ -1,4 +1,5 @@
-import styles from "./LPStyles.module.scss"
+import styles from "./HOBSStyles.module.scss"
+//import styles from "./LPStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
 import { BsCircle } from "react-icons/bs"
@@ -99,9 +100,9 @@ let LP_ = eng ? LP_Eng : LP_Esp;
         </div>
       </nav>
       <div className={styles.InfoContainer}>
-        <h1 className={styles.Title0}>{LP_.Title_0}</h1>
-        <h1 className={styles.Title1}>{LP_.Title_1}</h1>
-        <p className={styles.Description}>{LP_.Description_}</p>
+        <h1 className={styles.Subtitle}>{LP_.Title_0}</h1>
+        <h1 className={styles.H1}>{LP_.Title_1}</h1>
+        <p className={styles.Text}>{LP_.Description_}</p>
         <h2 className={styles.Title2}>{LP_.Title_2}</h2>
         <div className={styles.AreasContainer}>
           <div className={styles.cardTab}>

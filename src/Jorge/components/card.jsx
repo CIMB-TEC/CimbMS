@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./cardStyles.module.scss"
 import {GiClick} from "react-icons/gi"
-
+import {GiRobotLeg} from "react-icons/gi"
 
 function card(props){
     return(
@@ -9,8 +9,8 @@ function card(props){
             <div className={styles.card}>
                 <div className= {[`${styles.face} ${styles.face1} `]}>
                     <div className={styles.content}>
-                        <img src={props.IconCard} className={styles.icono2} alt=""/>
-                        <h3 className={styles.cardh3}>{props.Titulo}
+                        <GiRobotLeg className={styles.icono2} alt=""/>
+                        <h3 className={styles.subtitle}>{props.Titulo}
                         </h3>
                         <div className={styles.arrow}>
                             <GiClick  alt=""/>
