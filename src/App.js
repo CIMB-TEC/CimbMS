@@ -20,7 +20,6 @@ import BlogPost from "./Firebase/BlogPost.jsx";
 import Blog from "./Firebase/Blog.jsx"
 import CreateArticle from "./Firebase/CreateArticle.jsx";
 import CreateProject  from "./Firebase/CreateProject.jsx";
-import CreateReadMoreProject  from "./Firebase/CreateReadMoreProject";
 import researchEng from "./Einar/researchEng.json";
 import researchEsp from "./Einar/researchEsp.json";
 
@@ -128,10 +127,6 @@ function App() {
 
           <Route exact path="/firebase/project">
             <CreateProject />
-          </Route>
-
-          <Route exact path="/firebase/read_more_project">
-            <CreateReadMoreProject />
           </Route>
 
           <Route exact path="/firebase/:id" component={BlogPost} />
