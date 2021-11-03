@@ -14,7 +14,6 @@ import SE from "./Karen/SE";
 import UCTD from "./Karen/UCTD";
 import HOBS from "./Karen/HOBS";
 import LP from "./Karen/LP";
-import ReadMore from "./Karen/ReadMore";
 import CreateBlog from "./Firebase/CreateBlog.jsx";
 import BlogPost from "./Firebase/BlogPost.jsx";
 import Blog from "./Firebase/Blog.jsx"
@@ -95,10 +94,6 @@ function App() {
 
           <Route exact path="/lp">
             <LP />
-          </Route>
-
-          <Route exact path="/projects/:id">
-            <ReadMore />
           </Route>
 
           <Route exact path="/">
