@@ -8,6 +8,7 @@ import Paola from "./Paola/Paola.jsx";
 
 import Einar from "./Einar/Einar.jsx";
 import Jorge from "./Jorge/Jorge.jsx";
+import RM from "./Karen/ReadMore.jsx";
 import Header from "./NewComponents/Header.jsx";
 import ProjectCard from "./Paola/ProjectCard";
 import SE from "./Karen/SE";
@@ -110,6 +111,10 @@ function App() {
 
           <Route exact path="/projects">
             <Jorge />
+          </Route>
+        
+          <Route path="/projects/:id">
+            <RM />
           </Route>
 
           <Route exact path="/firebase">

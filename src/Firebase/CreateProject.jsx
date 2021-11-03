@@ -22,7 +22,7 @@ const CreateProject = () => {
     img:"",
     descripcion:"",
     description:"",
-    link:""
+    abv:""
   })
 
 
@@ -172,8 +172,8 @@ const CreateProject = () => {
           </label>
 
           <label className={styles.InputContainer}>
-            <span className={styles.Span}>Link</span>
-            <input className={styles.InputBlog} name="link" onChange={handelOnChange} />
+            <span className={styles.Span}>Abreviación</span>
+            <input className={styles.InputBlog} name="abv" onChange={handelOnChange} />
           </label>
 
           <div className={styles.Submit}>

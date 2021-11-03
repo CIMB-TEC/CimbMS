@@ -20,7 +20,7 @@ function card(props){
                 <div className= { `${styles.face} ${styles.face2} `}>
                     <div className={styles.content}>
                         <p className={styles.Text}>{props.Texto}</p>
-                        <a className={styles.anchor}href={props.enlace}>{props.enlaceTitulo}</a>
+                        <a className={styles.anchor} href={`/projects/${props.enlace}`} >{props.enlaceTitulo}</a>
                     </div>
                 </div>
             </div>
