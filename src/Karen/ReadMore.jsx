@@ -1,4 +1,4 @@
-import styles from "./HOBSStyles.module.scss"
+import styles from "./ReadMoreStyles.module.scss"
 //import styles from "./LPStyles.module.scss"
 import initial from "./img/timeLine_1.png"
 import final from "./img/timeLine_2.png"
@@ -19,9 +19,12 @@ const RM = () => {
     const [project, setProject] = useState({})
     const [proyecto, setProyecto] = useState({})
 
+    let shouldHide = true
+
     let Project = {
       title: "",
       text: "",
+      areas: []
     }
 
     const db = firebase.firestore()
@@ -38,14 +41,16 @@ const RM = () => {
 		}
         projectDB.forEach(pro => {
             pro = pro.data()
-			Project = {
+            Project = {
                 title: pro.title,
-                text: pro.description
+                text: pro.full_desc,
+                areas: pro.areasEng
             }
             setProject(Project)
             Project = {
                 title: pro.titulo,
-                text: pro.descripcion,
+                text: pro.desc_comp,
+                areas: pro.areasEsp
             }
             setProyecto(Project)
         })
@@ -55,9 +60,8 @@ const RM = () => {
     let LP_ = eng ? LP_Eng : LP_Esp;
 
     useEffect(() => {
-		getValue()
-
-	}, [])
+      getValue()
+	  }, [])
 
   const timeLine = [
     {
@@ -117,6 +121,13 @@ const RM = () => {
     }
   ]
 
+  console.log(proj.areas)
+  if (proj.areas){
+    if (proj.areas[0].label != ""){
+      shouldHide = false
+    }
+  }
+
 
   return (
     <div className={styles.Wrapper}>
@@ -148,32 +159,10 @@ const RM = () => {
       <div className={styles.InfoContainer}>
         <h1 className={styles.H1}> {proj.title} </h1>
         <p className={styles.Text}> {proj.text} </p>
-        <h2 className={styles.Title2}>areas</h2>
+        <h2 className={ shouldHide? styles.hidden : styles.Title2}>areas</h2>
         <div className={styles.AreasContainer}>
           <div className={styles.cardTab}>
-            {
-              LP_.areasT.map((areas) => {
-                return (
-                  <CardTab
-                    LabelT0="AI"
-                    TituloT0={areas.Titulo_T0}
-                    TextoT0={areas.Texto_T0}
-                    LabelT1="M"
-                    TituloT1={areas.Titulo_T1}
-                    TextoT1={areas.Texto_T1}
-                    LabelT2="E"
-                    TituloT2={areas.Titulo_T2}
-                    TextoT2={areas.Texto_T2}
-                    LabelT3="C"
-                    TituloT3={areas.Titulo_T3}
-                    TextoT3={areas.Texto_T3}
-                    LabelT4="B"
-                    TituloT4={areas.Titulo_T4}
-                    TextoT4={areas.Texto_T4}
-                  />
-                )
-              })
-            }
+            { shouldHide ? null : <CardTab areas = {proj.areas} /> }
           </div>
         </div>
       </div>

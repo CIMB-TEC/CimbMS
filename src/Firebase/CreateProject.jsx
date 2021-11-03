@@ -14,6 +14,9 @@ const CreateProject = () => {
   let currentImgId = "";
   const [file, setFile] = useState("hj");
 
+  const [areasEsp, setListaInput] = useState([{ label: "", a: "", desc: "" }]);
+  const [areasEng, setInputList] = useState([{ label: "", a: "", desc: "" }]);
+
 
   const [project, setProject] = useState({
     school:"",
@@ -21,8 +24,12 @@ const CreateProject = () => {
     title:"",
     img:"",
     descripcion:"",
+    desc_comp:"",
     description:"",
-    abv:""
+    full_desc:"",
+    abv:"",
+    areasEng:[],
+    areasEsp:[]
   })
 
 
@@ -104,12 +111,55 @@ const CreateProject = () => {
       [e.target.name]: e.target.value
     })
     console.log(e.target.name, e.target.value)
+    console.log(areasEng)
+    console.log(areasEsp)
   }
+
+  // handle input change
+  const handleInputChange = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...areasEng];
+    list[index][name] = value;
+    setInputList(list);
+  };
+  
+  const handleInputChangeEsp = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...areasEsp];
+    list[index][name] = value;
+    setListaInput(list);
+  };
+  
+  // handle click event of the Remove button
+  const handleRemoveClick = index => {
+    const list = [...areasEng];
+    list.splice(index, 1);
+    setInputList(list);
+  };
+
+  const handleRemoveClickEsp = index => {
+    const list = [...areasEsp];
+    list.splice(index, 1);
+    setListaInput(list);
+  };
+  
+  // handle click event of the Add button
+  const handleAddClick = () => {
+    setInputList([...areasEng, { label: "", a: "", desc: "" }]);
+  };
+
+  const handleAddClickEsp = () => {
+    setListaInput([...areasEsp, { label: "", a: "", desc: "" }]);
+  };
 
 
   const handelOnSubmit = async (e) => {
 
-    if (project.school == "" && project.titulo == "" && project.title == "" && project.img == "" && project.descripcion == "" && project.description == "" && project.link == "") {
+    project.areasEng = areasEng
+
+    project.areasEsp = areasEsp
+
+    if ((project.school == "" && project.titulo == "" && project.title == "" && project.img == "" && project.descripcion == "" && project.description == "") || project.abv == "" || project.areasEng.length != project.areasEsp.length) {
       return
     }
     console.log(project, "This is a complete project")
@@ -163,13 +213,88 @@ const CreateProject = () => {
           </div>
 
           <label className={styles.InputContainer}>
-            <span className={styles.Span}>Descripción</span>
+            <span className={styles.Span}>Descripción abreviada</span>
             <textarea className={styles.InputDesBlog} name="descripcion" onChange={handelOnChange}  />
           </label>
           <label className={styles.InputContainer}>
-            <span className={styles.Span}>Description</span>
+            <span className={styles.Span}>Short description</span>
             <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
           </label>
+
+          <label className={styles.InputContainer}>
+            <span className={styles.Span}>Descripción completa</span>
+            <textarea className={styles.InputDesBlog} name="desc_comp" onChange={handelOnChange}  />
+          </label>
+          <label className={styles.InputContainer}>
+            <span className={styles.Span}>Full description</span>
+            <textarea className={styles.InputDesBlog} name="full_desc" onChange={handelOnChange}  />
+          </label>
+
+          <label className={styles.AreasContainer}>
+            <span className={styles.Span}>Agregar áreas de investigación</span>
+            {areasEsp.map((x, i) => {
+              return (
+                <div className="box">
+                  <input
+                    className={styles.InputAreaLabel}
+                    placeholder="Etiqueta"
+                    name="label"
+                    value={x.label}
+                    onChange={e => handleInputChangeEsp(e, i)}
+                  />
+                  <input
+                    className={styles.InputAreaLabel}
+                    placeholder="Área"
+                    name="a"
+                    value={x.a}
+                    onChange={e => handleInputChangeEsp(e, i)}
+                  />
+                  <input
+                    className={styles.InputArea}
+                    placeholder="Descripción del área"
+                    name="desc"
+                    value={x.desc}
+                    onChange={e => handleInputChangeEsp(e, i)}
+                  />
+                    {areasEsp.length !== 1 && <button className={styles.AddRemButton} onClick={() => handleRemoveClickEsp(i)}>Remove</button>}
+                    {areasEsp.length - 1 === i && <button className={styles.AddRemButton} onClick={handleAddClickEsp}>Add</button>}
+                </div>
+              );
+            })}
+        </label>
+
+        <label className={styles.AreasContainer}>
+            <span className={styles.Span}>Add development areas</span>
+            {areasEng.map((x, i) => {
+              return (
+                <div className="box">
+                  <input
+                    className={styles.InputAreaLabel}
+                    placeholder="Label"
+                    name="label"
+                    value={x.label}
+                    onChange={e => handleInputChange(e, i)}
+                  />
+                  <input
+                    className={styles.InputAreaLabel}
+                    placeholder="Area"
+                    name="a"
+                    value={x.a}
+                    onChange={e => handleInputChange(e, i)}
+                  />
+                  <input
+                    className={styles.InputArea}
+                    placeholder="Area description"
+                    name="desc"
+                    value={x.desc}
+                    onChange={e => handleInputChange(e, i)}
+                  />
+                    {areasEng.length !== 1 && <button className={styles.AddRemButton} onClick={() => handleRemoveClick(i)}>Remove</button>}
+                    {areasEng.length - 1 === i && <button className={styles.AddRemButton} onClick={handleAddClick}>Add</button>}
+                </div>
+              );
+            })}
+        </label>
 
           <label className={styles.InputContainer}>
             <span className={styles.Span}>Abreviación</span>

@@ -82,6 +82,10 @@ $fontcolor: #fff;
   margin-left: 2.5%;
 }
 
+.hidden { 
+  display: none; 
+}
+
 .H1 {@include H1}
 .Subtitle {@include Subtitle}
 .Text {@include Text}

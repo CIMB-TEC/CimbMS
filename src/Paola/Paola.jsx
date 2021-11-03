@@ -172,7 +172,7 @@ function Paola(props) {
                     )
                 })
             }
-            <h2>{project.userCenteredTechnologyDevelopment}</h2>
+            <h2 className={styles.H1}>{project.userCenteredTechnologyDevelopment}</h2>
             {
                 projectUCT.map((proj) => {
                     return (
@@ -191,7 +191,7 @@ function Paola(props) {
                     )
                 })
             }
-            <h2>{project.others}</h2>
+            <h2 className={styles.H1}>{project.others}</h2>
             {
                 projectOTH.map((proj) => {
                     return (
