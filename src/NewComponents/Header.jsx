@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import Logo from "./Img/logo.png"
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai"
+import headersEng from "./Header_Eng.json"
+import headersEsp from "./Header_Esp.json"
+import { useContext } from "react";
+import { LanguageContext } from "../App"
 
 function Header(props) {
     const [ham, setHam] = useState(false)
@@ -10,6 +14,10 @@ function Header(props) {
     const handelHam = () => {
         setHam(!ham)
     }
+
+    const eng = useContext(LanguageContext)
+    let headers = eng ? headersEng : headersEsp;
+
     return (
         <>
             <div className={styles.Wrapper}>
@@ -19,10 +27,10 @@ function Header(props) {
                     </a>
                 </div>
                 <div className={styles.NavsContainer}>
-                    <Link to="/" className={styles.Nav}>Inicio</Link>
-                    <Link to="/jorge" className={styles.Nav}>Proyectos</Link>
-                    <Link to="/paola" className={styles.Nav}>Divulgación</Link>
-                    <Link to="/karen" className={styles.Nav}>Equipo de investigación </Link>
+                    <Link to="/" className={styles.Nav}>{headers.home}</Link>
+                    <Link to="/projects" className={styles.Nav}>{headers.projects}</Link>
+                    <Link to="/articles" className={styles.Nav}>{headers.disclosure}</Link>
+                    <Link to="/team" className={styles.Nav}>{headers.team}</Link>
 
                     <a onClick={props.changeLanguage} className={styles.Nav}> ENG/ESP</a>
                     <AiOutlineMenu className={styles.Ham} onClick={handelHam} />
@@ -30,10 +38,10 @@ function Header(props) {
             </div>
 
             {ham ? <div className={styles.NavHamContainer}>
-                <Link to="/" className={styles.NavHam} onClick={handelHam}>Inicio</Link>
-                <Link to="/jorge" className={styles.NavHam} onClick={handelHam}>Proyectos</Link>
-                <Link to="/paola" className={styles.NavHam} onClick={handelHam}>Divulgación</Link>
-                <Link to="/karen" className={styles.NavHam} onClick={handelHam}>Equipo de investigación </Link>
+                <Link to="/" className={styles.NavHam} onClick={handelHam}>{headers.home}</Link>
+                <Link to="/projects" className={styles.NavHam} onClick={handelHam}>{headers.projects}</Link>
+                <Link to="/articles" className={styles.NavHam} onClick={handelHam}>{headers.disclosure}</Link>
+                <Link to="/team" className={styles.NavHam} onClick={handelHam}>{headers.team}</Link>
                 <a onClick={props.changeLanguage} className={styles.NavHam}> ENG/ESP</a>
 
             </div> : <div></div>}

@@ -14,11 +14,13 @@ import SE from "./Karen/SE";
 import UCTD from "./Karen/UCTD";
 import HOBS from "./Karen/HOBS";
 import LP from "./Karen/LP";
+import ReadMore from "./Karen/ReadMore";
 import CreateBlog from "./Firebase/CreateBlog.jsx";
 import BlogPost from "./Firebase/BlogPost.jsx";
 import Blog from "./Firebase/Blog.jsx"
 import CreateArticle from "./Firebase/CreateArticle.jsx";
 import CreateProject  from "./Firebase/CreateProject.jsx";
+import CreateReadMoreProject  from "./Firebase/CreateReadMoreProject";
 import researchEng from "./Einar/researchEng.json";
 import researchEsp from "./Einar/researchEsp.json";
 
@@ -96,19 +98,23 @@ function App() {
             <LP />
           </Route>
 
+          <Route exact path="/projects/:id">
+            <ReadMore />
+          </Route>
+
           <Route exact path="/">
             <Einar />
           </Route>
 
-          <Route exact path="/karen">
+          <Route exact path="/team">
             <Karen />
           </Route>
 
-          <Route exact path="/paola">
+          <Route exact path="/articles">
             <Paola />
           </Route>
 
-          <Route exact path="/jorge">
+          <Route exact path="/projects">
             <Jorge />
           </Route>
 
@@ -122,6 +128,10 @@ function App() {
 
           <Route exact path="/firebase/project">
             <CreateProject />
+          </Route>
+
+          <Route exact path="/firebase/read_more_project">
+            <CreateReadMoreProject />
           </Route>
 
           <Route exact path="/firebase/:id" component={BlogPost} />

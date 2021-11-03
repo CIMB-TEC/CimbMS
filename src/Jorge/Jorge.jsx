@@ -116,8 +116,8 @@ function Jorge() {
                 
             </div>
         </div>
-        <h1 className={styles.heading_2}>
-            {projects.H1}
+        <h1 className={styles.H1}>
+            {projects.heading2}
         </h1>
         <div className={styles.containerPregrado}>
             <div className={styles.card}>
