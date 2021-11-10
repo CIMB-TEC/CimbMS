@@ -37,7 +37,7 @@ const CreateProject = () => {
 
   const addValue = async (currentProject) => {
     try {
-      const newProject = await db.collection("project").add(currentProject)
+      const newProject = await db.collection("project").doc(currentProject.abv).set(currentProject)
       console.log("New project Id", newProject.id)
 
       currentId = newProject.id

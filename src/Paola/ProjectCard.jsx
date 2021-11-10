@@ -3,6 +3,22 @@ import styles from './ProjectCardStyles.module.scss'
 
 const ProjectCard = (props) => {
 
+  let shouldHide = false
+  let noButton = false
+  let noVideo = false
+
+  if (props.ObjEsp == "" || !props.ObjEsp) {
+    shouldHide = true
+  }
+
+  if (props.link == "" || !props.link) {
+    noButton = true
+  }
+
+  if (props.videoLink == "" || !props.videoLink) {
+    noVideo = true
+  }
+
   return (
 
     <article className={styles.card}>
@@ -14,10 +30,11 @@ const ProjectCard = (props) => {
         <div className={styles.txt}>
           <h3>{props.ObjGenTi}</h3>
           <p>{props.ObjGen}</p>
-          <h3>{props.ObjEspTi}</h3>
-          <p>{props.ObjEsp}</p>
+          <h3 className={ shouldHide? styles.hidden : styles.h3}>{props.ObjEspTi}</h3>
+          <p className={ shouldHide? styles.hidden : styles.p}>{props.ObjEsp}</p>
         </div>
-        <a href={props.Link} className={styles.details}> {props.linkTi} </a>
+        <a href={props.link} className={ noButton? styles.hidden : styles.details}> {props.linkTi} </a>
+        <a href={props.videoLink} className={ noVideo? styles.hidden : styles.details}> {props.videoLinkTi} </a>
       </div>
     </article>
 

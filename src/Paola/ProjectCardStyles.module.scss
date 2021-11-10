@@ -19,19 +19,19 @@ article.card {
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba($background, 0.3);
   overflow: hidden;
-  max-width: 500px;
+  max-width: 70%;
   color: $white;
 }
 .thumb {
   width: 100%;
-  height: 75%;
+  height: 65%;
   border-radius: 3px;
 }
 .infos {
   width: 100%;
   height: 100%;
   position: relative;
-  padding: 3% 5%;
+  padding: 2% 5%;
   background: $blackGray;
   transition: $timing-1 $transition;
 }
@@ -39,7 +39,7 @@ article.card {
   position: relative;
   margin: 3px 0;
   letter-spacing: 3px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -47,14 +47,14 @@ article.card {
 .seats {
   margin-bottom: 3px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   color: $primary;
 }
 .seats {
   display: inline-block;
-  margin-bottom: 5%;
-  padding-bottom: 5%;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
   border-bottom: 1px solid $lite-grey;
   opacity: 0;
   transition: $timing-2 $transition;
@@ -78,6 +78,7 @@ article.card {
 .details {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3%;
   display: block;
   position: relative;
   padding: 2%;
@@ -100,7 +101,7 @@ article.card {
 }
 
 .infos:hover {
-  transform: translateY(-75%);
+  transform: translateY(-65%);
   overflow: scroll;
   .seats,
   .txt,
@@ -208,4 +209,8 @@ article.card {
       opacity: 1;
     }
   }
+}
+
+.hidden { 
+  display: none; 
 }

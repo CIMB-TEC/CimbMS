@@ -11,10 +11,6 @@ import Jorge from "./Jorge/Jorge.jsx";
 import RM from "./Karen/ReadMore.jsx";
 import Header from "./NewComponents/Header.jsx";
 import ProjectCard from "./Paola/ProjectCard";
-import SE from "./Karen/SE";
-import UCTD from "./Karen/UCTD";
-import HOBS from "./Karen/HOBS";
-import LP from "./Karen/LP";
 import CreateBlog from "./Firebase/CreateBlog.jsx";
 import BlogPost from "./Firebase/BlogPost.jsx";
 import Blog from "./Firebase/Blog.jsx"
@@ -79,22 +75,6 @@ function App() {
 
           <Route exact path="/projectcard">
             <ProjectCard />
-          </Route>
-
-          <Route exact path="/se">
-            <SE />
-          </Route>
-
-          <Route exact path="/uctd">
-            <UCTD />
-          </Route>
-
-          <Route exact path="/hobs">
-            <HOBS />
-          </Route>
-
-          <Route exact path="/lp">
-            <LP />
           </Route>
 
           <Route exact path="/">
