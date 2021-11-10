@@ -1,8 +1,7 @@
 @import '../global';
-
 /*
 $font: montserrat, sans-serif;
-$terciary: #f39d2b;
+$tertiary: #f39d2b;
 $secondary: #f39d2b;
 $primary: #f39d2b;
 $fontcolor: #fff;
@@ -21,6 +20,20 @@ $fontcolor: #fff;
   opacity: 1;
   background: radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #141414 20%, #141414 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#222222 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #222222 1.4000000000000001px, #141414 1.4000000000000001px) -0.7000000000000001px 0;
   background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+
+.SideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 50%;
+  margin-top: 180px;
+  //background-color: red;
 }*/
 
 .SideNav {
@@ -67,6 +80,15 @@ $fontcolor: #fff;
   justify-content: left;
   align-items: left;
   margin-left: 2.5%;
+}
+
+.hidden { 
+  display: none; 
+}
+
+.imageContainer {
+  width: 100%;
+  height: 30vh;
 }
 
 .H1 {@include H1}

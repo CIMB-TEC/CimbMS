@@ -17,9 +17,9 @@ function Jorge() {
     const [proyectosUnder, setProyectosUnder] = useState([])
 
     let Project = {
+      abv: "",
       title: "",
       text: "",
-      link: "",
       icon: "",
     }
 
@@ -38,16 +38,16 @@ function Jorge() {
 		projectsPostDB.forEach(project => {
             project = project.data()
 			Project = {
+                abv: project.abv,
                 title: project.title,
                 text: project.description,
-                link: project.link,
                 icon: project.img
             }
             setProjectsPost(projectsPost => [...projectsPost, Project])
             Project = {
+                abv: project.abv,
                 title: project.titulo,
                 text: project.descripcion,
-                link: project.link,
                 icon: project.img
             }
             setProyectosPost(proyectosPost => [...proyectosPost, Project])
@@ -61,16 +61,16 @@ function Jorge() {
 		projectsUnderDB.forEach(project => {
             project = project.data()
 			Project = {
+                abv: project.abv,
                 title: project.title,
                 text: project.description,
-                link: project.link,
                 icon: project.img
             }
             setProjectsUnder(projectsUnder => [...projectsUnder, Project])
             Project = {
+                abv: project.abv,
                 title: project.titulo,
                 text: project.descripcion,
-                link: project.link,
                 icon: project.img
             }
             setProyectosUnder(proyectosUnder => [...proyectosUnder, Project])
@@ -106,7 +106,7 @@ function Jorge() {
                         <Card
                             Titulo = {proj.title}
                             Texto = {proj.text}
-                            enlace = {proj.link}
+                            enlace = {proj.abv}
                             IconCard = {AiOutlineCar}
                             enlaceTitulo = {projects.titleLink}
                         />
@@ -127,7 +127,7 @@ function Jorge() {
                         <Card
                             Titulo = {proj.title}
                             Texto = {proj.text}
-                            enlace = {proj.link}
+                            enlace = {proj.abv}
                             IconCard = {AiOutlineCar}
                             enlaceTitulo = {projects.titleLink}
                         />
