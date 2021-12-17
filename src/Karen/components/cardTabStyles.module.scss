@@ -27,9 +27,9 @@ $primary: #f39d2b;
 
 .conttabs .label0 {
     width: 190px;
-    padding: 10px;
+    padding: 0;
     background: $highlight;
-    font-size: 1.7em;
+    font-size: $heading2;
     font-weight: bold;
     color: $card;
     text-align: center;
@@ -53,26 +53,29 @@ $primary: #f39d2b;
 }
 
 .conttabs .tabs .tabsh2 {
-    font-size: 3em;
+    font-size: $heading2;
     color: $highlight;
     text-align: center;
+    font-family: $font_text;
 }
 
 .conttabs .tabs .parrafoT0 {
-    font-size: 1.4em;
     color: $black;
     text-align: justify;
     padding: 5px;
+    @include Text;
 }
 
 .conttabs .input0:checked + .label0 + .tabs {
     display: block;
+    @include H2;
 }
 
 .conttabs .input0:checked + .label0 {
     background: $card;
     border-color: $card;
     color: $black;
+    @include H2;
 }
 
 @media only screen and (max-width: 1024px)  {
@@ -81,6 +84,10 @@ $primary: #f39d2b;
     }
     .conttabs .label0 {
         width: 150px;
+        font-size: $heading2;
+    }
+    .conttabs .tabs .tabsh2 {
+        font-size: $heading2;
     }
     .manita {
         margin-left: 5.5rem;
@@ -91,6 +98,15 @@ $primary: #f39d2b;
     .conttabs {
         max-width: 600px;
     }
+
+    .conttabs .label0 {
+        width: 110px;
+        font-size: $heading2;
+    }
+    .conttabs .tabs .tabsh2 {
+        font-size: $heading2;
+    }
+
     .conttabs .label0 {
         width: 110px;
     }

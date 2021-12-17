@@ -30,10 +30,10 @@ article.card {
   padding: 2% 5%;
   background: $card;
   transition: $timing-1 $transition;
+  font-family: $font_text;
 }
 .H1 {
-  @include H1;
-  @include Space;
+  @include H2;
   line-height: 2;
 }
 .Subtitle {
@@ -77,7 +77,6 @@ article.card {
 
 .H2 {
   @include H2;
-  @include Space;
   line-height: 2;
 }
 
@@ -238,6 +237,7 @@ article.card {
 @media (max-width: 440px) {
   .infos .H1 {
     width: 90%;
+    font-size: 15px;
   }
   .infos .Text {
     width: 100%;
