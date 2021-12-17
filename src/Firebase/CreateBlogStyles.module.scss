@@ -1,5 +1,6 @@
-$primary: #f39d2b;
+@import "../global";
 
+/*
 .Wrapper {
   font-size: 30px;
   color: white;
@@ -34,11 +35,36 @@ $primary: #f39d2b;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 1%;
+}*/
+
+.Wrapper {
+  @include Wrapper;
+}
+
+.H1 {
+  @include H1;
+  @include Space
+}
+
+.H2 {
+  @include H2;
+}
+
+.Subtitle {
+  @include Subtitle;
+  @include Space
+}
+
+.ContainerBack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 .Title {
   font-size: 4rem;
-  color: $primary;
+  color: $highlight;
   padding: 3px;
   text-align: left;
   width: 100%;
@@ -53,10 +79,11 @@ $primary: #f39d2b;
 .Container {
   display: flex;
   flex-direction: row;
-  width: 85%;
-  background-color: #222222;
-  margin: 2%;
-  border-radius: 20px;
+  width: 90%;
+  background: $card;
+  border-radius: 10px;
+  box-shadow: 0px 30px 40px -20px $grayishBlue;
+  border-left: 5px solid $highlight;
 }
 
 .BlogForm {
@@ -70,47 +97,50 @@ $primary: #f39d2b;
 .InputContainer {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
+  font-family: $font_text;
 }
 
 .Button {
   padding: 10px;
   width: 31%;
-  color: #fff;
+  color: $highlight;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  border: 3px solid $primary;
+  border: 3px solid $highlight;
   border-radius: 30px;
-  font-size: 0.6em;
+  font-size: 17px;
   font-weight: 525;
-  background-color: #222222;
+  background-color: $card;
   &:hover {
-    background: $primary;
-    color: #222222;
+    background: $highlight;
+    color: $background;
     font-weight: 540;
     font-weight: bold;
   }
 }
 
 .AddRemButton {
-  padding: 10px;
-  width: 10%;
-  color: #fff;
+  padding: 5px;
+  width: 15%;
+  color: $highlight;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  border: 3px solid $primary;
-  border-radius: 30px;
-  font-size: 0.4em;
+  border: 3px solid $highlight;
+  border-radius: 20px;
+  //font-size: 0.4em;
+  font-size: 17px;
   font-weight: 525;
-  height: 40px;
-  margin-right: 2%;
-  background-color: #222222;
+  //height: 40px;
+  //margin-right: 2%;
+  background-color: $card;
   &:hover {
-    background: $primary;
-    color: #222222;
+    background: $highlight;
+    color: $background;
     font-weight: 540;
     font-weight: bold;
   }
@@ -135,42 +165,47 @@ $primary: #f39d2b;
 }
 
 .Span {
-  font-size: 2.5rem;
-  color: #fff;
-  padding: 0;
+  ///font-size: 2.5rem;
+  //color: #fff;
+  //padding: 0;
+  font-size: 17px;
+  font-family: $font_text;
 }
 
 .InputBlog {
-  color: #fff;
-  background-color: #222222;
+  color: $black;
+  background-color: $card;
   width: 93%;
   height: 40px;
-  border: 3px solid $primary;
+  border: 3px solid $highlight;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 17px;
+  font-family: $font_text;
   outline: none;
 }
 
 .InputArea {
-  color: #fff;
-  background-color: #222222;
+  color: $black;
+  background-color: $card;
   width: 30%;
   height: 40px;
-  border: 3px solid $primary;
+  border: 3px solid $highlight;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 17px;
+  font-family: $font_text;
   outline: none;
   margin-right: 3%;
 }
 
 .InputAreaLabel {
-  color: #fff;
-  background-color: #222222;
+  color: $black;
+  background-color: $card;
   width: 15%;
   height: 40px;
-  border: 3px solid $primary;
+  border: 3px solid $highlight;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 17px;
+  font-family: $font_text;
   outline: none;
   margin-right: 3%;
 }
@@ -180,13 +215,14 @@ $primary: #f39d2b;
 }
 
 .InputDesBlog {
-  color: #fff;
-  background-color: #222222;
+  color: $black;
+  background-color: $card;
   width: 93%;
   height: 150px;
-  border: 3px solid $primary;
+  border: 3px solid $highlight;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 17px;
+  font-family: $font_text;
   outline: none;
 }
 
@@ -200,7 +236,7 @@ input[type="file"] {
 
 .buttonWrap {
   position: relative;
-  border: 3px solid $primary;
+  border: 3px solid $highlight;
   border-radius: 10px;
   font-size: 1.5rem;
   width: 93%;
@@ -215,6 +251,40 @@ input[type="file"] {
   padding: 5px 5px;
   cursor: pointer;
   border-radius: 4px;
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 17px;
+  font-family: $font_text;
+  color: $black;
+}
+
+
+//RESPONSIVE
+@media(max-width: 1016px) {
+  .Image {
+    width: 0%;
+  }
+  .BlogForm {
+    width: 100%;
+  }
+  .Rocket {
+    width: 0%;
+  }
+}
+
+@media (max-width: 597px) {
+  .H1 {
+    width: 90%;
+    @include H2
+  }
+  .H2 {
+    font-size: 17px;
+  }
+  .AddRemButton {
+    width: 20%;
+  }
+  .Button {
+    width: 45%;
+  }
+  .newButton {
+    width: 70%;
+  }
 }

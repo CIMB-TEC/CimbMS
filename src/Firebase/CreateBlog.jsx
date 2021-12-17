@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import firebase from "firebase"
 import image from "../Karen/ProfileImg/ArielLopez.jpg"
 import styles from "./CreateBlogStyles.module.scss"
-import rocket from "./img/cohete.png"
 
 
 const CreateBlog = () => {
@@ -150,52 +149,54 @@ const CreateBlog = () => {
     // </div>
 
     <div className={styles.Wrapper}>
-      <h1 className={styles.Title}>Crea un proyecto</h1>
-      <div className={styles.Container}>
-        <div className={styles.BlogForm}>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Title</span>
-            <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
-          </label>
-          
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Fecha</span>
-            <input className={styles.InputBlog} name="date" type="date" onChange={handelOnChange} />
-          </label>
+      <h1 className={styles.H1}>Crea una entrada de blog</h1>
+      <div className={styles.ContainerBack}>
+        <div className={styles.Container}>
+          <div className={styles.BlogForm}>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Title</span>
+              <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
+            </label>
+            
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Fecha</span>
+              <input className={styles.InputBlog} name="date" type="date" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Autor</span>
-            <input className={styles.InputBlog} name="author" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Autor</span>
+              <input className={styles.InputBlog} name="author" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Etiqueta</span>
-            <input className={styles.InputBlog} name="tag" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Etiqueta</span>
+              <input className={styles.InputBlog} name="tag" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}> Description</span>
-            <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}> Description</span>
+              <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
+            </label>
 
-          <div className={styles.InputContainer}>
-            <span className={styles.Span}>Imagen</span>
-            <div className={styles.buttonWrap}>
-              <label className={styles.newButton} for="upload" id="fileSelect"> Seleccionar archivo </label>
-              <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
+            <div className={styles.InputContainer}>
+              <span className={styles.H2}>Imagen</span>
+              <div className={styles.buttonWrap}>
+                <label className={styles.newButton} for="upload" id="fileSelect"> Seleccionar archivo </label>
+                <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.Submit}>
-          <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
-          </div>
+            <div className={styles.Submit}>
+            <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
+            </div>
 
-          {/*<button className={styles.Button} > <Link to={"firebase/" + currentId}> Read More </Link> </button>*/}
+            {/*<button className={styles.Button} > <Link to={"firebase/" + currentId}> Read More </Link> </button>*/}
+          </div>
+          <div className={styles.Rocket}>
+            <img className={styles.Image} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2Flaunch.png?alt=media&token=157bdf84-4c10-4443-a482-5bc5204d4345" alt=""/>
+          </div>
         </div>
-        <div className={styles.Rocket}>
-          <img className={styles.Image} src={rocket}/>
-        </div>
-      </div>
+      </div> 
     </div>
   );
 

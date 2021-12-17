@@ -7,14 +7,16 @@
 .Text {
   width: 80%;
   text-align: justify;
+  font-weight: bold;
   @include Text}
 
 .Wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  //max-width: 1440px;
   @include Wrapper
 }
 
@@ -31,7 +33,7 @@
 }
 
 .WaveContainer {
-  width: 90%;
+  width: 80%;
   background: $card;
   border-radius: 10px;
   box-shadow: 0px 30px 40px -20px $grayishBlue;
@@ -73,6 +75,34 @@
   margin: 20px;
 }
 
+.AreaTitle {
+  //font-size: 1.8rem;
+  //font-weight: 600;
+  font-family: $font_text;
+  font-size: $heading2;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.AreaLink {
+  //font-size: 1.8rem;
+  font-size: $heading2;
+  text-decoration: underline;
+}
+
+.AreaLink:link {
+  color: #1f1e1d;
+}
+
+.AreaLink:hover {
+  //font-weight: 900;
+  color: $highlight;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //RESPONSIVE
 @media (max-width: 1389px) {
   .ImageOne {
@@ -148,6 +178,15 @@
   }
   .ProyectosTitulo {
     @include H2
+  }
+  .AreaTitle {
+    font-size: $text;
+    text-align: center;
+  }
+  
+  .AreaLink {
+    @include Text;
+    text-align: center;
   }
 }
 
@@ -297,7 +336,7 @@ NO SE UTILIZAN
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: #1f1e1d;
   //background-color: rgba(11, 126, 17, 0.6);
   //opacity: 0.5;
@@ -319,32 +358,6 @@ NO SE UTILIZAN
   background-color: $card;
 }
 
-.AreaTitle {
-  //font-size: 1.8rem;
-  //font-weight: 600;
-  font-family: $font_text;
-  font-size: $heading2;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.AreaLink {
-  //font-size: 1.8rem;
-  font-size: $heading2;
-  text-decoration: underline;
-}
-
-.AreaLink:link {
-  color: #1f1e1d;
-}
-
-.AreaLink:hover {
-  //font-weight: 900;
-  color: $highlight;
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 img {
   padding: 0;

@@ -15,7 +15,7 @@ function Buttons(props) {
       </div>
       <div className={styles.Abstract}>
         <Collapse mt={4} isOpen={show}>
-          <p>{props.Abs}</p>
+          <p className={styles.Text}>{props.Abs}</p>
         </Collapse>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import styles from "./ReadMoreStyles.module.scss"
 import { BsCircle } from "react-icons/bs"
+import {GiClick} from "react-icons/gi"
 import CardTab from '../Karen/components/cardTab'
 import ProjectCard from "../Paola/ProjectCard"
 import React, { useContext, useState, useEffect } from "react"
@@ -115,13 +116,14 @@ const RM = () => {
   return (
     <div className={styles.Wrapper}>
       <nav className={styles.SideNav}>
+        <a className={styles.hand}><GiClick/></a>
         {console.log(prjcts)}
         {Object.keys(prjcts).map(function(key, index) {
           console.log(key)
             return (
-              <div className={styles.circleContainer}> 
-              <a href={`#${key}`}><BsCircle /></a>
-              <p className={styles.HideText}>{key}</p>
+              <div className={styles.circleContainer}>
+                <a href={`#${key}`}><BsCircle /></a>
+                <p className={styles.HideText}>{key}</p>
               </div>
             )
           })

@@ -154,62 +154,74 @@ function Paola(props) {
         <div className={styles.Page}>
             <h1 className={styles.Subtitle}>{project.title}</h1>
             <h2 className={styles.H1}>{project.smartElectromobility}</h2>
-            {
-                projectSE.map((proj) => {
-                    return (
-                        <Card
-                            Img={proj.Image}
-                            Title={proj.Title}
-                            Author={proj.Author}
-                            Year={proj.Year}
-                            Link={proj.Link}
-                            Abs={proj.Abstract}
-                            main1={proj.highLight1}
-                            main2={proj.highLight2}
-                            main3={proj.highLight3}
-                            Read={project.Read}
-                        />
-                    )
-                })
-            }
+            <div className={styles.ContainerSpace}>   
+                {
+                    projectSE.map((proj) => {
+                        return (
+                            <div className={styles.Space}>
+                                <Card
+                                    Img={proj.Image}
+                                    Title={proj.Title}
+                                    Author={proj.Author}
+                                    Year={proj.Year}
+                                    Link={proj.Link}
+                                    Abs={proj.Abstract}
+                                    main1={proj.highLight1}
+                                    main2={proj.highLight2}
+                                    main3={proj.highLight3}
+                                    Read={project.Read}
+                                />
+                            </div>
+                        )
+                    })
+                }
+            </div>
             <h2 className={styles.H1}>{project.userCenteredTechnologyDevelopment}</h2>
-            {
-                projectUCT.map((proj) => {
-                    return (
-                        <Card
-                            Img={proj.Image}
-                            Title={proj.Title}
-                            Author={proj.Author}
-                            Year={proj.Year}
-                            Link={proj.Link}
-                            Abs={proj.Abstract}
-                            main1={proj.highLight1}
-                            main2={proj.highLight2}
-                            main3={proj.highLight3}
-                            Read={project.Read}
-                        />
-                    )
-                })
-            }
+            <div className={styles.ContainerSpace}>
+                {
+                    projectUCT.map((proj) => {
+                        return (
+                            <div className={styles.Space}>
+                                <Card
+                                    Img={proj.Image}
+                                    Title={proj.Title}
+                                    Author={proj.Author}
+                                    Year={proj.Year}
+                                    Link={proj.Link}
+                                    Abs={proj.Abstract}
+                                    main1={proj.highLight1}
+                                    main2={proj.highLight2}
+                                    main3={proj.highLight3}
+                                    Read={project.Read}
+                                />
+                            </div>
+                        )
+                    })
+                }
+            </div>
             <h2 className={styles.H1}>{project.others}</h2>
-            {
-                projectOTH.map((proj) => {
-                    return (
-                        <Card
-                            Img={proj.Image}
-                            Title={proj.Title}
-                            Author={proj.Author}
-                            Year={proj.Year}
-                            Link={proj.Link}
-                            Abs={proj.Abstract}
-                            main1={proj.highLight1}
-                            main2={proj.highLight2}
-                            main3={proj.highLight3}
-                            Read={project.Read}
-                        />
-                    )
-                })
-            }
+            <div className={styles.ContainerSpace}>
+                {
+                    projectOTH.map((proj) => {
+                        return (
+                            <div className={styles.Space}>
+                                <Card
+                                    Img={proj.Image}
+                                    Title={proj.Title}
+                                    Author={proj.Author}
+                                    Year={proj.Year}
+                                    Link={proj.Link}
+                                    Abs={proj.Abstract}
+                                    main1={proj.highLight1}
+                                    main2={proj.highLight2}
+                                    main3={proj.highLight3}
+                                    Read={project.Read}
+                                />
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     );
 }

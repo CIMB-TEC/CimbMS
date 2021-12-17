@@ -31,6 +31,7 @@ function Header(props) {
                     <Link to="/projects" className={styles.Nav}>{headers.projects}</Link>
                     <Link to="/articles" className={styles.Nav}>{headers.disclosure}</Link>
                     <Link to="/team" className={styles.Nav}>{headers.team}</Link>
+                    <Link to="/blog" className={styles.Nav}>{headers.blog}</Link>
 
                     <a onClick={props.changeLanguage} className={styles.Nav}> ENG/ESP</a>
                     <AiOutlineMenu className={styles.Ham} onClick={handelHam} />
@@ -42,6 +43,7 @@ function Header(props) {
                 <Link to="/projects" className={styles.NavHam} onClick={handelHam}>{headers.projects}</Link>
                 <Link to="/articles" className={styles.NavHam} onClick={handelHam}>{headers.disclosure}</Link>
                 <Link to="/team" className={styles.NavHam} onClick={handelHam}>{headers.team}</Link>
+                <Link to="/blog" className={styles.NavHam} onClick={handelHam}>{headers.blog}</Link>
                 <a onClick={props.changeLanguage} className={styles.NavHam}> ENG/ESP</a>
 
             </div> : <div></div>}

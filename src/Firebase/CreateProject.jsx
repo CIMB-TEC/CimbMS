@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import firebase from "firebase"
 import styles from "./CreateBlogStyles.module.scss"
-import rocket from "./img/cohete.png"
 
 
 const CreateProject = () => {
@@ -183,132 +182,134 @@ const CreateProject = () => {
     // </div>
 
     <div className={styles.Wrapper}>
-      <h1 className={styles.Title}>Crea un proyecto</h1>
-      <div className={styles.Container}>
-        <div className={styles.BlogForm}>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Escolaridad</span>
-            <select className={styles.InputBlog} name="school" onChange={handelOnChange}>
-              <option value="" selected disabled hidde>Indique la escolaridad</option>
-              <option value="1">Postgrado</option>
-              <option value="2">Pregrado</option>
-            </select>
-          </label>
+      <h1 className={styles.H1}>Crea un proyecto</h1>
+      <div className={styles.ContainerBack}>
+        <div className={styles.Container}>
+          <div className={styles.BlogForm}>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Escolaridad</span>
+              <select className={styles.InputBlog} name="school" onChange={handelOnChange}>
+                <option value="" selected disabled hidde>Indique la escolaridad</option>
+                <option value="1">Postgrado</option>
+                <option value="2">Pregrado</option>
+              </select>
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Título</span>
-            <input className={styles.InputBlog} name="titulo" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Title</span>
-            <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Título</span>
+              <input className={styles.InputBlog} name="titulo" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Title</span>
+              <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
+            </label>
 
-          <div className={styles.InputContainer}>
-            <span className={styles.Span}>Icon</span>
-            <div className={styles.buttonWrap}>
-              <label className={styles.newButton} for="upload" id="fileSelect"> Seleccionar archivo </label>
-              <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
+            <div className={styles.InputContainer}>
+              <span className={styles.H2}>Icon</span>
+              <div className={styles.buttonWrap}>
+                <label className={styles.newButton} for="upload" id="fileSelect"> Seleccionar archivo </label>
+                <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
+              </div>
             </div>
-          </div>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Descripción abreviada</span>
-            <textarea className={styles.InputDesBlog} name="descripcion" onChange={handelOnChange}  />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Short description</span>
-            <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Descripción abreviada</span>
+              <textarea className={styles.InputDesBlog} name="descripcion" onChange={handelOnChange}  />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Short description</span>
+              <textarea className={styles.InputDesBlog} name="description" onChange={handelOnChange}  />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Descripción completa</span>
-            <textarea className={styles.InputDesBlog} name="desc_comp" onChange={handelOnChange}  />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Full description</span>
-            <textarea className={styles.InputDesBlog} name="full_desc" onChange={handelOnChange}  />
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Descripción completa</span>
+              <textarea className={styles.InputDesBlog} name="desc_comp" onChange={handelOnChange}  />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Full description</span>
+              <textarea className={styles.InputDesBlog} name="full_desc" onChange={handelOnChange}  />
+            </label>
+
+            <label className={styles.AreasContainer}>
+              <span className={styles.H2}>Agregar áreas de investigación</span>
+              {areasEsp.map((x, i) => {
+                return (
+                  <div className="box">
+                    <input
+                      className={styles.InputAreaLabel}
+                      placeholder="Etiqueta"
+                      name="label"
+                      value={x.label}
+                      onChange={e => handleInputChangeEsp(e, i)}
+                    />
+                    <input
+                      className={styles.InputAreaLabel}
+                      placeholder="Área"
+                      name="a"
+                      value={x.a}
+                      onChange={e => handleInputChangeEsp(e, i)}
+                    />
+                    <input
+                      className={styles.InputArea}
+                      placeholder="Descripción del área"
+                      name="desc"
+                      value={x.desc}
+                      onChange={e => handleInputChangeEsp(e, i)}
+                    />
+                      {areasEsp.length !== 1 && <button className={styles.AddRemButton} onClick={() => handleRemoveClickEsp(i)}>Remove</button>}
+                      {areasEsp.length - 1 === i && <button className={styles.AddRemButton} onClick={handleAddClickEsp}>Add</button>}
+                  </div>
+                );
+              })}
           </label>
 
           <label className={styles.AreasContainer}>
-            <span className={styles.Span}>Agregar áreas de investigación</span>
-            {areasEsp.map((x, i) => {
-              return (
-                <div className="box">
-                  <input
-                    className={styles.InputAreaLabel}
-                    placeholder="Etiqueta"
-                    name="label"
-                    value={x.label}
-                    onChange={e => handleInputChangeEsp(e, i)}
-                  />
-                  <input
-                    className={styles.InputAreaLabel}
-                    placeholder="Área"
-                    name="a"
-                    value={x.a}
-                    onChange={e => handleInputChangeEsp(e, i)}
-                  />
-                  <input
-                    className={styles.InputArea}
-                    placeholder="Descripción del área"
-                    name="desc"
-                    value={x.desc}
-                    onChange={e => handleInputChangeEsp(e, i)}
-                  />
-                    {areasEsp.length !== 1 && <button className={styles.AddRemButton} onClick={() => handleRemoveClickEsp(i)}>Remove</button>}
-                    {areasEsp.length - 1 === i && <button className={styles.AddRemButton} onClick={handleAddClickEsp}>Add</button>}
-                </div>
-              );
-            })}
-        </label>
-
-        <label className={styles.AreasContainer}>
-            <span className={styles.Span}>Add development areas</span>
-            {areasEng.map((x, i) => {
-              return (
-                <div className="box">
-                  <input
-                    className={styles.InputAreaLabel}
-                    placeholder="Label"
-                    name="label"
-                    value={x.label}
-                    onChange={e => handleInputChange(e, i)}
-                  />
-                  <input
-                    className={styles.InputAreaLabel}
-                    placeholder="Area"
-                    name="a"
-                    value={x.a}
-                    onChange={e => handleInputChange(e, i)}
-                  />
-                  <input
-                    className={styles.InputArea}
-                    placeholder="Area description"
-                    name="desc"
-                    value={x.desc}
-                    onChange={e => handleInputChange(e, i)}
-                  />
-                    {areasEng.length !== 1 && <button className={styles.AddRemButton} onClick={() => handleRemoveClick(i)}>Remove</button>}
-                    {areasEng.length - 1 === i && <button className={styles.AddRemButton} onClick={handleAddClick}>Add</button>}
-                </div>
-              );
-            })}
-        </label>
-
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Abreviación</span>
-            <input className={styles.InputBlog} name="abv" onChange={handelOnChange} />
+              <span className={styles.H2}>Add development areas</span>
+              {areasEng.map((x, i) => {
+                return (
+                  <div className="box">
+                    <input
+                      className={styles.InputAreaLabel}
+                      placeholder="Label"
+                      name="label"
+                      value={x.label}
+                      onChange={e => handleInputChange(e, i)}
+                    />
+                    <input
+                      className={styles.InputAreaLabel}
+                      placeholder="Area"
+                      name="a"
+                      value={x.a}
+                      onChange={e => handleInputChange(e, i)}
+                    />
+                    <input
+                      className={styles.InputArea}
+                      placeholder="Area description"
+                      name="desc"
+                      value={x.desc}
+                      onChange={e => handleInputChange(e, i)}
+                    />
+                      {areasEng.length !== 1 && <button className={styles.AddRemButton} onClick={() => handleRemoveClick(i)}>Remove</button>}
+                      {areasEng.length - 1 === i && <button className={styles.AddRemButton} onClick={handleAddClick}>Add</button>}
+                  </div>
+                );
+              })}
           </label>
 
-          <div className={styles.Submit}>
-          <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
-          </div>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Abreviación</span>
+              <input className={styles.InputBlog} name="abv" onChange={handelOnChange} />
+            </label>
 
-          {/*<button className={styles.Button} > <Link to={"firebase/" + currentId}> Read More </Link> </button>*/}
-        </div>
-        <div className={styles.Rocket}>
-          <img className={styles.Image} src={rocket}/>
+            <div className={styles.Submit}>
+            <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
+            </div>
+
+            {/*<button className={styles.Button} > <Link to={"firebase/" + currentId}> Read More </Link> </button>*/}
+          </div>
+          <div className={styles.Rocket}>
+            <img className={styles.Image} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2Flaunch.png?alt=media&token=157bdf84-4c10-4443-a482-5bc5204d4345" alt=""/>
+          </div>
         </div>
       </div>
     </div>

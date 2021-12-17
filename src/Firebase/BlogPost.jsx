@@ -14,10 +14,9 @@ const BlogPost = (props) => {
 
 
   return (
-
+    //show ID of project 
     <div>
-      <button onClick={() => { console.log(props.match.params.id) }} style={{ color: "red" }}>Hola</button>
-
+      <button onClick={() => { console.log(props.match.params.id) }} style={{ color: "red" }}></button>
     </div>
   )
 
