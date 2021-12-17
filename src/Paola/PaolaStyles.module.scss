@@ -4,8 +4,6 @@ $card: #383838;
 $white: #ffffff;
 $color: #00b398;
 $primary: #00b398;
-$primary: #f39d2b;
-$color: #f39d2b;
 $background: #1f1e1d;
 /*
 .Page {
@@ -27,18 +25,32 @@ $background: #1f1e1d;
   background-position: 0 0, 40px 40px;
 }*/
 
-.H1 {@include H1}
-.Subtitle {@include Subtitle}
-
-.Title {
-  font-size: 3rem;
-  color: #f1eeee;
-  text-shadow: 0 0 8px $primary, 0 0 2px $primary, 0 0 10px $primary,
-    0 0 6px $primary, 0 0 20px $primary, 0 0 20px $primary, 0 0 1px $primary,
-    0 0 12px $primary;
-  text-transform: uppercase;
-  padding: 5px;
+.ContainerSpace {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
+
+.Space {
+  width: 95%;
+}
+
+.Page{
+  @include Wrapper
+}
+
+.H1 {
+  @include H1;
+  @include Space
+}
+
+.Subtitle {
+  @include Subtitle;
+  @include Space
+}
+
 /*
 .Page h2 {
   font-size: 4rem;
@@ -49,18 +61,50 @@ $background: #1f1e1d;
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive*/
-@media only screen and (min-width: 1000) {
-  .Page {
-    margin-right: 1%;
+
+@media (max-width: 500px) {
+  .Page h2 {
+    //font-size: 4rem;
+    //line-height: 1.25em;
   }
 }
 
-@media (max-width: 500px) {
-  .Title {
-    font-size: 3rem;
+@media (max-width: 597px) {
+  .H1 {
+    width: 90%;
+    @include H2;
+    @include Space
   }
-  .Page h2 {
-    font-size: 4rem;
-    line-height: 1.25em;
+  .Text {
+    width: 100%;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 440px) {
+  .H1 {
+    width: 90%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 392px) {
+  .H1 {
+    width: 100%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
   }
 }

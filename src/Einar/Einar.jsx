@@ -31,27 +31,27 @@ function Einar(props) {
 
 
 	return (
-		<div>
-			<div className={styles.Wrapper}>
-				<div className={styles.WaveCont}>
-					<div className={styles.WaveContainer}>
-						<div className={styles.ContentContainer}>
-							<div className={styles.Content}>
-								<p className={styles.Subtitle}> {home.title}</p>
-								<p className={styles.H1}>
-									{home.definition}
-								</p>
-								<p className={styles.Text}>
-									{home.description}
-								</p>
-							</div>
-							<div className={styles.Image}>
-								<img className={styles.ImageOne} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2FHome.png?alt=media&token=2d178c03-b920-407b-b014-55f684fdf943" alt="" />
-							</div>
+		<div className={styles.Wrapper}>
+			
+			<div className={styles.WaveCont}>
+				<div className={styles.WaveContainer}>
+					<div className={styles.ContentContainer}>
+						<div className={styles.Content}>
+							<p className={styles.Subtitle}> {home.title}</p>
+							<p className={styles.H1}>
+								{home.definition}
+							</p>
+							<p className={styles.Text}>
+								{home.description}
+							</p>
+						</div>
+						<div className={styles.Image}>
+							<img className={styles.ImageOne} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2FHome.png?alt=media&token=2d178c03-b920-407b-b014-55f684fdf943" alt="" />
 						</div>
 					</div>
 				</div>
 			</div>
+			
 
 			<div className={styles.WaveContainer2}>
 

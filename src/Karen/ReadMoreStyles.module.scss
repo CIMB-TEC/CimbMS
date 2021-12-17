@@ -36,6 +36,11 @@ $fontcolor: #fff;
   //background-color: red;
 }*/
 
+.Wrapper{
+  @include Wrapper
+}
+
+
 .SideNav {
   display: flex;
   flex-direction: column;
@@ -48,6 +53,12 @@ $fontcolor: #fff;
   height: 50%;
   margin-top: 180px;
   //background-color: red;
+}
+
+.SideNav .hand {
+  margin: 5px 0px 5px 4px;
+  font-size: 23px;
+  color: $highlight;
 }
 
 .SideNav .circleContainer {
@@ -93,7 +104,10 @@ $fontcolor: #fff;
 
 .H1 {@include H1}
 .Subtitle {@include Subtitle}
-.Text {@include Text}
+.Text {
+  @include Text;
+  text-align: justify;
+}
 /*
 .Title0 {
   font-size: 3rem;
@@ -242,7 +256,7 @@ $fontcolor: #fff;
     font-size: 2rem;
   }*/
   .Title2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 20px;
   }
   .Title3 {
@@ -261,5 +275,44 @@ $fontcolor: #fff;
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 0 3px;
+  }
+}
+
+@media (max-width: 597px) {
+  .H1 {
+    width: 90%;
+    @include H2
+  }
+  .Text {
+    width: 100%;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 440px) {
+  .H1 {
+    width: 90%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 392px) {
+  .H1 {
+    width: 100%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
   }
 }

@@ -24,9 +24,9 @@ const ProjectCard = (props) => {
     <article className={styles.card}>
       <img className={styles.thumb} src={props.Img} />
       <div className={styles.infos}>
-        <h2 className={styles.title}>{props.Title}</h2>
-        <h3 className={styles.date}>{props.Date}</h3>
-        <h3 className={styles.group}>{props.Group}</h3>
+        <h2 className={styles.Subtitle}>{props.Title}</h2>
+        <h3 className={styles.H1}>{props.Date}</h3>
+        <h3 className={styles.H2}>{props.Group}</h3>
         <div className={styles.txt}>
           <h3>{props.ObjGenTi}</h3>
           <p>{props.ObjGen}</p>

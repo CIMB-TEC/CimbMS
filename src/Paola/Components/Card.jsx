@@ -8,14 +8,14 @@ function Card(props) {
         <div className={styles.Card}>
             <img src={props.Img} alt=""/>
             <div className={styles.Information}>
-                <h1>{props.Title}</h1>
-                <h2>{props.Author}</h2>
-                <h3>{props.Year}</h3>
+                <h1 className={styles.Subtitle}>{props.Title}</h1>
+                <h2 className={styles.H2}>{props.Author}</h2>
+                <h3 className={styles.H2}>{props.Year}</h3>
 
                 <ul>
-                    <li>{props.main1}</li>
-                    <li>{props.main2}</li>
-                    <li>{props.main3}</li>
+                    <li className={styles.Text}>{props.main1}</li>
+                    <li className={styles.Text}>{props.main2}</li>
+                    <li className={styles.Text}>{props.main3}</li>
                 </ul>
             </div>
 

@@ -5,16 +5,20 @@
   "activeProjects": "Proyectos activos",
   "projects": [
     { 
-       "title":  "Desarrollo de Tecnologías centradas en el usuario"
+       "title":  "Desarrollo de Tecnologías centradas en el usuario",
+       "info": "Más información"
     },
     { 
-      "title":  "Electro-movilidad inteligente "
+      "title":  "Electro-movilidad inteligente ",
+      "info": "Más información"
     },
     {
-      "title": "Sistemas Biomecatrónicos Orientados al Humano"
+      "title": "Sistemas Biomecatrónicos Orientados al Humano",
+      "info": "Más información"
     },
     {
-      "title": "Proyectos vinulados"
+      "title": "Proyectos vinulados",
+      "info": "Más información"
     }
 ]
 }

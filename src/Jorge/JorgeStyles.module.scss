@@ -42,41 +42,18 @@ $white: #fff;
   width: 100%;
 }
 
-.H1 {@include H1}
-.Subtitle {@include Subtitle}
-/*
-.heading_0 {
-  font-size: 3rem;
-  color: #f1eeee;
-  text-shadow: 0 0 8px $highlight, 0 0 2px $highlight, 0 0 10px $highlight,
-    0 0 6px $highlight, 0 0 20px $highlight, 0 0 20px $highlight, 0 0 1px $highlight,
-    0 0 12px $highlight;
-  text-transform: uppercase;
-  text-align: left;
-  width: 100%;
+.wrapper {@include Wrapper}
+
+.H1 { 
+  @include H1;
+  @include Space;
 }
-
-.heading_1 {
-  font-size: 4rem;
-  color: $highlight;
-  //font-weight: 600;
-  padding: 5px;
-  margin-bottom: 0.1em;
-  text-align: left;
-  width: 100%;
+.Subtitle {
+  @include Subtitle;
+  @include Space;
 }
-
-.heading_2 {
-  font-size: 4rem;
-  color: $highlight;
-  //font-weight: 600;
-  padding: 5px;
-  margin-bottom: 0.5em;
-  margin-top: 2em;
-  text-align: left;
-  width: 100%;
-}*/
-
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Responsive*/
 @media (max-width: 1024px) {
   // 2 y 3
   .card {
@@ -106,27 +83,6 @@ $white: #fff;
   .card {
     width: 100%;
   }
-  /*
-  .heading_0 {
-    font-size: 25px;
-    width: 100%;
-    font-weight: 400;
-    margin-left: 15px;
-  }
-  .heading_1 {
-    font-size: 25px;
-    width: 100%;
-    font-weight: 400;
-    margin-left: 10px;
-  }
-
-  .heading_2 {
-    font-size: 25px;
-    width: 100%;
-    font-weight: 400;
-    margin-top: 2em;
-    margin-left: 10px;
-  }*/
   .H1 {
     font-size: $heading1r;
   }
@@ -137,14 +93,55 @@ $white: #fff;
     margin-right: 1%;
   }
 }
-/*
-@media only screen and (max-width: 991px) {
-  .Page h1 {
-    font-size: 3.6em;
-    line-height: 1.2em;
+
+@media (max-width: 597px) {
+  .H1 {
+    width: 90%;
+    @include H2
   }
-  .Page h2 {
-    font-size: 2.2em;
-    line-height: 1.1em;
+  .Text {
+    width: 100%;
   }
-}*/
+  .Subtitle {
+    font-size: $text;
+  }
+  .ProyectosTitulo {
+    @include H2
+  }
+  .AreaTitle {
+    font-size: $text;
+    text-align: center;
+  }
+  
+  .AreaLink {
+    @include Text;
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .H1 {
+    width: 90%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 392px) {
+  .H1 {
+    width: 100%;
+  }
+  .Text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+

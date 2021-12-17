@@ -122,7 +122,7 @@ $card: #fff;
   margin: 0px 15px 15px 15px;
   top: 3%;
   position: fixed;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .face,
@@ -131,7 +131,7 @@ $card: #fff;
   text-decoration: none;
   text-align: center;
   //border-top: 5px solid $highlight;
-  border-left: 3px solid $highlight;
+  border-left: 5px solid $highlight;
   border-radius: 20px;
 }
 
@@ -147,7 +147,6 @@ $card: #fff;
   //text-decoration: none;
   font-weight: 525;
   display: block;
-  bottom: 1em;
   font-size: 0.8em;
   position: fixed;
   bottom: 3%;
@@ -156,10 +155,12 @@ $card: #fff;
 .anchor:hover {
   background-color: $highlight;
   color: $card;
-  font-weight: 549;
+  font-weight: 540;
   font-weight: bold;
+  border-radius: 50px;
 }
-
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Responsive*/
 @media (max-width: 768px) {
   /*copiar y pegar todos los estilos que tengan hover y cambiarlo a active*/
   .card:active .face.face1,
@@ -195,7 +196,7 @@ $card: #fff;
   }
   .face {
     //caja texto
-    width: 320px;
+    width: 300px;
     height: 300px; //si se modifica cambiar .face.face1{transform}
     transition: 0.5s;
   }
@@ -212,13 +213,50 @@ $card: #fff;
   .arrow {
     margin: 10px;
   }
-
-  .content .H1 {
-    font-size: 0.9em;
+  .content .Text {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
   }
- 
   .content .icono2 {
     max-width: 100%;
     max-height: 100%;
+  }
+}
+
+@media (max-width: 597px) {
+  .H1 {
+    width: 90%;
+    @include H2;
+  }
+  .Text {
+    width: 100%;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 440px) {
+  .H1 {
+    width: 90%;
+  }
+  .Text {
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
+  }
+}
+
+@media (max-width: 392px) {
+  .H1 {
+    width: 100%;
+  }
+  .Text {
+    font-size: 15px;
+  }
+  .Subtitle {
+    font-size: $text;
   }
 }

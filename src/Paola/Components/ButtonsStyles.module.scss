@@ -23,40 +23,42 @@ $background: #1f1e1d;*/
   grid-template-columns: 50% 50%;
 }
 .Buttons .Article {
-  padding: 10px;
-  display: block;
-  margin-left: 0;
-  margin-top: 0;
-  border-radius: 30px;
-  font-size: 1.5em;
+  border: 3px solid $highlight;
+  color: $highlight;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1px;
-  color: $highlight;
+  padding: 5px;
   width: 55%;
   cursor: pointer;
+  border-radius: 30px;
+  letter-spacing: 1px;
   text-decoration: none;
   font-weight: 525;
-  border: 3px solid $highlight;
+  display: block;
+  font-size: 1.3em;
+  bottom: 3%;
   &:hover {
     background: $highlight;
     color: $card;
-    font-weight: 549;
+    font-weight: 540;
     font-weight: bold;
   }
 }
 .Buttons button {
-  padding: 10px;
-  width: 55%;
+  border: 3px solid $highlight;
   color: $highlight;
-  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+  padding: 5px;
+  width: 55%;
   cursor: pointer;
-  border: 3px solid $highlight;
   border-radius: 30px;
-  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
   font-weight: 525;
+  display: block;
+  font-size: 1.3em;
+  bottom: 3%;
   &:hover {
     background: $highlight;
     color: $card;
@@ -71,14 +73,10 @@ $background: #1f1e1d;*/
   grid-area: abstract;
   padding: 0 3% 2% 2%;
 }
-.Abstract p {
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  line-height: 1.6em;
+.Abstract .Text {
+  @include Text;
+  @include Space;
   text-align: justify;
-  text-indent: 10px;
-  color: $highlight;
 }
 
 @media only screen and (max-width: 993px) {
@@ -96,7 +94,7 @@ $background: #1f1e1d;*/
     width: 65%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
     &:focus {
       background: $highlight;
     }
@@ -105,7 +103,7 @@ $background: #1f1e1d;*/
     width: 65%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
     &:hover {
       background: $highlight;
     }
@@ -117,7 +115,7 @@ $background: #1f1e1d;*/
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.3em;
+    font-size: 1.1em;
     &:focus {
       background: $highlight;
     }
@@ -126,7 +124,7 @@ $background: #1f1e1d;*/
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.3em;
+    font-size: 1.1em;
     &:hover {
       background: $highlight;
     }

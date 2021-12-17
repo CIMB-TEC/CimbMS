@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import firebase from "firebase"
 import styles from "./CreateBlogStyles.module.scss"
-import rocket from "./img/cohete.png"
 
 
 const CreateArticle = () => {
@@ -152,89 +151,91 @@ const CreateArticle = () => {
     // </div>
 
     <div className={styles.Wrapper}>
-      <h1 className={styles.Title}>Crea un artículo de divulgación</h1>
-      <div className={styles.Container}>
-        <div className={styles.BlogForm}>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Project</span>
-            <select className={styles.InputBlog} name="project" onChange={handelOnChange}>
-              <option value="" selected disabled hidde>Indique el proyecto</option>
-              <option value="1">Electro-movilidad inteligente</option>
-              <option value="2">Desarrollo de Tecnologías centradas en el usuario</option>
-              <option value="3">Otros</option>
-            </select>
-          </label>
+      <h1 className={styles.H1}>Crea un artículo de divulgación</h1>
+      <div className={styles.ContainerBack}>
+        <div className={styles.Container}>
+          <div className={styles.BlogForm}>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Project</span>
+              <select className={styles.InputBlog} name="project" onChange={handelOnChange}>
+                <option value="" selected disabled hidde>Indique el proyecto</option>
+                <option value="1">Electro-movilidad inteligente</option>
+                <option value="2">Desarrollo de Tecnologías centradas en el usuario</option>
+                <option value="3">Otros</option>
+              </select>
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Título</span>
-            <input className={styles.InputBlog} name="titulo" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Title</span>
-            <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Título</span>
+              <input className={styles.InputBlog} name="titulo" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Title</span>
+              <input className={styles.InputBlog} name="title" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Año</span>
-            <input className={styles.InputBlog} name="year" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Año</span>
+              <input className={styles.InputBlog} name="year" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Autor</span>
-            <input className={styles.InputBlog} name="author" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Autor</span>
+              <input className={styles.InputBlog} name="author" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Idea Principal 1</span>
-            <input className={styles.InputBlog} name="princ1" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Main Idea 1</span>
-            <input className={styles.InputBlog} name="main1" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Idea Principal 2</span>
-            <input className={styles.InputBlog} name="princ2" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Main Idea 2</span>
-            <input className={styles.InputBlog} name="main2" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Idea Principal 3</span>
-            <input className={styles.InputBlog} name="princ3" onChange={handelOnChange} />
-          </label>
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Main Idea 3</span>
-            <input className={styles.InputBlog} name="main3" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Idea Principal 1</span>
+              <input className={styles.InputBlog} name="princ1" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Main Idea 1</span>
+              <input className={styles.InputBlog} name="main1" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Idea Principal 2</span>
+              <input className={styles.InputBlog} name="princ2" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Main Idea 2</span>
+              <input className={styles.InputBlog} name="main2" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Idea Principal 3</span>
+              <input className={styles.InputBlog} name="princ3" onChange={handelOnChange} />
+            </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Main Idea 3</span>
+              <input className={styles.InputBlog} name="main3" onChange={handelOnChange} />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Abstract</span>
-            <textarea className={styles.InputDesBlog} name="abstract" onChange={handelOnChange}  />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Abstract</span>
+              <textarea className={styles.InputDesBlog} name="abstract" onChange={handelOnChange}  />
+            </label>
 
-          <label className={styles.InputContainer}>
-            <span className={styles.Span}>Link</span>
-            <input className={styles.InputBlog} name="link" onChange={handelOnChange} />
-          </label>
+            <label className={styles.InputContainer}>
+              <span className={styles.H2}>Link</span>
+              <input className={styles.InputBlog} name="link" onChange={handelOnChange} />
+            </label>
 
-          <div className={styles.InputContainer}>
-            <span className={styles.Span}>Imagen</span>
-            <div className={styles.buttonWrap}>
-              <label className={styles.newButton} for="upload" id="fileSelect" > Seleccionar archivo </label>
-              <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
+            <div className={styles.InputContainer}>
+              <span className={styles.H2}>Imagen</span>
+              <div className={styles.buttonWrap}>
+                <label className={styles.newButton} for="upload" id="fileSelect" > Seleccionar archivo </label>
+                <input id="upload" className={styles.InputBlog} name="img" type="file" onChange={addImage}/>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.Submit}>
-          <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
-          </div>
+            <div className={styles.Submit}>
+            <button onClick={handelOnSubmit} className={styles.Button}> Submit </button>
+            </div>
 
-          {/*<button className={styles.Button} > <Link to={"firebase/" + currentId}> Read More </Link> </button>*/}
-        </div>
-        <div className={styles.Rocket}>
-          <img className={styles.Image} src={rocket}/>
+            {/*<button className={styles.Button} > <Link to={"firebase/" + currentId}> Read More </Link> </button>*/}
+          </div>
+          <div className={styles.Rocket}>
+            <img className={styles.Image} src="https://firebasestorage.googleapis.com/v0/b/cimb-59410.appspot.com/o/page%2Flaunch.png?alt=media&token=157bdf84-4c10-4443-a482-5bc5204d4345" alt=""/>
+          </div>
         </div>
       </div>
     </div>
